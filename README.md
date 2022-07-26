@@ -5,7 +5,11 @@ Follow these commands to run the proect on your local machine :
 
 Clone the project 
 
- > git clone https://github.com/zuri-training/price_compare_team_27.git 
+```
+
+git clone https://github.com/zuri-training/price_compare_team_27.git 
+
+```
 
 Enter the project directory 
 
