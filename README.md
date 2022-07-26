@@ -4,34 +4,44 @@
 Follow these commands to run the proect on your local machine :
 
 Clone the project 
-
 ```
-
 git clone https://github.com/zuri-training/price_compare_team_27.git 
-
 ```
 
 Enter the project directory 
 
-` cd price_compare_team_27 `
+```
+cd price_compare_team_27
+```
 
 Create a virtual env
 
-` python -m venv env `
+```
+python -m venv env 
+```
 
-Activate your env 
+Activate your env(for windows)
 
-` ./env/Scripts/activate ` *For windows*	 
+```
+./env/Scripts/activate 	 
+```
+(for linux or mac)
 
-` source env/bin/activate ` *linux or mac* 
+```
+source env/bin/activate 
+``` 
 
 Install Project Dependencies
 
-` pip install -r requirements.txt `
+```
+pip install -r requirements.txt
+```
 
 Run the server
 
-` python manage.py runserver `
+```
+python manage.py runserver
+```
 
 ## To contribute :
 - NOTE : Don't push to the main branch
@@ -42,7 +52,7 @@ Run the server
 
 ```
 git add .
-git commit -m "The task you did "
+git commit -m " The task you did "
 git push branchname 
 
 ```
