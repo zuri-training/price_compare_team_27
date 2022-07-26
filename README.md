@@ -17,7 +17,15 @@ Create a virtual env
 
 Activate your env 
 
-` ./env/Scripts/activate ` <sub>For window users</sub>	 
-` source env/bin/activate ` <sub>For mac users</sub>	 
+` ./env/Scripts/activate ` *For windows*	 
 
+` source env/bin/activate ` *linux or mac* 
+
+Install Project Dependencies
+
+` pip install -r requirements.txt `
+
+Run the server
+
+` python manage.py runserver `
 
