@@ -1,0 +1,56 @@
+{%load static%}
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--<title> Registration or Sign Up form in HTML CSS | CodingLab </title>-->
+    <link rel="stylesheet" href="{% static 'accounts/signup.css'%}">
+   </head>
+<body>
+  <div class="wrapper">
+    <h2>Registration</h2>
+    <form method="post" id="form">
+      {%csrf_token%}
+      <div class="input-box">
+        {{form.username}}
+      </div>
+      <div class="input-box">
+        {{form.email}}
+      </div>
+      <div class="input-box">
+        {{form.password1}}
+
+      </div>
+      <div class="input-box">
+        {{form.password2}}
+
+      </div>
+      <div class="policy">
+        <input type="checkbox">
+        <h3>I accept all terms & condition</h3>
+      </div>
+      <div class="input-box button">
+        <input type="Submit" value="Register Now">
+      </div>
+      <div class="alert alert-danger" role="alert">
+        {{form.errors}}
+      </div>
+      <div class="text">
+        <h3>Already have an account? <a href="{%url 'login' %}">Login now</a></h3>
+      </div>
+    </form>
+   
+  </div>
+  <script>
+    const form_fields = document.getElementsByTagName('input')
+    form_fields[1].placeholder="Enter your username"
+    form_fields[2].placeholder="Enter your email"
+    form_fields[3].placeholder="Enter your password"
+    form_fields[4].placeholder="Confirm your password"
+
+
+  </script>
+</body>
+</html>
