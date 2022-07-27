@@ -37,6 +37,19 @@ Install Project Dependencies
 pip install -r requirements.txt
 ```
 
+Make Migrations
+
+```
+python manage.py makemigrations
+python manage.py migrate
+```
+
+Create Superuser
+
+```
+python manage.py createsuperuser
+```
+
 Run the server
 
 ```
@@ -44,11 +57,12 @@ python manage.py runserver
 ```
 
 ## To contribute :
-- NOTE : Don't push to the main branch
 
+### NOTE :
+
+- Don't push to the main branch
 - Create a branch and switch to it ` git checkout -b (branchname)` *Dont include brackets*
-
-- After finishing your tasks, push to your branch 
+- After finishing your tasks run ``
 
 ```
 git add .
