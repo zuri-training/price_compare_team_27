@@ -1,0 +1,2 @@
+Same Footer:
+>>Product information
