@@ -52,6 +52,7 @@ li {
   list-style-type: none;
 }
 
+
 /* layout */
 body {
   position: relative;
@@ -65,6 +66,7 @@ footer {
   background: var(--footer-color);
   color: var(--light-text);
 }
+
 
 /* footer */
 .footer-container {
@@ -179,7 +181,7 @@ footer {
   text-align: center;
   background: var(--copyright);
   color: var(--dark-text);
-  font-size: 0.9em;
+  font-size: 0.8em;
   padding-block: 0.5em;
 }
 .copyright span {

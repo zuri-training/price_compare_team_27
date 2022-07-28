@@ -206,9 +206,6 @@ footer {
 }
 
 
-
-
-
 /* footer */
 .footer-container {
   width: 90%;
@@ -216,9 +213,9 @@ footer {
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
-  font-size: 1em;
+  font-size: 0.85em;
   font-weight: 400;
-  padding-block: 4em;
+  padding-block: 2.5em;
 }
 .footer-container a {
   text-decoration: none;
@@ -230,10 +227,10 @@ footer {
   background: var(--dark-text); /* remove this when the logo is available */
 }
 .footer-nav {
-  width: 50%;
+  width: 55%;
 }
 .footer-nav nav {
-  margin-inline-start: 1.5em;
+  margin-inline-start: 2em;
   display: flex;
   justify-content: flex-start;
   gap: 2em;
@@ -286,7 +283,7 @@ footer {
   text-align: center;
   background: var(--copyright);
   color: var(--dark-text);
-  font-size: 0.9em;
+  font-size: 0.8em;
   padding-block: 0.5em;
 }
 .copyright span {
@@ -295,7 +292,3 @@ footer {
 .copyright .emoji {
   color: rgb(155,34,29);
 }
-
-
-
-
