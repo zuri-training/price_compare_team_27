@@ -92,9 +92,7 @@ footer {
   color: inherit;
 }
 .header-logo {
-  border: 1px solid; /* remove this when the logo is available */
-  width: 15%; 
-  background: var(--dark-text); /* remove this when the logo is available */
+  width: 10%; 
 }
 .header-search {
   width: 35%;
@@ -266,9 +264,7 @@ input.custom {
   color: inherit;
 }
 .footer-logo {
-  width: 15%;
-  border: 1px solid; /* remove this when the logo is available */
-  background: var(--dark-text); /* remove this when the logo is available */
+  width: 10%;
 }
 .footer-nav {
   width: 55%;
