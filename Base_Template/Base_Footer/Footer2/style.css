@@ -72,7 +72,7 @@ footer {
 .footer-container {
   width: 90%;
   margin-inline: auto;
-  font-size: 1em;
+  font-size: 0.85em;
   font-weight: 400;
   padding-block: 2em;
 }
@@ -123,10 +123,10 @@ footer {
   width: 10%;
 }
 .footer-nav {
-  width: 50%;
+  width: 55%;
 }
 .footer-nav nav {
-  margin-inline-start: 1.5em;
+  margin-inline-start: 2em;
   display: flex;
   justify-content: flex-start;
   gap: 2em;
