@@ -1,19 +1,19 @@
-# price_compare_team_27
+# Team 27 Price_compare 
 
 ### Project Documentation
- > [price_compare_team_27 Documentation](https://docs.google.com/document/d/1qCUDKd5Hb_DAtzi2BKYs_Svso_pp2-m57vPPuYOYh74/edit?usp=drivesdk)
+ > [Team 27_Price_compare Documentation](https://docs.google.com/document/d/1qCUDKd5Hb_DAtzi2BKYs_Svso_pp2-m57vPPuYOYh74/edit?usp=drivesdk)
  
 ### Presentation Slides
-> [price_compare_team_27 Slides](https://www.figma.com/proto/BzsR8MmSXhHvMYbPWx9Q7b/Pricify?node-id=897%3A3499&scaling=contain&page-id=856%3A3905)
+> [Team 27_Price_compare  Slides](https://www.figma.com/proto/BzsR8MmSXhHvMYbPWx9Q7b/Pricify?node-id=897%3A3499&scaling=contain&page-id=856%3A3905)
 
 ### Figma Link
-> [price_compare_team_27 Figma ](https://www.figma.com/file/BzsR8MmSXhHvMYbPWx9Q7b/Price-Compare?node-id=2%3A3)
+> [Team 27_Price_compare  Figma ](https://www.figma.com/file/BzsR8MmSXhHvMYbPWx9Q7b/Price-Compare?node-id=2%3A3)
 
 ### Figjam Link
-> [price_compare_team_27 FigJam](https://www.figma.com/file/HppxK2j0nylpMF2OPuQaMB/Pricify-Sketch)
+> [Team 27_Price_compare  FigJam](https://www.figma.com/file/HppxK2j0nylpMF2OPuQaMB/Pricify-Sketch)
 
 ### List of Tasks
-> [price_compare_team_27 List of Tasks](https://docs.google.com/spreadsheets/d/1VVzcnnJz0iOHUNQ_6cVq_wheTDTpOR9279F6vc6_mng/edit?usp=sharing)
+> [Team 27_Price_compare List of Tasks](https://docs.google.com/spreadsheets/d/1VVzcnnJz0iOHUNQ_6cVq_wheTDTpOR9279F6vc6_mng/edit?usp=sharing)
 
 ## Follow these commands to run the proect on your local machine :
 
