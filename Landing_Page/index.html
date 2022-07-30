@@ -1,0 +1,825 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <script
+      src="https://kit.fontawesome.com/a076d05399.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Sharp:opsz,wght,FILL,GRAD@48,400,0,0"/>
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Sharp:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <script src="live.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Sharp:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <title>PRICIFY</title>
+  </head>
+  <body>
+    <div id="page_container">
+      <div id="whole_top">
+        <div id="whole_top_top">
+          <div id="top_top">
+            <div id="white_bar">
+              <img id="logo" src="./images/Choice Logo.png" alt="company logo">
+            </div>
+            <div id="topnav">
+              <a id="active" href="index.html">Home</a>
+              <a href="categories.html">Categories</a>
+              <a id ="cart" href="wishlist.html">Wishlist<span class="material-symbols-sharp">shopping_cart</span></a>
+            </div>
+            <div id="right_container">
+              <div id="account"><span class="material-symbols-sharp">account_circle</span></div>
+              <h4>Account</h4>
+              <div class="caret-down"><span class="material-symbols-sharp">expand_more</span></div>              
+              <!-- <a href="login.html"
+                ><button type="submit" id="signin">Sign in</button></a
+              >
+              <a href="signup.html"
+                ><button type="submit" id="signup">Sign up</button></a
+              > -->
+            </div>
+          </div>
+          <div id="mid">
+            <div id="mid_left">
+              <div id="mid_text">
+                <h1>
+                  Compare prices across <br />
+                  multiple platforms
+                </h1>
+              </div>
+              <div id="form_part">
+                <form id="form" action="live.js" method="get">
+                  <input
+                    type="search"
+                    name="q"
+                    placeholder="What are you looking to find?"
+                    id="query"
+                  />
+                  <button id="search_button" type="submit">Search</button>
+                </form>
+              </div>
+              <div id="mid_icon">
+<img id="iconnnn" src="./images/ri-google-lineSocial.png" alt="google logo">
+<img id="iconnnn" src="./images/ri-facebook-lineSocial.png" alt="facebook logo">
+<img id="iconnnn" src="./images/ri-twitter-lineSocial.png" alt="google logo">
+              </div>
+            </div>
+            <div id="mid_image">
+              <img src="./images/Group 13.png" alt="image">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="icon_section">
+        <div style="margin-top: 1em;"id="Samsung">
+          <img style="padding-bottom:0.8em" id="iphone_img" src="./images/Vector.png" alt="samsung logo">
+          <p style=" font-size: 15px;">Samsung</p>
+        </div>
+        <div id="iphone">
+          <img id="iphone_img" src="./images/cil_car-alt (Traced).png" alt="iphone logo">
+          <p style="font-size: 15px;">iPhone</p>
+        </div>
+        <div id="Huawei">
+          <img id="iphone_img" src="./images/Vector-1.png" alt="huawei logo">
+          <p style="font-size: 15px; margin-left: -0.3em; margin-top: 1.6em;">Huawei</p>
+        </div>
+        <div id="Infinix">
+          <img style="margin-bottom: 1.2em;" id="iphone_img" src="./images/bi_laptop (Traced).png" alt="infinix logo">
+          <p style="font-size: 15px; margin-left: 0.5em;">Infinix</p>
+        </div>
+        <div id="Xiaomi">
+          <img id="iphone_img" src="./images/Vector-2.png" alt="Xiaomi logo">
+          <p style="font-size: 15px; margin-top: 1.7em; margin-left: -0.6em;">Xiaomi</p>
+        </div>
+        <div id="Oppo">
+          <img style="padding-bottom:1em;" id="iphone_img" src="./images/Frame 17 (Traced).png" alt="Oppo logo">
+          <p style="font-size: 15px; margin-left: 0.5em;">Oppo</p>
+        </div>
+        <div id="Tecno">
+          <img style="padding-bottom: 1em;" id="iphone_img" src="./images/Tecn.png" alt="Tecno logo">
+          <p style="font-size: 15px; margin-left: 0.5em; ">Tecno</p>
+        </div>
+        
+      </div>
+      <div id="all_products">
+        <div id="product_section">
+        <div id="product_container">
+          <div id="heading_container">
+            <div class="top_heading">
+              <h1 class="texttop_heading">Popular products</h1>
+              <div id="sort_stuff">
+              
+                <!-- <label class="sort_sort" for="sort-sort"> -->
+                  <span class="sort_sort_sort">Sort by</span>
+                  <div id="border">
+                  Newest<div class="caret-down_down"><span class="material-symbols-sharp">expand_more   
+                  </span></div></div>            
+                  <!-- <svg
+                    viewBox="0 0 24 24"
+                    class="view_box"
+                    width="18"
+                    height="18" >
+                  </svg> -->
+                  <a href="#see_more_button"> <span class="material-symbols-sharp">filter_list</span></a>
+                <!-- </label> -->
+              </div>
+            </div>
+            <div id="below_heading">
+              <p class="below_heading_text">All deals in one place, enjoy</p>
+            </div>
+          </div>
+          <div class="products">
+            <div class="product_1">
+              <div class="product_image">
+                <img
+                  class="phone_img"
+                  src="https://ng.jumia.is/cms/0-0-black-friday/2021/cyber-monday/iphones_260x144.png"
+                  alt="iPhones"
+                />
+              </div>
+              <div class="product_text">
+                <div class="product_name">
+                  <h1 class="product_heading">Apple iPhone 13 Pro Max<br>256GB Gold</h1>
+                </div>
+                <div class="availability">
+                  <span class="availabilty_text"> Available </span>
+                  <span class="number_available"> 4 </span>
+                </div>
+                <div class="review_rating">
+                  <div>
+                    <span class="review_text">Review</span>
+                    <div class="rating">
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star "></span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="product_1">
+              <div class="product_image">
+                <img
+                  class="phone_img"
+                  src="https://ng.jumia.is/cms/0-0-black-friday/2021/cyber-monday/iphones_260x144.png"
+                  alt="iPhones"
+                />
+              </div>
+              <div class="product_text">
+                <div class="product_name">
+                  <h1 class="product_heading">Apple iPhone 13 Pro Max<br>256GB Gold</h1>
+                </div>
+                <div class="availability">
+                  <span class="availabilty_text"> Available </span>
+                  <span class="number_available"> 4 </span>
+                </div>
+                <div class="review_rating">
+                  <div>
+                    <span class="review_text">Review</span>
+                    <div class="rating">
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star "></span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="product_1">
+              <div class="product_image">
+                <img
+                  class="phone_img"
+                  src="https://ng.jumia.is/cms/0-0-black-friday/2021/cyber-monday/iphones_260x144.png"
+                  alt="iPhones"
+                />
+              </div>
+              <div class="product_text">
+                <div class="product_name">
+                  <h1 class="product_heading">Apple iPhone 13 Pro Max<br>256GB Gold</h1>
+                </div>
+                <div class="availability">
+                  <span class="availabilty_text"> Available </span>
+                  <span class="number_available"> 4 </span>
+                </div>
+                <div class="review_rating">
+                  <div>
+                    <span class="review_text">Review</span>
+                    <div class="rating">
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star "></span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="product_1">
+              <div class="product_image">
+                <img
+                  class="phone_img"
+                  src="https://ng.jumia.is/cms/0-0-black-friday/2021/cyber-monday/iphones_260x144.png"
+                  alt="iPhones"
+                />
+              </div>
+              <div class="product_text">
+                <div class="product_name">
+                  <h1 class="product_heading">Apple iPhone 13 Pro Max<br>256GB Gold</h1>
+                </div>
+                <div class="availability">
+                  <span class="availabilty_text"> Available </span>
+                  <span class="number_available"> 4 </span>
+                </div>
+                <div class="review_rating">
+                  <div>
+                    <span class="review_text">Review</span>
+                    <div class="rating">
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star "></span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+          </div>
+          <div class="products">
+            <div class="product_1">
+              <div class="product_image">
+                <img
+                  class="phone_img"
+                  src="https://ng.jumia.is/cms/0-0-black-friday/2021/cyber-monday/iphones_260x144.png"
+                  alt="iPhones"
+                />
+              </div>
+              <div class="product_text">
+                <div class="product_name">
+                  <h1 class="product_heading">Apple iPhone 13 Pro Max<br>256GB Gold</h1>
+                </div>
+                <div class="availability">
+                  <span class="availabilty_text"> Available </span>
+                  <span class="number_available"> 4 </span>
+                </div>
+                <div class="review_rating">
+                  <div>
+                    <span class="review_text">Review</span>
+                    <div class="rating">
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star "></span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="product_1">
+              <div class="product_image">
+                <img
+                  class="phone_img"
+                  src="https://ng.jumia.is/cms/0-0-black-friday/2021/cyber-monday/iphones_260x144.png"
+                  alt="iPhones"
+                />
+              </div>
+              <div class="product_text">
+                <div class="product_name">
+                  <h1 class="product_heading">Apple iPhone 13 Pro Max<br>256GB Gold</h1>
+                </div>
+                <div class="availability">
+                  <span class="availabilty_text"> Available </span>
+                  <span class="number_available"> 4 </span>
+                </div>
+                <div class="review_rating">
+                  <div>
+                    <span class="review_text">Review</span>
+                    <div class="rating">
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star "></span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="product_1">
+              <div class="product_image">
+                <img
+                  class="phone_img"
+                  src="https://ng.jumia.is/cms/0-0-black-friday/2021/cyber-monday/iphones_260x144.png"
+                  alt="iPhones"
+                />
+              </div>
+              <div class="product_text">
+                <div class="product_name">
+                  <h1 class="product_heading">Apple iPhone 13 Pro Max<br>256GB Gold</h1>
+                </div>
+                <div class="availability">
+                  <span class="availabilty_text"> Available </span>
+                  <span class="number_available"> 4 </span>
+                </div>
+                <div class="review_rating">
+                  <div>
+                    <span class="review_text">Review</span>
+                    <div class="rating">
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star "></span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="product_1">
+              <div class="product_image">
+                <img
+                  class="phone_img"
+                  src="https://ng.jumia.is/cms/0-0-black-friday/2021/cyber-monday/iphones_260x144.png"
+                  alt="iPhones"
+                />
+              </div>
+              <div class="product_text">
+                <div class="product_name">
+                  <h1 class="product_heading">Apple iPhone 13 Pro Max<br>256GB Gold</h1>
+                </div>
+                <div class="availability">
+                  <span class="availabilty_text"> Available </span>
+                  <span class="number_available"> 4 </span>
+                </div>
+                <div class="review_rating">
+                  <div>
+                    <span class="review_text">Review</span>
+                    <div class="rating">
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star "></span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div> 
+        </div>
+        <div class="buttonbelow">
+          <a href="moreproducts.html">
+            <button type="submit" id="see_more_button">
+              See all Deals<i class="fas fa-angle-down"></i></button
+          ></a>
+        </div>
+        </div>
+      </div>
+    </div>
+    <div id="page_container2">
+      <div class="product_section_two">
+        <div class="product_container">
+          <div id="heading_container">
+            <div class="top_heading">
+              <h1 class="texttop_heading">New product release</h1>
+              <div id="sort_stuff">
+                <!-- <label class="sort_sort" for="sort-sort"> -->
+                  <span class="sort_sort_sort">Sort by</span>
+                  <div id="border">
+                  Newest<div class="caret-down_down"><span class="material-symbols-sharp">expand_more   
+                  </span></div></div>            
+                  <!-- <svg
+                    viewBox="0 0 24 24"
+                    class="view_box"
+                    width="18"
+                    height="18" >
+                  </svg> -->
+                  <a href="footer"> <span class="material-symbols-sharp">filter_list</span></a>
+                <!-- </label> -->
+              </div>
+            </div>
+            <div id="below_heading">
+              <p class="below_heading_text">All deals in one place, enjoy</p>
+            </div>
+          </div>
+          <div class="products">
+            <div id="product_2">
+              <div class="product_image">
+                <img
+                  class="phone_img"
+                  src="https://ng.jumia.is/cms/0-0-black-friday/2021/cyber-monday/iphones_260x144.png"
+                  alt="iPhones"
+                />
+              </div>
+              <div class="product_text">
+                <div class="product_name">
+                  <h1 class="product_heading">Apple iPhone 13 Pro Max<br>256GB Gold</h1>
+                </div>
+                <div class="availability">
+                  <span class="availabilty_text"> Available </span>
+                  <span class="number_available"> 4 </span>
+                </div>
+                <div class="review_rating">
+                  <div>
+                    <span class="review_text">Review</span>
+                    <div class="rating">
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star "></span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div id="product_2">
+              <div class="product_image">
+                <img
+                  class="phone_img"
+                  src="https://ng.jumia.is/cms/0-0-black-friday/2021/cyber-monday/iphones_260x144.png"
+                  alt="iPhones"
+                />
+              </div>
+              <div class="product_text">
+                <div class="product_name">
+                  <h1 class="product_heading">Apple iPhone 13 Pro Max<br>256GB Gold</h1>
+                </div>
+                <div class="availability">
+                  <span class="availabilty_text"> Available </span>
+                  <span class="number_available"> 4 </span>
+                </div>
+                <div class="review_rating">
+                  <div>
+                    <span class="review_text">Review</span>
+                    <div class="rating">
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star "></span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div id="product_2">
+              <div class="product_image">
+                <img
+                  class="phone_img"
+                  src="https://ng.jumia.is/cms/0-0-black-friday/2021/cyber-monday/iphones_260x144.png"
+                  alt="iPhones"
+                />
+              </div>
+              <div class="product_text">
+                <div class="product_name">
+                  <h1 class="product_heading">Apple iPhone 13 Pro Max<br>256GB Gold</h1>
+                </div>
+                <div class="availability">
+                  <span class="availabilty_text"> Available </span>
+                  <span class="number_available"> 4 </span>
+                </div>
+                <div class="review_rating">
+                  <div>
+                    <span class="review_text">Review</span>
+                    <div class="rating">
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star "></span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div id="product_2">
+              <div class="product_image">
+                <img
+                  class="phone_img"
+                  src="https://ng.jumia.is/cms/0-0-black-friday/2021/cyber-monday/iphones_260x144.png"
+                  alt="iPhones"
+                />
+              </div>
+              <div class="product_text">
+                <div class="product_name">
+                  <h1 class="product_heading">Apple iPhone 13 Pro Max<br>256GB Gold</h1>
+                </div>
+                <div class="availability">
+                  <span class="availabilty_text"> Available </span>
+                  <span class="number_available"> 4 </span>
+                </div>
+                <div class="review_rating">
+                  <div>
+                    <span class="review_text">Review</span>
+                    <div class="rating">
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star "></span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+          </div>
+        </div>
+        <div class="buttonbelow">
+          <a href="moreproducts.html">
+            <button type="submit" id="see_more_button">
+              See all Deals<i class="fas fa-angle-down"></i></button
+          ></a>
+        </div>
+        <div id="product_container_2">
+          <div id="heading_container">
+            <div class="top_heading">
+              <h1 class="texttop_heading">Trending products</h1>
+              <div id="sort_stuff">
+                <!-- <label class="sort_sort" for="sort-sort"> -->
+                  <span class="sort_sort_sort">Sort by</span>
+                  <div id="border">
+                  Newest<div class="caret-down_down"><span class="material-symbols-sharp">expand_more   
+                  </span></div></div>            
+                  <!-- <svg
+                    viewBox="0 0 24 24"
+                    class="view_box"
+                    width="18"
+                    height="18" >
+                  </svg> -->
+                  <a href="#see_more_button"> <span class="material-symbols-sharp">filter_list</span></a>
+                <!-- </label> -->
+              </div>
+            </div>
+            <div id="below_heading">
+              <p class="below_heading_text">All deals in one place, enjoy</p>
+            </div>
+          </div>
+          <div class="products">
+            <div id="product_2">
+              <div class="product_image">
+                <img
+                  class="phone_img"
+                  src="https://ng.jumia.is/cms/0-0-black-friday/2021/cyber-monday/iphones_260x144.png"
+                  alt="iPhones"
+                />
+              </div>
+              <div class="product_text">
+                <div class="product_name">
+                  <h1 class="product_heading">Apple iPhone 13 Pro Max<br>256GB Gold</h1>
+                </div>
+                <div class="availability">
+                  <span class="availabilty_text"> Available </span>
+                  <span class="number_available"> 4 </span>
+                </div>
+                <div class="review_rating">
+                  <div>
+                    <span class="review_text">Review</span>
+                    <div class="rating">
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star "></span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div id="product_2">
+              <div class="product_image">
+                <img
+                  class="phone_img"
+                  src="https://ng.jumia.is/cms/0-0-black-friday/2021/cyber-monday/iphones_260x144.png"
+                  alt="iPhones"
+                />
+              </div>
+              <div class="product_text">
+                <div class="product_name">
+                  <h1 class="product_heading">Apple iPhone 13 Pro Max<br>256GB Gold</h1>
+                </div>
+                <div class="availability">
+                  <span class="availabilty_text"> Available </span>
+                  <span class="number_available"> 4 </span>
+                </div>
+                <div class="review_rating">
+                  <div>
+                    <span class="review_text">Review</span>
+                    <div class="rating">
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star "></span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div id="product_2">
+              <div class="product_image">
+                <img
+                  class="phone_img"
+                  src="https://ng.jumia.is/cms/0-0-black-friday/2021/cyber-monday/iphones_260x144.png"
+                  alt="iPhones"
+                />
+              </div>
+              <div class="product_text">
+                <div class="product_name">
+                  <h1 class="product_heading">Apple iPhone 13 Pro Max<br>256GB Gold</h1>
+                </div>
+                <div class="availability">
+                  <span class="availabilty_text"> Available </span>
+                  <span class="number_available"> 4 </span>
+                </div>
+                <div class="review_rating">
+                  <div>
+                    <span class="review_text">Review</span>
+                    <div class="rating">
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star "></span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div id="product_2">
+              <div class="product_image">
+                <img
+                  class="phone_img"
+                  src="https://ng.jumia.is/cms/0-0-black-friday/2021/cyber-monday/iphones_260x144.png"
+                  alt="iPhones"
+                />
+              </div>
+              <div class="product_text">
+                <div class="product_name">
+                  <h1 class="product_heading">Apple iPhone 13 Pro Max<br>256GB Gold</h1>
+                </div>
+                <div class="availability">
+                  <span class="availabilty_text"> Available </span>
+                  <span class="number_available"> 4 </span>
+                </div>
+                <div class="review_rating">
+                  <div>
+                    <span class="review_text">Review</span>
+                    <div class="rating">
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star "></span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+          </div>
+        </div>
+        <div class="buttonbelow">
+          <a href="moreproducts.html">
+            <button type="submit" id="see_more_button">
+              See all Deals<i class="fas fa-angle-down"></i></button
+          ></a>
+        </div>
+      </div>
+    </div>
+    <div id="who">
+        <div id="box_container_1">
+          <div id="top_box">
+            <div id="top_image">
+              <img id="left_image_logo" src="./images/Pics 185.png" alt="pic">
+            </div>
+            <div id="top_text">
+              <p>
+                Why we are special
+              </p>
+            </div>
+            <div id="imageee">
+              <!-- <img src=""> -->
+            </div>
+          </div>
+        </div>         
+        <div id="box_container_2">
+          <div id="bottom_box">
+            <div id="left_image" >
+              <img id="left_imagee" src="./images/unsplash_7qCeFo19r24.png" alt="picture">
+            </div>
+            <div id="mid_textt">
+              <div id="top_textt">
+              <p>
+                Our joy is to see all our customers <br>
+                enjoy purchasing products from the <br>
+                comfort of their homes
+              </p>
+              </div>
+              <div id="bottom_textt_box">
+                <div id="bottom_textt">
+                <p>
+                  Our vision is to make you feel safe when <br>
+                  shopping online, giving you free access <br>
+                  to helpful information in order to make <br>
+                  smart purchasing decisions
+                </p>
+              </div>
+              </div>
+            </div>
+            <div id="right_image">
+              <img id="right_imagee"src="./images/New Pics.png">
+            </div>
+          </div>
+        </div>
+      </div>
+    <footer>
+      <div id="footer_container">
+        <div id="middle_box">
+          <div id="middle_text">
+            <h1>
+              Join millions of other <br />
+              satisfied customers
+            </h1>
+          </div>
+          <div id="middle_button">
+            <a href="signup.html"
+              ><button type="submit" id="signup">Sign up</button></a
+            >
+            <a href="login.html"
+              ><button type="submit" id="signin">Sign in</button></a
+            >           
+          </div>
+          <div id="beauty">
+            <img id="beauty_pic" src="./images/Union (4).png">
+          </div>
+        </div>
+        <div id="last_box">
+          <div id="bottom" >
+            <img id="bottom_logo" src="./images/White Logo.png" alt="logo">
+          </div>
+          <div id="company_info" >
+          <div id="company">
+            <ul>
+            <li><p>Company</p></li>
+            <li><a href="#">About us</a></li>
+            <li><a href="#">Contact</a></li>
+            </ul>
+          </div>
+          <div id="brands">
+            <ul>
+              <li><p>Brands</p></li>
+              <li><a href="#">Samsung</a></li>
+              <li><a href="#">Huawei</a></li>
+              <li><a href="#">iPhone</a></li>
+              <li><a href="#">infinix</a></li>
+              <li><a href="#">Nokia</a></li>
+            </ul>
+          </div>
+          <div id="services">
+          <ul>
+              <li><p>Services</p></li>
+              <li><a href="#">Prices</a></li>
+              <li><a href="#">Rating</a></li>
+              <li><a href="#">Availability</a></li>
+          </ul>
+          </div>
+          <div id="social">
+            <ul>
+              <li><p>Social</p></li>
+              <li><a href="#">Facebook</a></li>
+              <li><a href="#">Twitter</a></li>
+              <li><a href="#">Instagram</a></li>
+            </ul>
+          </div>   
+          </div>
+          <div id="news">
+            <p>Newsletter Subscription</p>
+            <form method="get">           
+              <input type="search" id="search" placeholder="Subscribe to our newsletter">
+              <input type="submit" id="submit" value="Subscribe">
+            </form>
+          </div>
+        </div>
+      </div>
+      </div>
+    </footer>
+    <section id="copyright">
+      <p>Copyright 2022. Made with ❤️ from Zuri Project. Team 27</p>
+    </section>
+  </body>
+</html>
