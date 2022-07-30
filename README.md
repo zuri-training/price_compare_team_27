@@ -1,5 +1,8 @@
 # Team 27 Price_compare 
 
+### Pricify
+What is Pricify? Pricify is a price comparison website which focuses on comparing phone prices across various brands such as Nokia, Samsung, iPhone, Tecno and a host of other phone manufacturing brands, for the sole aim of helping a user get the best price.
+
 ### Project Documentation
  > [Team 27_Price_compare Documentation](https://docs.google.com/document/d/1qCUDKd5Hb_DAtzi2BKYs_Svso_pp2-m57vPPuYOYh74/edit?usp=drivesdk)
  
