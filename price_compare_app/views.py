@@ -10,9 +10,15 @@ def home_page(request):
         all_phone = Phone.objects.filter(name__icontains=q)
     
     else:
-        all_phone= Phone.objects.all()
+        all_samsung= Phone.objects.filter(brand__name__icontains='samsung')
+        all_iphones= Phone.objects.filter(brand__name__icontains='iphone')
+        all_huawei= Phone.objects.filter(brand__name__icontains='huawei')
+
+
     context={
-        'phones':all_phone
+        'iphones':all_iphones,
+        'samsung':all_samsung,
+        'huawei':all_huawei
     }
 
     return render(request,'price_compare_app/index.html',context)
