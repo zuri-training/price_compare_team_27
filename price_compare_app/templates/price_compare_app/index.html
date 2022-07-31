@@ -21,144 +21,27 @@
 			
 			<center style="margin-bottom: 50px; font-size: 20px;">Welcome at Daily Tutorials</center>
 
-
-			<div class="carousel-item">
-				<img class="carousel-item__img" src="{% static 'images/pic1.jpg' %}">
-				<div class="panel1">
-					<a href="#" class="far fa-bookmark"></a>
-				</div>
-				<div class="panel2">
-					<a href="#" class="far fa-thumbs-up"></a>
-				</div>
-				<div class="info">
-					<a><h3>Demo Nam</h3></a>
-					<div class="stars">
-						<i class="fas fa-star"></i> (4.5/5)
+			{%for phone in phones%}
+				
+				<div class="carousel-item">
+					<img class="carousel-item__img" src="{{phone.image.url}}">
+					<div class="panel1">
+						<a href="#" class="far fa-bookmark"></a>
 					</div>
-					<strong class="price"><span class="mrp">1200/-</span>&nbsp;&nbsp;700/-</strong>
-				</div>
-			</div>
-
-			<div class="carousel-item">
-				<img class="carousel-item__img" src="{% static 'images/pic2.jpg' %}">
-				<div class="panel1">
-					<a href="#" class="far fa-bookmark"></a>
-				</div>
-				<div class="panel2">
-					<a href="#" class="far fa-thumbs-up"></a>
-				</div>
-				<div class="info">
-					<a><h3>Demo Nam</h3></a>
-					<div class="stars">
-						<i class="fas fa-star"></i> (4.5/5)
+					<div class="panel2">
+						<a href="#" class="far fa-thumbs-up"></a>
 					</div>
-					<strong class="price"><span class="mrp">1200/-</span>&nbsp;&nbsp;700/-</strong>
-				</div>
-			</div>
-
-			<div class="carousel-item">
-				<img class="carousel-item__img" src="{% static 'images/pic3.jpg' %}">
-				<div class="panel1">
-					<a href="#" class="far fa-bookmark"></a>
-				</div>
-				<div class="panel2">
-					<a href="#" class="far fa-thumbs-up"></a>
-				</div>
-				<div class="info">
-					<a><h3>Demo Nam</h3></a>
-					<div class="stars">
-						<i class="fas fa-star"></i> (4.5/5)
+					<div class="info">
+						<a><h3>{{phone.name}}</h3></a>
+						<div class="stars">
+							<i class="fas fa-star"></i> (4.5/5)
+						</div>
+						<strong class="price"><span class="mrp">1200/-</span>&nbsp;&nbsp;700/-</strong>
 					</div>
-					<strong class="price"><span class="mrp">1200/-</span>&nbsp;&nbsp;700/-</strong>
 				</div>
-			</div>
 
-			<div class="carousel-item">
-				<img class="carousel-item__img" src="{% static 'images/pic4.jpg' %}">
-				<div class="panel1">
-					<a href="#" class="far fa-bookmark"></a>
-				</div>
-				<div class="panel2">
-					<a href="#" class="far fa-thumbs-up"></a>
-				</div>
-				<div class="info">
-					<a><h3>Demo Nam</h3></a>
-					<div class="stars">
-						<i class="fas fa-star"></i> (4.5/5)
-					</div>
-					<strong class="price"><span class="mrp">1200/-</span>&nbsp;&nbsp;700/-</strong>
-				</div>
-			</div>
-
-			<div class="carousel-item">
-				<img class="carousel-item__img" src="{% static 'images/pic5.jpg' %}">
-				<div class="panel1">
-					<a href="#" class="far fa-bookmark"></a>
-				</div>
-				<div class="panel2">
-					<a href="#" class="far fa-thumbs-up"></a>
-				</div>
-				<div class="info">
-					<a><h3>Demo Nam</h3></a>
-					<div class="stars">
-						<i class="fas fa-star"></i> (4.5/5)
-					</div>
-					<strong class="price"><span class="mrp">1200/-</span>&nbsp;&nbsp;700/-</strong>
-				</div>
-			</div>
-
-			<div class="carousel-item">
-				<img class="carousel-item__img" src="{% static 'images/pic6.jpg' %}">
-				<div class="panel1">
-					<a href="#" class="far fa-bookmark"></a>
-				</div>
-				<div class="panel2">
-					<a href="#" class="far fa-thumbs-up"></a>
-				</div>
-				<div class="info">
-					<a><h3>Demo Nam</h3></a>
-					<div class="stars">
-						<i class="fas fa-star"></i> (4.5/5)
-					</div>
-					<strong class="price"><span class="mrp">1200/-</span>&nbsp;&nbsp;700/-</strong>
-				</div>
-			</div>
-
-			<div class="carousel-item">
-				<img class="carousel-item__img" src="{% static 'images/pic7.jpg' %}">
-				<div class="panel1">
-					<a href="#" class="far fa-bookmark"></a>
-				</div>
-				<div class="panel2">
-					<a href="#" class="far fa-thumbs-up"></a>
-				</div>
-				<div class="info">
-					<a><h3>Demo Nam</h3></a>
-					<div class="stars">
-						<i class="fas fa-star"></i> (4.5/5)
-					</div>
-					<strong class="price"><span class="mrp">1200/-</span>&nbsp;&nbsp;700/-</strong>
-				</div>
-			</div>
-
-			<div class="carousel-item">
-				<img class="carousel-item__img" src="{% static 'images/pic8.jpg' %}">
-				<div class="panel1">
-					<a href="#" class="far fa-bookmark"></a>
-				</div>
-				<div class="panel2">
-					<a href="#" class="far fa-thumbs-up"></a>
-				</div>
-				<div class="info">
-					<a><h3>Demo Nam</h3></a>
-					<div class="stars">
-						<i class="fas fa-star"></i> (4.5/5)
-					</div>
-					<strong class="price"><span class="mrp">1200/-</span>&nbsp;&nbsp;700/-</strong>
-				</div>
-			</div>
-
-
+			{%endfor%}
+			
 
 		</div>
 	</section>
