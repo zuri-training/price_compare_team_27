@@ -37,9 +37,12 @@ class WishList(models.Model):
     date_listed = models.DateTimeField(auto_now_add=True)
 
     def __str__(self):
-        return self.id
+        return f"{self.user} wishlist"
 
 class Review(models.Model):
     comment = models.TextField(max_length=100000,null=True)
     user = models.ForeignKey(User,on_delete=models.CASCADE)
     phone= models.ForeignKey(Phone,on_delete=models.CASCADE)
+
+    def __str__(self):
+        return f"{self.user} comment on {self.phone}"

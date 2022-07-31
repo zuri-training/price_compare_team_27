@@ -18,7 +18,7 @@ def search(request):
     if request.method == 'GET':
         q = request.GET.get('q')
         if q:
-            phone = Phone.objects.filter(name_icontains=q)
+            phone = Phone.objects.filter(name__icontains=q)
             return render(request, 'search.html', {'phone': phone})
         else:
             print("not available")
