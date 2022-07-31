@@ -1,7 +1,6 @@
 import requests
 from bs4 import BeautifulSoup
 
-
 nova9='https://www.jumia.com.ng/huawei-nova-9-se-6.78-8128gb-android-11-dual-midnight-black-137053499.html'
 p40_pro='https://www.jumia.com.ng/huawei-p40-pro-6.58-inch-8gb-ram-256gb-rom-android-10-50mp-12mp-40mp-32mp-5g-dual-sim-silver-frost-106095064.html'
 p50_pro='https://www.jumia.com.ng/huawei-p50-pro-6.6-256gb-rom8gb-ram-harmonyos-2.0-50401364mp-13mp-selfie-4g-hybrid-dual-4360mah-golden-black-123195151.html'
