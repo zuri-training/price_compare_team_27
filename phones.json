@@ -1,0 +1,77 @@
+[
+    {
+        "model": "price_compare_app.phone", 
+        "pk": 1, 
+        "fields": {     
+          "name": "iphone5", 
+          "brand": 1, 
+          "created_on": "2022-07-31", 
+          "modified_on": "2022-07-31", 
+          "image":"iphone5.webp",
+          "url_jumia":"url.com",
+          "url_konga":"iamge.com",
+          "price_jumia":"50000",
+          "price_konga":"60000"
+        }
+    },
+    {
+        "model": "price_compare_app.phone", 
+        "pk": 2, 
+        "fields": {     
+          "name": "iphone6", 
+          "brand": 1, 
+          "created_on": "2022-07-31", 
+          "modified_on": "2022-07-31", 
+          "image":"iphone6.jpg",
+          "url_jumia":"https://www.jumia.com.ng/apple-refurbished-apple-iphone-6-16gb-grey-89901727.html",
+          "url_konga":"https://www.konga.com/product/apple-iphone-6-4-7-16gb-grey-4623548",
+          "price_jumia":"70000",
+          "price_konga":"80000"
+        }
+    },
+    {
+        "model": "price_compare_app.phone", 
+        "pk": 3, 
+        "fields": {     
+          "name": "iphone7", 
+          "brand": 1, 
+          "created_on": "2022-07-31", 
+          "modified_on": "2022-07-31", 
+          "image":"iphone7.jpg",
+          "url_jumia":"'https://www.jumia.com.ng/apple-renewed-iphone-7-plus-32gbram3gb-black-iphone7p-118774089.html",
+          "url_konga":"https://www.konga.com/product/iphone-7-plus-5-5-32gb-rom-3gb-ram-nano-sim-black-5226700",
+          "price_jumia":"11000",
+          "price_konga":"120000"
+        }
+    },
+    {
+        "model": "price_compare_app.phone", 
+        "pk": 4, 
+        "fields": {     
+          "name": "iphone8", 
+          "brand": 1, 
+          "created_on": "2022-07-31", 
+          "modified_on": "2022-07-31", 
+          "image":"iphone8.jpg",
+          "url_jumia":"'https://www.jumia.com.ng/apple-iphone-8-3gb64gb-space-gray-5.5-inch-refurbished-99-new-3d-touch-fingerprint-ios-smartphone-73398517.html",
+          "url_konga":"https://www.konga.com/product/apple-iphone-8-plus-5-5-64gb-rom-3gb-ram-ios-11-12mp-5630055",
+          "price_jumia":"129000",
+          "price_konga":"130000"
+        }
+    },
+    {
+        "model": "price_compare_app.phone", 
+        "pk": 5, 
+        "fields": {     
+          "name": "iphonex", 
+          "brand": 1, 
+          "created_on": "2022-07-31", 
+          "modified_on": "2022-07-31", 
+          "image":"iphonex.jpg",
+          "url_jumia":"https://www.jumia.com.ng/apple-iphone-x-256gb-5.8-inch-3gb-ram-space-grey-92801020.html",
+          "url_konga":"https://www.konga.com/product/apple-iphone-x-256gb-pouch-screen-guide-selfie-stick-grey-4678237",
+          "price_jumia":"150000",
+          "price_konga":"170000"
+        }
+    }
+]

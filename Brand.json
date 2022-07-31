@@ -1,0 +1,51 @@
+[
+    {
+      "model": "price_compare_app.Brand", 
+      "pk": 1, 
+      "fields": {
+        "name": "Iphone"
+      }
+    },
+    {
+        "model": "price_compare_app.Brand", 
+        "pk": 2, 
+        "fields": {
+          "name": "Samsung"
+        }
+      },
+    {
+        "model": "price_compare_app.Brand", 
+        "pk": 3, 
+        "fields": {
+          "name": "Huawei"
+        }
+    },
+    {
+        "model": "price_compare_app.Brand", 
+        "pk": 4, 
+        "fields": {
+          "name": "Infinix"
+        }
+    },
+    {
+        "model": "price_compare_app.Brand", 
+        "pk": 5, 
+        "fields": {
+          "name": "Oppo"
+        }
+    },
+    {
+        "model": "price_compare_app.Brand", 
+        "pk": 6, 
+        "fields": {
+          "name": "Tecno"
+        }
+    },
+    {
+        "model": "price_compare_app.Brand", 
+        "pk": 7, 
+        "fields": {
+          "name": "Xiomi"
+        }
+    }
+]
