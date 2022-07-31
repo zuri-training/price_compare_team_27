@@ -64,6 +64,13 @@ python manage.py makemigrations
 python manage.py migrate
 ```
 
+Setting up default data
+
+```
+python manage.py loaddata Brand.json
+python manage.py loaddata phones.json
+```
+
 Create Superuser
 
 ```

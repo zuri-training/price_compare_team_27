@@ -20,8 +20,8 @@ class Phone(models.Model):
     image = models.ImageField(default='default-product.png', blank=True)
     url_jumia = models.URLField(max_length=9999, db_index=True)
     url_konga = models.URLField(max_length=9999, db_index=True)
-    price_jumia = models.PositiveIntegerField(null=True, blank=True)
-    price_komga = models.PositiveIntegerField(null=True, blank=True)
+    price_jumia = models.DecimalField(max_digits=8, decimal_places=2,null=False,default=0)
+    price_konga = models.DecimalField(max_digits=8, decimal_places=2,null=False,default=0)
 
     
     class Meta:
