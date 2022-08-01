@@ -1,7 +1,6 @@
 import requests
 from bs4 import BeautifulSoup
 
-
 iphone6='https://www.konga.com/product/apple-iphone-6-4-7-16gb-grey-4623548'
 iphone7_plus='https://www.konga.com/product/iphone-7-plus-5-5-32gb-rom-3gb-ram-nano-sim-black-5226700'
 iphone8_plus='https://www.konga.com/product/apple-iphone-8-plus-5-5-64gb-rom-3gb-ram-ios-11-12mp-5630055'
