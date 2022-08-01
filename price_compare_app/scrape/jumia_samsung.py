@@ -1,7 +1,6 @@
 import requests
 from bs4 import BeautifulSoup
 
-
 A03_core ='https://www.jumia.com.ng/samsung-galaxy-a03-core-2gb32gb-memory-onyx-136322463.html'
 A13='https://www.jumia.com.ng/samsung-galaxy-a13-4gb64gb-memory-5000-mah-battery-black-126589247.html'
 A22='https://www.jumia.com.ng/samsung-galaxy-a22-6.4-inch-4gb-ram-64gb-android-11-48mp-8mp-2mp-2mp-13mp-dual-sim-mint-81157923.html'
