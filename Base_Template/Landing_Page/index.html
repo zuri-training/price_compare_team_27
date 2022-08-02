@@ -27,20 +27,49 @@
           <img src="\Base_Template/images/Choice Logo.png" alt="">
         </section>
   
-        <section class="header-nav">
+        <section id="mheader-nav" class="header-nav">
           <nav>
             <a href="#">Home</a>
             <a href="#">Categories</a>
             <a href="#">Wishlist <div class="cart-img"><span class="material-symbols-sharp">shopping_cart</span></div></a>
+            
+            <div class="dropdown">
+              <div class="dropdown-content">
+                <a href="#">Home </a>
+                <a href="#">Categories</a>
+                <a href="#">Wishlist</a>
+              </div>
+            </div>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+           
           </nav>
         </section>
-  
+
+        <section class="header-logo-m">
+          <img src="\Base_Template\images\Choice Logo.png" alt="">
+        </section>
+
         <section class="header-profile">
+          <div class="desktop_top">
           <div id="view"><div class="profile-icon"><span class="material-symbols-sharp">account_circle</span> Account</div><div class="caret-down" id="drop-down"><span class="material-symbols-sharp">expand_more</span></div></div>
           <div id="toggleCard">
             <a href="\Base_Template/Login_page/login.html" class="toggle_top">Login</a>
             <a href="\Base_Template/Signup_page/signup.html" class="toggle_bottom">Signup</a>
           </div>
+        </div>
+        <div class="mobile_top">
+          <a href="#">
+          <div class="cart-img">
+            <span class="material-symbols-sharp">shopping_cart</span>
+          </div>
+            <div class="profile-icon">
+              <span class="material-symbols-sharp">account_circle</span>
+            </div>
+              <div class="caret-down">
+              <span class="material-symbols-sharp">expand_more</span>
+            </div>
+          </a>
+        </div>
         </section>
       </div>
 
@@ -832,6 +861,6 @@
     </div>
 
   </footer>
-  <script src="\Base_Template/live.js"></script>
+  <script src="\Base_Template\Landing_page\live.js"></script>
 </body>
 </html>
