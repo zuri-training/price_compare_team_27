@@ -19,9 +19,9 @@
 	<section class="carousel">
 		<div class="carousel__container">
 			
-			<center style="margin-bottom: 50px; font-size: 20px;">Welcome at Daily Tutorials</center>
+			<center style="margin-bottom: 50px; font-size: 20px;">Iphones</center>
 
-			{%for phone in phones%}
+			{%for phone in iphones%}
 				
 				<div class="carousel-item">
 					<img class="carousel-item__img" src="{{phone.image.url}}">
@@ -34,9 +34,63 @@
 					<div class="info">
 						<a><h3>{{phone.name}}</h3></a>
 						<div class="stars">
-							<i class="fas fa-star"></i> (4.5/5)
+							<i class="fas fa-star"></i> ({{phone.star_reviews}}/5)
 						</div>
-						<strong class="price"><span class="mrp">1200/-</span>&nbsp;&nbsp;700/-</strong>
+						<strong class="price"><span class="mrp">{{phone.get_jumia_price}}-</span>&nbsp;&nbsp;{{phone.get_konga_price}}</strong>
+					</div>
+				</div>
+
+			{%endfor%}
+			
+
+		</div>
+		<div class="carousel__container">
+			
+			<center style="margin-bottom: 50px; font-size: 20px;">Samsung</center>
+
+			{%for phone in samsung%}
+				
+				<div class="carousel-item">
+					<img class="carousel-item__img" src="{{phone.image.url}}">
+					<div class="panel1">
+						<a href="#" class="far fa-bookmark"></a>
+					</div>
+					<div class="panel2">
+						<a href="#" class="far fa-thumbs-up"></a>
+					</div>
+					<div class="info">
+						<a><h3>{{phone.name}}</h3></a>
+						<div class="stars">
+							<i class="fas fa-star"></i> ({{phone.star_reviews}}/5)
+						</div>
+						<strong class="price"><span class="mrp">{{phone.get_jumia_price}}-</span>&nbsp;&nbsp;{{phone.get_konga_price}}</strong>
+					</div>
+				</div>
+
+			{%endfor%}
+			
+
+		</div>
+		<div class="carousel__container">
+			
+			<center style="margin-bottom: 50px; font-size: 20px;">Huawei</center>
+
+			{%for phone in huawei%}
+				
+				<div class="carousel-item">
+					<img class="carousel-item__img" src="{{phone.image.url}}">
+					<div class="panel1">
+						<a href="#" class="far fa-bookmark"></a>
+					</div>
+					<div class="panel2">
+						<a href="#" class="far fa-thumbs-up"></a>
+					</div>
+					<div class="info">
+						<a><h3>{{phone.name}}</h3></a>
+						<div class="stars">
+							<i class="fas fa-star"></i> ({{phone.star_reviews}}/5)
+						</div>
+						<strong class="price"><span class="mrp">{{phone.get_jumia_price}}-</span>&nbsp;&nbsp;{{phone.get_konga_price}}</strong>
 					</div>
 				</div>
 
