@@ -667,3 +667,270 @@ footer {
 .copyright .emoji {
   color: rgb(155,34,29);
 }
+
+
+.header-nav .dropdown-content {
+  display: none;
+  }
+  
+  .dropdown-content {
+    display: none;
+  }
+  
+  .header-nav .icon{
+    display: none;
+  } 
+  
+  .header-profile1{
+    display: none;
+  }
+  
+  .mobile_top{
+    display: none;
+  }
+  
+
+@media (max-width: 768px){
+  .header-nav a, .dropdown-content .dropbtn {
+    display: none;
+  }
+
+
+  .desktop_top{
+    display: none;
+  }
+
+.mobile_top .cart-img{
+  position: absolute;
+  margin-left: -4em;
+}
+
+  .mobile_top{
+    display: block;
+  }
+  .dropdown {
+    display: block;
+    float: left;
+    overflow: hidden;
+  }
+
+  .header-profile a{
+    display: flex;
+  }
+
+  /* Style the dropdown content (hidden by default) */
+
+  .dropdown-content {
+  display: block;
+  margin-top: 1.3em;
+  margin-left: -5.0em;
+  position: absolute;
+  background-color: #f9f9f9;
+  width: 280px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Style the links inside the dropdown */
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+
+/* Add a grey background to dropdown links on hover */
+ .dropdown-content a:hover {
+  background-color: #ddd;
+  color: black;
+} 
+
+  .header-nav a.icon {
+    position: absolute;
+    margin-left: -3.5em;
+    font-size: 20px;
+    display: block;
+  }  
+
+
+  .header-nav.responsive .dropdown-content {
+ display:block;
+  }
+ 
+
+  .header-top{
+    background-color: white;
+    width: 120%;
+    overflow: hidden;
+  }
+
+
+  .header-logo {
+    display: none;
+    width: 10%; 
+  }
+
+  .header-logo-m {
+    display: block;
+    position: absolute;
+    width: 12%; 
+    margin-left: 5em;
+  }
+
+  .mid .mid_image{
+    display: none;
+  }
+
+  .mid_text{
+    width: 100%;
+  }
+
+  .form_part #form{
+    flex-direction: column;
+    margin-left: -2em;
+  }
+
+  .form_part #search_button{
+    margin-top: 0.8em;
+    margin-left: -8.5em;
+    width: 120px;
+  }
+
+  .mid_icon{
+    margin-left: 0.4em;
+  }
+
+  .brands {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+  }  
+
+
+.new-products , .trending{
+  background-color: white;
+  width: 100%;
+}
+
+  .popular-text {
+    display: block;
+    justify-content: space-evenly;
+    width: 100%;
+  }
+
+.section-heading h3{
+  font-size: 1.4em;
+}
+
+.section-filter{
+  margin-top: 1em;
+  width: 90%;
+}
+
+.product-div {
+  display: flex;
+  overflow-x: scroll;
+}
+
+.see-more{
+margin-top: 4em;
+padding-bottom: 2em;
+
+}
+
+.see-more a{
+  width:90%;
+}
+
+.fr-card-img2 , .bk-card-img , .fr-card-img1{
+  display: none;
+}
+
+.display-cards{
+  width:100%;
+  background-color: white;
+}
+
+.back-card{
+  width: 100%;
+  margin-left: 10px;
+}
+
+.bk-card-text{
+width: 100%;
+background-color: white;
+}
+
+.front-card {
+  width: 90%;
+  float: left;
+  background-color: white;
+  margin-left: 1em;
+  padding: 1em;
+  box-shadow: none;
+}
+
+.fr-card-txt{
+   width: 100%;
+  font-size: 10px;
+  margin-top: 0;
+}
+
+
+.abs-card{
+  width: 100%;
+  margin-top: 8em;
+  margin-left: 1px;
+  position: relative;
+  background-color: white;
+}
+
+.abs-card p{
+  width: 100%;
+  font-size: 16px;
+}
+
+
+.footer-bar{
+  display: none;
+}
+
+
+.footer-body {
+  display: flex;
+  width: 100%;
+  flex-direction: column-reverse;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer-nav {
+  display: none;
+}
+
+.newsletter{
+  width: 100%;
+  margin: auto;
+  margin-bottom: 2em;
+}
+
+
+.newsletter form {
+  flex-direction: column;
+  width: 100%;
+  margin-top: 5px;
+}
+
+.newsletter input[type="email"] {
+  width: 100%;
+  text-align: center;
+}
+.newsletter input[type="submit"] {
+  margin: auto;
+  margin-top: 5px;
+  width: 100%;
+}
+
+}
