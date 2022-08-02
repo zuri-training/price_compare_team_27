@@ -1,0 +1,29 @@
+body {
+    background-color: var(--btn-blue);
+}
+
+.section-1,
+.section-2 {
+    width: 40%;
+    margin: 5rem;
+}
+
+.section-1 h1,
+.section-2 h1 {
+    margin-bottom: 1.5rem;
+    color: var(--footer-color);
+}
+.section-3 {
+    background-color: var(--footer-color);
+    color: var(--light-text);
+    padding: 2rem;    
+    width: 60%;
+    margin: auto;
+    margin-top: 10rem;
+    margin-bottom: 20rem;
+    line-height: 1.5;
+}
+
+.section-3 h1 {
+    margin-bottom: 1.5rem;
+}

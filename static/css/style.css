@@ -156,3 +156,7 @@
 	background-color: #fff;
 	background-image: -webkit-gradient(linear,40% 0%,75% 84%, from(#ff6da2), to(#7983f8), color-stop(0.6, #7983f8));
 }
+
+body {
+	background-color: #EE82EE;
+}
