@@ -1,0 +1,39 @@
+{% extends 'base.html' %}
+
+
+{% load static %}
+
+
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css">
+
+{% block title %} About Us {% endblock %}
+
+{% block content %}  
+
+
+{% block css %}
+<link rel="stylesheet" type="text/css" href="{% static 'css/about.css' %}">
+{% endblock %}
+
+  <section class="section-1">
+    <h1>About Us</h1>
+    <p>We are a fast-growing brand that provides comparison of prices from various e-commerce brands</p>
+  </section>
+
+  <section class="section-2">
+    <h1>Our Story</h1>
+    <p>We stand off with a burden to lessen the stress associated with comparing prices of products over a range of brands</p>
+    <br>
+    <p>Our platform helps to compare prices and make the best choice of your day-to-day essential products</p>
+  </section>
+
+  <section class="section-3">
+    <h1>Why we do it</h1>
+    <p>We saw the need to plan and budget better with the help of price comparison</p>
+    <br>
+    <p>We are able to serve our customers, helping them to choose products with the best quality and price</p>
+    <br>
+    <p>We provide the price list from different brands, which reduces the overallstress experienced by our users, also giving them the luxury of ordering for their products from the preferred brand</p>
+  </section>
+
+{% endblock %}
