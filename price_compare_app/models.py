@@ -1,10 +1,8 @@
-
+from autoslug import AutoSlugField
 from django.contrib.auth.models import User
 from django.db import models
-from django.urls import reverse
 
 # Create your models here.
-
 
 class Brand(models.Model):
     name = models.CharField(max_length=100)
@@ -23,8 +21,8 @@ class Phone(models.Model):
     price_jumia = models.DecimalField(max_digits=8, decimal_places=2,null=False,default=0)
     price_konga = models.DecimalField(max_digits=8, decimal_places=2,null=False,default=0)
     star_reviews=models.DecimalField(max_digits=2,decimal_places=1,null=True)
+    slug = AutoSlugField(populate_from='name', always_update=True)
 
-    
     def get_jumia_price(self):
         price = int(self.price_jumia)
         return f"₦{price}"
