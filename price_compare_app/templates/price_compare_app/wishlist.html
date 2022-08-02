@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+    {% for item in items %}
+    <ul>
+        <li>name: {{item.phone.name}}</li>
+        <li>price: {{item.phone.price_konga}}</li>
+        <li>price: {{item.phone.price_jumia}}</li>
+    </ul>
+    {% endfor %}
+    <h5>items : {{wish.get_cart_items}}</h5>
+    <h5>total: {{wish.get_cart_total}}</h5>
+    <h5>price: {{best_price.best_price}}</h5>
+
+    {% for best_price in best_price %}
+     <p>  price: {{best_price.best_price}}</p> 
+        {% endfor %}
+    </div>
+    
+</body>
+</html>

@@ -9,7 +9,7 @@ from django.urls import reverse
 class Brand(models.Model):
     name = models.CharField(max_length=100)
 
-    def __str__(self):
+    def __str__(self): 
         return self.name
 
 class Phone(models.Model):
@@ -32,12 +32,46 @@ class Phone(models.Model):
         return self.name
 
 class WishList(models.Model):
-    phone =models.ForeignKey(Phone,on_delete=models.SET_NULL, null=True, blank=True) 
     user = models.ForeignKey(User,on_delete=models.SET_NULL,null=True, blank=True)
     date_listed = models.DateTimeField(auto_now_add=True)
 
     def __str__(self):
-        return self.id
+        return str(self.id)
+    
+    @property
+    def price(self):
+        wishitems = self.wishitem_set.all()
+        return (item.best_price for item in wishitems)
+
+    @property
+    def get_cart_total(self):
+        wishitems = self.wishitem_set.all()
+        total = sum(item.best_price for item in wishitems)
+        return total
+
+
+    @property
+    def get_cart_items(self):
+        wishitems = self.wishitem_set.all()
+        total=len(wishitems)
+        return total
+
+class WishItem(models.Model):
+    phone =models.ForeignKey(Phone,on_delete=models.SET_NULL, null=True, blank=True) 
+    wish = models.ForeignKey(WishList, on_delete=models.SET_NULL, null=True, blank=True)
+    # quantity = models.IntegerField(default=0, null=True, blank=True)
+    
+    
+    @property
+    def best_price(self):
+        if self.phone.price_jumia < self.phone.price_konga:
+            return self.phone.price_jumia
+
+        else:
+            return self.phone.price_konga
+            
+
+
 
 class Review(models.Model):
     comment = models.TextField(max_length=100000,null=True)
