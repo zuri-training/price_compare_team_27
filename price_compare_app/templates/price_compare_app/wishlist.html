@@ -9,20 +9,21 @@
 </head>
 <body>
     <div>
-    {% for item in items %}
-    <ul>
-        <li>name: {{item.phone.name}}</li>
-        <li>price: {{item.phone.price_konga}}</li>
-        <li>price: {{item.phone.price_jumia}}</li>
-    </ul>
-    {% endfor %}
-    <h5>items : {{wish.get_cart_items}}</h5>
-    <h5> cart total: {{wish.get_cart_total}}</h5>
-
-    {% for price in best_price %}
-     <p>  total : {{price.get_total}}</p> 
-     <p>  best price: {{price.best_price}}</p>
-     <p>  quantity {{price.quantity}}</p>
+            <h5>items : {{wish.get_cart_items}}</h5>
+            <h5> cart total: {{wish.get_cart_total}}</h5>        
+    </div>
+    <div>
+        {% for item in items %}
+        <ul>
+            <li>name: {{item.phone.name}}</li>
+            <li>price: {{item.phone.price_konga}}</li>
+            <li>price: {{item.phone.price_jumia}}</li>
+        </ul>
+        {% endfor %}
+        {% for price in best_price %}
+        <p>  total : {{price.get_total}}</p> 
+        <p>  best price: {{price.best_price}}</p>
+        <p>  quantity {{price.quantity}}</p>
         {% endfor %}
     </div>
     
