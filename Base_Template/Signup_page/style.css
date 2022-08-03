@@ -2,16 +2,16 @@
 /* general */
 :root {
   /* bg colors */
-  --pry-color: rgb(205,222,194);
-  --footer-color: rgb(17,32,61);
+  --pry-color: rgb(205,222,194);;
+  --footer-color: #0D162F;
   --copyright: rgb(175,197,191);
 
   /* buttons */
-  --btn-blue: rgb(52,98,180);
+  --btn-blue: #4070EC;
   --btn-white: rgb(205,222,194);
 
   /* button active state */
-  --hover-blue: #4070EC;
+  --hover-blue: #355DC5;
 
   /* text colors */
   --dark-text: #1E1E1E;
@@ -138,7 +138,7 @@ footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border: 1px solid rgba (0,0,0,0);
+  border: 1px solid rgba(0,0,0,0);
   padding-block: 0.3em;
   padding-inline: 0.3em;
 }
@@ -147,9 +147,53 @@ footer {
   align-items: center;
 }
 .header-nav a:hover, .header-nav a:focus {
-  border: 1.5px solid var(--btn-blue);
+  border: 2px solid var(--btn-blue);
   border-radius: 0.45em;
+  font-weight: 600;
 }
+.caret-down {
+  cursor: pointer;
+}
+.profile-icon #view {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 2px solid rgba(0,0,0,0);
+  padding-block: 0.3em;
+  padding-inline: 0.3em;
+}
+.profile-icon #view>div {
+  display: flex;
+  align-items: center;
+}
+.profile-icon #view:hover, .profile-icon #view:focus {
+  border: 2px solid var(--btn-blue);
+  border-radius: 0.4em;
+  font-weight: 600;
+}
+.profile-icon {
+  position: relative;
+}
+.profile-icon #toggleCard {
+  position: absolute;
+  border: 1px solid inherit;
+  width: 100%;
+  margin-block-start: 0.5em;
+  display: none;
+}
+#toggleCard a {
+  display: block;
+  border: 1px solid;
+  padding-block: 0.2em;
+  padding-inline: 0.5em;
+  background: var(--btn-blue);
+  color: var(--light-text);
+}
+#toggleCard a:hover {
+  background: var(--hover-blue);
+  border-radius: 0;
+}
+
 
 
 /* main */
@@ -237,6 +281,9 @@ input.custom {
   padding-block: 0.3em;
   border-radius: 0.4em;
 }
+.call-to-action input[type="submit"]:hover {
+  background: var(--hover-blue);
+}
 .sec-action {
   text-align: center;
   font-size: 0.7em;
@@ -245,6 +292,10 @@ input.custom {
 .sec-action a {
   text-decoration: none;
   color: var(--btn-blue);
+}
+.sec-action a:hover {
+  text-decoration: underline;
+  color: var(--hover-blue);
 }
 
 

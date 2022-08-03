@@ -24,4 +24,5 @@ def home_page(request):
     return render(request,'price_compare_app/index.html',context)
 
 
-
+def about_page(request):
+    return render(request,'price_compare_app/about.html')

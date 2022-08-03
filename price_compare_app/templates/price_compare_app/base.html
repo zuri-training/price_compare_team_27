@@ -1,3 +1,5 @@
+{% load static %}
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,15 +7,15 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Sharp:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-  <link rel="stylesheet" href="style.css">
-  <title>Login</title>
+  <link rel="stylesheet" href="{% static 'css/base.css' %}">
+  <title>{% block title %} Header {% endblock %}</title>
 </head>
 <body>
   <header>
     <div class="header-container">
 
       <section class="header-logo">
-        <img src="\Base_Template\images\Choice Logo.png" alt="">
+        <img src="{% static 'images/Choice-Logo.png' %}" alt="">
       </section>
 
       <section class="header-search">
@@ -35,57 +37,15 @@
     </div>
   </header>
 
-  <main>
-    <div class="main-container">
-      <form action="" method="get" class="login-form">
-
-        <section class="form-tittle">
-          <h5>Welcome Back, Champ!</h5>
-        </section>
-
-        <section class="details" id="first">
-          <label for="login-email">Email Address</label>
-          <input type="email" name="login-email" id="" placeholder="nelson@gmail.com" required>
-        </section>
-
-        <section class="details" id="second">
-          <label for="login-password">Password</label>
-          <input type="password" name="login-password" id="" placeholder="********" required>
-        </section>
-
-        <section class="ter-action">
-
-            <label for="check">
-              <input type="checkbox" name="check" class="custom" id="">
-              <p>Remember me</p>
-            </label>
-            
-            <div class="forgot-password">
-              <a href="#">Forgot Password?</a>
-            </div>
-
-        </section>
-
-        <section class="call-to-action">
-          <input type="submit" value="Login">
-        </section>
-
-        <section class="sec-action">
-          <p>Don&apos;t have an account&quest; <a href="#">Sign Up</a></p>
-        </section>
-
-      </form>
-    </div>
-  </main>
+  <div id="content">
+    {% block content %}{% endblock %}
+  </div>
 
   <footer>
-
     <div class="footer-container">
-
       <section class="footer-logo">
-        <img src="\Base_Template\images\White Logo.png" alt="">
+        <img src="{% static 'images\White Logo.png' %}" alt="">
       </section>
-
       <section class="footer-nav">
         <nav>
           <ul class="list">
