@@ -31,8 +31,9 @@ def wishlist(request):
         items = wishes.wishitem_set.all()
         best_price = WishItem.objects.all()
     else:
-        items = []
-        wishes = {'get_cart_total': 0, 'get_cart_items':0, 'price':0}
+        # items = []
+        # wishes = {'get_cart_total': 0, 'get_cart_items':0, 'best_price':0}
+        return render(request, 'price_compare_app/index.html')
     context = {
         'items':items, 'wish': wishes, 'best_price': best_price
     }

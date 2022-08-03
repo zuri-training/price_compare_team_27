@@ -17,11 +17,12 @@
     </ul>
     {% endfor %}
     <h5>items : {{wish.get_cart_items}}</h5>
-    <h5>total: {{wish.get_cart_total}}</h5>
-    <h5>price: {{best_price.best_price}}</h5>
+    <h5> cart total: {{wish.get_cart_total}}</h5>
 
-    {% for best_price in best_price %}
-     <p>  price: {{best_price.best_price}}</p> 
+    {% for price in best_price %}
+     <p>  total : {{price.get_total}}</p> 
+     <p>  best price: {{price.best_price}}</p>
+     <p>  quantity {{price.quantity}}</p>
         {% endfor %}
     </div>
     
