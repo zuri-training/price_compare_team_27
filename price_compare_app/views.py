@@ -21,12 +21,8 @@ def home_page(request):
         'huawei':all_huawei
     }
 
-    return render(request, 'index.html',  context,)
+    return render(request,'price_compare_app/index.html',context)
 
 
-def about(request):
-    return render(request, 'about.html')
-
-
-
-
+def about_page(request):
+    return render(request,'price_compare_app/about.html')

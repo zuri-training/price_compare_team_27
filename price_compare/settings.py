@@ -15,7 +15,6 @@ from pathlib import Path
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
-SETTINGS_PATH = os.path.dirname(os.path.dirname(__file__))
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/4.0/howto/deployment/checklist/
@@ -42,7 +41,6 @@ INSTALLED_APPS = [
     'price_compare_app',
     'accounts',
 
-
     #3rd party packages
     'crispy_forms',
     'crispy_bootstrap5',
@@ -67,7 +65,7 @@ ROOT_URLCONF = 'price_compare.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [os.path.join(SETTINGS_PATH, 'templates')],
+        'DIRS': [],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -128,14 +126,11 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/4.0/howto/static-files/
 
-
-
-# STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 STATIC_URL = '/static/'
-STATICFILES_DIRS= [
-    os.path.join(SETTINGS_PATH, 'static'),
-]
 
+STATICFILES_DIRS= [
+    os.path.join(BASE_DIR,'static')
+]
 
 
 MEDIA_URL = '/media/'

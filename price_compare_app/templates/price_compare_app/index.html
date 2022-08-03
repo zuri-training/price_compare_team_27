@@ -1,0 +1,125 @@
+{%load static%}	
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Swiper Demo</title>
+	<link rel="stylesheet" type="text/css" href="{% static 'price_compare_app/style.css' %}">
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css">
+</head>
+<body>
+	<form action="#" method="get">
+		{% csrf_token %}
+		<input type="text" name="q">
+		<button type="submit">Search</button>
+	</form>
+	
+	<section class="carousel">
+		<div class="carousel__container">
+			
+			<center style="margin-bottom: 50px; font-size: 20px;">Iphones</center>
+
+			{%for phone in iphones%}
+				
+				<div class="carousel-item">
+					<img class="carousel-item__img" src="{{phone.image.url}}">
+					<div class="panel1">
+						<a href="#" class="far fa-bookmark"></a>
+					</div>
+					<div class="panel2">
+						<a href="#" class="far fa-thumbs-up"></a>
+					</div>
+					<div class="info">
+						<a><h3>{{phone.name}}</h3></a>
+						<div class="stars">
+							<i class="fas fa-star"></i> ({{phone.star_reviews}}/5)
+						</div>
+						<strong class="price"><span class="mrp">{{phone.get_jumia_price}}-</span>&nbsp;&nbsp;{{phone.get_konga_price}}</strong>
+					</div>
+				</div>
+
+			{%endfor%}
+			
+
+		</div>
+		<div class="carousel__container">
+			
+			<center style="margin-bottom: 50px; font-size: 20px;">Samsung</center>
+
+			{%for phone in samsung%}
+				
+				<div class="carousel-item">
+					<img class="carousel-item__img" src="{{phone.image.url}}">
+					<div class="panel1">
+						<a href="#" class="far fa-bookmark"></a>
+					</div>
+					<div class="panel2">
+						<a href="#" class="far fa-thumbs-up"></a>
+					</div>
+					<div class="info">
+						<a><h3>{{phone.name}}</h3></a>
+						<div class="stars">
+							<i class="fas fa-star"></i> ({{phone.star_reviews}}/5)
+						</div>
+						<strong class="price"><span class="mrp">{{phone.get_jumia_price}}-</span>&nbsp;&nbsp;{{phone.get_konga_price}}</strong>
+					</div>
+				</div>
+
+			{%endfor%}
+			
+
+		</div>
+		<div class="carousel__container">
+			
+			<center style="margin-bottom: 50px; font-size: 20px;">Huawei</center>
+
+			{%for phone in huawei%}
+				
+				<div class="carousel-item">
+					<img class="carousel-item__img" src="{{phone.image.url}}">
+					<div class="panel1">
+						<a href="#" class="far fa-bookmark"></a>
+					</div>
+					<div class="panel2">
+						<a href="#" class="far fa-thumbs-up"></a>
+					</div>
+					<div class="info">
+						<a><h3>{{phone.name}}</h3></a>
+						<div class="stars">
+							<i class="fas fa-star"></i> ({{phone.star_reviews}}/5)
+						</div>
+						<strong class="price"><span class="mrp">{{phone.get_jumia_price}}-</span>&nbsp;&nbsp;{{phone.get_konga_price}}</strong>
+					</div>
+				</div>
+
+			{%endfor%}
+			
+
+		</div>
+	</section>
+	
+	<div>
+
+
+		{% if user.is_authenticated %}
+
+		<h2>Hi {{ user.username }}!</a></h2>
+		<p><a href="{% url 'logout' %}">Sign Out</a></p>
+		<p><a href="{% url 'password_reset' %}">Reset Password</a></p>
+
+		{% else %}
+
+		<p><a href="#">You are not logged in!</a></p>
+		<p> <a href="{% url 'login' %}">Sign In</a></p>
+		<p> <a href="{% url 'signup' %}">Sign Up</a></p>
+
+
+		{% endif %}
+
+
+		
+	</div>
+</body>
+</html>
