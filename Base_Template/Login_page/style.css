@@ -520,9 +520,6 @@ input.custom {
     font-size: 0.8em;
     border-radius: 0.4em;
   }
-  .details input::placeholder {
-    font-weight: 200;
-  }
   .details input[type="email"] {
     padding: 0.8em;
   }
@@ -583,7 +580,6 @@ input.custom {
   }
   .m-newsletter input[type="email"] {
     padding-block: 0.7em;
-    padding-inline: 1em;
     border: 1px solid var(--light-text);
     background: inherit;
     color: var(--light-text);

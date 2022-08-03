@@ -5,3 +5,4 @@ django-crispy-forms==1.14.0
 Pillow==9.2.0
 sqlparse==0.4.2
 tzdata==2022.1
+django-autoslug==1.9.8

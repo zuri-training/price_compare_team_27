@@ -1,0 +1,73 @@
+
+/* main */
+.main-container {
+  width: 100%;
+  font-size: 1em;
+  padding-block: 2em;
+}
+.alert-card {
+  width: 90%;
+  margin-inline: auto;
+}
+.text {
+  width: 90%;
+  margin-inline: auto;
+  font-size: 1.3em;
+  font-weight: 400;
+  margin-block-end: 1em;
+}
+.alert-panel {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-block: 1em;
+  padding-inline: 2em;
+  padding-block: 1em;
+  border-radius: 0.4em;
+  background: var(--pry-color);
+}
+.vendor-logo {
+  width: 10%;
+}
+.product-name a {
+  text-decoration: none;
+  color: inherit;
+}
+.current-price h4, .alert-panel h4 {
+  font-weight: 600;
+}
+.current-price p, .alert-panel p {
+  font-weight: 300;
+  font-size: 0.8em;
+}
+.ratings span {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.ratings div {
+  display: flex;
+  align-items: center;
+  color: rgb(255,149,41);
+  font-size: 0.5em;
+  width: 50%;
+}
+.view-in-shop a {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-decoration: none;
+  color: inherit;
+  padding-block: 0.3em;
+  padding-inline: 1em;
+  background: var(--btn-blue);
+  color: var(--light-text);
+  font-weight: 300;
+  border-radius: 0.4em;
+}
+.view-in-shop div {
+  display: flex;
+  align-items: center;
+}
+
+
