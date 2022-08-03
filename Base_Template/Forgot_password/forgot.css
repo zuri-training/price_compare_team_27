@@ -235,9 +235,6 @@ footer {
 #first {
   margin-block: 1em;
 }
-#second {
-  margin-block: 0.5em;
-}
 .details label {
   font-size: 0.9em;
   font-weight: 500;
@@ -252,49 +249,11 @@ footer {
   border: 1px solid grey;
   font-weight: 500;
 }
-.details input[type="password"] {
-  padding: 0.4em;
-  background: inherit;
-  border: 1px solid grey;
-  font-weight: 500;
-}
-.details input[type="email"]::placeholder, .details input[type="password"]::placeholder {
-  font-weight: 300;
-}
-.ter-action {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  font-size: 0.7em;
-}
-.ter-action label {
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  width: 30%;
-}
-input.custom {
-  display: inline;
-  width: 1em;
-  height: 1em;
-  margin-inline-end: 0.5em;
-  cursor: pointer;
-}
-.forgot-password {
-  text-align: right;
-  width: 30%;
-}
-.forgot-password a {
-  color: inherit;
-  text-decoration: none;
-  color: var(--btn-blue);
-}
-.forgot-password a:hover {
-  text-decoration: underline;
-  color: var(--hover-blue);
+.details input[type="email"]::placeholder {
+  font-weight: 200;
 }
 .call-to-action {
-  margin-block: 1em;
+  margin-block: 1.5em 2.5em;
 }
 .call-to-action input[type="submit"] {
   background: var(--btn-blue);
@@ -307,7 +266,7 @@ input.custom {
 }
 .sec-action {
   text-align: center;
-  font-size: 0.7em;
+  font-size: 0.8em;
   font-weight: 500;
 }
 .sec-action a {

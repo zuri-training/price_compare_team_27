@@ -1,25 +1,23 @@
-// const f = document.getElementById("form")
-// const q = document.getElementById("query")
-// const site = "oursitedomain.com"
-
-
-
-// f.addEventListener('submit' , submitted);
-
-
-// let dropDown = document.getElementById('drop-down');
-// let toggleCard = document.getElementById('toggleCard');
-// function toggleFunx() {
-//   toggleCard.style.display = "block"
-// }
-
-
-// dropDown.addEventListener('click', toggleFunx)
-
 
 $('document').ready(function() {
-  $('#drop-down').click(function() {
-    $('#toggleCard').slideToggle(300);
+  $('#view').click(function() {
+    $('#toggleCard').slideToggle(130);
   });
 })
+
+
+
+// $(document).ready(function(){
+//   // Show hide popover
+//   $("#view").click(function(){
+//     $("#toggleCard").slideToggle("fast");
+//   });
+// });
+// $(document).on("click", function(event){
+//   var $trigger = $("#toggleCard");
+//   if($trigger !== event.target && !$trigger.has(event.target).length) {
+//     $("#toggleCard").slideUp("fast");
+//     console.log('hi');
+//   }            
+// });
 
