@@ -65,7 +65,11 @@ body {
 header {
   padding-block-end: 1.5em;
   min-height: 100vh;
-  background: linear-gradient(to bottom, #FFFFFF, #94AFF4);
+  /* background: linear-gradient(to bottom, #FFFFFF, #94AFF4); */
+  background-image: url("/Base_Template/images/SemicircleBig.png"), url('/Base_Template/images/Semicircle\ 2small.png'), url('/Base_Template/images/Blur\ Ellipse\ 9Boys\ head.png'), url('/Base_Template/images/Blur\ Ellipse\ 10Top\ Left\ corner.png') ,linear-gradient(to bottom, #FFFFFF, #94AFF4);
+  background-position: 33% 0%, 0% 130%, 98% -20%, top left;
+  background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
+  background-size: 25em, 7.5em, 25em, 15em, 100%;
 }
 /* 180deg, #FFFFFF 52.92%, #94AFF4 102.5%  */
 input[type="submit"] {
@@ -174,6 +178,7 @@ header {
   border: 2px solid rgba(0,0,0,0);
   padding-block: 0.3em;
   padding-inline: 0.3em;
+  cursor: pointer;
 }
 .header-profile #view>div {
   display: flex;
@@ -187,7 +192,6 @@ header {
 .header-profile {
   position: relative;
 }
-
 .header-profile #toggleCard {
   position: absolute;
   border: 1px solid inherit;
@@ -219,6 +223,7 @@ header {
 .mid_left {
   margin-block-start: 2.5em;
 }
+.mid
 .form_part {
   margin-block: 2em 3em;
 }
@@ -255,6 +260,9 @@ header {
   gap: 1.5em;
   width: 50%;
 }
+.mid_text h1 {
+  font-size: 2.8em;
+}
 .mid_icon .header-icon {
   width: 15%;
 }
@@ -263,9 +271,12 @@ header {
 /* brands */
 article {
   width: 100%;
-  background: rgb(164,187,245);
   background: #94AFF4;
   padding-block: 2.5em 3em;
+  background-image: url('/Base_Template/images/Semicircle\ 2small.png');
+  background-position: 0% 180%;
+  background-repeat: no-repeat;
+  background-size: 7.5em;
 }
 .brands {
   width: 60%;
@@ -278,8 +289,11 @@ article {
   width: 12%;
   aspect-ratio: 1;
   display: flex;
-  flex-direction: column;
   justify-content: space-between;
+  align-items: center;
+}
+#small {
+  width: 30%;
 }
 .brands .br-logo {
   width: 35%;
@@ -346,7 +360,7 @@ article {
   background: #94AFF4;
 }
 hr {
-  border: 0.1px solid var(--pry-color);
+  border: 0.1px solid #FFF;
   height: 0.1px;
 }
 .phone-img {
@@ -376,7 +390,7 @@ hr {
   justify-content: space-between;
   padding-block: 1em 0.5em;
   padding-inline: 1em;
-  width: 50%;
+  width: 90%;
 }
 .review {
   display: flex;
@@ -385,8 +399,11 @@ hr {
   padding-block-start: 0.5em;
   padding-inline: 1em;
 }
+.review>p:nth-child(2) {
+  color: rgb(255,149,41);
+}
 .review .white {
-  color: #FFF;
+  color: var(--dark-text);
 }
 .grid {
   display: grid;
@@ -680,12 +697,14 @@ footer {
   .header-nav .icon{
     display: none;
   } 
-  
   .header-profile1{
     display: none;
   }
   
   .mobile_top{
+    display: none;
+  }
+  .header-logo-m {
     display: none;
   }
   
