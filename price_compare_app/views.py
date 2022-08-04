@@ -1,5 +1,6 @@
-from django.shortcuts import render
-
+from pyexpat import model
+from django.http import Http404
+from django.shortcuts import get_object_or_404, render
 from price_compare_app.models import Phone
 
 # Create your views here.
@@ -21,12 +22,16 @@ def home_page(request):
         'huawei':all_huawei
     }
 
-    return render(request, 'index.html',  context,)
-
-
-def about(request):
-    return render(request, 'about.html')
+    return render(request,'price_compare_app/index.html',context)
 
 
 
+def about_page(request):
+    return render(request,'price_compare_app/about.html')
 
+
+def PhoneDetailView(request, slug):
+    item = get_object_or_404(Phone, slug = slug)
+
+    return render(request, 'price_compare_app/index.html', context={'item': item})
+    

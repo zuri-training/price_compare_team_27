@@ -164,6 +164,10 @@ footer {
   border: 2px solid rgba(0,0,0,0);
   padding-block: 0.3em;
   padding-inline: 0.3em;
+<<<<<<< HEAD
+=======
+  cursor: pointer;
+>>>>>>> 864d2deffffda38d558d8ae134f2538fbf98accc
 }
 .profile-icon #view>div {
   display: flex;

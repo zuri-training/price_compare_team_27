@@ -178,6 +178,10 @@ footer {
   border: 2px solid rgba(0,0,0,0);
   padding-block: 0.3em;
   padding-inline: 0.3em;
+<<<<<<< HEAD
+=======
+  cursor: pointer;
+>>>>>>> 864d2deffffda38d558d8ae134f2538fbf98accc
 }
 .profile-icon #view>div {
   display: flex;
@@ -256,6 +260,12 @@ footer {
   background: inherit;
   border: 1px solid grey;
   font-weight: 500;
+<<<<<<< HEAD
+=======
+}
+.details input[type="email"]::placeholder, .details input[type="password"]::placeholder {
+  font-weight: 300;
+>>>>>>> 864d2deffffda38d558d8ae134f2538fbf98accc
 }
 .ter-action {
   display: flex;
@@ -520,9 +530,12 @@ input.custom {
     font-size: 0.8em;
     border-radius: 0.4em;
   }
+<<<<<<< HEAD
   .details input::placeholder {
     font-weight: 200;
   }
+=======
+>>>>>>> 864d2deffffda38d558d8ae134f2538fbf98accc
   .details input[type="email"] {
     padding: 0.8em;
   }
@@ -583,7 +596,10 @@ input.custom {
   }
   .m-newsletter input[type="email"] {
     padding-block: 0.7em;
+<<<<<<< HEAD
     padding-inline: 1em;
+=======
+>>>>>>> 864d2deffffda38d558d8ae134f2538fbf98accc
     border: 1px solid var(--light-text);
     background: inherit;
     color: var(--light-text);
