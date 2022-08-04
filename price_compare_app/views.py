@@ -1,10 +1,11 @@
 from django.shortcuts import render
 
-from price_compare_app.models import Phone
+from .models import Phone
 
 # Create your views here.
 
 def home_page(request):
+    phones = Phone.objects.all()
     if 'q' in request.GET:
         q = request.GET['q']
         all_phone = Phone.objects.filter(name__icontains=q)
@@ -21,12 +22,12 @@ def home_page(request):
         'huawei':all_huawei
     }
 
-    return render(request, 'index.html',  context,)
+    return render(request, 'index.html',  {"context": context, "phones": phones})
 
 
 def about(request):
     return render(request, 'about.html')
 
-
+ 
 
 

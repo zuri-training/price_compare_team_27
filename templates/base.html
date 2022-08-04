@@ -8,6 +8,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Sharp:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
   <link rel="stylesheet" href="{% static 'css/base.css' %}">
+  <script src="{% static '/js/script.js' %}"></script>     
+  <script src="https://kit.fontawesome.com/d83ab79ffb.js" crossorigin="anonymous"></script>
   <title>{% block title %} Header {% endblock %}</title>
 </head>
 <body>
@@ -21,17 +23,31 @@
       <section class="header-search">
         <form action="" method="get" class="search-bar">
           <input type="search" name="search" id="" placeholder="What are you looking to find?">
-          <input type="submit" value="Search">
+          <input type="submit" value="Search" class="submit">
         </form>
       </section>
 
-      <section class="header-nav">
-        <nav>
+      <section class="header-nav" id="my-top-nav">
+        <nav class="nav-item">
           <a href="#">Home</a>
           <a href="#">Categories</a>
-          <a href="#">Wishlist <div class="cart-img"><span class="material-symbols-sharp">shopping_cart</span></div></a>
-          <a href="#"><div class="profile-icon"><span class="material-symbols-sharp">account_circle</span></div> Login/Signup<div class="caret-down"><span class="material-symbols-sharp">expand_more</span></div></a>
+          <a href="#">Wishlist </a>
+          <a href="javascript:void(0);" class="icon" onclick="navbar()">
+          <i class="fa fa-bars"></i>
+          </a>
         </nav>
+      </section>
+      <section class="login-nav" id='login-nav'>
+        <div class="material-symbols-sharp">shopping_cart</div>
+        <div class="material-symbols-sharp">account_circle</div>
+        <div class="cart-nav" id="my-cart-nav">
+          <nav class="nav-list">
+            <a href="#" class="text">Signup</a>
+            <a href="javascript:void(0);" class="icon" onclick="loginNav()">
+            <i class="fas fa-caret-down"></i>
+            </a>
+          </nav>
+        </div>
       </section>
 
     </div>

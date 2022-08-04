@@ -1,0 +1,161 @@
+#content {
+ margin: 3rem;
+}
+
+.top-section {
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.top-section h3 {
+    width: 30%;
+    font-weight: bolder;
+    margin-top: -6rem;
+}
+
+
+.header-search {
+    margin-top: -6rem;
+    margin-bottom: 3rem;
+}
+
+.top-section img {
+    width: 10rem;
+}
+
+.icons {
+    display: flex;
+    width: 10%;
+    justify-content: space-between;
+    margin-bottom: 4rem;
+}
+
+
+.icons img {
+    width: 1.5rem;
+}
+
+.brands .brand .big-img {
+    width: 1rem;
+}
+
+.brands {
+    width: 70%;
+    align-items: center;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 3rem;
+}
+
+.brands .brand {
+    height: 4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.brands img {
+    width: 3rem;
+}
+
+
+.product-card {
+    margin: 5rem 0;
+    width: 100%;
+}
+
+.deals {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: auto;
+}
+
+
+.row {
+        justify-content: space-between;
+}
+
+.card {
+    background-color: #fff;
+    border-radius: .5rem;
+    box-shadow: 1px 1px 5px 5px rgba(0, 0, 0, .2);
+}
+
+.card-img-top {
+    padding: .1rem;
+}
+
+.card-body {
+    padding-left: 1rem;
+}
+
+.special {
+    margin-top: 3rem;
+}
+
+.special-section {
+    display: flex;
+    justify-content: left;
+    align-items: flex-start;
+    
+}
+
+.special .special-img {
+    width: 12rem;
+    height: 15rem;
+    margin-right: 2rem;
+}
+
+.special .card-1 {
+    width: 50rem;
+    height: 20rem;
+    margin: auto;
+    margin-top: -10.9rem;
+    margin-left: 6rem;
+    z-index: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background-color: #fff;
+    box-shadow: 1px 1px 3px 3px rgba(0, 0, 0, .2);
+    border-radius: .5rem;
+}
+
+.special .card-1 :nth-child(2) {
+    align-self: flex-start;
+    margin-top: 3rem;
+    font-size: .7rem;
+    text-align: right;
+    width: 30%;
+}
+
+.special .card-1 :nth-child(3) {
+    align-self: flex-start;
+    margin-top: -1rem;
+    /* padding-left: 1rem; */
+    /* right: -5rem; */
+}
+
+
+.special .card-2 {
+    width: 22rem;
+    height: 11rem;
+    margin: auto;
+    margin-top: -12rem;
+    margin-right: 30rem;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* padding: 1rem 0; */
+    background-color: #fff;
+    box-shadow: 1px 1px 3px 3px rgba(0, 0, 0, .2);
+    border-radius: .5rem;
+}

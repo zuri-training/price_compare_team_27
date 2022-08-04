@@ -1,9 +1,6 @@
 import requests
 from bs4 import BeautifulSoup
 
-
-
-
 iphone6_refurbished='https://www.jumia.com.ng/apple-refurbished-apple-iphone-6-16gb-grey-89901727.html'
 iphone7_plus='https://www.jumia.com.ng/apple-renewed-iphone-7-plus-32gbram3gb-black-iphone7p-118774089.html'
 iphone8_plus='https://www.jumia.com.ng/apple-iphone-8-3gb64gb-space-gray-5.5-inch-refurbished-99-new-3d-touch-fingerprint-ios-smartphone-73398517.html'

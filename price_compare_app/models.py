@@ -17,7 +17,7 @@ class Phone(models.Model):
     brand = models.ForeignKey(Brand, on_delete=models.CASCADE)
     created_on = models.DateTimeField(auto_now_add=True)
     modified_on = models.DateTimeField(auto_now=True)
-    image = models.ImageField(default='default-product.png', blank=True)
+    image = models.ImageField(default='default-product.png', blank=True, upload_to ='uploads/')
     url_jumia = models.URLField(max_length=9999, db_index=True)
     url_konga = models.URLField(max_length=9999, db_index=True)
     price_jumia = models.DecimalField(max_digits=8, decimal_places=2,null=False,default=0)
@@ -27,11 +27,11 @@ class Phone(models.Model):
     
     def get_jumia_price(self):
         price = int(self.price_jumia)
-        return f"₦{price}"
+        return f"₦{price:,.2f}"
 
     def get_konga_price(self):
         price = int(self.price_konga)
-        return f"₦{price}"
+        return f"₦{price:,.2f}"
 
     class Meta:
         ordering = ['name']

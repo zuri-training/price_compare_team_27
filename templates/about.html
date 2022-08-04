@@ -12,7 +12,200 @@
 
 
 {% block css %}
+
 <link rel="stylesheet" type="text/css" href="{% static 'css/about.css' %}">
+
+<style>
+  /* Extra small devices (phones, 600px and down) */
+  @media only screen and (max-width: 992px) {
+    .header-container {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      padding: .2rem;
+      height: 7rem;
+      justify-content: space-between;
+    }
+
+    .header-logo {
+      width: 4rem;
+      padding: .5rem;
+      position: relative;
+      left: 1.5rem;
+      top: .5rem;
+    }
+
+    .header-nav a {display: none;}
+    
+    .header-nav a.icon {
+      float: right;
+      display: block;
+      border: none;
+      outline: none;
+      position: absolute;
+      top: 1rem;
+      left: 1rem;
+      }
+
+      /* .header-nav.responsive {position: relative;} */
+      .header-nav.responsive a.icon {
+        float: right;
+        position: absolute;
+        right: 1rem;
+        top: 1rem;
+      }
+
+      .header-nav.responsive a:not(:last-child) {
+        height: 2rem;
+        width: 10vh;
+        float: none;
+        display: block;
+        justify-content: space-between;
+        align-items: center;
+        position: relative; 
+        left: -5rem;
+        top: 1rem;
+      }
+
+      .header-nav.responsive .header-container {
+        background-color: black;
+      }
+
+      .nav-item {
+        display: flex;
+        flex-direction: column;
+        align-items: right;
+      }
+
+    .cart-nav a {display: none;}
+    
+    .login-nav {
+      display: flex;
+      position: absolute;
+      right: 4rem;
+      top: 1rem; 
+      width: 5rem;
+      justify-content: space-between;
+      /* font-size: .5rem; */
+    }
+
+    .nav-list .text {
+      font-size: .7rem;
+    }
+
+    .cart-nav a.icon { 
+      display: block;
+      border: none;
+      outline: none;
+      position: absolute;
+      right: -1.5rem;
+      } 
+
+      .cart-nav.responsive {position: relative;}
+      .cart-nav.responsive .icon {
+        position: absolute;
+        right: -1.5rem;
+        top: 0;
+      }
+      .cart-nav.responsive a {
+        float: none;
+        display: block;
+        text-align: center;
+        padding-left: .2rem;
+      }
+
+    .header-search {
+      display: block;
+      width: 90%;
+      margin-top: .5rem;
+    }
+
+
+    body {
+      background-color: #fff;
+    }
+
+    .section-1,
+    .section-2 {
+      margin-left: 2rem;
+      width: 90%;
+      text-align: left;
+    }
+
+    .section-3 {
+      width: 100%;
+      background-color: #fff;
+      margin: 0;
+    }
+
+    .section-3 .section-text{
+      display: none;
+    }
+
+    .section-3 .section-img {
+      display: block;
+      width: 100%;
+    }
+
+    .footer-container {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+    }
+
+    .footer-logo img {
+      width: 15rem;
+      margin-left: 35%;
+      margin-bottom: 1rem;
+    }
+
+    .footer-nav {
+      width: 100%;
+    }
+
+    .footer-nav nav {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      /* margin: 0; */
+      /* flex-wrap: wrap; */
+    }
+
+    .footer-nav nav ul {
+      width: 33%;
+      /* padding-right: 1rem; */
+    }
+
+    .newsletter {
+      display: block;
+      flex-direction: auto;
+      margin-left: 10%;
+      width: 80%;
+      text-align: center;
+      margin-top: 1.5rem;
+    }
+  }
+  /* Small devices (portrait tablets and large phones, 600px and up) */
+  @media only screen and (min-width: 600px) {
+    .example {background: green;}
+  }
+  
+  /* Medium devices (landscape tablets, 768px and up) */
+  @media only screen and (min-width: 768px) {
+    .example {background: blue;}
+  } 
+  
+  /* Large devices (laptops/desktops, 992px and up) */
+  @media only screen and (min-width: 992px) {
+    .example {background: orange;}
+  } 
+  
+  /* Extra large devices (large laptops and desktops, 1200px and up) */
+  @media only screen and (min-width: 1200px) {
+    .example {background: pink;}
+  }
+  </style>
 {% endblock %}
 
   <section class="section-1">
@@ -26,14 +219,18 @@
     <br>
     <p>Our platform helps to compare prices and make the best choice of your day-to-day essential products</p>
   </section>
-
   <section class="section-3">
-    <h1>Why we do it</h1>
-    <p>We saw the need to plan and budget better with the help of price comparison</p>
-    <br>
-    <p>We are able to serve our customers, helping them to choose products with the best quality and price</p>
-    <br>
-    <p>We provide the price list from different brands, which reduces the overallstress experienced by our users, also giving them the luxury of ordering for their products from the preferred brand</p>
-  </section>
+    <div class="section-text">
+      <h1>Why we do it</h1>
+      <p>We saw the need to plan and budget better with the help of price comparison</p>
+      <br>
+      <p>We are able to serve our customers, helping them to choose products with the best quality and price</p>
+      <br>
+      <p>We provide the price list from different brands, which reduces the overallstress experienced by our users, also giving them the luxury of ordering for their products from the preferred brand</p>
+      </div>
+      <div class="section-img">
+        <img src="{% static 'images/laptop.png' %}" alt="">
+      </div>
+    </section>
 
 {% endblock %}
