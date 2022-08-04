@@ -51,8 +51,8 @@ def about_page(request):
     return render(request,'price_compare_app/about.html')
 
 
-def PhoneDetailView(request, slug):
-    item = get_object_or_404(Phone, slug = slug)
+# def PhoneDetailView(request, slug):
+#     item = get_object_or_404(Phone, slug = slug)
 
-    return render(request, 'price_compare_app/index.html', context={'item': item})
+#     return render(request, 'price_compare_app/index.html', context={'item': item})
     

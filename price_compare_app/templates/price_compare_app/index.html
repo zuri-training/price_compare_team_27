@@ -37,6 +37,8 @@
 							<i class="fas fa-star"></i> ({{phone.star_reviews}}/5)
 						</div>
 						<strong class="price"><span class="mrp">{{phone.get_jumia_price}}-</span>&nbsp;&nbsp;{{phone.get_konga_price}}</strong>
+						<button  data-product = '{{phone.id}}' data-action='add' class="btn btn-outline-secondary add-btn update-cart">Add to Cart</button>
+
 					</div>
 				</div>
 
@@ -65,6 +67,8 @@
 						</div>
 						<strong class="price"><span class="mrp">{{phone.get_jumia_price}}-</span>&nbsp;&nbsp;{{phone.get_konga_price}}</strong>
 					</div>
+					<button  data-product = '{{phone.id}}' data-action='add' class="btn btn-outline-secondary add-btn update-cart">Add to Cart</button>
+
 				</div>
 
 			{%endfor%}
