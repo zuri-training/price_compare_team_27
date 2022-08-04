@@ -217,11 +217,6 @@ header {
   z-index: 100;
 }
 
-
-.mid_text{
-  width: 55%;
-}
-
 .mid_left {
   margin-block-start: 2.5em;
 }
@@ -261,6 +256,11 @@ header {
   gap: 1.5em;
   width: 50%;
 }
+
+.mid_text h1 {
+  font-size: 2.8em;
+}
+
 .mid_icon .header-icon {
   width: 15%;
 }
@@ -269,9 +269,12 @@ header {
 /* brands */
 article {
   width: 100%;
-  background: rgb(164,187,245);
   background: #94AFF4;
   padding-block: 2.5em 3em;
+  background-image: url('/Base_Template/images/Semicircle\ 2small.png');
+  background-position: 0% 180%;
+  background-repeat: no-repeat;
+  background-size: 7.5em;
 }
 .brands {
   width: 60%;
@@ -284,9 +287,14 @@ article {
   width: 12%;
   aspect-ratio: 1;
   display: flex;
-  flex-direction: column;
   justify-content: space-between;
+  align-items: center;
 }
+
+#small {
+  width: 30%;
+}
+
 .brands .br-logo {
   width: 35%;
   margin-inline: auto;
@@ -382,7 +390,7 @@ hr {
   justify-content: space-between;
   padding-block: 1em 0.5em;
   padding-inline: 1em;
-  width: 50%;
+  width: 90%;
 }
 .review {
   display: flex;
@@ -391,8 +399,13 @@ hr {
   padding-block-start: 0.5em;
   padding-inline: 1em;
 }
+
+.review>p:nth-child(2) {
+  color: rgb(255,149,41);
+}
+
 .review .white {
-  color: #FFF;
+  color: var(--dark-text);
 }
 .grid {
   display: grid;
@@ -508,7 +521,7 @@ hr {
 }
 .abs-card {
   box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.15);
-  width: 35%;
+  width: 40%;
   margin-inline: 30%;
   z-index: 500;
   position: absolute;
@@ -541,6 +554,12 @@ hr {
 
 
 /* footer */
+
+
+footer {
+  margin-top: 3em;
+}
+
 .footer-container {
   width: 90%;
   margin-inline: auto;
@@ -649,7 +668,18 @@ hr {
     display: none;
   }
 
+.footer-container-mobile{
+  display:none;
+}
+
+.m-copyright{
+  display:none;
+}
+
+
 @media (max-width: 768px){
+
+
   .header-nav a, .dropdown-content .dropbtn {
     display: none;
   }
@@ -661,12 +691,16 @@ hr {
 
 .mobile_top .cart-img{
   position: absolute;
-  margin-left: -4em;
+  margin-left: -3em;
 }
 
   .mobile_top{
     display: block;
+    margin-right: 0.5em;
   }
+
+
+
   .dropdown {
     display: block;
     float: left;
@@ -709,8 +743,8 @@ hr {
 
   .header-nav a.icon {
     position: absolute;
-    margin-left: -3.5em;
-    font-size: 20px;
+    margin-left: -6em;
+    font-size: 15px;
     display: block;
   }  
 
@@ -736,7 +770,7 @@ hr {
     display: block;
     position: absolute;
     width: 12%; 
-    margin-left: 5em;
+    margin-left: 3em;
   }
 
   .mid .mid_image{
@@ -745,16 +779,36 @@ hr {
 
   .mid_text{
     width: 100%;
+    font-size: 0.75em;
   }
+
+.mid_text h1 br {
+  display: none;
+}
+
+.form_part{
+  margin-block: 1.5em 1.5em;
+
+}
 
   .form_part #form{
     flex-direction: column;
     margin-left: -2em;
   }
 
+
+  .form_part input[type="search"]{
+    width: 100%;
+    font-size: 0.9em;
+    padding-block: 0.5em;
+    padding-inline: 1.2em;
+    border: 1.5px solid black;
+    margin-left:4.55em;
+  }
+
   .form_part #search_button{
     margin-top: 0.8em;
-    margin-left: -8.5em;
+    margin-right: 8.9em;
     width: 120px;
   }
 
@@ -764,8 +818,35 @@ hr {
 
   .brands {
     display: grid;
+    width: 100%;
+    margin-inline: 1.5em;
     grid-template-columns: auto auto auto auto;
   }  
+
+#small {
+  width: 30%;
+}
+
+.brands>div {
+  width: 55%;
+  aspect-ratio: 1.5;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+.brands .br-logo {
+  width: 30%;
+  margin-inline: auto;
+  display: flex;
+  align-items: flex-start;
+}
+
+article {
+
+  padding-block: 0 1.5em;
+}
 
 
 .new-products , .popular, .trending{
@@ -859,17 +940,9 @@ background-color: white;
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
+footer {
+  margin-top: 0em;
+}
 .footer-container, .copyright {
   display: none;
 }
@@ -888,9 +961,11 @@ background-color: white;
   padding-block: 0.7em;
   border: 1px solid var(--light-text);
   background: inherit;
+  text-align: center;
   color: var(--light-text);
   border-radius: 0.4em;
 }
+
 .m-newsletter input[type="submit"] {
   padding-block: 0.7em;
   color: inherit;
@@ -930,7 +1005,7 @@ background-color: white;
   gap: 5em;
 }
 .m-nav-bottom {
-  gap: 3em;
+  gap: 7em;
 }
 .m-nav-bottom .list {
   display: flex;
@@ -991,7 +1066,7 @@ background-color: white;
   color: var(--dark-text);
   text-align: center;
   padding-block: 1em;
-  font-size: 0.8em;
+  font-size: 0.7em;
 }
 .m-copyright .emoji {
   color: rgb(155,34,29);
