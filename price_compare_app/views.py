@@ -1,13 +1,17 @@
-from django.shortcuts import render
 from django.http import JsonResponse
 import json
 from price_compare_app.models import *
 from pyexpat import model
-from django.http import Http404
 from django.shortcuts import get_object_or_404, render
-from price_compare_app.models import Phone
+
 
 # Create your views here.
+
+def get_random_four():
+    pass
+
+def get_latest_four():
+    pass
 
 def home_page(request):
     if 'q' in request.GET:
@@ -26,7 +30,7 @@ def home_page(request):
         'huawei':all_huawei
     }
 
-    return render(request,'price_compare_app/index.html',context)
+    return render(request,'price_compare_app/landingpage.html',context)
 
 def wishlist(request):
     if request.user.is_authenticated:
