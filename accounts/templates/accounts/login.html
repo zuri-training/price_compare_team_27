@@ -1,76 +1,49 @@
-{%load static%}
-<!DOCTYPE html>
-<!-- === Coding by CodingLab | www.codinglabweb.com === -->
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <!-- ===== Iconscout CSS ===== -->
-    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <!-- ===== CSS ===== -->
-    <link rel="stylesheet" href="{% static 'accounts/login.css' %}">
-         
-</head>
-<body>
-    
-    <div class="container">
-        <div class="forms">
-            <div class="form login">
-                <span class="title">Login</span>
+{% extends 'price_compare_app/base.html' %}
+{% load static %}
+{%block title%}Login{%endblock title%}
 
-                <form method="post">
-                    {%csrf_token%}
-                    <div class="input-field">
-                        <input type="text" placeholder="Enter your username" name="username" required>
-                        <i class="uil uil-envelope icon"></i>
-                    </div>
-                    <div class="input-field">
-                        <input type="password" class="password" placeholder="Enter your password" name='password' required>
-                        <i class="uil uil-lock icon"></i>
-                        <i class="uil uil-eye-slash showHidePw"></i>
-                    </div>
+{%block content%}
+  <main>
+    <div class="main-container">
+      <form action="" method="post" class="login-form">
+        {%csrf_token%}
+        <section class="form-tittle">
+          <h5>Welcome Back, Champ!</h5>
+        </section>
 
-                    <div class="checkbox-text">
-                        <div class="checkbox-content">
-                            <input type="checkbox" id="logCheck">
-                            <label for="logCheck" class="text">Remember me</label>
-                        </div>
-                        
-                        <a href="#" class="text">Forgot password?</a>
-                    </div>
+        <section class="details" id="first">
+          <label for="login-email">Username</label>
+          <input type="text" name="username" id="" placeholder="enter your email address" required>
+        </section>
 
-                    <div class="input-field button">
-                        <input type="submit" value="Login">
-                    </div>
-                </form>
+        <section class="details" id="second">
+          <label for="login-password">Password</label>
+          <input type="password" name="password" id="" placeholder="********" required>
+        </section>
 
-                <div class="login-signup">
-                    <span class="text">Not a member?
-                        <a href="{%url 'signup'%}" class="text signup-link">Signup Now</a>
-                    </span>
-                </div>
-            </div>
+        <section class="ter-action">
 
-         
-        </div>
-        <div class="alert alert-info" role="alert">
-            {% for message in messages %}
-                {% if message.tags == 'success' %}
-                    <div class="alert alert-primary alert-dismissible fade show" role="alert">
-                        
-                        {{message}}
+          <label for="check">
+            <input type="checkbox" name="check" class="custom" id="">
+            <p>Remember me</p>
+          </label>
 
-                    </div>
-                {%endif %}
-            {% endfor %}
-            
+          <div class="forgot-password">
+            <a href="#">Forgot Password?</a>
           </div>
+
+        </section>
+
+        <section class="call-to-action">
+          <input type="submit" value="Login">
+        </section>
+
+        <section class="sec-action">
+          <p>Don&apos;t have an account&quest; <a href="#">Sign Up</a></p>
+        </section>
+
+      </form>
     </div>
-
-    <!-- <script src="{% static 'accounts/scripts.js' %}"></script> -->
-</body>
-</html>
-
+  </main>
+{%endblock content%}
+<script src=""></script>

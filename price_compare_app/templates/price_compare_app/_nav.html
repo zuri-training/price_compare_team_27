@@ -1,0 +1,30 @@
+{%load static%}
+<header>
+    <div class="header-container">
+
+        <section class="header-logo">
+            <img src="{% static 'images\Choice Logo.png' %}" alt="">
+        </section>
+
+        <section class="header-search">
+            <form action="" method="get" class="search-bar">
+                <input type="search" name="search" id="" placeholder="What are you looking to find?">
+                <input type="submit" value="Search">
+            </form>
+        </section>
+
+        <section class="header-nav">
+            <nav>
+                <a href="#">Home</a>
+                <a href="#">Categories</a>
+                <a href="#">Wishlist <div class="cart-img"><span class="material-symbols-sharp">shopping_cart</span>
+                    </div></a>
+                <a href="#">
+                    <div class="profile-icon"><span class="material-symbols-sharp">account_circle</span></div>
+                    Login/Signup<div class="caret-down"><span class="material-symbols-sharp">expand_more</span></div>
+                </a>
+            </nav>
+        </section>
+
+    </div>
+</header>
