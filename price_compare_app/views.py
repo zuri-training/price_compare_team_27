@@ -11,14 +11,9 @@ def get_latest_four():
     pass
 
 def home_page(request):
-    if 'q' in request.GET:
-        q = request.GET['q']
-        all_phone = Phone.objects.filter(name__icontains=q)
-    
-    else:
-        all_samsung= Phone.objects.filter(brand__name__icontains='samsung')
-        all_iphones= Phone.objects.filter(brand__name__icontains='iphone')
-        all_huawei= Phone.objects.filter(brand__name__icontains='huawei')
+    all_samsung= Phone.objects.all
+    all_iphones= Phone.objects.all
+    all_huawei= Phone.objects.all
 
 
     context={
@@ -27,7 +22,15 @@ def home_page(request):
         'huawei':all_huawei
     }
 
-    return render(request,'price_compare_app/landingpage.html',context)
+    return render(request,'price_compare_app/landingpage.html')
+
+def search(request):
+    if request.method == 'POST':
+        query = request.POST['query']
+        return render(request, 'price_compare_app/search.html', {'query':query})
+    else:
+        return render(request, 'price_compare_app/search.html', {'query':query})
+
 
 
 
