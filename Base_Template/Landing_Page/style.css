@@ -504,7 +504,7 @@ hr {
   margin-inline: 10%;
 }
 .bk-card-img {
-  width: 20%;
+  width: 30%;
 }
 .bk-card-text {
   padding: 0.5em;
@@ -518,7 +518,8 @@ hr {
   box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.15);
   padding: 0 2em 1em;
   width: 70%;
-  margin-inline-start: 20%;
+  margin-top: 1em;
+  margin-inline-start: 22%;
   border-radius: 0.4em;
   position: absolute;
   inset: 0;
@@ -528,8 +529,8 @@ hr {
   background: var(--pry-color);
 }
 .fr-card-img1{
-  width: 20%;
-  align-self: flex-end;
+  width: 30%;
+  margin-top: 1em;
 }
 .fr-card-img1 img {
   margin-bottom: 3em;
@@ -537,13 +538,15 @@ hr {
 }
 .fr-card-txt {
   text-align: right;
-  width: 55%;
+  width: 45%;
   display: flex;
+  font-size: 12px;
   margin-top: 3.5em;
+  margin-right: 1em;
   justify-content: flex-end;
 }
 .fr-card-img2 {
-  width: 20%;
+  width: 30%;
   padding-bottom: 1em;
 }
 .fr-card-img2 img {
@@ -551,11 +554,11 @@ hr {
 }
 .abs-card {
   box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.15);
-  width: 35%;
-  margin-inline: 30%;
+  width: 32%;
+  margin-inline: 35%;
   z-index: 500;
   position: absolute;
-  padding: 1em;
+  padding: 3em 1em;
   background: var(--pry-color);
   border-radius: 0.4em;
   bottom: 10%;
