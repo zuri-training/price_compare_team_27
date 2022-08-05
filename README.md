@@ -89,7 +89,7 @@ python manage.py runserver
 
 - Don't push to the main branch
 - Create a branch and switch to it ` git checkout -b (branchname)` *Dont include brackets*
-- After finishing your tasks run `git pull ` then `git push (your branchname)`
+- After finishing your tasks run `git pull origin main ` then `git push (your branchname)`
 
 ```
 git add .
