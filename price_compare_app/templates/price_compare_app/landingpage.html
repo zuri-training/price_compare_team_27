@@ -132,318 +132,40 @@
         
         <div class="product-div grid">
           
-          <section class="product-card">
+          {% for phone in iphones  %}
+            <a href="" style="text-decoration: none; color:black ; ">
+              <section class="product-card">
+              
+                <div class="phone-img">
+                  <div class="img"><img src="{{phone.image.url}}" alt=""></div>
+                </div>
+                
+                <div class="phone-txt">
+                  
+                  <p class="phone-name">{{phone.name}}</p>
+                  
+                  <div class="availabilty">
+                    <p>Availablity</p>
+                    <p>4</p>
+                  </div>
+                  
+                  <hr>
+                  
+                  <div class="review">
+                    <p>Review</p>
+                    <p>★★★★<span class="white">★</span></p>
+                  </div>
+                  
+                </div>
+                
+              </section>
+              
+            </a>
             
-            <div class="phone-img">
-              <div class="img"><img src="{% static 'images/iphone12.webp' %}" alt=""></div>
-            </div>
-            
-            <div class="phone-txt">
-              
-              <p class="phone-name">Apple iPhone 13 Pro Max 256GB Gold</p>
-              
-              <div class="availabilty">
-                <p>Availablity</p>
-                <p>4</p>
-              </div>
-              
-              <hr>
-              
-              <div class="review">
-                <p>Review</p>
-                <p>★★★★<span class="white">★</span></p>
-              </div>
-              
-            </div>
-            
-          </section>
-          
-          <section class="product-card">
-            
-            <div class="phone-img">
-              <div class="img"><img src="{% static 'images/iphone12.webp' %}" alt=""></div>
-            </div>
-            
-            <div class="phone-txt">
-              
-              <p class="phone-name">Apple iPhone 13 Pro Max 256GB Gold</p>
-              
-              <div class="availabilty">
-                <p>Availablity</p>
-                <p>4</p>
-              </div>
-              
-              <hr>
-              
-              <div class="review">
-                <p>Review</p>
-                <p>★★★★<span class="white">★</span></p>
-              </div>
-              
-            </div>
-            
-          </section>
-          
-          <section class="product-card">
-            
-            <div class="phone-img">
-              <div class="img"><img src="{% static 'images/iphone12.webp' %}" alt=""></div>
-            </div>
-            
-            <div class="phone-txt">
-              
-              <p class="phone-name">Apple iPhone 13 Pro Max 256GB Gold</p>
-              
-              <div class="availabilty">
-                <p>Availablity</p>
-                <p>4</p>
-              </div>
-              
-              <hr>
-              
-              <div class="review">
-                <p>Review</p>
-                <p>★★★★<span class="white">★</span></p>
-              </div>
-              
-            </div>
-            
-          </section>
-          
-          <section class="product-card">
-            
-            <div class="phone-img">
-              <div class="img"><img src="{% static 'images/iphone12.webp' %}" alt=""></div>
-            </div>
-            
-            <div class="phone-txt">
-              
-              <p class="phone-name">Apple iPhone 13 Pro Max 256GB Gold</p>
-              
-              <div class="availabilty">
-                <p>Availablity</p>
-                <p>4</p>
-              </div>
-              
-              <hr>
-              
-              <div class="review">
-                <p>Review</p>
-                <p>★★★★<span class="white">★</span></p>
-              </div>
-              
-            </div>
-            
-          </section>
-                 
-          <section class="product-card">
-            
-            <div class="phone-img">
-              <div class="img"><img src="{% static 'images/iphone12.webp' %}" alt=""></div>
-            </div>
-            
-            <div class="phone-txt">
-              
-              <p class="phone-name">Apple iPhone 13 Pro Max 256GB Gold</p>
-              
-              <div class="availabilty">
-                <p>Availablity</p>
-                <p>4</p>
-              </div>
-              
-              <hr>
-              
-              <div class="review">
-                <p>Review</p>
-                <p>★★★★<span class="white">★</span></p>
-              </div>
-              
-            </div>
-            
-          </section>
-          
-          <section class="product-card">
-            
-            <div class="phone-img">
-              <div class="img"><img src="{% static 'images/iphone12.webp' %}" alt=""></div>
-            </div>
-            
-            <div class="phone-txt">
-              
-              <p class="phone-name">Apple iPhone 13 Pro Max 256GB Gold</p>
-              
-              <div class="availabilty">
-                <p>Availablity</p>
-                <p>4</p>
-              </div>
-              
-              <hr>
-              
-              <div class="review">
-                <p>Review</p>
-                <p>★★★★<span class="white">★</span></p>
-              </div>
-              
-            </div>
-            
-          </section>
-          
-          <section class="product-card">
-            
-            <div class="phone-img">
-              <div class="img"><img src="{% static 'images/iphone12.webp' %}" alt=""></div>
-            </div>
-            
-            <div class="phone-txt">
-              
-              <p class="phone-name">Apple iPhone 13 Pro Max 256GB Gold</p>
-              
-              <div class="availabilty">
-                <p>Availablity</p>
-                <p>4</p>
-              </div>
-              
-              <hr>
-              
-              <div class="review">
-                <p>Review</p>
-                <p>★★★★<span class="white">★</span></p>
-              </div>
-              
-            </div>
-            
-          </section>
-          
-          <section class="product-card">
-            
-            <div class="phone-img">
-              <div class="img"><img src="{% static 'images/iphone12.webp' %}" alt=""></div>
-            </div>
-            
-            <div class="phone-txt">
-              
-              <p class="phone-name">Apple iPhone 13 Pro Max 256GB Gold</p>
-              
-              <div class="availabilty">
-                <p>Availablity</p>
-                <p>4</p>
-              </div>
-              
-              <hr>
-              
-              <div class="review">
-                <p>Review</p>
-                <p>★★★★<span class="white">★</span></p>
-              </div>
-              
-            </div>
-            
-          </section>       
-          
-          <section class="product-card">
-            
-            <div class="phone-img">
-              <div class="img"><img src="{% static 'images/iphone12.webp' %}" alt=""></div>
-            </div>
-            
-            <div class="phone-txt">
-              
-              <p class="phone-name">Apple iPhone 13 Pro Max 256GB Gold</p>
-              
-              <div class="availabilty">
-                <p>Availablity</p>
-                <p>4</p>
-              </div>
-              
-              <hr>
-              
-              <div class="review">
-                <p>Review</p>
-                <p>★★★★<span class="white">★</span></p>
-              </div>
-              
-            </div>
-            
-          </section>
-          
-          <section class="product-card">
-            
-            <div class="phone-img">
-              <div class="img"><img src="{% static 'images/iphone12.webp' %}" alt=""></div>
-            </div>
-            
-            <div class="phone-txt">
-              
-              <p class="phone-name">Apple iPhone 13 Pro Max 256GB Gold</p>
-              
-              <div class="availabilty">
-                <p>Availablity</p>
-                <p>4</p>
-              </div>
-              
-              <hr>
-              
-              <div class="review">
-                <p>Review</p>
-                <p>★★★★<span class="white">★</span></p>
-              </div>
-              
-            </div>
-            
-          </section>
-          
-          <section class="product-card">
-            
-            <div class="phone-img">
-              <div class="img"><img src="{% static 'images/iphone12.webp' %}" alt=""></div>
-            </div>
-            
-            <div class="phone-txt">
-              
-              <p class="phone-name">Apple iPhone 13 Pro Max 256GB Gold</p>
-              
-              <div class="availabilty">
-                <p>Availablity</p>
-                <p>4</p>
-              </div>
-              
-              <hr>
-              
-              <div class="review">
-                <p>Review</p>
-                <p>★★★★<span class="white">★</span></p>
-              </div>
-              
-            </div>
-            
-          </section>
-          
-          <section class="product-card">
-            
-            <div class="phone-img">
-              <div class="img"><img src="{% static 'images/iphone12.webp' %}" alt=""></div>
-            </div>
-            
-            <div class="phone-txt">
-              
-              <p class="phone-name">Apple iPhone 13 Pro Max 256GB Gold</p>
-              
-              <div class="availabilty">
-                <p>Availablity</p>
-                <p>4</p>
-              </div>
-              
-              <hr>
-              
-              <div class="review">
-                <p>Review</p>
-                <p>★★★★<span class="white">★</span></p>
-              </div>
-              
-            </div>
-            
-          </section>
 
+          {% endfor %}
+            
+         
         </div>
 
         <div class="see-more">
