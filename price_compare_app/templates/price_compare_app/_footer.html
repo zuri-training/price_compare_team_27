@@ -1,5 +1,5 @@
 {%load static%}
-
+{% load social_share %}
 <footer>
 
     <div class="footer-container">
@@ -34,7 +34,8 @@
                 <ul class="list">
                     <h5>Social</h5>
                     <li><a href="#">Facebook</a></li>
-                    <li><a href="#">Twitter</a></li>
+                    <li> {% post_to_twitter 'check out my website' object_or_url 'Twitter' %}
+                        </li>
                     <li><a href="#">Instagram</a></li>
                 </ul>
             </nav>
@@ -56,5 +57,5 @@
         <p>Copyright 2022. Made with&nbsp; <span class="emoji">❤</span>&nbsp; from Zuri Project. <span>Team 27</span>
         </p>
     </div>
-
+    <script type="text/javascript" src="{% static 'wishlist.js' %}"></script>
 </footer>

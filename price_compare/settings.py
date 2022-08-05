@@ -44,6 +44,8 @@ INSTALLED_APPS = [
     #3rd party packages
     'crispy_forms',
     'crispy_bootstrap5',
+    'django_social_share',
+    # 'anymail',
 ]
 
 CRISPY_ALLOWED_TEMPLATE_PACKS = 'bootstrap5'

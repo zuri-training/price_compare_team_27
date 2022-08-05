@@ -1,4 +1,5 @@
 {%load static%}	
+{% extend%}
 <!DOCTYPE html>
 <html>
 <head>
@@ -8,7 +9,7 @@
 	<title>Swiper Demo</title>
 	<link rel="stylesheet" type="text/css" href="{% static 'price_compare_app/style.css' %}">
 	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css">
-	<script type = 'text/javascript'>
+	<!-- <script type = 'text/javascript'>
 		var user = '{{ request.user }}'
 		function getToken(name) {
             var cookieValue =null;
@@ -27,7 +28,7 @@
             return cookieValue;
         }
         var csrftoken = getToken('csrftoken')
-	</script>
+	</script> -->
 </head>
 <body>
 	<form action="#" method="get">
@@ -145,7 +146,7 @@
 
 		
 	</div>
-	<script type="text/javascript" src="{% static 'wishlist.js' %}"></script>
+	<!-- <script type="text/javascript" src="{% static 'wishlist.js' %}"></script> -->
 
 </body>
 </html>
