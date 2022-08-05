@@ -66,17 +66,10 @@ header {
   padding-block-end: 1.5em;
   min-height: 100vh;
   /* background: linear-gradient(to bottom, #FFFFFF, #94AFF4); */
-<<<<<<< HEAD:price_compare_app/static/price_compare_app/css/landingstyle.css
-  background-image: url("Hero/SemicircleBig.png"), url('Hero/Semicircle\ 2small.png'), url('Hero/Blur\ Ellipse\ 9Boys\ head.png'), url('/Hero/Blur\ Ellipse\ 10Top\ Left\ corner.png') ,linear-gradient(to bottom, #FFFFFF, #94AFF4);
-  background-position: 33% 0%, 0% 130%, 98% -20%, top left;
-  background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
-  background-size: 25em, 7.5em, 25em, 15em, 100%;
-=======
   background-image: url("/Base_Template/images/SemicircleBig.png"), url('/Base_Template/images/Blur\ Ellipse\ 9Boys\ head.png'), url('/Base_Template/images/Blur\ Ellipse\ 10Top\ Left\ corner.png') ,linear-gradient(to bottom, #FFFFFF, #94AFF4);
   background-position: 33% 0%, 98% -20%, top left;
   background-repeat: no-repeat, no-repeat, no-repeat;
   background-size: 25em, 25em, 15em, 100%;
->>>>>>> 7153e14c765883c9c45e799a04bb74ac4b4b2e6b:Base_Template/Landing_Page/style.css
 }
 /* 180deg, #FFFFFF 52.92%, #94AFF4 102.5%  */
 input[type="submit"] {
@@ -249,11 +242,7 @@ article {
   width: 100%;
   background: #94AFF4;
   padding-block: 2.5em 3em;
-<<<<<<< HEAD:price_compare_app/static/price_compare_app/css/landingstyle.css
-  background-image: url('Hero/Semicircle\ 2small.png');
-=======
   /* background-image: url('/Base_Template/images/Semicircle\ 2small.png');
->>>>>>> 7153e14c765883c9c45e799a04bb74ac4b4b2e6b:Base_Template/Landing_Page/style.css
   background-position: 0% 180%;
   background-repeat: no-repeat;
   background-size: 7.5em; */
