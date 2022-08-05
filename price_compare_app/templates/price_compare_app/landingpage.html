@@ -76,11 +76,18 @@
           </div>
 
           <div class="form_part">
-            <form id="form" action="live.js" method="get">
-              <input type="search" name="q" placeholder="What are you looking to find?" id="query"/>
-              <input id="search_button" type="submit" value="Search" />
-            </form>
-          </div>
+              <form id="form" action="{% url 'search' %}" method="POST">
+                {% csrf_token %}
+                <input
+                  type="search"
+                  name="query"
+                  placeholder="What are you looking to find?"
+                  id="query"
+                />
+                <input id="search_button" type="submit" value="Search" />
+              </form>
+            </div>
+
 
           <div class="mid_icon">
             <div class="header-icon"><img class="iconnnn" src="{% static 'images/ri-google-lineSocial.png ' %}" alt="google logo"></div>
