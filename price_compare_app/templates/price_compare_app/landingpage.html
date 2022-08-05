@@ -1,3 +1,4 @@
+{%load static%}
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,20 +6,19 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Sharp:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="{% static 'price_compare_app/css/landingstyle.css' %}">
   <title>Pricify</title>
-  <script type="text/javascript" src="jquery-3.6.0.min.js"> </script>
+  <script type="text/javascript" src="{% static 'price_compare_app/js/jquery-3.6.0.min.js' %}"> </script>
 </head>
 <body>
     
-
   <header>
 
     <div class="header-container">
 
       <div class="header-top">
         <section class="header-logo">
-          <img src="images\Choice Logo.png" alt="">
+          <img src="{% static 'images\Choice Logo.png' %}" alt="">
         </section>
   
         <section class="header-nav">
@@ -31,10 +31,19 @@
   
         <section class="header-profile">
           <div id="view"><div class="profile-icon"><span class="material-symbols-sharp">account_circle</span> Account</div><div class="caret-down" id="drop-down"><span class="material-symbols-sharp">expand_more</span></div></div>
-          <div id="toggleCard">
-            <a href="login.html" class="toggle_top">Login</a>
-            <a href="signup.html" class="toggle_bottom">Signup</a>
-          </div>
+          
+          {% if user.is_authenticated %}
+            <div id="toggleCard">
+              <a href="{% url 'logoutpage' %}" class="toggle_top">signout</a>
+            </div>
+          {% else %}
+            <div id="toggleCard">
+              <a href="{% url 'login' %}" class="toggle_top">Login</a>
+              <a href="{% url 'signup' %}" class="toggle_bottom">Signup</a>
+            </div>
+          {% endif %}
+            
+         
         </section>
       </div>
 
@@ -56,14 +65,14 @@
           </div>
 
           <div class="mid_icon">
-            <div class="header-icon"><img class="iconnnn" src="images\ri-google-lineSocial.png" alt="google logo"></div>
-            <div class="header-icon"><img class="iconnnn" src="images\ri-facebook-lineSocial.png" alt="facebook logo"></div>
-            <div class="header-icon"><img class="iconnnn" src="images\ri-twitter-lineSocial.png" alt="google logo"></div>
+            <div class="header-icon"><img class="iconnnn" src="{% static 'images\ri-google-lineSocial.png' %}" alt="google logo"></div>
+            <div class="header-icon"><img class="iconnnn" src="{% static 'images\ri-facebook-lineSocial.png' %}" alt="facebook logo"></div>
+            <div class="header-icon"><img class="iconnnn" src="{% static 'images\ri-twitter-lineSocial.png' %}" alt="google logo"></div>
           </div>
         </div>
 
         <div class="mid_image">
-          <img src="images\Group 13.png" alt="image">
+          <img src="{% static 'images\Group 13.png' %}" alt="image">
         </div>
 
       </div>
@@ -75,26 +84,26 @@
   <article class="brand-logo">
     <div class="brands">
       <div>
-        <img src="images\Vector.png" alt="">
+        <img src="{% static 'images\Vector.png' %}" alt="">
       </div>
       <div>
         <div class="br-logo">
-          <img src="images\cil_car-alt (Traced).png" alt="">
+          <img src="{% static 'images\cil_car-alt (Traced).png' %}" alt="">
         </div>
       </div>
       <div>
-        <div class="br-logo"><img src="images\Vector-1.png" alt=""></div>
+        <div class="br-logo"><img src="{% static 'images\Vector-1.png' %}" alt=""></div>
       </div>
       <div>
-        <img src="images\bi_laptop (Traced).png" alt="">
+        <img src="{% static 'images\bi_laptop (Traced).png' %}" alt="">
       </div>
       <div>
-        <div class="br-logo"><img src="images\Vector-2.png" alt=""></div>
+        <div class="br-logo"><img src="{% static 'images\Vector-2.png' %}" alt=""></div>
       </div>
       <div>
-        <img src="images\Frame 17 (Traced).png" alt="">
+        <img src="{% static 'images\Frame 17 (Traced).png' %}" alt="">
       </div>
-      <!-- <img src="images\Vector.png" alt=""> -->
+      <!-- <img src="{% static 'images\Vector.png' %}" alt=""> -->
     </div>
   </article>
 
@@ -126,7 +135,7 @@
           <section class="product-card">
             
             <div class="phone-img">
-              <div class="img"><img src="images/iphone12.webp" alt=""></div>
+              <div class="img"><img src="{% static 'images/iphone12.webp' %}" alt=""></div>
             </div>
             
             <div class="phone-txt">
@@ -152,7 +161,7 @@
           <section class="product-card">
             
             <div class="phone-img">
-              <div class="img"><img src="images/iphone12.webp" alt=""></div>
+              <div class="img"><img src="{% static 'images/iphone12.webp' %}" alt=""></div>
             </div>
             
             <div class="phone-txt">
@@ -178,7 +187,7 @@
           <section class="product-card">
             
             <div class="phone-img">
-              <div class="img"><img src="images/iphone12.webp" alt=""></div>
+              <div class="img"><img src="{% static 'images/iphone12.webp' %}" alt=""></div>
             </div>
             
             <div class="phone-txt">
@@ -204,7 +213,7 @@
           <section class="product-card">
             
             <div class="phone-img">
-              <div class="img"><img src="images/iphone12.webp" alt=""></div>
+              <div class="img"><img src="{% static 'images/iphone12.webp' %}" alt=""></div>
             </div>
             
             <div class="phone-txt">
@@ -230,7 +239,7 @@
           <section class="product-card">
             
             <div class="phone-img">
-              <div class="img"><img src="images/iphone12.webp" alt=""></div>
+              <div class="img"><img src="{% static 'images/iphone12.webp' %}" alt=""></div>
             </div>
             
             <div class="phone-txt">
@@ -256,7 +265,7 @@
           <section class="product-card">
             
             <div class="phone-img">
-              <div class="img"><img src="images/iphone12.webp" alt=""></div>
+              <div class="img"><img src="{% static 'images/iphone12.webp' %}" alt=""></div>
             </div>
             
             <div class="phone-txt">
@@ -282,7 +291,7 @@
           <section class="product-card">
             
             <div class="phone-img">
-              <div class="img"><img src="images/iphone12.webp" alt=""></div>
+              <div class="img"><img src="{% static 'images/iphone12.webp' %}" alt=""></div>
             </div>
             
             <div class="phone-txt">
@@ -308,7 +317,7 @@
           <section class="product-card">
             
             <div class="phone-img">
-              <div class="img"><img src="images/iphone12.webp" alt=""></div>
+              <div class="img"><img src="{% static 'images/iphone12.webp' %}" alt=""></div>
             </div>
             
             <div class="phone-txt">
@@ -334,7 +343,7 @@
           <section class="product-card">
             
             <div class="phone-img">
-              <div class="img"><img src="images/iphone12.webp" alt=""></div>
+              <div class="img"><img src="{% static 'images/iphone12.webp' %}" alt=""></div>
             </div>
             
             <div class="phone-txt">
@@ -360,7 +369,7 @@
           <section class="product-card">
             
             <div class="phone-img">
-              <div class="img"><img src="images/iphone12.webp" alt=""></div>
+              <div class="img"><img src="{% static 'images/iphone12.webp' %}" alt=""></div>
             </div>
             
             <div class="phone-txt">
@@ -386,7 +395,7 @@
           <section class="product-card">
             
             <div class="phone-img">
-              <div class="img"><img src="images/iphone12.webp" alt=""></div>
+              <div class="img"><img src="{% static 'images/iphone12.webp' %}" alt=""></div>
             </div>
             
             <div class="phone-txt">
@@ -412,7 +421,7 @@
           <section class="product-card">
             
             <div class="phone-img">
-              <div class="img"><img src="images/iphone12.webp" alt=""></div>
+              <div class="img"><img src="{% static 'images/iphone12.webp' %}" alt=""></div>
             </div>
             
             <div class="phone-txt">
@@ -468,7 +477,7 @@
           <section class="product-card">
             
             <div class="phone-img">
-              <div class="img"><img src="images/iphone12_ProMax.webp" alt=""></div>
+              <div class="img"><img src="{% static 'images/iphone12_ProMax.webp' %}" alt=""></div>
             </div>
             
             <div class="phone-txt">
@@ -494,7 +503,7 @@
           <section class="product-card">
             
             <div class="phone-img">
-              <div class="img"><img src="images/iphone12_ProMax.webp" alt=""></div>
+              <div class="img"><img src="{% static 'images/iphone12_ProMax.webp' %}" alt=""></div>
             </div>
             
             <div class="phone-txt">
@@ -520,7 +529,7 @@
           <section class="product-card">
             
             <div class="phone-img">
-              <div class="img"><img src="images/iphone12_ProMax.webp" alt=""></div>
+              <div class="img"><img src="{% static 'images/iphone12_ProMax.webp' %}" alt=""></div>
             </div>
             
             <div class="phone-txt">
@@ -546,7 +555,7 @@
           <section class="product-card">
             
             <div class="phone-img">
-              <div class="img"><img src="images/iphone12_ProMax.webp" alt=""></div>
+              <div class="img"><img src="{% static 'images/iphone12_ProMax.webp' %}" alt=""></div>
             </div>
             
             <div class="phone-txt">
@@ -602,7 +611,7 @@
           <section class="product-card">
             
             <div class="phone-img">
-              <div class= "img"><img src="images/iphone12.jpg" alt=""></div>
+              <div class= "img"><img src="{% static 'images/iphone12.jpg' %}" alt=""></div>
             </div>
             
             <div class="phone-txt">
@@ -628,7 +637,7 @@
           <section class="product-card">
             
             <div class="phone-img">
-              <div class= "img"><img src="images/iphone12.jpg" alt=""></div>
+              <div class= "img"><img src="{% static 'images/iphone12.jpg' %}" alt=""></div>
             </div>
             
             <div class="phone-txt">
@@ -654,7 +663,7 @@
           <section class="product-card">
             
             <div class="phone-img">
-              <div class= "img"><img src="images/iphone12.jpg" alt=""></div>
+              <div class= "img"><img src="{% static 'images/iphone12.jpg' %}" alt=""></div>
             </div>
             
             <div class="phone-txt">
@@ -680,7 +689,7 @@
           <section class="product-card">
             
             <div class="phone-img">
-              <div class= "img"><img src="images/iphone12.jpg" alt=""></div>
+              <div class= "img"><img src="{% static 'images/iphone12.jpg' %}" alt=""></div>
             </div>
             
             <div class="phone-txt">
@@ -714,7 +723,7 @@
       <section class="display-cards">      
         <div class="back-card">
           <div class="bk-card-img">
-            <img src="images\Pics 185.png" alt="">
+            <img src="{% static 'images\Pics 185.png' %}" alt="">
           </div>
           <div class="bk-card-text">
             <h2>Why we are special</h2>
@@ -724,13 +733,13 @@
         <div class="front-card">
 
           <div class="fr-card-img1">
-            <img src="images\unsplash_7qCeFo19r24.png" alt="">
+            <img src="{% static 'images\unsplash_7qCeFo19r24.png' %}" alt="">
           </div>
           
           <div class="fr-card-txt"><p>Our joy is to see all our customers<br>enjoy purchasing products from the<br>comfort of their homes</p></div>
 
           <div class="fr-card-img2">
-            <img src="images\New Pics.png" alt="">
+            <img src="{% static 'images\New Pics.png' %}" alt="">
           </div>
 
 
@@ -767,7 +776,7 @@
 
       <div class="footer-body">
         <section class="footer-logo">
-          <img src="images\White Logo.png" alt="">
+          <img src="{% static 'images\White Logo.png' %}" alt="">
         </section>
   
         <section class="footer-nav">
@@ -820,6 +829,6 @@
     </div>
 
   </footer>
-  <script src="live.js"></script>
+  <script src="{% static 'price_compare_app/js/live.js' %}"></script>
 </body>
 </html>
