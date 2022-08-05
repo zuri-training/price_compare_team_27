@@ -1,5 +1,6 @@
 from django.shortcuts import render
-
+from django.http import JsonResponse
+import json
 from price_compare_app.models import *
 from pyexpat import model
 from django.http import Http404
@@ -35,8 +36,6 @@ def wishlist(request):
         items = wishes.wishitem_set.all()
         best_price = WishItem.objects.all()
     else:
-        # items = []
-        # wishes = {'get_cart_total': 0, 'get_cart_items':0, 'best_price':0}
         return render(request, 'price_compare_app/index.html')
     context = {
         'items':items, 'wish': wishes, 'best_price': best_price
@@ -50,6 +49,32 @@ def wishlist(request):
 def about_page(request):
     return render(request,'price_compare_app/about.html')
 
+def updateItem(request):
+    data = json.loads(request.body)
+    productId = data['productId']
+    action = data['action']
+    print('Action:', action)
+    print('productId:', productId)
+
+    user = request.user.id
+    phone = Phone.objects.get(id = productId)
+    wish, created = WishList.objects.get_or_create(user_id=user)
+    wishItem, created = WishItem.objects.get_or_create(wish=wish, phone=phone)
+
+    if action == 'add':
+        wishItem.quantity += 1
+
+    elif action =='remove':
+        wishItem.quantity -= 1
+
+    elif action =='delete':
+        wishItem.delete()
+    wishItem.save()
+
+    if wishItem.quantity <= 0:
+        wishItem.delete()
+        
+    return JsonResponse('Item was added', safe=False)
 
 # def PhoneDetailView(request, slug):
 #     item = get_object_or_404(Phone, slug = slug)
