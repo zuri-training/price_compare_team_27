@@ -1,0 +1,58 @@
+{%extends 'price_compare_app/base.html' %}
+{% load static %}
+
+{% block content %}
+    <section class="first">
+        <div class="content-container">
+        <div class="desc">
+            <div class="img"><img src="{{data.image.url}}"></div>
+            <div class="text">
+            <h2>{{data.name}}</h2>
+            <span>
+                4.0(6 reviews)<br />
+                Operation System: Apple iOS 15<br />
+                Screen size: 6.7 inches<br />
+                Storage space: 256GB
+            </span>
+            </div>
+        </div>
+        <div class="buttons">
+            <button class="btn-wishlist">
+            Add to wishlist <i class="fa-solid fa-cart-plus"></i>
+            </button>
+            <button class="btn-priceA">Set price alert</button>
+            <div class="share">
+            <p>Share this product on</p> 
+            <p><i class="fa-brands fa-slack"></i>
+            <i class="fa-brands fa-square-facebook"></i>
+            <i class="fa-solid fa-envelope"></i></p>
+        </div>
+        </div>
+        </div>
+        <div class="price-history">
+        <h2>Price history</h2>
+        <p>Have a look at how this product has been performing</p>
+        <div class="price-chart"></div>
+    </section>
+    <section class="price-compare">
+        <h2>Compare price across platforms</h2>
+        <div class="jumia">
+            <div class="logo"><img src="{% static 'images/Rectangle 57.png' %}" style="width:122px; height:48px;"></div>
+            <div class="name">{{data.name}}</div>
+            <div class="price">{{data.get_jumia_price}}</div>
+            <div class="review">4.0 <img src="{% static 'images/Star 6.png' %}" style="width: 20px; height:20x;"></div>
+            <div class="delivery">Free delivery</div>
+            <div class="shop-link"><button>view in shop <i class="fa-solid fa-cart-shopping"></i></button></div>
+        </div>
+
+        <div class="konga">
+            <div class="logo"><img src="{% static 'images/Rectangle 58.png' %}" style="width:122px; height:48px;"></div>
+            <div class="name">{{data.name}}</div>
+            <div class="price">{{data.get_konga_price}}</div>
+            <div class="review">4.0 <img src="{% static 'images/Star 6.png' %}" style="width: 20px; height:20x;"></div>
+            <div class="delivery">Free delivery</div>
+            <div class="shop-link"><button>view in shop <i class="fa-solid fa-cart-shopping"></i></button></div>
+        </div>
+    </section>
+{% endblock content %}
+    
