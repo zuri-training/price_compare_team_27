@@ -1,0 +1,136 @@
+{% load static %}
+<footer>
+    
+    <div class="footer-container">
+
+      <div class="footer-bar">
+        <div class="footer_msg">
+          <div class="msg-text">
+            <h1>Join millions of other <br />satisfied customers</h1>
+          </div>
+          <div class="msg-nav">
+            <a href="#">Sign up</a>
+            <a href="#">Sign in</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-body">
+        <section class="footer-logo">
+          <img src="{% static 'images/White Logo.png' %}" alt="">
+        </section>
+  
+        <section class="footer-nav">
+          <nav>
+            <ul class="list">
+              <h5>Company</h5>
+              <li><a href="#">About us</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+            <ul class="list">
+              <h5>Brands</h5>
+              <li><a href="#">Samsung</a></li>
+              <li><a href="#">iPhone</a></li>
+              <li><a href="#">Techno</a></li>
+              <li><a href="#">Infinix</a></li>
+              <li><a href="#">Huawei</a></li>
+              <li><a href="#">Xiaomi</a></li>
+              <li><a href="#">Oppo</a></li>
+            </ul>
+            <ul class="list">
+              <h5>Services</h5>
+              <li><a href="#">Prices</a></li>
+              <li><a href="#">Rating</a></li>
+              <li><a href="#">Availabilty</a></li>
+            </ul>
+            <ul class="list">
+              <h5>Social</h5>
+              <li><a href="#">Facebook</a></li>
+              <li><a href="#">Twitter</a></li>
+              <li><a href="#">Instagram</a></li>
+            </ul>
+          </nav>
+        </section>
+  
+        <section class="newsletter">
+          <label for="newsletter"><h5>Newsletter Subscription</h5></label>
+          <form action="" method="get"> 
+            <input type="email" name="newsletter" id="email" placeholder="Subscribe to our newsletter">
+            <input type="submit" value="Subscribe">
+          </form>
+        </section>
+  
+      </div>
+    
+      
+    </div>
+
+    <div class="copyright">
+      <p>Copyright 2022. Made with&nbsp;    <span class="emoji">❤</span>&nbsp;    from Zuri Project. <span>Team 27</span></p>
+    </div>
+
+    <div class="footer-container-mobile">
+
+      <section class="m-newsletter">
+        <label for="m-newsletter"><h5>Newsletter Subscription</h5></label>
+        <form method="get">
+          <input type="email" name="m-newsletter" id="m-newsletter-email" placeholder="Subcribe to our newsletter">
+          <input type="submit" value="Subcribe">
+        </form>
+      </section>
+
+      <section class="m-logo-div">
+        <div class="m-logo"><img src="{% static 'images/White Logo.png' %}" alt=""></div>
+      </section>
+
+      <section class="m-footer-nav">
+        <nav>
+          <div class="m-nav-top">
+            <ul class="list">
+              <h5>Company</h5>
+              <li><a href="#">About us</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+
+            <ul class="list">
+              <h5>Services</h5>
+              <li>Prices</li>
+              <li>Rating</li>
+              <li>Availabilty</li>
+            </ul>
+          </div>
+
+          <div class="m-nav-bottom">
+            <ul class="list">
+              <h5>Brands</h5>
+              <div class="m-big-brand">
+                <li><img src="{% static 'images/VectorWhite-1.png' %}" alt=""></li>
+                <li><img src="{% static 'images/cil_car-alt (Traced)White.png' %}" alt=""></li>
+                <li><img src="{% static 'images/VectorWhite-2.png' %}" alt=""></li>
+              </div>
+
+              <div class="m-mid-brand">
+                <li><img src="{% static 'images/bi_laptop (Traced)White.png' %}" alt=""></li>
+                <li><img src="{% static 'images/TecnWhite.png' %}" alt=""></li>
+              </div>
+
+              <div class="m-last-brand">
+                <li><img src="{% static 'images/Frame 17 (Traced)White.png' %}" alt=""></li>
+                <li><img src="{% static 'images/VectorWhite.png' %}" alt=""></li>
+              </div>
+            </ul>
+
+            <ul class="list">
+              <h5>Social</h5>
+              <div class="social-flex">
+                <li><a href="#"><img src="{% static 'images/facebook.svg' %}" alt=""></a></li>
+                <li><a href="#"><img src="{% static 'images/instagram.svg' %}" alt=""></a></li>
+                <li><a href="#"><img src="{% static 'images/twitter.svg' %}" alt=""></a></li>
+              </div>
+            </ul>
+          </div>
+        </nav>
+      </section>
+    </div>
+    <script type="text/javascript" src="{% static 'wishlist.js' %}"></script>
+  </footer>
