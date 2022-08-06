@@ -230,40 +230,41 @@
           </div>
         </div>
         
-        {% for phone in iphones %}
+        
           <div class="product-div grid">
-            
-            <a href="#"><section class="product-card">
-              <div class="price">$500</div>
-              <div class="fav"><span class="material-symbols-sharp fav-icon" style="font-size: 1.6em; font-weight: 400; color: var(--dark-text);">favorite</span></div>
+            {% for phone in iphones %}
 
-              <div class="phone-img">
-                <div class="img"><img src="{{phone.image.url}}" alt=""></div>
-              </div>
-              
-              <div class="phone-txt">
-                
-                <p class="phone-name">Apple iPhone 13 Pro Max 256GB Gold</p>
-                
-                <div class="availabilty">
-                  <p>Availablity</p>
-                  <p>4</p>
+              <a href="#"><section class="product-card">
+                <div class="price">$500</div>
+                <div class="fav"><span class="material-symbols-sharp fav-icon" style="font-size: 1.6em; font-weight: 400; color: var(--dark-text);">favorite</span></div>
+
+                <div class="phone-img">
+                  <div class="img"><img src="{{phone.image.url}}" alt=""></div>
                 </div>
                 
-                <hr>
-                
-                <div class="review">
-                  <p>Review</p>
-                  <p>★★★★<span class="white">★</span></p>
+                <div class="phone-txt">
+                  
+                  <p class="phone-name">Apple iPhone 13 Pro Max 256GB Gold</p>
+                  
+                  <div class="availabilty">
+                    <p>Availablity</p>
+                    <p>4</p>
+                  </div>
+                  
+                  <hr>
+                  
+                  <div class="review">
+                    <p>Review</p>
+                    <p>★★★★<span class="white">★</span></p>
+                  </div>
+                  
                 </div>
                 
-              </div>
-              
-            </section></a>
+              </section></a>
             
-
+            {% endfor %}
           </div>
-        {% endfor %}
+        
           
        
 
@@ -294,7 +295,7 @@
         </div>
         
         <div class="product-div grid">
-          
+          {% for phone in iphones %}  
           <a href="#"><section class="product-card">
 
             <div class="price">$500</div>
@@ -323,93 +324,7 @@
             </div>
             
           </section></a>
-          
-          <a href="#"><section class="product-card">
-
-            <div class="price">$500</div>
-            <div class="fav"><span class="material-symbols-sharp fav-icon" style="font-size: 1.6em; font-weight: 400; color: var(--dark-text);">favorite</span></div>
-            
-            <div class="phone-img">
-              <div class="img"><img src="{% static '/images/iphone12_ProMax.webp' % }" alt=""></div>
-            </div>
-            
-            <div class="phone-txt">
-              
-              <p class="phone-name">Apple iPhone 13 Pro Max 256GB Gold</p>
-              
-              <div class="availabilty">
-                <p>Availablity</p>
-                <p>4</p>
-              </div>
-              
-              <hr>
-              
-              <div class="review">
-                <p>Review</p>
-                <p>★★★★<span class="white">★</span></p>
-              </div>
-              
-            </div>
-            
-          </section></a>
-          
-          <a href="#"><section class="product-card">
-
-            <div class="price">$500</div>
-            <div class="fav"><span class="material-symbols-sharp fav-icon" style="font-size: 1.6em; font-weight: 400; color: var(--dark-text);">favorite</span></div>
-            
-            <div class="phone-img">
-              <div class="img"><img src="{% static '/images/iphone12_ProMax.webp' % }" alt=""></div>
-            </div>
-            
-            <div class="phone-txt">
-              
-              <p class="phone-name">Apple iPhone 13 Pro Max 256GB Gold</p>
-              
-              <div class="availabilty">
-                <p>Availablity</p>
-                <p>4</p>
-              </div>
-              
-              <hr>
-              
-              <div class="review">
-                <p>Review</p>
-                <p>★★★★<span class="white">★</span></p>
-              </div>
-              
-            </div>
-            
-          </section></a>
-          
-          <a href="#"><section class="product-card">
-
-            <div class="price">$500</div>
-            <div class="fav"><span class="material-symbols-sharp fav-icon" style="font-size: 1.6em; font-weight: 400; color: var(--dark-text);">favorite</span></div>
-            
-            <div class="phone-img">
-              <div class="img"><img src="{% static '/images/iphone12_ProMax.webp' % }" alt=""></div>
-            </div>
-            
-            <div class="phone-txt">
-              
-              <p class="phone-name">Apple iPhone 13 Pro Max 256GB Gold</p>
-              
-              <div class="availabilty">
-                <p>Availablity</p>
-                <p>4</p>
-              </div>
-              
-              <hr>
-              
-              <div class="review">
-                <p>Review</p>
-                <p>★★★★<span class="white">★</span></p>
-              </div>
-              
-            </div>
-            
-          </section></a>
+          {% endfor %}
                   
         </div>
 
@@ -440,7 +355,7 @@
         </div>
         
         <div class="product-div grid">
-          
+          {% for phone in iphones %}
           <a href="#"><section class="product-card">
 
             <div class="price">$500</div>
@@ -469,93 +384,7 @@
             </div>
             
           </section></a>
-          
-          <a href="#"><section class="product-card">
-
-            <div class="price">$500</div>
-            <div class="fav"><span class="material-symbols-sharp fav-icon" style="font-size: 1.6em; font-weight: 400; color: var(--dark-text);">favorite</span></div>
-            
-            <div class="phone-img">
-              <div class= "img"><img src="{% static '/images/iphone12.jpg' %}" alt=""></div>
-            </div>
-            
-            <div class="phone-txt">
-              
-              <p class="phone-name">Apple iPhone 13 Pro Max 256GB Gold</p>
-              
-              <div class="availabilty">
-                <p>Availablity</p>
-                <p>4</p>
-              </div>
-              
-              <hr>
-              
-              <div class="review">
-                <p>Review</p>
-                <p>★★★★<span class="white">★</span></p>
-              </div>
-              
-            </div>
-            
-          </section></a>
-          
-          <a href="#"><section class="product-card">
-
-            <div class="price">$500</div>
-            <div class="fav"><span class="material-symbols-sharp fav-icon" style="font-size: 1.6em; font-weight: 400; color: var(--dark-text);">favorite</span></div>
-            
-            <div class="phone-img">
-              <div class= "img"><img src="{% static '/images/iphone12.jpg' %}" alt=""></div>
-            </div>
-            
-            <div class="phone-txt">
-              
-              <p class="phone-name">Apple iPhone 13 Pro Max 256GB Gold</p>
-              
-              <div class="availabilty">
-                <p>Availablity</p>
-                <p>4</p>
-              </div>
-              
-              <hr>
-              
-              <div class="review">
-                <p>Review</p>
-                <p>★★★★<span class="white">★</span></p>
-              </div>
-              
-            </div>
-            
-          </section></a>
-          
-          <a href="#"><section class="product-card">
-
-            <div class="price">$500</div>
-            <div class="fav"><span class="material-symbols-sharp fav-icon" style="font-size: 1.6em;">favorite</span></div>
-            
-            <div class="phone-img">
-              <div class= "img"><img src="{% static '/images/iphone12.jpg' %}" alt=""></div>
-            </div>
-            
-            <div class="phone-txt">
-              
-              <p class="phone-name">Apple iPhone 13 Pro Max 256GB Gold</p>
-              
-              <div class="availabilty">
-                <p>Availablity</p>
-                <p>4</p>
-              </div>
-              
-              <hr>
-              
-              <div class="review">
-                <p>Review</p>
-                <p>★★★★<span class="white">★</span></p>
-              </div>
-              
-            </div>
-            
-          </section></a>
+          {% endfor%}
                   
         </div>
 
