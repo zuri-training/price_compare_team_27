@@ -32,6 +32,8 @@ class Phone(models.Model):
     class Meta:
         ordering = ['name']
     
+    def price_range(self):
+        pass
 
     def __str__(self):
         return self.name

@@ -20,7 +20,7 @@
 
       <section class="header-search">
         <form action="" method="get" class="search-bar">
-          <input type="search" name="search" id="" placeholder="What are you looking to find?">
+          <input type="search" name="search" id="header-search" placeholder="What are you looking to find?">
           <input type="submit" value="Search">
         </form>
       </section>
@@ -48,7 +48,7 @@
         <div class="menu">
           <span class="material-symbols-sharp">menu</span>
         </div>
-        <div class="header-logo"><img src="images\Choice Logo.png" alt=""></div>
+        <div class="header-logo"><img src="/Base_Template/images/Choice Logo.png" alt=""></div>
       </section>
 
       <section class="header-nav">
@@ -61,7 +61,7 @@
       
       <div class="header-search">
         <form>
-          <input type="search" placeholder="Search here">
+          <input type="search" placeholder="Search here" id="m-header-search">
         </form> 
       </div>
       
@@ -71,31 +71,33 @@
 
   <main>
     <div class="main-container">
-      <form action="" method="get" class="login-form">
+      <form action="" method="get" id="login" class="login-form">
 
         <section class="form-tittle">
           <h5>Welcome Back, Champ!</h5>
         </section>
 
-        <section class="details" id="first">
+        <section class="details form-field" id="first">
           <label for="login-email">Email Address</label>
-          <input type="email" name="login-email" id="" placeholder="nelson@gmail.com" required>
+          <input type="email" name="login-email" id="form-email" placeholder="nelson@gmail.com" required>
+          <small id="error" class="small">Invalid Input!</small>
         </section>
 
-        <section class="details" id="second">
+        <section class="details form-field" id="second">
           <label for="login-password">Password</label>
-          <input type="password" name="login-password" id="" placeholder="********" required>
+          <input type="password" name="login-password" id="form-password" placeholder="********" required>
+          <small id="error" class="small">Invalid Input!</small>
         </section>
 
         <section class="ter-action">
 
             <label for="check">
-              <input type="checkbox" name="check" class="custom" id="">
+              <input type="checkbox" name="check" class="custom" id="remember-me">
               <p>Remember me</p>
             </label>
             
             <div class="forgot-password">
-              <a href="#">Forgot Password?</a>
+              <a href="\Base_Template/Forgot_password/forgot.html">Forgot Password?</a>
             </div>
 
         </section>
@@ -117,7 +119,7 @@
     <div class="footer-container">
 
       <section class="footer-logo">
-        <img src="images\White Logo.png" alt="">
+        <img src="\Base_Template/images/White Logo.png" alt="">
       </section>
 
       <section class="footer-nav">
@@ -155,7 +157,7 @@
       <section class="newsletter">
         <label for="newsletter"><h5>Newsletter Subscription</h5></label>
         <form action="" method="get"> 
-          <input type="email" name="newsletter" id="email" placeholder="Subscribe to our newsletter">
+          <input type="email" name="newsletter" id="newsletter-email" placeholder="Subscribe to our newsletter">
           <input type="submit" value="Subscribe">
         </form>
       </section>
@@ -171,7 +173,7 @@
       <section class="m-newsletter">
         <label for="m-newsletter"><h5>Newsletter Subscription</h5></label>
         <form method="get">
-          <input type="email" name="m-newsletter" id="" placeholder="Subcribe to our newsletter">
+          <input type="email" name="m-newsletter" id="m-newsletter-email" placeholder="Subcribe to our newsletter">
           <input type="submit" value="Subcribe">
         </form>
       </section>
