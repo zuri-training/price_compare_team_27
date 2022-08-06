@@ -21,13 +21,18 @@ class Phone(models.Model):
     price_konga = models.DecimalField(max_digits=8, decimal_places=2,null=False,default=0)
     star_reviews=models.DecimalField(max_digits=2,decimal_places=1,null=True)
 
+    def comma(self,number):
+        return ("{:,}".format(number))
+
     def get_jumia_price(self):
         price = int(self.price_jumia)
-        return f"₦ {price}"
+        comma_price = self.comma(price)
+        return f"₦ {comma_price}"
 
     def get_konga_price(self):
         price = int(self.price_konga)
-        return f"₦ {price}"
+        comma_price = self.comma(price)
+        return f"₦ {comma_price}"
 
     class Meta:
         ordering = ['name']
