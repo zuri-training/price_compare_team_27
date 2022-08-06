@@ -1,6 +1,14 @@
+from multiprocessing import context
+
 from django.shortcuts import get_object_or_404, render
 
-from price_compare_app.models import Phone
+from price_compare_app.form import ReviewForm
+
+from .form import ReviewForm
+from .models import Phone
+
+#from pyexpat import model
+
 
 # Create your views here.
 
@@ -33,13 +41,29 @@ def search(request):
 
 
 
-
 def about_page(request):
     return render(request,'price_compare_app/about.html')
 
+def PhoneDetailView(request, id):
+    data = get_object_or_404(Phone, pk=id)
+    reviews = data.reviews
+    new_review = None
 
-def PhoneDetailView(request, slug):
-    item = get_object_or_404(Phone, slug = slug)
+    if request.method == 'POST':
+        review_form = ReviewForm(data=request.POST)
+        if review_form.is_valid():
 
-    return render(request, 'price_compare_app/index.html', context={'item': item})
-    
+            # Create Comment object but don't save to database yet
+            new_review = review_form.save(commit=False)
+            # Assign the current post to the comment
+            new_review.data = data
+            # Save the comment to the database
+            new_review.save()
+    else:
+        review_form = ReviewForm()
+
+    context = {"data":data,
+               "reviews": reviews,
+               "new_review": new_review,
+               "review_form": review_form}
+    return render(request, 'price_compare_app/details-test.html', context)
