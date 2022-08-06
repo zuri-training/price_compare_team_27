@@ -1,6 +1,10 @@
-from multiprocessing import context
-
+from django.http import JsonResponse
+import json
+from price_compare_app.models import *
+from pyexpat import model
 from django.shortcuts import get_object_or_404, render
+
+from multiprocessing import context
 
 from price_compare_app.form import ReviewForm
 
@@ -32,6 +36,21 @@ def home_page(request):
 
     return render(request,'price_compare_app/landingpage.html',context)
 
+def wishlist(request):
+    if request.user.is_authenticated:
+        user = request.user.id
+
+        wishes, created= WishList.objects.get_or_create(user_id=user)
+        items = wishes.wishitem_set.all()
+        best_price = WishItem.objects.all()
+    else:
+        return render(request, 'accounts/login.html')
+    context = {
+        'items':items, 'wish': wishes, 'best_price': best_price
+    }
+        
+    return render(request, 'price_compare_app/wishlist.html', context)
+
 def search(request):
     if request.method == 'POST':
         query = request.POST['query']
@@ -43,6 +62,37 @@ def search(request):
 
 def about_page(request):
     return render(request,'price_compare_app/about.html')
+
+def updateItem(request):
+    # loads the data from the wishlist.js javascript file and creates variables to store this data in productId is the phoneId
+    data = json.loads(request.body)
+    productId = data['productId']
+    action = data['action']
+    print('Action:', action)
+    print('productId:', productId)
+    # retrieves the user based on the user_id and retrieves products based on productId
+    user = request.user.id
+    phone = Phone.objects.get(id = productId)
+    # creates or retrieves a wishlist based on the user_id generated, the creation of the wishlist is for unauthenticated user to have something to fill in there
+    wish, created = WishList.objects.get_or_create(user_id=user)
+    # retrieves the items in the wishlist of the user based on the wish created or gotten and the phone
+    wishItem, created = WishItem.objects.get_or_create(wish=wish, phone=phone)
+    #  based on the action i.e the button the wishItem reacts
+    if action == 'add':
+        wishItem.quantity += 1
+
+    elif action =='remove':
+        wishItem.quantity -= 1
+
+    elif action =='delete':
+        wishItem.delete()
+    wishItem.save()
+
+    if wishItem.quantity <= 0:
+        wishItem.delete()
+        
+    return JsonResponse('Item was added', safe=False)
+
 
 def PhoneDetailView(request, id):
     data = get_object_or_404(Phone, pk=id)
