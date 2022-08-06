@@ -66,4 +66,4 @@ def PhoneDetailView(request, id):
                "reviews": reviews,
                "new_review": new_review,
                "review_form": review_form}
-    return render(request, 'price_compare_app/details-test.html', context)
+    return render(request, 'price_compare_app/productinfo.html', context)

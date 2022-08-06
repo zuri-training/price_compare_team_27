@@ -23,11 +23,11 @@ class Phone(models.Model):
 
     def get_jumia_price(self):
         price = int(self.price_jumia)
-        return f"₦{price}"
+        return f"₦ {price}"
 
     def get_konga_price(self):
         price = int(self.price_konga)
-        return f"₦{price}"
+        return f"₦ {price}"
 
     class Meta:
         ordering = ['name']
