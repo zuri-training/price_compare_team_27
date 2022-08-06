@@ -87,7 +87,7 @@ header {
   position: sticky;
   top: 0;
   box-shadow:  0px 0.2px 10px 0.1px rgba(15, 15, 15, 0.2);
-  background: rgb(177,199,191);
+  background: white;
   z-index: 100;
 }
 footer {
