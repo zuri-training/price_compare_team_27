@@ -45,8 +45,13 @@
           <div class="desktop_top">
           <div id="view"><div class="profile-icon"><span class="material-symbols-sharp">account_circle</span> Account</div><div class="caret-down" id="drop-down"><span class="material-symbols-sharp">expand_more</span></div></div>
           <div id="toggleCard">
+            {% if user.is_authenticated %}
+            <a href="{% url 'logoutpage' %}" class="toggle_top">Log Out</a>
+            <a href="{% url 'password_reset' %}" class="toggle_bottom">Reset Password</a>
+            {% else %}
             <a href="{% url 'login' %}" class="toggle_top">Login</a>
             <a href="{% url 'signup' %}" class="toggle_bottom">Signup</a>
+            {% endif %}
           </div>
         </div>
         <!-- <div class="mobile_top">
