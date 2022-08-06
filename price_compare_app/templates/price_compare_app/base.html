@@ -1,0 +1,28 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  {% include "price_compare_app/_stylesheet.html" %}
+
+
+  <title>{% block title %} {% endblock title %} - Pricify</title>
+
+  {% include 'price_compare_app/_nav.html' %}
+
+
+</head>
+<body>
+
+
+  <main>
+    {% block content %}{% endblock %}
+  </main>
+  
+
+
+
+  {% include 'price_compare_app/_footer.html' %}
+
+</body>
+</html>

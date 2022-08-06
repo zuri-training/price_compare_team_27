@@ -1,5 +1,8 @@
-{% extends 'index.html' %}
-
-{% block content %}
+{% extends 'price_compare_app/base.html' %} {% block content %}
+<center>
+  {% if query %}
+  <h1>search results for {{ query }}</h1>
+  {% endif %}
+</center>
 
 {% endblock %}
