@@ -5,13 +5,16 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Sharp:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link rel="stylesheet" href="\Base_Template/Login_page/style.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Sharp:opsz,wght,FILL,GRAD@48,400,1,0" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Sharp:opsz,wght,FILL,GRAD@48,700,1,200" />
+  <link rel="stylesheet" href="style.css">
+  <title>Create an Account</title>
   <script type="text/javascript" src="\Base_Template/jquery-3.6.0.min.js"> </script>
-  <title>Login</title>
 </head>
 <body>
-  <header>
+
+
+<header>
     <div class="header-container">
 
       <section class="header-logo">
@@ -71,47 +74,59 @@
 
   <main>
     <div class="main-container">
-      <form action="" method="get" id="login" class="login-form">
+        <form action="" method="post" id="login" class="login-form">
 
-        <section class="form-tittle">
-          <h5>Welcome Back, Champ!</h5>
-        </section>
+                <section class="form-tittle">
+                  <h5>Create An Account</h5>
+                </section>
+        
+                <section class="details form-field" id="first">
+                  <label for="login-email">Email Address</label>
+                  <input type="email" name="login-email" id="form-email" placeholder="nelson@gmail.com" required="">
+                  <small id="error" class="small">Invalid format!</small>
+                </section>
 
-        <section class="details form-field" id="first">
-          <label for="login-email">Email Address</label>
-          <input type="email" name="login-email" id="form-email" placeholder="nelson@gmail.com" required>
-          <small id="error" class="small">Invalid format!</small>
-        </section>
+                <section class="details form-field" id="first">
+                  <label for="login-email">Username</label>
+                  <input type="email" name="login-email" id="form-email" placeholder="Nelson Mandela" required="">
+                  <small id="error" class="small">Invalid format!</small>
+                </section>
+        
+                <section class="details form-field" id="second">
+                  <label for="login-password">Password</label>
+                  <input type="password" name="login-password" id="form-password" placeholder="********" required="">
+                  <small id="error" class="small">Invalid format!</small>
+                </section>
+        
+                <section class="details form-field" id="second">
+                  <label for="login-password">Confirm Password</label>
+                  <input type="password" name="login-password" id="form-password" placeholder="********" required="">
+                  <small id="error" class="small">Invalid format!</small>
+                </section>
 
-        <section class="details form-field" id="second">
-          <label for="login-password">Password</label>
-          <input type="password" name="login-password" id="form-password" placeholder="********" required>
-          <small id="error" class="small">Invalid format!</small>
-        </section>
 
-        <section class="ter-action">
-
-            <label for="check">
-              <input type="checkbox" name="check" class="custom" id="remember-me">
-              <p>Remember me</p>
-            </label>
-            
-            <div class="forgot-password">
-              <a href="\Base_Template/Forgot_password/forgot.html">Forgot Password?</a>
-            </div>
-
-        </section>
-
-        <section class="call-to-action">
-          <input type="submit" value="Login">
-        </section>
-
-        <section class="sec-action">
-          <p>Don&apos;t have an account&quest; <a href="\Base_Template/Signup_page/signup.html">Sign Up</a></p>
-        </section>
-
-      </form>
+                <section class="ter-action">
+        
+                    <label for="check">
+                      <input type="checkbox" name="check" class="custom" id="remember-me">
+                      <p>Remember me</p>
+                    </label>
+                    
+        
+                </section>
+        
+                <section class="call-to-action">
+                  <input type="submit" value="Sign Up">
+                </section>
+        
+                <section class="sec-action">
+                  <p>Have an account? <a href="\Base_Template/Login_page/signup.html">Login</a></p>
+                </section>
+        
+        </form>
     </div>
+      
+    
   </main>
 
   <footer>
@@ -238,5 +253,6 @@
 
   </footer>
   <script src="\Base_Template/live.js"></script>
+
 </body>
 </html>
