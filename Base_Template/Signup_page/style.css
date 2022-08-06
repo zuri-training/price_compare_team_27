@@ -402,8 +402,52 @@ input.custom {
 
 
 /* media queries */
-@media screen and (max-width: 850px) {
-  body {
+/* media queries */
+@media (max-width: 1004px) {
+  .main-container form {
+    width: 60%;
+  }
+}
+@media (max-width: 900px) {
+  .header-logo {
+    width: 10%;
+  }
+  .header-search {
+    width: 40%;
+  }
+  .header-search form {
+    font-size: 0.9rem;
+    gap: 0.5em;
+  }
+  .header-search input[type="search"] {
+    width: 75%;
+  }
+  .header-search input[type="submit"] {
+    width: 25%;
+  }
+  .header-nav {
+    font-size: 0.9em;
+    width: 45%;
+  }
+}
+@media screen and (max-width: 830px) {
+  .footer-container {
+    font-size: 0.8rem;
+  }
+}
+@media screen and (max-width: 780px) {
+  .footer-container {
+    font-size: 0.78rem;
+  }
+}
+@media screen and (max-width: 778px) {
+  .header-nav {
+    width: 50%;
+  }
+  
+}
+@media screen and (max-width: 760px) {
+  body, header {
     overflow-x: hidden;
   }
   .header-container {
@@ -429,10 +473,10 @@ input.custom {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 30%;
+    width: 20%;
   }
   .header-nav {
-    width: 30%;
+    width: 20%;
     display: flex;
     justify-content: space-between;
   }
@@ -519,20 +563,11 @@ input.custom {
     font-size: 0.8em;
     border-radius: 0.4em;
   }
-  .details input::placeholder {
-    font-weight: 200;
-  }
   .details input[type="email"] {
     padding: 0.8em;
-    font-weight: 500;
-  }
-  .details input[type="text"] {
-    padding: 0.8em;
-    font-weight: 500;
   }
   .details input[type="password"] {
     padding: 0.8em;
-    font-weight: 500;
   }
   .ter-action label {
     width: 40%;
@@ -588,7 +623,6 @@ input.custom {
   }
   .m-newsletter input[type="email"] {
     padding-block: 0.7em;
-    padding-inline: 1em;
     border: 1px solid var(--light-text);
     background: inherit;
     color: var(--light-text);
@@ -701,4 +735,51 @@ input.custom {
   }
 
 }
-
+@media screen and (max-width: 590px) {
+  .header-menu {
+    width: 20%;
+  }
+  .header-nav {
+    width: 23%;
+  }
+  .header-nav nav {
+    width: 93%;
+    margin-inline-start: 15%;
+  }
+}
+@media screen and (max-width: 500px) {
+  .header-menu {
+    width: 20%;
+  }
+  .header-logo {
+    width: 65%;
+  }
+  .header-nav {
+    width: 23%;
+  }
+  .header-nav nav {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 475px) {
+  .header-menu {
+    width: 20%;
+  }
+  .header-nav {
+    width: 25%;
+  }
+  .header-nav nav {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 410px) {
+  .forgot-password {
+    text-align: right;
+    width: 40%;
+  }
+}
+@media screen and (max-width: 351px) {
+  .ter-action label {
+    width: 50%;
+  }
+}

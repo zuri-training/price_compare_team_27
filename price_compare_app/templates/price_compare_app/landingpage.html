@@ -1,4 +1,4 @@
-{%load static%}
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,41 +6,29 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Sharp:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-<<<<<<< HEAD:price_compare_app/templates/price_compare_app/landingpage.html
-  <link rel="stylesheet" href="{% static 'price_compare_app/css/landingstyle.css' %}">
-=======
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Sharp:opsz,wght,FILL,GRAD@48,400,1,0" />
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Sharp:opsz,wght,FILL,GRAD@48,700,1,200" />
-  <link rel="stylesheet" href="style.css">
->>>>>>> 7153e14c765883c9c45e799a04bb74ac4b4b2e6b:Base_Template/Landing_Page/index.html
+  <link rel="stylesheet" href="{%static 'price_compare_app/css/landingstyle.css'%}">
   <title>Pricify</title>
   <script type="text/javascript" src="{% static 'price_compare_app/js/jquery-3.6.0.min.js' %}"> </script>
+  
 </head>
 <body>
-<<<<<<< HEAD:price_compare_app/templates/price_compare_app/landingpage.html
-    
-=======
 
->>>>>>> 7153e14c765883c9c45e799a04bb74ac4b4b2e6b:Base_Template/Landing_Page/index.html
   <header>
 
     <div class="header-container">
 
       <div class="header-top">
         <section class="header-logo">
-          <img src="{% static 'images\Choice Logo.png' %}" alt="">
+          <img src="{% static 'images/Choice Logo.png' %}" alt="">
         </section>
   
-        <section class="header-nav">
+        <section id="mheader-nav" class="header-nav">
           <nav>
             <a href="#">Home</a>
             <a href="#">Categories</a>
             <a href="#">Wishlist <div class="cart-img"><span class="material-symbols-sharp">shopping_cart</span></div></a>
-<<<<<<< HEAD:price_compare_app/templates/price_compare_app/landingpage.html
-          </nav>
-        </section>
-  
-=======
             
             <div class="dropdown">
               <div class="dropdown-content">
@@ -54,18 +42,12 @@
           </nav>
         </section>
 
->>>>>>> 7153e14c765883c9c45e799a04bb74ac4b4b2e6b:Base_Template/Landing_Page/index.html
         <section class="header-profile">
+          <div class="desktop_top">
           <div id="view"><div class="profile-icon"><span class="material-symbols-sharp">account_circle</span> Account</div><div class="caret-down" id="drop-down"><span class="material-symbols-sharp">expand_more</span></div></div>
-<<<<<<< HEAD:price_compare_app/templates/price_compare_app/landingpage.html
-          
-          {% if user.is_authenticated %}
-            <div id="toggleCard">
-              <a href="{% url 'logoutpage' %}" class="toggle_top">signout</a>
-=======
           <div id="toggleCard">
-            <a href="\Base_Template/Login_page/login.html" class="toggle_top">Login</a>
-            <a href="\Base_Template/Signup_page/signup.html" class="toggle_bottom">Signup</a>
+            <a href="{% url 'login' %}" class="toggle_top">Login</a>
+            <a href="{% url 'signup' %}" class="toggle_bottom">Signup</a>
           </div>
         </div>
         <!-- <div class="mobile_top">
@@ -75,21 +57,12 @@
           </div>
             <div class="profile-icon">
               <span class="material-symbols-sharp">account_circle</span>
->>>>>>> 7153e14c765883c9c45e799a04bb74ac4b4b2e6b:Base_Template/Landing_Page/index.html
             </div>
-          {% else %}
-            <div id="toggleCard">
-              <a href="{% url 'login' %}" class="toggle_top">Login</a>
-              <a href="{% url 'signup' %}" class="toggle_bottom">Signup</a>
+              <div class="caret-down">
+              <span class="material-symbols-sharp">expand_more</span>
             </div>
-<<<<<<< HEAD:price_compare_app/templates/price_compare_app/landingpage.html
-          {% endif %}
-            
-         
-=======
           </a>
         </div> -->
->>>>>>> 7153e14c765883c9c45e799a04bb74ac4b4b2e6b:Base_Template/Landing_Page/index.html
         </section>
       </div>
 
@@ -104,32 +77,29 @@
           </div>
 
           <div class="form_part">
-            <form id="form" action="live.js" method="get">
-              <input type="search" name="q" placeholder="What are you looking to find?" id="query"/>
-              <input id="search_button" type="submit" value="Search" />
-            </form>
-          </div>
+              <form id="form" action="" method="POST">
+                {% csrf_token %}
+                <input
+                  type="search"
+                  name="query"
+                  placeholder="What are you looking to find?"
+                  id="query"
+                />
+                <input id="search_button" type="submit" value="Search" />
+              </form>
+            </div>
+
 
           <div class="mid_icon">
-<<<<<<< HEAD:price_compare_app/templates/price_compare_app/landingpage.html
-            <div class="header-icon"><img class="iconnnn" src="{% static 'images\ri-google-lineSocial.png' %}" alt="google logo"></div>
-            <div class="header-icon"><img class="iconnnn" src="{% static 'images\ri-facebook-lineSocial.png' %}" alt="facebook logo"></div>
-            <div class="header-icon"><img class="iconnnn" src="{% static 'images\ri-twitter-lineSocial.png' %}" alt="google logo"></div>
-=======
-            <div class="header-icon"><img class="iconnnn" src="images\ri-google-lineSocial.png" alt="google logo"></div>
-            <div class="header-icon"><img class="iconnnn" src="images\ri-facebook-lineSocial.png" alt="facebook logo"></div>
-            <div class="header-icon"><img class="iconnnn" src="images\ri-twitter-lineSocial.png" alt="google logo"></div>
+            <div class="header-icon"><img class="iconnnn" src="{% static 'images/ri-google-lineSocial.png ' %}" alt="google logo"></div>
+            <div class="header-icon"><img class="iconnnn" src="{% static 'images/ri-facebook-lineSocial.png ' %}" alt="facebook logo"></div>
+            <div class="header-icon"><img class="iconnnn" src="{% static 'images/ri-twitter-lineSocial.png ' %}" alt="google logo"></div>
           
->>>>>>> 7153e14c765883c9c45e799a04bb74ac4b4b2e6b:Base_Template/Landing_Page/index.html
           </div>
         </div>
 
         <div class="mid_image">
-<<<<<<< HEAD:price_compare_app/templates/price_compare_app/landingpage.html
-          <img src="{% static 'images\Group 13.png' %}" alt="image">
-=======
-          <img src="/Base_Template/images/Group 13.png" alt="image">
->>>>>>> 7153e14c765883c9c45e799a04bb74ac4b4b2e6b:Base_Template/Landing_Page/index.html
+          <img src="{% static 'images/Group 13.png ' %}" alt="image">
         </div>
 
       </div>
@@ -143,7 +113,7 @@
             <span class="material-symbols-sharp">menu</span>
           </div>
           <div class="head-logo">
-            <img src="/Base_Template/images/Choice Logo.png" alt="">
+            <img src="{% static 'images/Choice Logo.png ' %}" alt="">
           </div>
         </div>
 
@@ -171,26 +141,26 @@
   <article class="brand-logo">
     <div class="brands">
       <div>
-        <img src="{% static 'images\Vector.png' %}" alt="">
+        <img src="{% static ' images/Vector.png ' %}" alt="">
       </div>
       <div>
-        <div class="br-logo">
-          <img src="{% static 'images\cil_car-alt (Traced).png' %}" alt="">
+        <div id="small" class="br-logo">
+          <img src="{% static ' images/cil_car-alt (Traced).png ' %}" alt="">
         </div>
       </div>
       <div>
-        <div class="br-logo"><img src="{% static 'images\Vector-1.png' %}" alt=""></div>
+        <div class="br-logo"><img src="{% static ' images/Vector-1.png ' %}" alt=""></div>
       </div>
       <div>
-        <img src="{% static 'images\bi_laptop (Traced).png' %}" alt="">
+        <img src="{% static ' images/bi_laptop (Traced).png ' %}" alt="">
       </div>
       <div>
-        <div class="br-logo"><img src="{% static 'images\Vector-2.png' %}" alt=""></div>
+        <div class="br-logo"><img src="{% static ' images/Vector-2.png ' %}" alt=""></div>
       </div>
       <div>
-        <img src="{% static 'images\Frame 17 (Traced).png' %}" alt="">
+        <img src="{% static ' images/Frame 17 (Traced).png ' %}" alt="">
       </div>
-      <!-- <img src="{% static 'images\Vector.png' %}" alt=""> -->
+      <!-- <img src="{% static ' images/Vector.png ' %}" alt=""> -->
     </div>
   </article>
 
@@ -205,35 +175,35 @@
       </form>
     </div>
     <div class="sec-socials">
-      <div class="header-icon"><img class="iconnnn" src="images\ri-google-lineSocial.png" alt="google logo"></div>
-      <div class="header-icon"><img class="iconnnn" src="images\ri-facebook-lineSocial.png" alt="facebook logo"></div>
-      <div class="header-icon"><img class="iconnnn" src="images\ri-twitter-lineSocial.png" alt="google logo"></div>
+      <div class="header-icon"><img class="iconnnn" src="{% static ' images/ri-google-lineSocial.png ' %}" alt="google logo"></div>
+      <div class="header-icon"><img class="iconnnn" src="{% static ' images/ri-facebook-lineSocial.png ' %}" alt="facebook logo"></div>
+      <div class="header-icon"><img class="iconnnn" src="{% static ' images/ri-twitter-lineSocial.png ' %}" alt="google logo"></div>
     </div>
     <div class="sec-brands">
       <div>
-        <img src="images\Vector.png" alt="">
+        <img src="{% static ' images/Vector.png ' %}" alt="">
       </div>
       <div>
         <div id="small" class="br-logo">
-          <img src="images\cil_car-alt (Traced).png" alt="">
+          <img src="{% static ' images/cil_car-alt (Traced).png" alt="">
         </div>
       </div>
       <div>
-        <div class="br-logo"><img src="images\Vector-1.png" alt=""></div>
+        <div class="br-logo"><img src="{% static ' images/Vector-1.png" alt=""></div>
       </div>
       <div>
-        <img src="images\bi_laptop (Traced).png" alt="">
+        <img src="{% static ' images/bi_laptop (Traced).png" alt="">
       </div>
       <div>
-        <div class="br-logo"><img src="images\Vector-2.png" alt=""></div>
+        <div class="br-logo"><img src="{% static ' images/Vector-2.png" alt=""></div>
       </div>
       <div>
-        <img src="images\Frame 17 (Traced).png" alt="">
+        <img src="{% static ' images/Frame 17 (Traced).png" alt="">
       </div>
       <div>
-        <img src="images\Tecn.png" alt="">
+        <img src="{% static ' images/Tecn.png" alt="">
       </div>
-      <!-- <img src="images\Vector.png" alt=""> -->
+      <!-- <img src="{% static ' images/Vector.png" alt=""> -->
     
     </div>
   </article>
@@ -261,13 +231,14 @@
           </div>
         </div>
         
-        <div class="product-div grid">
-          
-<<<<<<< HEAD:price_compare_app/templates/price_compare_app/landingpage.html
-          {% for phone in iphones  %}
-            <a href="" style="text-decoration: none; color:black ; ">
-              <section class="product-card">
-              
+        
+          <div class="product-div grid">
+            {% for phone in iphones %}
+
+              <a href="#"><section class="product-card">
+                <div class="price">$500</div>
+                <div class="fav"><span class="material-symbols-sharp fav-icon" style="font-size: 1.6em; font-weight: 400; color: var(--dark-text);">favorite</span></div>
+
                 <div class="phone-img">
                   <div class="img"><img src="{{phone.image.url}}" alt=""></div>
                 </div>
@@ -290,363 +261,13 @@
                   
                 </div>
                 
-              </section>
-              
-            </a>
+              </section></a>
             
-=======
-          <a href="#"><section class="product-card">
-            <div class="price">$500</div>
-            <div class="fav"><span class="material-symbols-sharp fav-icon" style="font-size: 1.6em; font-weight: 400; color: var(--dark-text);">favorite</span></div>
-
-            <div class="phone-img">
-              <div class="img"><img src="\Base_Template/images/iphone12.webp" alt=""></div>
-            </div>
-            
-            <div class="phone-txt">
-              
-              <p class="phone-name">Apple iPhone 13 Pro Max 256GB Gold</p>
-              
-              <div class="availabilty">
-                <p>Availablity</p>
-                <p>4</p>
-              </div>
-              
-              <hr>
-              
-              <div class="review">
-                <p>Review</p>
-                <p>★★★★<span class="white">★</span></p>
-              </div>
-              
-            </div>
-            
-          </section></a>
+            {% endfor %}
+          </div>
+        
           
-          <a href="#"><section class="product-card">
-
-            <div class="price">$500</div>
-            <div class="fav"><span class="material-symbols-sharp fav-icon" style="font-size: 1.6em; font-weight: 400; color: var(--dark-text);">favorite</span></div>
-            
-            <div class="phone-img">
-              <div class="img"><img src="\Base_Template/images/iphone12.webp" alt=""></div>
-            </div>
-            
-            <div class="phone-txt">
-              
-              <p class="phone-name">Apple iPhone 13 Pro Max 256GB Gold</p>
-              
-              <div class="availabilty">
-                <p>Availablity</p>
-                <p>4</p>
-              </div>
-              
-              <hr>
-              
-              <div class="review">
-                <p>Review</p>
-                <p>★★★★<span class="white">★</span></p>
-              </div>
-              
-            </div>
-            
-          </section></a>
-          
-          <a href="#"><section class="product-card">
-
-            <div class="price">$500</div>
-            <div class="fav"><span class="material-symbols-sharp fav-icon" style="font-size: 1.6em; font-weight: 400; color: var(--dark-text);">favorite</span></div>
-            
-            <div class="phone-img">
-              <div class="img"><img src="\Base_Template/images/iphone12.webp" alt=""></div>
-            </div>
-            
-            <div class="phone-txt">
-              
-              <p class="phone-name">Apple iPhone 13 Pro Max 256GB Gold</p>
-              
-              <div class="availabilty">
-                <p>Availablity</p>
-                <p>4</p>
-              </div>
-              
-              <hr>
-              
-              <div class="review">
-                <p>Review</p>
-                <p>★★★★<span class="white">★</span></p>
-              </div>
-              
-            </div>
-            
-          </section></a>
-          
-          <a href="#"><section class="product-card">
-
-            <div class="price">$500</div>
-            <div class="fav"><span class="material-symbols-sharp fav-icon" style="font-size: 1.6em; font-weight: 400; color: var(--dark-text);">favorite</span></div>
-            
-            <div class="phone-img">
-              <div class="img"><img src="\Base_Template/images/iphone12.webp" alt=""></div>
-            </div>
-            
-            <div class="phone-txt">
-              
-              <p class="phone-name">Apple iPhone 13 Pro Max 256GB Gold</p>
-              
-              <div class="availabilty">
-                <p>Availablity</p>
-                <p>4</p>
-              </div>
-              
-              <hr>
-              
-              <div class="review">
-                <p>Review</p>
-                <p>★★★★<span class="white">★</span></p>
-              </div>
-              
-            </div>
-            
-          </section></a>
-                 
-          <a href="#"><section class="product-card">
-
-            <div class="price">$500</div>
-            <div class="fav"><span class="material-symbols-sharp fav-icon" style="font-size: 1.6em; font-weight: 400; color: var(--dark-text);">favorite</span></div>
-            
-            <div class="phone-img">
-              <div class="img"><img src="\Base_Template/images/iphone12.webp" alt=""></div>
-            </div>
-            
-            <div class="phone-txt">
-              
-              <p class="phone-name">Apple iPhone 13 Pro Max 256GB Gold</p>
-              
-              <div class="availabilty">
-                <p>Availablity</p>
-                <p>4</p>
-              </div>
-              
-              <hr>
-              
-              <div class="review">
-                <p>Review</p>
-                <p>★★★★<span class="white">★</span></p>
-              </div>
-              
-            </div>
-            
-          </section></a>
-          
-          <a href="#"><section class="product-card">
-
-            <div class="price">$500</div>
-            <div class="fav"><span class="material-symbols-sharp fav-icon" style="font-size: 1.6em; font-weight: 400; color: var(--dark-text);">favorite</span></div>
-            
-            <div class="phone-img">
-              <div class="img"><img src="\Base_Template/images/iphone12.webp" alt=""></div>
-            </div>
-            
-            <div class="phone-txt">
-              
-              <p class="phone-name">Apple iPhone 13 Pro Max 256GB Gold</p>
-              
-              <div class="availabilty">
-                <p>Availablity</p>
-                <p>4</p>
-              </div>
-              
-              <hr>
-              
-              <div class="review">
-                <p>Review</p>
-                <p>★★★★<span class="white">★</span></p>
-              </div>
-              
-            </div>
-            
-          </section></a>
-          
-          <a href="#"><section class="product-card">
-
-            <div class="price">$500</div>
-            <div class="fav"><span class="material-symbols-sharp fav-icon" style="font-size: 1.6em; font-weight: 400; color: var(--dark-text);">favorite</span></div>
-            
-            <div class="phone-img">
-              <div class="img"><img src="\Base_Template/images/iphone12.webp" alt=""></div>
-            </div>
-            
-            <div class="phone-txt">
-              
-              <p class="phone-name">Apple iPhone 13 Pro Max 256GB Gold</p>
-              
-              <div class="availabilty">
-                <p>Availablity</p>
-                <p>4</p>
-              </div>
-              
-              <hr>
-              
-              <div class="review">
-                <p>Review</p>
-                <p>★★★★<span class="white">★</span></p>
-              </div>
-              
-            </div>
-            
-          </section></a>
-          
-          <a href="#"><section class="product-card">
-
-            <div class="price">$500</div>
-            <div class="fav"><span class="material-symbols-sharp fav-icon" style="font-size: 1.6em; font-weight: 400; color: var(--dark-text);">favorite</span></div>
-            
-            <div class="phone-img">
-              <div class="img"><img src="\Base_Template/images/iphone12.webp" alt=""></div>
-            </div>
-            
-            <div class="phone-txt">
-              
-              <p class="phone-name">Apple iPhone 13 Pro Max 256GB Gold</p>
-              
-              <div class="availabilty">
-                <p>Availablity</p>
-                <p>4</p>
-              </div>
-              
-              <hr>
-              
-              <div class="review">
-                <p>Review</p>
-                <p>★★★★<span class="white">★</span></p>
-              </div>
-              
-            </div>
-            
-          </section> </a>      
-          
-          <a href="#"><section class="product-card">
-
-            <div class="price">$500</div>
-            <div class="fav"><span class="material-symbols-sharp fav-icon" style="font-size: 1.6em; font-weight: 400; color: var(--dark-text);">favorite</span></div>
-            
-            <div class="phone-img">
-              <div class="img"><img src="\Base_Template/images/iphone12.webp" alt=""></div>
-            </div>
-            
-            <div class="phone-txt">
-              
-              <p class="phone-name">Apple iPhone 13 Pro Max 256GB Gold</p>
-              
-              <div class="availabilty">
-                <p>Availablity</p>
-                <p>4</p>
-              </div>
-              
-              <hr>
-              
-              <div class="review">
-                <p>Review</p>
-                <p>★★★★<span class="white">★</span></p>
-              </div>
-              
-            </div>
-            
-          </section></a>
-          
-          <a href="#"><section class="product-card">
-
-            <div class="price">$500</div>
-            <div class="fav"><span class="material-symbols-sharp fav-icon" style="font-size: 1.6em; font-weight: 400; color: var(--dark-text);">favorite</span></div>
-            
-            <div class="phone-img">
-              <div class="img"><img src="\Base_Template/images/iphone12.webp" alt=""></div>
-            </div>
-            
-            <div class="phone-txt">
-              
-              <p class="phone-name">Apple iPhone 13 Pro Max 256GB Gold</p>
-              
-              <div class="availabilty">
-                <p>Availablity</p>
-                <p>4</p>
-              </div>
-              
-              <hr>
-              
-              <div class="review">
-                <p>Review</p>
-                <p>★★★★<span class="white">★</span></p>
-              </div>
-              
-            </div>
-            
-          </section></a>
-          
-          <a href="#"><section class="product-card">
-
-            <div class="price">$500</div>
-            <div class="fav"><span class="material-symbols-sharp fav-icon" style="font-size: 1.6em; font-weight: 400; color: var(--dark-text);">favorite</span></div>
-            
-            <div class="phone-img">
-              <div class="img"><img src="\Base_Template/images/iphone12.webp" alt=""></div>
-            </div>
-            
-            <div class="phone-txt">
-              
-              <p class="phone-name">Apple iPhone 13 Pro Max 256GB Gold</p>
-              
-              <div class="availabilty">
-                <p>Availablity</p>
-                <p>4</p>
-              </div>
-              
-              <hr>
-              
-              <div class="review">
-                <p>Review</p>
-                <p>★★★★<span class="white">★</span></p>
-              </div>
-              
-            </div>
-            
-          </section></a>
-          
-          <a href="#"><section class="product-card">
-
-            <div class="price">$500</div>
-            <div class="fav"><span class="material-symbols-sharp fav-icon" style="font-size: 1.6em; font-weight: 400; color: var(--dark-text);">favorite</span></div>
-            
-            <div class="phone-img">
-              <div class="img"><img src="\Base_Template/images/iphone12.webp" alt="#"></div>
-            </div>
-            
-            <div class="phone-txt">
-              
-              <p class="phone-name">Apple iPhone 13 Pro Max 256GB Gold</p>
-              
-              <div class="availabilty">
-                <p>Availablity</p>
-                <p>4</p>
-              </div>
-              
-              <hr>
-              
-              <div class="review">
-                <p>Review</p>
-                <p>★★★★<span class="white">★</span></p>
-              </div>
-              
-            </div>
-            
-          </section></a>
->>>>>>> 7153e14c765883c9c45e799a04bb74ac4b4b2e6b:Base_Template/Landing_Page/index.html
-
-          {% endfor %}
-            
-         
-        </div>
+       
 
         <div class="see-more">
           <a href="#">See all deals <div><span class="material-symbols-sharp">open_in_new</span></div></a>
@@ -675,122 +296,36 @@
         </div>
         
         <div class="product-div grid">
-          
-          <a href="#"><section class="product-card">
+          {% for phone in samsung %}  
+            <a href="#"><section class="product-card">
 
-            <div class="price">$500</div>
-            <div class="fav"><span class="material-symbols-sharp fav-icon" style="font-size: 1.6em; font-weight: 400; color: var(--dark-text);">favorite</span></div>
-            
-            <div class="phone-img">
-              <div class="img"><img src="{% static 'images/iphone12_ProMax.webp' %}" alt=""></div>
-            </div>
-            
-            <div class="phone-txt">
+              <div class="price">$500</div>
+              <div class="fav"><span class="material-symbols-sharp fav-icon" style="font-size: 1.6em; font-weight: 400; color: var(--dark-text);">favorite</span></div>
               
-              <p class="phone-name">Apple iPhone 13 Pro Max 256GB Gold</p>
-              
-              <div class="availabilty">
-                <p>Availablity</p>
-                <p>4</p>
+              <div class="phone-img">
+                <div class="img"><img src="{{phone.image.url}}" alt=""></div>
               </div>
               
-              <hr>
-              
-              <div class="review">
-                <p>Review</p>
-                <p>★★★★<span class="white">★</span></p>
+              <div class="phone-txt">
+                
+                <p class="phone-name">{{phone.name}}</p>
+                
+                <div class="availabilty">
+                  <p>Availablity</p>
+                  <p>4</p>
+                </div>
+                
+                <hr>
+                
+                <div class="review">
+                  <p>Review</p>
+                  <p>★★★★<span class="white">★</span></p>
+                </div>
+                
               </div>
               
-            </div>
-            
-          </section></a>
-          
-          <a href="#"><section class="product-card">
-
-            <div class="price">$500</div>
-            <div class="fav"><span class="material-symbols-sharp fav-icon" style="font-size: 1.6em; font-weight: 400; color: var(--dark-text);">favorite</span></div>
-            
-            <div class="phone-img">
-              <div class="img"><img src="{% static 'images/iphone12_ProMax.webp' %}" alt=""></div>
-            </div>
-            
-            <div class="phone-txt">
-              
-              <p class="phone-name">Apple iPhone 13 Pro Max 256GB Gold</p>
-              
-              <div class="availabilty">
-                <p>Availablity</p>
-                <p>4</p>
-              </div>
-              
-              <hr>
-              
-              <div class="review">
-                <p>Review</p>
-                <p>★★★★<span class="white">★</span></p>
-              </div>
-              
-            </div>
-            
-          </section></a>
-          
-          <a href="#"><section class="product-card">
-
-            <div class="price">$500</div>
-            <div class="fav"><span class="material-symbols-sharp fav-icon" style="font-size: 1.6em; font-weight: 400; color: var(--dark-text);">favorite</span></div>
-            
-            <div class="phone-img">
-              <div class="img"><img src="{% static 'images/iphone12_ProMax.webp' %}" alt=""></div>
-            </div>
-            
-            <div class="phone-txt">
-              
-              <p class="phone-name">Apple iPhone 13 Pro Max 256GB Gold</p>
-              
-              <div class="availabilty">
-                <p>Availablity</p>
-                <p>4</p>
-              </div>
-              
-              <hr>
-              
-              <div class="review">
-                <p>Review</p>
-                <p>★★★★<span class="white">★</span></p>
-              </div>
-              
-            </div>
-            
-          </section></a>
-          
-          <a href="#"><section class="product-card">
-
-            <div class="price">$500</div>
-            <div class="fav"><span class="material-symbols-sharp fav-icon" style="font-size: 1.6em; font-weight: 400; color: var(--dark-text);">favorite</span></div>
-            
-            <div class="phone-img">
-              <div class="img"><img src="{% static 'images/iphone12_ProMax.webp' %}" alt=""></div>
-            </div>
-            
-            <div class="phone-txt">
-              
-              <p class="phone-name">Apple iPhone 13 Pro Max 256GB Gold</p>
-              
-              <div class="availabilty">
-                <p>Availablity</p>
-                <p>4</p>
-              </div>
-              
-              <hr>
-              
-              <div class="review">
-                <p>Review</p>
-                <p>★★★★<span class="white">★</span></p>
-              </div>
-              
-            </div>
-            
-          </section></a>
+            </section></a>
+          {% endfor %}
                   
         </div>
 
@@ -821,122 +356,36 @@
         </div>
         
         <div class="product-div grid">
-          
-          <a href="#"><section class="product-card">
+            {% for phone in huawei %}
+              <a href="#"><section class="product-card">
 
-            <div class="price">$500</div>
-            <div class="fav"><span class="material-symbols-sharp fav-icon" style="font-size: 1.6em; font-weight: 400; color: var(--dark-text);">favorite</span></div>
-            
-            <div class="phone-img">
-              <div class= "img"><img src="{% static 'images/iphone12.jpg' %}" alt=""></div>
-            </div>
-            
-            <div class="phone-txt">
-              
-              <p class="phone-name">Apple iPhone 13 Pro Max 256GB Gold</p>
-              
-              <div class="availabilty">
-                <p>Availablity</p>
-                <p>4</p>
-              </div>
-              
-              <hr>
-              
-              <div class="review">
-                <p>Review</p>
-                <p>★★★★<span class="white">★</span></p>
-              </div>
-              
-            </div>
-            
-          </section></a>
-          
-          <a href="#"><section class="product-card">
-
-            <div class="price">$500</div>
-            <div class="fav"><span class="material-symbols-sharp fav-icon" style="font-size: 1.6em; font-weight: 400; color: var(--dark-text);">favorite</span></div>
-            
-            <div class="phone-img">
-              <div class= "img"><img src="{% static 'images/iphone12.jpg' %}" alt=""></div>
-            </div>
-            
-            <div class="phone-txt">
-              
-              <p class="phone-name">Apple iPhone 13 Pro Max 256GB Gold</p>
-              
-              <div class="availabilty">
-                <p>Availablity</p>
-                <p>4</p>
-              </div>
-              
-              <hr>
-              
-              <div class="review">
-                <p>Review</p>
-                <p>★★★★<span class="white">★</span></p>
-              </div>
-              
-            </div>
-            
-          </section></a>
-          
-          <a href="#"><section class="product-card">
-
-            <div class="price">$500</div>
-            <div class="fav"><span class="material-symbols-sharp fav-icon" style="font-size: 1.6em; font-weight: 400; color: var(--dark-text);">favorite</span></div>
-            
-            <div class="phone-img">
-              <div class= "img"><img src="{% static 'images/iphone12.jpg' %}" alt=""></div>
-            </div>
-            
-            <div class="phone-txt">
-              
-              <p class="phone-name">Apple iPhone 13 Pro Max 256GB Gold</p>
-              
-              <div class="availabilty">
-                <p>Availablity</p>
-                <p>4</p>
-              </div>
-              
-              <hr>
-              
-              <div class="review">
-                <p>Review</p>
-                <p>★★★★<span class="white">★</span></p>
-              </div>
-              
-            </div>
-            
-          </section></a>
-          
-          <a href="#"><section class="product-card">
-
-            <div class="price">$500</div>
-            <div class="fav"><span class="material-symbols-sharp fav-icon" style="font-size: 1.6em;">favorite</span></div>
-            
-            <div class="phone-img">
-              <div class= "img"><img src="{% static 'images/iphone12.jpg' %}" alt=""></div>
-            </div>
-            
-            <div class="phone-txt">
-              
-              <p class="phone-name">Apple iPhone 13 Pro Max 256GB Gold</p>
-              
-              <div class="availabilty">
-                <p>Availablity</p>
-                <p>4</p>
-              </div>
-              
-              <hr>
-              
-              <div class="review">
-                <p>Review</p>
-                <p>★★★★<span class="white">★</span></p>
-              </div>
-              
-            </div>
-            
-          </section></a>
+                <div class="price">$500</div>
+                <div class="fav"><span class="material-symbols-sharp fav-icon" style="font-size: 1.6em; font-weight: 400; color: var(--dark-text);">favorite</span></div>
+                
+                <div class="phone-img">
+                  <div class= "img"><img src="{{phone.image.url}}" alt=""></div>
+                </div>
+                
+                <div class="phone-txt">
+                  
+                  <p class="phone-name">Apple iPhone 13 Pro Max 256GB Gold</p>
+                  
+                  <div class="availabilty">
+                    <p>Availablity</p>
+                    <p>4</p>
+                  </div>
+                  
+                  <hr>
+                  
+                  <div class="review">
+                    <p>Review</p>
+                    <p>★★★★<span class="white">★</span></p>
+                  </div>
+                  
+                </div>
+                
+              </section></a>
+            {% endfor%}
                   
         </div>
 
@@ -949,7 +398,7 @@
       <section class="display-cards">      
         <div class="back-card">
           <div class="bk-card-img">
-            <img src="{% static 'images\Pics 185.png' %}" alt="">
+            <img src="{% static 'images/Pics 185.png' %}" alt="">
           </div>
           <div class="bk-card-text">
             <h2>Why we are special</h2>
@@ -959,13 +408,13 @@
         <div class="front-card">
 
           <div class="fr-card-img1">
-            <img src="{% static 'images\unsplash_7qCeFo19r24.png' %}" alt="">
+            <img src="{% static 'images/unsplash_7qCeFo19r24.png' %}" alt="">
           </div>
           
           <div class="fr-card-txt"><p>Our joy is to see all our customers<br>enjoy purchasing products from the<br>comfort of their homes</p></div>
 
           <div class="fr-card-img2">
-            <img src="{% static 'images\New Pics.png' %}" alt="">
+            <img src="{% static 'images/New Pics.png' %}" alt="">
           </div>
 
 
@@ -1016,7 +465,7 @@
 
       <div class="footer-body">
         <section class="footer-logo">
-          <img src="{% static 'images\White Logo.png' %}" alt="">
+          <img src="{% static 'images/White Logo.png' %}" alt="">
         </section>
   
         <section class="footer-nav">
@@ -1079,7 +528,7 @@
       </section>
 
       <section class="m-logo-div">
-        <div class="m-logo"><img src="images\White Logo.png" alt=""></div>
+        <div class="m-logo"><img src="{% static 'images/White Logo.png' %}" alt=""></div>
       </section>
 
       <section class="m-footer-nav">
@@ -1103,28 +552,28 @@
             <ul class="list">
               <h5>Brands</h5>
               <div class="m-big-brand">
-                <li><img src="images\VectorWhite-1.png" alt=""></li>
-                <li><img src="images\cil_car-alt (Traced)White.png" alt=""></li>
-                <li><img src="images\VectorWhite-2.png" alt=""></li>
+                <li><img src="{% static 'images/VectorWhite-1.png' %}" alt=""></li>
+                <li><img src="{% static 'images/cil_car-alt (Traced)White.png' %}" alt=""></li>
+                <li><img src="{% static 'images/VectorWhite-2.png' %}" alt=""></li>
               </div>
 
               <div class="m-mid-brand">
-                <li><img src="images\bi_laptop (Traced)White.png" alt=""></li>
-                <li><img src="images\TecnWhite.png" alt=""></li>
+                <li><img src="{% static 'images/bi_laptop (Traced)White.png' %}" alt=""></li>
+                <li><img src="{% static 'images/TecnWhite.png' %}" alt=""></li>
               </div>
 
               <div class="m-last-brand">
-                <li><img src="images\Frame 17 (Traced)White.png" alt=""></li>
-                <li><img src="images\VectorWhite.png" alt=""></li>
+                <li><img src="{% static 'images/Frame 17 (Traced)White.png' %}" alt=""></li>
+                <li><img src="{% static 'images/VectorWhite.png' %}" alt=""></li>
               </div>
             </ul>
 
             <ul class="list">
               <h5>Social</h5>
               <div class="social-flex">
-                <li><a href="#"><img src="/Base_Template/images/facebook.svg" alt=""></a></li>
-                <li><a href="#"><img src="/Base_Template/images/instagram.svg" alt=""></a></li>
-                <li><a href="#"><img src="/Base_Template/images/twitter.svg" alt=""></a></li>
+                <li><a href="#"><img src="{% static 'images/facebook.svg' %}" alt=""></a></li>
+                <li><a href="#"><img src="{% static 'images/instagram.svg' %}" alt=""></a></li>
+                <li><a href="#"><img src="{% static 'images/twitter.svg' %}" alt=""></a></li>
               </div>
             </ul>
           </div>

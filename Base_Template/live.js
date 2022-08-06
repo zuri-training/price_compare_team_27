@@ -24,7 +24,7 @@ function myBlurFunction() {
   else {
     email.style.border = "2px solid #f00";
     errorMsg.style.display = "block"
-    errorMsg.innerHTML = "Invalid Input!"
+    errorMsg.innerHTML = "Invalid Format"
     myBlurFunction()
   }
 }

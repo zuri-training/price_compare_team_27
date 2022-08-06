@@ -5,30 +5,41 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Sharp:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Sharp:opsz,wght,FILL,GRAD@48,400,1,0" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Sharp:opsz,wght,FILL,GRAD@48,700,1,200" />
   <link rel="stylesheet" href="style.css">
-  <title>Signup</title>
+  <title>Create an Account</title>
+  <script type="text/javascript" src="\Base_Template/jquery-3.6.0.min.js"> </script>
 </head>
 <body>
-  <header>
+
+
+<header>
     <div class="header-container">
 
       <section class="header-logo">
-        <img src="\Base_Template\images\Choice Logo.png" alt="">
+        <img src="\Base_Template/images/Choice Logo.png" alt="">
       </section>
 
       <section class="header-search">
         <form action="" method="get" class="search-bar">
-          <input type="search" name="search" id="" placeholder="What are you looking to find?">
+          <input type="search" name="search" id="header-search" placeholder="What are you looking to find?">
           <input type="submit" value="Search">
         </form>
       </section>
 
       <section class="header-nav">
         <nav>
-          <a href="#">Home</a>
+          <a href="\Base_Template/Landing_Page/index.html">Home</a>
           <a href="#">Categories</a>
           <a href="#">Wishlist <div class="cart-img"><span class="material-symbols-sharp">shopping_cart</span></div></a>
-          <a href="#"><div class="profile-icon"><span class="material-symbols-sharp">account_circle</span></div> Account<div class="caret-down"><span class="material-symbols-sharp">expand_more</span></div></a>
+          <div class="profile-icon">
+            <div id="view"><div class="profile-icon"><span class="material-symbols-sharp">account_circle</span> Account</div><div class="caret-down" id="drop-down"><span class="material-symbols-sharp">expand_more</span></div></div>
+              <div id="toggleCard">
+              <a href="#" class="toggle_top">Login</a>
+              <a href="\Base_Template/Signup_page/signup.html" class="toggle_bottom">Signup</a>
+            </div>
+          </div>
         </nav>
       </section>
 
@@ -58,55 +69,64 @@
       </div>
       
     </div>
+
   </header>
 
   <main>
     <div class="main-container">
-      <form action="" method="get" class="login-form">
+        <form action="" method="post" id="login" class="login-form">
 
-        <section class="form-tittle">
-          <h5>Create an Account</h5>
-        </section>
+                <section class="form-tittle">
+                  <h5>Create An Account</h5>
+                </section>
+        
+                <section class="details form-field" id="first">
+                  <label for="login-email">Email Address</label>
+                  <input type="email" name="login-email" id="form-email" placeholder="nelson@gmail.com" required="">
+                  <small id="error" class="small">Invalid format!</small>
+                </section>
 
-        <section class="details" id="first">
-          <label for="login-email">Email Address</label>
-          <input type="email" name="login-email" id="" placeholder="nelson@gmail.com" required>
-        </section>
+                <section class="details form-field" id="first">
+                  <label for="login-email">Username</label>
+                  <input type="email" name="login-email" id="form-email" placeholder="Nelson Mandela" required="">
+                  <small id="error" class="small">Invalid format!</small>
+                </section>
+        
+                <section class="details form-field" id="second">
+                  <label for="login-password">Password</label>
+                  <input type="password" name="login-password" id="form-password" placeholder="********" required="">
+                  <small id="error" class="small">Invalid format!</small>
+                </section>
+        
+                <section class="details form-field" id="second">
+                  <label for="login-password">Confirm Password</label>
+                  <input type="password" name="login-password" id="form-password" placeholder="********" required="">
+                  <small id="error" class="small">Invalid format!</small>
+                </section>
 
-        <section class="details" id="second">
-          <label for="username">Username</label>
-          <input type="text" name="username" id="" placeholder="Nelson Mandela" required>
-        </section>
 
-        <section class="details" id="third">
-          <label for="new-password">Password</label>
-          <input type="password" name="new-password" id="" placeholder="**********" required>
-        </section>
-
-        <section class="details" id="fourth">
-          <label for="confirm-password">Confirm Password</label>
-          <input type="password" name="confirm-password" id="" placeholder="********" required>
-        </section>
-
-        <section class="ter-action">
-
-            <label for="check">
-              <input type="checkbox" name="check" class="custom" id="">
-              <p>Remember me</p>
-            </label>
-
-        </section>
-
-        <section class="call-to-action">
-          <input type="submit" value="Sign Up">
-        </section>
-
-        <section class="sec-action">
-          <p>Have an account&quest; <a href="#">Login</a></p>
-        </section>
-
-      </form>
+                <section class="ter-action">
+        
+                    <label for="check">
+                      <input type="checkbox" name="check" class="custom" id="remember-me">
+                      <p>Remember me</p>
+                    </label>
+                    
+        
+                </section>
+        
+                <section class="call-to-action">
+                  <input type="submit" value="Sign Up">
+                </section>
+        
+                <section class="sec-action">
+                  <p>Have an account? <a href="\Base_Template/Login_page/signup.html">Login</a></p>
+                </section>
+        
+        </form>
     </div>
+      
+    
   </main>
 
   <footer>
@@ -174,7 +194,7 @@
       </section>
 
       <section class="m-logo-div">
-        <div class="m-logo"><img src="/Base_Template/images/White Logo.png" alt=""></div>
+        <div class="m-logo"><img src="images\White Logo.png" alt=""></div>
       </section>
 
       <section class="m-footer-nav">
@@ -198,28 +218,28 @@
             <ul class="list">
               <h5>Brands</h5>
               <div class="m-big-brand">
-                <li><img src="/Base_Template/images/VectorWhite-1.png" alt=""></li>
-                <li><img src="/Base_Template/images/cil_car-alt (Traced)White.png" alt=""></li>
-                <li><img src="/Base_Template/images/VectorWhite-2.png" alt=""></li>
+                <li><img src="images\VectorWhite-1.png" alt=""></li>
+                <li><img src="images\cil_car-alt (Traced)White.png" alt=""></li>
+                <li><img src="images\VectorWhite-2.png" alt=""></li>
               </div>
 
               <div class="m-mid-brand">
-                <li><img src="/Base_Template/images/bi_laptop (Traced)White.png" alt=""></li>
-                <li><img src="/Base_Template/images/TecnWhite.png" alt=""></li>
+                <li><img src="images\bi_laptop (Traced)White.png" alt=""></li>
+                <li><img src="images\TecnWhite.png" alt=""></li>
               </div>
 
               <div class="m-last-brand">
-                <li><img src="/Base_Template/images/Frame 17 (Traced)White.png" alt=""></li>
-                <li><img src="/Base_Template/images/VectorWhite.png" alt=""></li>
+                <li><img src="images\Frame 17 (Traced)White.png" alt=""></li>
+                <li><img src="images\VectorWhite.png" alt=""></li>
               </div>
             </ul>
 
             <ul class="list">
               <h5>Social</h5>
               <div class="social-flex">
-                <li><a href="#"><img src="/Base_Template/images/facebook.svg" alt=""></a></li>
-                <li><a href="#"><img src="/Base_Template/images/instagram.svg" alt=""></a></li>
-                <li><a href="#"><img src="/Base_Template/images/twitter.svg" alt=""></a></li>
+                <li><a href="#"><img src="images\facebook.svg" alt=""></a></li>
+                <li><a href="#"><img src="images\instagram.svg" alt=""></a></li>
+                <li><a href="#"><img src="images\twitter.svg" alt=""></a></li>
               </div>
             </ul>
           </div>
@@ -232,6 +252,7 @@
     </div>
 
   </footer>
+  <script src="\Base_Template/live.js"></script>
 
 </body>
 </html>

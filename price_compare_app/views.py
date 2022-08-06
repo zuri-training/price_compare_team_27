@@ -4,6 +4,15 @@ from price_compare_app.models import *
 from pyexpat import model
 from django.shortcuts import get_object_or_404, render
 
+from multiprocessing import context
+
+from price_compare_app.form import ReviewForm
+
+from .form import ReviewForm
+from .models import Phone
+
+#from pyexpat import model
+
 
 # Create your views here.
 
@@ -14,14 +23,9 @@ def get_latest_four():
     pass
 
 def home_page(request):
-    if 'q' in request.GET:
-        q = request.GET['q']
-        all_phone = Phone.objects.filter(name__icontains=q)
-    
-    else:
-        all_samsung= Phone.objects.filter(brand__name__icontains='samsung')
-        all_iphones= Phone.objects.filter(brand__name__icontains='iphone')
-        all_huawei= Phone.objects.filter(brand__name__icontains='huawei')
+    all_samsung= Phone.objects.filter(brand__name__icontains='samsung')
+    all_iphones= Phone.objects.filter(brand__name__icontains='iphone')
+    all_huawei= Phone.objects.filter(brand__name__icontains='huawei')
 
 
     context={
@@ -40,13 +44,19 @@ def wishlist(request):
         items = wishes.wishitem_set.all()
         best_price = WishItem.objects.all()
     else:
-        return render(request, 'price_compare_app/index.html')
+        return render(request, 'accounts/login.html')
     context = {
         'items':items, 'wish': wishes, 'best_price': best_price
     }
         
     return render(request, 'price_compare_app/wishlist.html', context)
 
+def search(request):
+    if request.method == 'POST':
+        query = request.POST['query']
+        return render(request, 'price_compare_app/search.html', {'query':query})
+    else:
+        return render(request, 'price_compare_app/search.html', {'query':query})
 
 
 
@@ -54,17 +64,20 @@ def about_page(request):
     return render(request,'price_compare_app/about.html')
 
 def updateItem(request):
+    # loads the data from the wishlist.js javascript file and creates variables to store this data in productId is the phoneId
     data = json.loads(request.body)
     productId = data['productId']
     action = data['action']
     print('Action:', action)
     print('productId:', productId)
-
+    # retrieves the user based on the user_id and retrieves products based on productId
     user = request.user.id
     phone = Phone.objects.get(id = productId)
+    # creates or retrieves a wishlist based on the user_id generated, the creation of the wishlist is for unauthenticated user to have something to fill in there
     wish, created = WishList.objects.get_or_create(user_id=user)
+    # retrieves the items in the wishlist of the user based on the wish created or gotten and the phone
     wishItem, created = WishItem.objects.get_or_create(wish=wish, phone=phone)
-
+    #  based on the action i.e the button the wishItem reacts
     if action == 'add':
         wishItem.quantity += 1
 
@@ -80,8 +93,27 @@ def updateItem(request):
         
     return JsonResponse('Item was added', safe=False)
 
-# def PhoneDetailView(request, slug):
-#     item = get_object_or_404(Phone, slug = slug)
 
-#     return render(request, 'price_compare_app/index.html', context={'item': item})
-    
+def PhoneDetailView(request, id):
+    data = get_object_or_404(Phone, pk=id)
+    reviews = data.reviews
+    new_review = None
+
+    if request.method == 'POST':
+        review_form = ReviewForm(data=request.POST)
+        if review_form.is_valid():
+
+            # Create Comment object but don't save to database yet
+            new_review = review_form.save(commit=False)
+            # Assign the current post to the comment
+            new_review.data = data
+            # Save the comment to the database
+            new_review.save()
+    else:
+        review_form = ReviewForm()
+
+    context = {"data":data,
+               "reviews": reviews,
+               "new_review": new_review,
+               "review_form": review_form}
+    return render(request, 'price_compare_app/productinfo.html', context)
