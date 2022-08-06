@@ -1,3 +1,6 @@
 {
-  "liveServer.settings.port": 5502
+  "liveServer.settings.port": 5502,
+  "python.analysis.extraPaths": [
+    "./price_compare_app/templates/price_compare_app"
+  ]
 }
