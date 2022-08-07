@@ -49,11 +49,19 @@ def search(request):
         search_keyword=request.GET['search']
         if search:
             phones=Phone.objects.filter(name__icontains=search_keyword)
-    context={
-        'phones':phones,
-    }
+     
+   
+        context={
+            'phones':phones,
+        }
+        
+        return render(request,'price_compare_app/search.html',context)
+    else:
+        print('No search result found')
+        return render(request,'price_compare_app/search.html',{})
 
-    return render(request,'price_compare_app/search.html',context)
+    
+
 
 
 
