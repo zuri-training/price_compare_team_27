@@ -72,12 +72,48 @@ footer {
 .footer-container {
   width: 90%;
   margin-inline: auto;
+  font-size: 0.85em;
+  font-weight: 400;
+  padding-block: 2em;
+}
+.footer_search {
+  width: 100%;
+  margin-block-end: 3em;
+}
+.footer_searchBar {
+  width: 50%;
+  margin-inline: auto;
+}
+.footer_searchBar form {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.footer_searchBar input[type="search"] {
+  width: 75%;
+  padding-block: 0.6em;
+  padding-inline: 1em;
+  background: var(--pry-color);
+  color: var(--dark-text);
+  border: 1.5px solid var(--light-text);
+  font-size: 0.8em;
+  font-weight: 400;
+  border-radius: 0.45em;
+}
+.footer_searchBar input[type="submit"] {
+  width: 22%;
+  color: var(--light-text);
+  background: var(--btn-blue);
+  font-size: 0.8em;
+  font-weight: 500;
+  border-radius: 0.45em;
+  padding-block: 0.75em;
+  padding-inline: 0.2em;
+}
+.footer-body {
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
-  font-size: 0.85em;
-  font-weight: 400;
-  padding-block: 2.5em;
 }
 .footer-container a {
   text-decoration: none;
