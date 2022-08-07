@@ -1,18 +1,14 @@
-from django.http import JsonResponse
 import json
-from price_compare_app.models import *
-from pyexpat import model
+
+from django.contrib.auth.decorators import login_required
+from django.http import JsonResponse
 from django.shortcuts import get_object_or_404, render
 
-from multiprocessing import context
-
 from price_compare_app.form import ReviewForm
+from price_compare_app.models import *
 
 from .form import ReviewForm
 from .models import Phone
-
-#from pyexpat import model
-
 
 # Create your views here.
 
@@ -36,27 +32,28 @@ def home_page(request):
 
     return render(request,'price_compare_app/landingpage.html',context)
 
+@login_required(login_url='login')
 def wishlist(request):
-    if request.user.is_authenticated:
-        user = request.user.id
-
-        wishes, created= WishList.objects.get_or_create(user_id=user)
-        items = wishes.wishitem_set.all()
-        best_price = WishItem.objects.all()
-    else:
-        return render(request, 'accounts/login.html')
+    user = request.user.id
+    wishes, created= WishList.objects.get_or_create(user_id=user)
+    items = wishes.wishitem_set.all()
+    best_price = WishItem.objects.all()
     context = {
         'items':items, 'wish': wishes, 'best_price': best_price
     }
         
-    return render(request, 'price_compare_app/wishlist.html', context)
+    return render(request, 'price_compare_app/wish.html', context)
 
 def search(request):
-    if request.method == 'POST':
-        query = request.POST['query']
-        return render(request, 'price_compare_app/search.html', {'query':query})
-    else:
-        return render(request, 'price_compare_app/search.html', {'query':query})
+    if 'search' in request.GET:
+        search_keyword=request.GET['search']
+        if search:
+            phones=Phone.objects.filter(name__icontains=search_keyword)
+    context={
+        'phones':phones,
+    }
+
+    return render(request,'price_compare_app/search.html',context)
 
 
 

@@ -1,0 +1,59 @@
+{% extends 'price_compare_app/base.html' %}
+{% load static %}
+{% block title %} Wishlist {% endblock %}
+
+{% block styles %}
+    <link rel="stylesheet" href="{% static 'price_compare_app/css/wishlist.css' %}">
+{% endblock styles %}
+    
+
+{% block content %}
+<div class="main-container">
+
+    <section class="popular">
+    
+        <div class="popular-text">
+            <div class="section-heading">
+                <h2>Wishlist</h2>
+            </div>
+        </div>
+    
+        <div class="product-div grid">
+            
+            {% for item in items  %}
+                      
+                <section class="product-card">
+        
+                    <div class="phone-img">
+                        <div class="img"><img src="{{item.phone.image.url}}" alt=""></div>
+                    </div>
+        
+                    <div class="phone-txt">
+        
+                        <p class="phone-name">{{item.phone.name}}</p>
+        
+                        <div class="availabilty">
+                            <p>Quantity</p>
+                            <p>4</p>
+                        </div>
+        
+                        <hr>
+        
+                        <div class="review">
+                            <p>Review</p>
+                            <p>★★★★<span class="white">★</span></p>
+                        </div>
+        
+                    </div>
+        
+                </section>
+            {% endfor %}
+          
+    
+        </div>
+    
+    
+    </section>
+
+</div>
+{% endblock content %}

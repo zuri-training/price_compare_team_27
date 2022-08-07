@@ -1,14 +1,15 @@
 {% extends 'price_compare_app/base.html' %}
 {% load static %}
-
 {% block title %} About Us {% endblock %}
+
+{% block styles %}
+  <link rel="stylesheet" type="text/css" href="{% static 'price_compare_app/css/about.css' %}">
+{% endblock %}
+
 
 {% block content %}  
 
 
-{% block css %}
-<link rel="stylesheet" type="text/css" href="{% static 'price_compare_app/about.css' %}">
-{% endblock %}
 
   <section class="section-1">
     <h1>About Us</h1>
