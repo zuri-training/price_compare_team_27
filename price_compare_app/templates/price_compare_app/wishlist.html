@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+{% extends 'price_compare_app\base.html' %}
+
+{% load static %}
+
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+{% block content %}
+    <a class="btn btn-outline-dark" href="{% url 'index' %}">&#x2190; Continue Shopping</a>
+
+    <br>
+    <br>
+    <table class="table">
+        <tr>
+            <th>
+                <h5>Items: <strong>{{wish.get_cart_items}}</strong></h5>
+            </th>
+            <th>
+                <h5>Total:<strong>{{wish.get_cart_total}}</strong></h5>
+            </th>
+            <th>
+                <a style="float:right; margin:3px;" class="btn btn-success" href="{% url 'about' %}">about</a>
+            </th>
+        </tr>
+    </table>
+
+    <tr>
+        <td>placeholder image</td>
+        <td>Item</td>
+        <td>Price</td>
+        <td>Quantity</td>
+        <td>Total</td>
+
+    </tr>
+
+    <tr>
+        {% for price in best_price %}
+        <td>placeholder image </td>
+        <td>
+            <p>{{ price.phone.name }}</p>
+        </td>
+        <td>
+            <p>{{price.best_price| floatformat:2 }}</p>
+        </td>
+        <td>
+            <p>{{price.quantity}}</p>
+        </td>
+        <td>
+            <p>{{price.get_total}}</p>
+        </td>
+        {% endfor %}
+    </tr>
+
+    </table>
+    <!-- <p>  total : </p> 
+        <p>  best price: </p>
+        <p>  quantity </p> -->
+
+
+    {% for item in items %}
+    <ul>
+        <li>name: {{item.phone.name}}</li>
+        <li>price: {{item.phone.price_konga}}</li>
+        <li>price: {{item.phone.price_jumia}}</li>
+    </ul>
+    {% endfor %}
+{% endblock %}
+
+
+<!-- </html> -->

@@ -1,5 +1,11 @@
 {% extends 'price_compare_app/base.html' %}
 {% load static %}
+
+{% block styles %}
+  <link rel="stylesheet" href="{%static 'accounts/css/signup-style.css'%}">
+{% endblock styles %}
+  
+
 {% block content %}
 
   <div class="main-container">
@@ -44,7 +50,7 @@
       </section>
 
       <section class="sec-action">
-        <p>Have an account&quest; <a href="#">Login</a></p>
+        <p>Have an account&quest; <a href="{% url 'login' %}">Login</a></p>
       </section>
 
     </form>
