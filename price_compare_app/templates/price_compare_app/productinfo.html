@@ -1,6 +1,11 @@
 {%extends 'price_compare_app/base.html' %}
 {% load static %}
 
+{% block styles %}
+    <link rel="stylesheet" href="{% static 'price_compare_app/css/productinfo.css' %}">
+{% endblock styles %}
+    
+
 {% block content %}
     <section class="first">
         <div class="content-container">

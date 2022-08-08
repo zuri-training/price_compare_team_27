@@ -25,7 +25,8 @@
   
         <section id="mheader-nav" class="header-nav">
           <nav>
-            <a href="#">Home</a>
+
+            <a href="{% url 'index' %}">Home</a>
             <a href="#">Categories</a>
             <a href="{% url 'wishlist' %}">Wishlist <div class="cart-img"><span class="material-symbols-sharp">shopping_cart</span></div></a>
             
@@ -43,30 +44,31 @@
 
         <section class="header-profile">
           <div class="desktop_top">
-          <div id="view"><div class="profile-icon"><span class="material-symbols-sharp">account_circle</span> Account</div><div class="caret-down" id="drop-down"><span class="material-symbols-sharp">expand_more</span></div></div>
-          <div id="toggleCard">
-            {% if user.is_authenticated %}
-            <a href="{% url 'logoutpage' %}" class="toggle_top">Log Out</a>
-            <a href="{% url 'password_reset' %}" class="toggle_bottom">Reset Password</a>
-            {% else %}
-            <a href="{% url 'login' %}" class="toggle_top">Login</a>
-            <a href="{% url 'signup' %}" class="toggle_bottom">Signup</a>
-            {% endif %}
-          </div>
-        </div>
-        <!-- <div class="mobile_top">
-          <a href="#">
-          <div class="cart-img">
-            <span class="material-symbols-sharp">shopping_cart</span>
-          </div>
-            <div class="profile-icon">
-              <span class="material-symbols-sharp">account_circle</span>
+            <div id="view"><div class="profile-icon"><span class="material-symbols-sharp">account_circle</span> Account</div><div class="caret-down" id="drop-down"><span class="material-symbols-sharp">expand_more</span></div></div>
+          
+        
+            <div id="toggleCard">
+              {% if user.is_authenticated %}
+                <a href="{% url 'logout' %}" class="toggle_top">Logout</a>
+              {% else %}          
+                <a href="{% url 'login' %}" class="toggle_top">Login</a>
+                <a href="{% url 'signup' %}" class="toggle_bottom">Signup</a>
+              {% endif %}
             </div>
-              <div class="caret-down">
-              <span class="material-symbols-sharp">expand_more</span>
+          </div>
+          <!-- <div class="mobile_top">
+            <a href="#">
+            <div class="cart-img">
+              <span class="material-symbols-sharp">shopping_cart</span>
             </div>
-          </a>
-        </div> -->
+              <div class="profile-icon">
+                <span class="material-symbols-sharp">account_circle</span>
+              </div>
+                <div class="caret-down">
+                <span class="material-symbols-sharp">expand_more</span>
+              </div>
+            </a>
+          </div> -->
         </section>
       </div>
 
@@ -81,13 +83,11 @@
           </div>
 
           <div class="form_part">
-              <form id="form" action="" method="POST">
-                {% csrf_token %}
+              <form id=""  action="{% url 'search' %}" method="get" >
                 <input
                   type="search"
-                  name="query"
+                  name="search"
                   placeholder="What are you looking to find?"
-                  id="query"
                 />
                 <input id="search_button" type="submit" value="Search" />
               </form>

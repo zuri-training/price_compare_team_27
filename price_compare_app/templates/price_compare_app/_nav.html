@@ -1,5 +1,12 @@
 {%load static%}
 {% load social_share %} 
+
+{% block styles %}
+    <link rel="stylesheet" href="{% static 'price_compare_app/css/nav-style.css' %}">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Sharp:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+{% endblock styles %}
+    
 <header>
     <script type = 'text/javascript'>
         var user = '{{ request.user }}'
@@ -28,7 +35,7 @@
         </section>
 
         <section class="header-search">
-            <form action="" method="get" class="search-bar">
+            <form action="{% url 'search' %}" method="get" class="search-bar">
                 <input type="search" name="search" id="" placeholder="What are you looking to find?">
                 <input type="submit" value="Search">
             </form>
@@ -36,13 +43,13 @@
 
         <section class="header-nav">
             <nav>
-                <a href="#">Home</a>
+                <a href="{% url 'index' %}">Home</a>
                 <a href="#">Categories</a>
-                <a href="#">Wishlist <div class="cart-img"><span class="material-symbols-sharp">shopping_cart</span>
+                <a href="{% url 'wishlist' %}">Wishlist <div class="cart-img"><span class="material-symbols-sharp">shopping_cart</span>
                     </div></a>
                 <a href="{% url 'login' %}">
                     <div class="profile-icon"><span class="material-symbols-sharp">account_circle</span></div>
-                    Login/Signup<div class="caret-down"><span class="material-symbols-sharp">expand_more</span></div>
+                    Account<div class="caret-down"><span class="material-symbols-sharp">expand_more</span></div>
                 </a>
             </nav>
         </section>

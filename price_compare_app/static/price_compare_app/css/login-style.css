@@ -1,8 +1,26 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+/* clears the ‘X’ from Internet Explorer */
+input[type=search]::-ms-clear { display: none; width : 0; height: 0; }
+input[type=search]::-ms-reveal { display: none; width : 0; height: 0; }
+/* clears the ‘X’ from Chrome */
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration { display: none; }
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active  {
+  -webkit-box-shadow: 0 0 0 30px var(--input) inset !important;
+}
+
 /* general */
 :root {
   /* bg colors */
-  --pry-color: rgb(205,222,194);;
+  --pry-color: rgb(205,222,194);
+  --input: rgb(177,199,191);
   --footer-color: #0D162F;
   --copyright: rgb(175,197,191);
 
@@ -12,13 +30,16 @@
 
   /* button active state */
   --hover-blue: #355DC5;
-
   /* text colors */
   --dark-text: #1E1E1E;
   --light-text: #FFF;
 
   /* fonts */
   --font-family: 'Poppins', sans-serif;
+
+  --error-color: #dc3545;
+  --success-color: #28a745;
+  --warning-color: #ffc107;
 }
 * {
   padding: 0;
@@ -44,6 +65,7 @@ input {
 }
 input[type="submit"]:hover  {
   cursor: pointer;
+  background: var(--hover-blue);
 }
 ::placeholder {
   color: inherit;
@@ -57,179 +79,13 @@ body {
   position: relative;
   font-family: var(--font-family);
   color: #1E1E1E;
-  background: var(--pry-color);
+  background: rgb(177,199,191);
   font-weight: 400;
   line-height: 1.5;
 }
 
 
-/* header */
 
-
-
-
-/* main */
-.main-container {
-  width: 100%;
-  font-size: 1em;
-  margin-block: 2em;
-}
-.main-container form {
-  width: 45%;
-  margin-inline: auto;
-  padding-block: 1.5em;
-  padding-inline: 1em;
-  box-shadow: rgba(17, 12, 46, 0.15) 0px 20px 100px 0px;
-  border-radius: 0.4em;
-}
-.form-tittle h5{
-  font-weight: 600;
-  font-size: 1.1em;
-}
-#first {
-  margin-block: 1em;
-}
-#second {
-  margin-block: 1em;
-}
-#third {
-  margin-block: 1em;
-}
-#fourth {
-  margin-block: 0.5em;
-}
-.details label {
-  font-size: 0.9em;
-  font-weight: 500;
-}
-.details input {
-  font-size: 0.8em;
-  border-radius: 0.4em;
-}
-.details input[type="email"] {
-  padding: 0.4em;
-  background: inherit;
-  border: 1px solid grey;
-  font-weight: 200;
-}
-.details input[type="password"] {
-  padding: 0.4em;
-  background: inherit;
-  border: 1px solid grey;
-  font-weight: 200;
-}
-.details input[type="text"] {
-  padding: 0.4em;
-  background: inherit;
-  border: 1px solid grey;
-  font-weight: 200;
-}
-.ter-action {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  font-size: 0.7em;
-}
-.ter-action label {
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  width: 30%;
-}
-input.custom {
-  display: inline;
-  width: 1em;
-  height: 1em;
-  margin-inline-end: 0.5em;
-  cursor: pointer;
-}
-.call-to-action {
-  margin-block-end: 1em;
-  margin-block-start: 1.5em;
-}
-.call-to-action input[type="submit"] {
-  background: var(--btn-blue);
-  color: var(--light-text);
-  padding-block: 0.3em;
-  border-radius: 0.4em;
-}
-.call-to-action input[type="submit"]:hover {
-  background: var(--hover-blue);
-}
-.sec-action {
-  text-align: center;
-  font-size: 0.7em;
-  font-weight: 500;
-}
-.sec-action a {
-  text-decoration: none;
-  color: var(--btn-blue);
-}
-.sec-action a:hover {
-  text-decoration: underline;
-  color: var(--hover-blue);
-}
-
-
-.list h5 {
-  font-weight: 400;
-  font-size: 1.1em;
-  margin-block-end: 0.3em;
-}
-.list li {
-  font-weight: 300;
-}
-.newsletter {
-  width: 30%;
-  margin-inline-start: 2em;
-}
-.newsletter form {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin-block-start: 1.5em;
-}
-.newsletter label>h5 {
-  font-weight: 400;
-  font-size: 1.1em;
-}
-.newsletter input[type="email"] {
-  width: 70%;
-  padding-block: 0.6em;
-  padding-inline: 1em;
-  background: inherit;
-  color: var(--light-text);
-  border: 1.5px solid var(--light-text);
-  font-size: 0.7em;
-  font-weight: 400;
-  border-radius: 0.45em;
-}
-.newsletter input[type="submit"] {
-  width: 28%;
-  color: var(--dark-text);
-  background: var(--btn-white);
-  font-size: 0.7em;
-  font-weight: 500;
-  border-radius: 0.45em;
-  padding-block: 0.75em;
-  padding-inline: 0.2em;
-}
-.copyright {
-  text-align: center;
-  background: var(--copyright);
-  color: var(--dark-text);
-  font-size: 0.8em;
-  padding-block: 0.5em;
-}
-.copyright span {
-  font-weight: 500;
-}
-.copyright .emoji {
-  color: rgb(155,34,29);
-}
-
-
-/* media queries */
 @media screen and (max-width: 850px) {
   body {
     overflow-x: hidden;
@@ -260,7 +116,7 @@ input.custom {
     width: 30%;
   }
   .header-nav {
-    width: 30%;
+    width: 20%;
     display: flex;
     justify-content: space-between;
   }
@@ -324,82 +180,6 @@ input.custom {
   .header-search input::placeholder {
     font-size: 1.2em;
   }
-  .main-container {
-    margin-block: 3em;
-  }
-  .form-tittle {
-    margin-block-end: 1.5em;
-  }
-  .main-container form {
-    width: 90%;
-    padding: 0;
-    box-shadow: none;
-  }
-  .form-tittle h5{
-    font-weight: 600;
-    font-size: 1.5em;
-  }
-  .details label {
-    margin-bottom: 0.4em;
-    display: block;
-  }
-  .details input {
-    font-size: 0.8em;
-    border-radius: 0.4em;
-  }
-  .details input::placeholder {
-    font-weight: 200;
-  }
-  .details input[type="email"] {
-    padding: 0.8em;
-    font-weight: 500;
-  }
-  .details input[type="text"] {
-    padding: 0.8em;
-    font-weight: 500;
-  }
-  .details input[type="password"] {
-    padding: 0.8em;
-    font-weight: 500;
-  }
-  .ter-action label {
-    width: 40%;
-    font-size: 1.1em;
-  }
-  input.custom {
-    width: 1.1em;
-    aspect-ratio: 1;
-  }
-  .forgot-password {
-    text-align: right;
-    width: 30%;
-  }
-  .forgot-password a {
-    text-decoration: underline;
-  }
-  .forgot-password a:hover {
-    color: var(--hover-blue);
-  }
-  .call-to-action {
-    margin-block: 1.3em;
-  }
-  .call-to-action input[type="submit"] {
-    padding-block: 0.6em;
-  }
-  .call-to-action input[type="submit"]:hover {
-    background: var(--hover-blue);
-  }
-  .sec-action {
-    font-size: 0.78em;
-  }
-  .sec-action a {
-    text-decoration: none;
-    color: var(--btn-blue);
-  }
-  .sec-action a:hover {
-    color: var(--hover-blue);
-    text-decoration: underline;
-  }
   .footer-container, .copyright {
     display: none;
   }
@@ -416,7 +196,6 @@ input.custom {
   }
   .m-newsletter input[type="email"] {
     padding-block: 0.7em;
-    padding-inline: 1em;
     border: 1px solid var(--light-text);
     background: inherit;
     color: var(--light-text);

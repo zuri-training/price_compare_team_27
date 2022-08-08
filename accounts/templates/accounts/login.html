@@ -2,48 +2,51 @@
 {% load static %}
 {%block title%}Login{%endblock title%}
 
+{% block styles %}
+  <link rel="stylesheet" href="{% static 'price_compare_app/css/login-style.css' %}">
+{% endblock styles %}
+
+
 {%block content%}
-  <main>
-    <div class="main-container">
-      <form action="" method="post" class="login-form">
-        {%csrf_token%}
-        <section class="form-tittle">
-          <h5>Welcome Back, Champ!</h5>
-        </section>
+  <div class="main-container">
+    <form action="" method="post" class="login-form">
+      {%csrf_token%}
+      <section class="form-tittle">
+        <h5>Welcome Back, Champ!</h5>
+      </section>
 
-        <section class="details" id="first">
-          <label for="login-email">Username</label>
-          <input type="text" name="username" id="" placeholder="enter your email address" required>
-        </section>
+      <section class="details" id="first">
+        <label for="login-email">Username</label>
+        <input type="text" name="username" id="" placeholder="enter your email address" required>
+      </section>
 
-        <section class="details" id="second">
-          <label for="login-password">Password</label>
-          <input type="password" name="password" id="" placeholder="********" required>
-        </section>
+      <section class="details" id="second">
+        <label for="login-password">Password</label>
+        <input type="password" name="password" id="" placeholder="********" required>
+      </section>
 
-        <section class="ter-action">
+      <section class="ter-action">
 
-          <label for="check">
-            <input type="checkbox" name="check" class="custom" id="">
-            <p>Remember me</p>
-          </label>
+        <label for="check">
+          <input type="checkbox" name="check" class="custom" id="">
+          <p>Agree to our tems and conditions</p>
+        </label>
 
-          <div class="forgot-password">
-            <a href="#">Forgot Password?</a>
-          </div>
+        <div class="forgot-password">
+          <a href="{%url 'password_reset'%}">Forgot Password?</a>
+        </div>
 
-        </section>
+      </section>
 
-        <section class="call-to-action">
-          <input type="submit" value="Login">
-        </section>
+      <section class="call-to-action">
+        <input type="submit" value="Login">
+      </section>
 
-        <section class="sec-action">
-          <p>Don&apos;t have an account&quest; <a href="#">Sign Up</a></p>
-        </section>
+      <section class="sec-action">
+        <p>Don&apos;t have an account&quest; <a href="{% url 'signup' %}">Sign Up</a></p>
+      </section>
 
-      </form>
-    </div>
-  </main>
+    </form>
+  </div>
+
 {%endblock content%}
-<script src=""></script>
