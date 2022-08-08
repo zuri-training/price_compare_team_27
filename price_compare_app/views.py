@@ -84,9 +84,10 @@ def updateItem(request):
     elif action =='remove':
         wishItem.quantity -= 1
 
-    elif action =='delete':
-        wishItem.delete()
     wishItem.save()
+    
+    if action =='delete':
+        wishItem.delete()
 
     if wishItem.quantity <= 0:
         wishItem.delete()
