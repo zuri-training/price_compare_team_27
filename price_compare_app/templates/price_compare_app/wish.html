@@ -20,7 +20,7 @@
     
         <div class="product-div grid">
             
-            {% for item in items  %}
+            {% for item in best_price  %}
                       
                 <section class="product-card">
         
@@ -31,10 +31,10 @@
                     <div class="phone-txt">
         
                         <p class="phone-name">{{item.phone.name}}</p>
-        
+                        <p class="phone-name">Best Price: {{item.best_price|floatformat:2}}</p>
                         <div class="availabilty">
                             <p>Quantity</p>
-                            <p>4</p>
+                            <p>{{item.quantity}}</p>
                         </div>
         
                         <hr>
