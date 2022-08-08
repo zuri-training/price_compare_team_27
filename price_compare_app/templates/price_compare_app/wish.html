@@ -47,8 +47,9 @@
                         <div class='phone-name'><button data-product = '{{item.phone.id}}' data-action='delete' class="btn-wishlist update-cart">
                             Remove
                             </button></div>
-                            {% post_to_twitter "Get the best prices for {{item.phone.name}} on Pricify" object_or_url 'Twitter' %}
                             {% post_to_facebook object_or_url 'Facebook' %}
+                            {% post_to_twitter "Get the best prices for {{item.phone.name}} on Pricify" object_or_url 'Twitter' %}
+                            
                     </div>
         
                 </section>

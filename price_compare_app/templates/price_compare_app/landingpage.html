@@ -29,7 +29,7 @@
 
               <a href="{% url 'phone-details' phone.id %}"><section class="product-card">
                 <div class="price">$500</div>
-                <div class="fav"><span class="material-symbols-sharp fav-icon" style="font-size: 1.6em; font-weight: 400; color: var(--dark-text);">favorite</span></div>
+                <div class="fav"><span data-product = '{{phone.id}}' data-action = 'add' class="material-symbols-sharp fav-icon update-cart" style="font-size: 1.6em; font-weight: 400; color: var(--dark-text);">favorite</span></div>
 
                 <div class="phone-img">
                   <div class="img"><img src="{{phone.image.url}}" alt=""></div>

@@ -1,4 +1,5 @@
 {% load static %}
+{% load social_share %}
 <footer>
     
     <div class="footer-container">
@@ -45,8 +46,8 @@
             </ul>
             <ul class="list">
               <h5>Social</h5>
-              <li><a href="#">Facebook</a></li>
-              <li><a href="#">Twitter</a></li>
+              <li>{% post_to_facebook object_or_url 'Facebook' %}</li>
+              <li>{% post_to_twitter "Get the best prices on Pricify" object_or_url 'Twitter' %}</li>
               <li><a href="#">Instagram</a></li>
             </ul>
           </nav>
