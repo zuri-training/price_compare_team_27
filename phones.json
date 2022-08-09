@@ -5,8 +5,8 @@
     "fields": {
       "name": "Iphone 5",
       "brand": 1,
-      "created_on": "2022-07-31",
-      "modified_on": "2022-07-31",
+      "created_on": "2022-07-01 10:45:00",
+      "modified_on": "2022-07-15 02:33:00",
       "image": "/iphones/iphone5.webp",
       "url_jumia": "url.com",
       "url_konga": "iamge.com",
@@ -21,13 +21,13 @@
     "fields": {
       "name": "Iphone 6",
       "brand": 1,
-      "created_on": "2022-07-31",
-      "modified_on": "2022-07-31",
+      "created_on": "2022-07-02 08:45:00",
+      "modified_on": "2022-07-16 09:32:00",
       "image": "/iphones/iphone6.webp",
       "url_jumia": "https://www.jumia.com.ng/apple-refurbished-apple-iphone-6-16gb-grey-89901727.html",
       "url_konga": "https://www.konga.com/product/apple-iphone-6-4-7-16gb-grey-4623548",
-      "price_jumia": "70000",
-      "price_konga": "80000",
+      "price_jumia": "36000",
+      "price_konga": "64999",
       "star_reviews":4.0
     }
   },
@@ -37,13 +37,13 @@
     "fields": {
       "name": "Iphone 7",
       "brand": 1,
-      "created_on": "2022-07-31",
-      "modified_on": "2022-07-31",
+      "created_on": "2022-07-03 08:45:00",
+      "modified_on": "2022-07-17 08:45:00",
       "image": "/iphones/iphone7_plus.webp",
-      "url_jumia": "'https://www.jumia.com.ng/apple-renewed-iphone-7-plus-32gbram3gb-black-iphone7p-118774089.html",
-      "url_konga": "https://www.konga.com/product/iphone-7-plus-5-5-32gb-rom-3gb-ram-nano-sim-black-5226700",
-      "price_jumia": "11000",
-      "price_konga": "120000",
+      "url_jumia": "https://www.jumia.com.ng/apple-renewed-iphone-7-plus-32gbram3gb-black-iphone7p-118774089.html",
+      "url_konga": "https://www.konga.com/product/apple-iphone-7-plus-128gb-red-3284491",
+      "price_jumia": "99000",
+      "price_konga": "190000",
       "star_reviews":4.5
     }
   },
@@ -53,13 +53,13 @@
     "fields": {
       "name": "Iphone 8 Plus",
       "brand": 1,
-      "created_on": "2022-07-31",
-      "modified_on": "2022-07-31",
+      "created_on": "2022-07-04 08:45:00",
+      "modified_on": "2022-07-18 09:40:30",
       "image": "/iphones/iphone8_plus.webp",
-      "url_jumia": "'https://www.jumia.com.ng/apple-iphone-8-3gb64gb-space-gray-5.5-inch-refurbished-99-new-3d-touch-fingerprint-ios-smartphone-73398517.html",
+      "url_jumia": "https://www.jumia.com.ng/apple-iphone-8-3gb64gb-space-gray-5.5-inch-refurbished-99-new-3d-touch-fingerprint-ios-smartphone-73398517.html",
       "url_konga": "https://www.konga.com/product/apple-iphone-8-plus-5-5-64gb-rom-3gb-ram-ios-11-12mp-5630055",
-      "price_jumia": "129000",
-      "price_konga": "130000",
+      "price_jumia": "200999",
+      "price_konga": "188999",
       "star_reviews":4.5
     }
   },
@@ -69,13 +69,13 @@
     "fields": {
       "name": "Iphone X",
       "brand": 1,
-      "created_on": "2022-07-31",
-      "modified_on": "2022-07-31",
+      "created_on": "2022-07-05 10:22:34",
+      "modified_on": "2022-07-19 11:45:00",
       "image": "/iphones/iphoneX.webp",
       "url_jumia": "https://www.jumia.com.ng/apple-iphone-x-256gb-5.8-inch-3gb-ram-space-grey-92801020.html",
       "url_konga": "https://www.konga.com/product/apple-iphone-x-256gb-pouch-screen-guide-selfie-stick-grey-4678237",
-      "price_jumia": "150000",
-      "price_konga": "170000",
+      "price_jumia": "194000",
+      "price_konga": "199000",
       "star_reviews":4.5
     }
   },
@@ -85,13 +85,13 @@
     "fields": {
       "name": "Iphone Xs Max",
       "brand": 1,
-      "created_on": "2022-07-31",
-      "modified_on": "2022-07-31",
+      "created_on": "2022-07-06 07:45:00",
+      "modified_on": "2022-07-20 06:40:00",
       "image": "/iphones/iphoneXS_Max.jpg",
       "url_jumia": "https://www.jumia.com.ng/apple-iphone-xs-max-256gb-4gb-6.5-gold.-free-case-screen-guide-134599590.html",
       "url_konga": "https://www.konga.com/product/apple-iphone-xs-max-256gb-rom-4gb-ram-12mp-6-5-space-grey-free-case-and-screen-guide-5763466",
-      "price_jumia": "150000",
-      "price_konga": "170000",
+      "price_jumia": "300000",
+      "price_konga": "289500",
       "star_reviews":4.5
     }
   },
@@ -101,13 +101,13 @@
     "fields": {
       "name": "Iphone 11",
       "brand": 1,
-      "created_on": "2022-07-31",
-      "modified_on": "2022-07-31",
+      "created_on": "2022-07-07 01:45:09",
+      "modified_on": "2022-07-21 02:04:00",
       "image": "iphones/iphone11.jpg",
       "url_jumia": "https://www.jumia.com.ng/apple-iphone-11-128gb-black-authorized-reseller-store-44865293.html",
-      "url_konga": "'https://www.konga.com/product/apple-iphone-11-128gb-rom-4gb-ram-red-4719450",
-      "price_jumia": "150000",
-      "price_konga": "170000",
+      "url_konga": "https://www.konga.com/product/apple-iphone-11-128gb-rom-4gb-ram-red-4719450",
+      "price_jumia": "424999",
+      "price_konga": "365000",
       "star_reviews":4.0
     }
   },
@@ -117,13 +117,13 @@
     "fields": {
       "name": "Iphone 11 Pro Max",
       "brand": 1,
-      "created_on": "2022-07-31",
-      "modified_on": "2022-07-31",
+      "created_on": "2022-07-08 08:45:00",
+      "modified_on": "2022-07-21 08:45:00",
       "image": "/iphones/iphone11_ProMax.webp",
-      "url_jumia": "'https://www.jumia.com.ng/iphone-11-pro-max-6.5-inch-4gb-ram-256gb-romios-13-12mp12mp12mp12mp-4g-lte-smartphone-midnight-green-apple-mpg1598798.html",
+      "url_jumia": "https://www.jumia.com.ng/iphone-11-pro-max-6.5-inch-4gb-ram-256gb-romios-13-12mp12mp12mp12mp-4g-lte-smartphone-midnight-green-apple-mpg1598798.html",
       "url_konga": "https://www.konga.com/product/apple-iphone-11-pro-max-6-5-256gb-rom-4gb-ram-ios-13-3969mah-gold-5699852",
-      "price_jumia": "150000",
-      "price_konga": "170000",
+      "price_jumia": "530000",
+      "price_konga": "485000",
       "star_reviews":4.0
     }
   },
@@ -133,13 +133,13 @@
     "fields": {
       "name": "Iphone 12",
       "brand": 1,
-      "created_on": "2022-07-31",
-      "modified_on": "2022-07-31",
+      "created_on": "2022-07-09 04:21:14",
+      "modified_on": "2022-07-22 03:24:13",
       "image": "/iphones/iphone12.webp",
-      "url_jumia": "'https://www.jumia.com.ng/apple-iphone-12-128gb-purple-78398928.html",
+      "url_jumia": "https://www.jumia.com.ng/iphone-12-6.1-inches-4gb-ram-64gb-rom-12mp-12mp-2815mah-black-apple-mpg1566249.html",
       "url_konga": "https://www.konga.com/product/apple-iphone-12-6-1-display-128gb-rom-4gb-ram-single-sim-2815mah-power-bank-blue-5682008",
-      "price_jumia": "150000",
-      "price_konga": "170000",
+      "price_jumia": "375000",
+      "price_konga": "455000",
       "star_reviews":4.0
     }
   },
@@ -149,13 +149,13 @@
     "fields": {
       "name": "Iphone 12 Pro Max",
       "brand": 1,
-      "created_on": "2022-07-31",
-      "modified_on": "2022-07-31",
+      "created_on": "2022-07-10 01:45:00",
+      "modified_on": "2022-07-23 01:21:20",
       "image": "/iphones/iphone12_ProMax.webp",
       "url_jumia": "https://www.jumia.com.ng/iphone-12-pro-max-256gb-6gb-ram-6.7-inch12mp12mp12mp-pacific-blue-apple-mpg1595399.html",
       "url_konga": "https://www.konga.com/product/apple-iphone-12-pro-max-256gb-6gb-ram-6-7-pacific-blue-5187171",
-      "price_jumia": "150000",
-      "price_konga": "170000",
+      "price_jumia": "660000",
+      "price_konga": "660000",
       "star_reviews":4.0
     }
   },
@@ -165,13 +165,13 @@
     "fields": {
       "name": "Iphone 13 Pro Max",
       "brand": 1,
-      "created_on": "2022-07-31",
-      "modified_on": "2022-07-31",
+      "created_on": "2022-07-11 07:44:00",
+      "modified_on": "2022-07-24 07:45:11",
       "image": "/iphones/iphone13_ProMax.webp",
-      "url_jumia": "https://www.jumia.com.ng/apple-iphone-13-pro-max-6.7-xdr-display-6gb-ram-128gb-rom-ios-15-sierra-blue-93389767.html",
+      "url_jumia": "https://www.jumia.com.ng/iphone-13-pro-6.1-inch-super-retina-xdr-display-with-promotion-6gb-ram-256gb-rom-ios-15-5g-facetime-sierra-blue-apple-mpg1620490.html",
       "url_konga": "https://www.konga.com/product/apple-iphone-13-pro-128gb-5g-sierra-blue-5501066",
-      "price_jumia": "150000",
-      "price_konga": "170000",
+      "price_jumia": "796312",
+      "price_konga": "670000",
       "star_reviews":4.0
     }
   },
@@ -182,13 +182,13 @@
     "fields": {
       "name": "Samsung A03 Core",
       "brand": 2,
-      "created_on": "2022-07-31",
-      "modified_on": "2022-07-31",
+      "created_on": "2022-07-12 09:56:00",
+      "modified_on": "2022-07-25 08:45:54",
       "image": "/samsung/A03-Core.jpg",
       "url_jumia": "https://www.jumia.com.ng/samsung-galaxy-a03-core-2gb32gb-memory-onyx-136322463.html",
-      "url_konga": "https://www.konga.com/product/samsung-samsung-galaxy-a03-core-2gb-ram-32gb-rom-dual-sim-4g-lte-5000mah-5706106",
-      "price_jumia": "150000",
-      "price_konga": "170000",
+      "url_konga": "https://www.konga.com/product/samsung-galaxy-a03-core-32gb-rom-2gb-ram-dual-sim-4g-lte-5000mah-6-5-black-5760875",
+      "price_jumia": "51990",
+      "price_konga": "63000",
       "star_reviews":4.0
     }
   },
@@ -198,13 +198,13 @@
     "fields": {
       "name": "Samsung A13",
       "brand": 2,
-      "created_on": "2022-07-31",
-      "modified_on": "2022-07-31",
+      "created_on": "2022-07-13 08:45:00",
+      "modified_on": "2022-07-26 01:12:00",
       "image": "/samsung/A13.webp",
       "url_jumia": "https://www.jumia.com.ng/samsung-galaxy-a13-4gb64gb-memory-5000-mah-battery-black-126589247.html",
-      "url_konga": "https://www.konga.com/product/samsung-samsung-galaxy-a13-4gb-ram-64gb-rom-lte-5000mah-5706179",
-      "price_jumia": "150000",
-      "price_konga": "170000",
+      "url_konga": "https://www.konga.com/product/samsung-galaxy-a13-6-6-128gb-rom-4gb-ram-50mp-dual-sim-4g-lte-fingerprint-blue-5780303",
+      "price_jumia": "90650",
+      "price_konga": "138000",
       "star_reviews":4.5
     }
   },
@@ -214,29 +214,28 @@
     "fields": {
       "name": "Samsung A22",
       "brand": 2,
-      "created_on": "2022-07-31",
-      "modified_on": "2022-07-31",
+      "created_on": "2022-07-14 08:45:00",
+      "modified_on": "2022-07-30 05:45:00",
       "image": "/samsung/A22.webp",
       "url_jumia": "https://www.jumia.com.ng/samsung-galaxy-a22-6.4-inch-4gb-ram-64gb-android-11-48mp-8mp-2mp-2mp-13mp-dual-sim-mint-81157923.html",
       "url_konga": "https://www.konga.com/product/samsung-galaxy-a22-5g-64gb-rom-4gb-ram-5000mah-android-11-6-6-white-5673453",
-      "price_jumia": "150000",
-      "price_konga": "170000",
+      "price_jumia": "139000",
+      "price_konga": "125000",
       "star_reviews":4.2
     }
   },
-  {
     "model": "price_compare_app.phone",
     "pk": 15,
     "fields": {
       "name": "Samsung A23",
       "brand": 2,
-      "created_on": "2022-07-31",
-      "modified_on": "2022-07-31",
+      "created_on": "2022-07-15 04:45:00",
+      "modified_on": "2022-07-30 02:45:00",
       "image": "/samsung/A23.webp",
       "url_jumia": "https://www.jumia.com.ng/samsung-galaxy-a23-6.6-tft-screen-4gb128gb-memory-50mp-quad-camera-5000-mah-battery-android-12-blue-106401391.html",
       "url_konga": "https://www.konga.com/product/samsung-samsung-galaxy-a23-6-6-4gb-ram-128gb-rom-dual-sim-5000mah-peach-5674621",
-      "price_jumia": "150000",
-      "price_konga": "170000",
+      "price_jumia": "121798",
+      "price_konga": "139000",
       "star_reviews":4.4
     }
   },
@@ -246,13 +245,13 @@
     "fields": {
       "name": "Samsung A53",
       "brand": 2,
-      "created_on": "2022-07-31",
-      "modified_on": "2022-07-31",
+      "created_on": "2022-07-01 01:45:00",
+      "modified_on": "2022-07-15 02:40:00",
       "image": "/samsung/A53.webp",
       "url_jumia": "https://www.jumia.com.ng/samsung-galaxy-a53-5g-6gb128gb-memory-android-12-black-125642178.html",
-      "url_konga": "https://www.konga.com/product/samsung-samsung-galaxy-a53-6-5-6gb-ram-128gb-rom-dual-sim-5g-5000mah-white-5674576",
-      "price_jumia": "150000",
-      "price_konga": "170000",
+      "url_konga": "https://www.konga.com/product/samsung-samsung-galaxy-a53-6-5-6gb-ram-128gb-rom-dual-sim-5g-5000mah-black-5670340",
+      "price_jumia": "210350",
+      "price_konga": "242200",
       "star_reviews":3.9
     }
   },
@@ -262,13 +261,13 @@
     "fields": {
       "name": "Samsung A54",
       "brand": 2,
-      "created_on": "2022-07-31",
-      "modified_on": "2022-07-31",
+      "created_on": "2022-07-02 08:45:00",
+      "modified_on": "2022-07-16 10:45:00",
       "image": "/samsung/A54.webp",
       "url_jumia": "https://www.jumia.com.ng/samsung-galaxy-a53-5g-6gb128gb-memory-android-12-black-125642178.html",
       "url_konga": "https://www.konga.com/product/samsung-samsung-galaxy-a53-6-5-6gb-ram-128gb-rom-dual-sim-5g-5000mah-white-5674576",
-      "price_jumia": "150000",
-      "price_konga": "170000",
+      "price_jumia": "210350",
+      "price_konga": "242200",
       "star_reviews":3.9
     }
   },
@@ -278,13 +277,13 @@
     "fields": {
       "name": "Samsung S9 Plus",
       "brand": 2,
-      "created_on": "2022-07-31",
-      "modified_on": "2022-07-31",
+      "created_on": "2022-07-03 08:32:00",
+      "modified_on": "2022-07-17 10:45:59",
       "image": "/samsung/S9plus.webp",
       "url_jumia": "https://www.jumia.com.ng/samsung-galaxy-s9-plus-6gb-ram64gb-rom8.0-oreo.-black-111935879.html",
       "url_konga": "https://www.konga.com/product/samsung-galaxy-s9-plus-6-2-single-sim-6gb-ram-64gb-rom-3500mah-4g-blue-5180044",
-      "price_jumia": "150000",
-      "price_konga": "170000",
+      "price_jumia": "122000",
+      "price_konga": "140000",
       "star_reviews":4.3
     }
   },
@@ -294,13 +293,13 @@
     "fields": {
       "name": "Samsung S10 Plus",
       "brand": 2,
-      "created_on": "2022-07-31",
-      "modified_on": "2022-07-31",
+      "created_on": "2022-07-04 06:29:00",
+      "modified_on": "2022-07-18 01:45:36",
       "image": "/samsung/S10plus.webp",
       "url_jumia": "https://www.jumia.com.ng/samsung-galaxy-s10-plus-s10-6.4-inch-amoled-8gb128gb-rom-4g-smartphone-back-case-screen-guide-100783895.html",
       "url_konga": "https://www.konga.com/product/samsung-s10-plus-8gb-128gb-6-4-single-nano-sim-black-5374804",
-      "price_jumia": "150000",
-      "price_konga": "170000",
+      "price_jumia": "200000",
+      "price_konga": "250000",
       "star_reviews":4.2
     }
   },
@@ -310,13 +309,13 @@
     "fields": {
       "name": "Samsung S20 Ultra",
       "brand": 2,
-      "created_on": "2022-07-31",
-      "modified_on": "2022-07-31",
+      "created_on": "2022-07-05 08:45:00",
+      "modified_on": "2022-07-19 08:45:00",
       "image": "/samsung/S20Ultra.jpg",
       "url_jumia": "https://www.jumia.com.ng/samsung-galaxy-s20-5g-12128gb-single-sim-android-10-octa-core-6.2-inch-quad-hd-121264mp-tri-lens-gray-134489070.html",
       "url_konga": "https://www.konga.com/product/samsung-galaxy-s20-ultra-5g-12-6-9-128gb-rom-12gb-ram-5g-single-sim-5000mah-black-5778075",
-      "price_jumia": "150000",
-      "price_konga": "170000",
+      "price_jumia": "270000",
+      "price_konga": "385000",
       "star_reviews":4.5
     }
   },
@@ -326,13 +325,13 @@
     "fields": {
       "name": "Samsung S21 Ultra",
       "brand": 2,
-      "created_on": "2022-07-31",
-      "modified_on": "2022-07-31",
+      "created_on": "2022-07-06 07:00:00",
+      "modified_on": "2022-07-20 08:56:00",
       "image": "/samsung/S21Ultra.webp",
       "url_jumia": "https://www.jumia.com.ng/samsung-galaxy-s21-ultra-5g-12256gb-g998u-android-11-single-sim-6.8-inch-quad-hd-108121010mp-four-camera-black-122317208.html",
       "url_konga": "https://www.konga.com/product/samsung-galaxy-s21-ultra-6-8-256gb-rom-12gb-ram-dual-sim-5g-5000mah-fingerprint-silver-5090504",
-      "price_jumia": "150000",
-      "price_konga": "170000",
+      "price_jumia": "530000",
+      "price_konga": "630000",
       "star_reviews":4.1
     }
   },
@@ -342,31 +341,29 @@
     "fields": {
       "name": "Samsung S22 Ultra",
       "brand": 2,
-      "created_on": "2022-07-31",
-      "modified_on": "2022-07-31",
+      "created_on": "2022-07-07 01:09:00",
+      "modified_on": "2022-07-21 03:18:00",
       "image": "/samsung/S22Ultra.jpg",
       "url_jumia": "https://www.jumia.com.ng/samsung-galaxy-s22-ultra-dual-sim-12gb-ram-256gb-5g-phantom-black-107448815.html",
       "url_konga": "https://www.konga.com/product/samsung-galaxy-s22-ultra-5g-6-8-256gb-rom-12gb-ram-5g-dual-sim-5000mah-black-5797496",
-      "price_jumia": "150000",
-      "price_konga": "170000",
+      "price_jumia": "750000",
+      "price_konga": "892400",
       "star_reviews":4.3
     }
   },
-
-
   {
     "model": "price_compare_app.phone",
     "pk": 23,
     "fields": {
       "name": "Huawei P10 Lite",
       "brand": 3,
-      "created_on": "2022-07-31",
-      "modified_on": "2022-07-31",
+      "created_on": "2022-07-08 06:45:45",
+      "modified_on": "2022-07-22 05:56:34",
       "image": "/huawei/p10_lite.webp",
       "url_jumia": "https://www.jumia.com.ng/huawei-p10-lite-5.2inch-4gbram64gbrom-dual-sim-card-97074590.html",
       "url_konga": "https://www.konga.com/product/huawei-p10-lite-64gb-rom-4gb-ram-dual-sim-white-5577702?gclid=Cj0KCQjwof6WBhD4ARIsAOi65ajVyR6vIC3MoCQJoSL00mDVyZiNRixBLDzEw9RnT-4e-2lOn6HqZMcaApVXEALw_wcB",
-      "price_jumia": "150000",
-      "price_konga": "170000",
+      "price_jumia": "72000",
+      "price_konga": "75000",
       "star_reviews":4.3
     }
   },
@@ -376,13 +373,13 @@
     "fields": {
       "name": "Huawei P30 Lite",
       "brand": 3,
-      "created_on": "2022-07-31",
-      "modified_on": "2022-07-31",
+      "created_on": "2022-07-09 03:45:00",
+      "modified_on": "2022-07-23 08:30:00",
       "image": "/huawei/p30_lite.webp",
-      "url_jumia": "https://www.jumia.com.ng/huawei-p30-lite-6.15-inch-6gb-ram-256gb-rom-android-9.048mp-8mp-2mp-dual-sim-midnight-black-71467107.html",
+      "url_jumia": "https://www.jumia.com.ng/huawei-p30-lite-smartphone-6.15-screen-6gb128gb-memory-3240mah-battery-android-9.0-peacock-blue-106075850.html",
       "url_konga": "https://www.konga.com/product/huawei-p30-lite-6-15-6gb-ram-256gb-rom-48-8-2-mp-32mp-selfie-hybrid-dual-blue-5716380",
-      "price_jumia": "150000",
-      "price_konga": "170000",
+      "price_jumia": "89900",
+      "price_konga": "225000",
       "star_reviews":4.3
     }
   },
@@ -392,13 +389,13 @@
     "fields": {
       "name": "Huawei P40 Pro",
       "brand": 3,
-      "created_on": "2022-07-31",
-      "modified_on": "2022-07-31",
+      "created_on": "2022-07-10 01:45:00",
+      "modified_on": "2022-07-24 02:20:00",
       "image": "/huawei/p40_pro.jpg",
-      "url_jumia": "https://www.jumia.com.ng/huawei-p40-pro-6.58-inch-8gb-ram-256gb-rom-android-10-50mp-12mp-40mp-32mp-5g-dual-sim-silver-frost-106095064.html",
+      "url_jumia": "https://www.jumia.com.ng/huawei-p40-pro-5g-8256gb-dual-sim-android-10-kirin-990-5g-32.0mptri-lens-camera-6.58-inch-amoled-no-google-play-black-85762700.html",
       "url_konga": "https://www.konga.com/product/huawei-p40-pro-dual-sim-8gb-ram-256gb-rom-4g-lte-6-58-4200mah-fingerprint-silver-5136141?gclid=Cj0KCQjwof6WBhD4ARIsAOi65ahiqEPtmj5AJoRnWQKtmORLzAmuP1D-O7kCsMqlu273JnqauGW_73caAiefEALw_wcB",
-      "price_jumia": "150000",
-      "price_konga": "170000",
+      "price_jumia": "510400",
+      "price_konga": "479999",
       "star_reviews":4.3
     }
   },
@@ -408,13 +405,13 @@
     "fields": {
       "name": "Huawei P50 Pro",
       "brand": 3,
-      "created_on": "2022-07-31",
-      "modified_on": "2022-07-31",
+      "created_on": "2022-07-11 08:45:00",
+      "modified_on": "2022-07-25 08:45:00",
       "image": "/huawei/p50_pro.webp",
       "url_jumia": "https://www.jumia.com.ng/huawei-p50-pro-6.6-256gb-rom8gb-ram-harmonyos-2.0-50401364mp-13mp-selfie-4g-hybrid-dual-4360mah-golden-black-123195151.html",
       "url_konga": "https://www.konga.com/product/huawei-p50-pro-6-6-8gb-ram-256gb-rom-harmony-os-dual-sim-golden-black-5774129",
-      "price_jumia": "150000",
-      "price_konga": "170000",
+      "price_jumia": "699999",
+      "price_konga": "540000",
       "star_reviews":4.3
     }
   },
@@ -424,13 +421,13 @@
     "fields": {
       "name": "Huawei Y6 Prime",
       "brand": 3,
-      "created_on": "2022-07-31",
-      "modified_on": "2022-07-31",
+      "created_on": "2022-07-12 05:45:00",
+      "modified_on": "2022-07-26 08:43:04",
       "image": "/huawei/y6_prime.webp",
       "url_jumia": "https://www.jumia.com.ng/huawei-p50-pro-6.6-256gb-rom8gb-ram-harmonyos-2.0-50401364mp-13mp-selfie-4g-hybrid-dual-4360mah-golden-black-123195151.html",
-      "url_konga": "https://www.konga.com/product/huawei-y6-prime-2018-5-7-8gb-ram-128gb-rom-4g-lte-dual-sim-3000mah-black-5785260",
-      "price_jumia": "150000",
-      "price_konga": "170000",
+      "url_konga": "https://www.konga.com/product/huawei-p50-pro-6-6oled-256gb-rom-8gb-ram-4g-lte-fingerprint-dual-sim-black-5747104",
+      "price_jumia": "699999",
+      "price_konga": "560000",
       "star_reviews":4.3
     }
   },
@@ -440,13 +437,13 @@
     "fields": {
       "name": "Huawei Y9",
       "brand": 3,
-      "created_on": "2022-07-31",
-      "modified_on": "2022-07-31",
+      "created_on": "2022-07-13 07:23:00",
+      "modified_on": "2022-07-27 08:45:00",
       "image": "/huawei/y9.webp",
       "url_jumia": "https://www.jumia.com.ng/huawei-y9-2019-smartphone-6.56gb128gb-ram-dual-sim-93925424.html",
       "url_konga": "https://www.konga.com/product/huawei-y9-2019-128gb-rom-6gb-am-dual-sim-gold-5577684",
-      "price_jumia": "150000",
-      "price_konga": "170000",
+      "price_jumia": "99900",
+      "price_konga": "99000",
       "star_reviews":4.3
     }
   },
@@ -456,12 +453,12 @@
     "fields": {
       "name": "Huawei Y9a",
       "brand": 3,
-      "created_on": "2022-07-31",
-      "modified_on": "2022-07-31",
+      "created_on": "2022-07-14 08:45:00",
+      "modified_on": "2022-07-28 08:45:00",
       "image": "/huawei/y9a.jpg",
-      "url_jumia": "https://www.jumia.com.ng/huawei-y9a-6.63-8gb-ram128gb-rom-64822mp-quad-camera-16mp-motorized-selfie-.-4300mah-4g-sakura-pink-69477481.html",
+      "url_jumia": "https://www.jumia.com.ng/huawei-y9a-6.63-inch-8gb-ram-128gb-rom-android-10-64mp-8mp-2mp-2mp-16mp-dual-sim-sakura-pink-71276437.html",
       "url_konga": "https://www.konga.com/product/huawei-y9a-dual-sim-8gb-ram-128gb-rom-4g-lte-6-63-4300mah-fingerprint-black-5612167",
-      "price_jumia": "150000",
+      "price_jumia": "170000",
       "price_konga": "170000",
       "star_reviews":4.3
     }
@@ -474,13 +471,13 @@
     "fields": {
       "name": "Infinix Hot-11",
       "brand": 4,
-      "created_on": "2022-07-31",
-      "modified_on": "2022-07-31",
+      "created_on": "2022-07-15 08:45:00",
+      "modified_on": "2022-07-29 09:25:00",
       "image": "/huawei/hot_11.webp",
-      "url_jumia": "https://www.jumia.com.ng/infinix-hot-11-6.82-hd-4gb-ram-128gb-rom-android-11-polar-black-139128307.html",
+      "url_jumia": "https://www.jumia.com.ng/infinix-hot-11-play-x688b-6000-mah-64-gb-storage-4-gb-ram-black-94735893.html",
       "url_konga": "https://www.konga.com/product/infinix-hot-11-4gb-ram-128gb-rom-6-82-6000mah-4g-lte-fingerprint-purple-5782514",
-      "price_jumia": "150000",
-      "price_konga": "170000",
+      "price_jumia": "79300",
+      "price_konga": "119000",
       "star_reviews":4.3
     }
   },
@@ -490,13 +487,13 @@
     "fields": {
       "name": "Infinix Hot-11 Play",
       "brand": 4,
-      "created_on": "2022-07-31",
-      "modified_on": "2022-07-31",
+      "created_on": "2022-07-16 08:45:00",
+      "modified_on": "2022-07-30 08:45:00",
       "image": "/huawei/hot_11play.webp",
       "url_jumia": "https://www.jumia.com.ng/infinix-hot-11-play-x688b-6000-mah-64-gb-storage-4-gb-ram-black-94735893.html",
       "url_konga": "https://www.konga.com/product/infinix-hot-11-play-x688b-6-82-hd-64gb-rom-4gb-ram-13mp-8mp-6000mah-4g-lte-helio-g35-blue-5596949",
-      "price_jumia": "150000",
-      "price_konga": "170000",
+      "price_jumia": "79300",
+      "price_konga": "78800",
       "star_reviews":4.3
     }
   },
@@ -506,13 +503,13 @@
     "fields": {
       "name": "Infinix Hot-12i",
       "brand": 4,
-      "created_on": "2022-07-31",
-      "modified_on": "2022-07-31",
+      "created_on": "2022-07-01 01:45:00",
+      "modified_on": "2022-07-15 08:45:00",
       "image": "/huawei/hot_12i.webp",
       "url_jumia": "https://www.jumia.com.ng/infinix-hot-12i-4gb64gb-memory-racing-black-129805008.html",
       "url_konga": "https://www.konga.com/product/infinix-hot-12i-6-6hd-64gb-rom-4gb-4g-lte-5000mah-fingerprint-gold-5760934",
-      "price_jumia": "150000",
-      "price_konga": "170000",
+      "price_jumia": "75350",
+      "price_konga": "96000",
       "star_reviews":4.3
     }
   },
@@ -522,13 +519,13 @@
     "fields": {
       "name": "Infinix Hot-12 Play",
       "brand": 4,
-      "created_on": "2022-07-31",
-      "modified_on": "2022-07-31",
+      "created_on": "2022-07-02 08:45:00",
+      "modified_on": "2022-07-16 01:45:00",
       "image": "/huawei/hot_12play.jpg",
-      "url_jumia": "https://www.jumia.com.ng/infinix-hot-12-play-x6816-6.82-1284gb-ram-13mp8mp-4g-lte-6000mah-blue-130414749.html",
+      "url_jumia": "https://www.jumia.com.ng/infinix-hot-12-play-x6816-6.82-hd-4gb-ramup-to-7gb-64gb-rom-6000mah-android-11-13mp-camera-4g-fingerprint-black-131166566.html",
       "url_konga": "https://www.konga.com/product/infinix-hot-12-play-6-82-128gb-rom-4gb-ram-dual-sim-4g-lte-fingerprint-6000mah-green-5724735",
-      "price_jumia": "150000",
-      "price_konga": "170000",
+      "price_jumia": "84990",
+      "price_konga": "97000",
       "star_reviews":4.3
     }
   },
@@ -538,13 +535,13 @@
     "fields": {
       "name": "Infinix Note-10",
       "brand": 4,
-      "created_on": "2022-07-31",
-      "modified_on": "2022-07-31",
+      "created_on": "2022-07-03 02:45:00",
+      "modified_on": "2022-07-17 08:45:00",
       "image": "/huawei/note_10.webp",
       "url_jumia": "https://www.jumia.com.ng/infinix-note-10-x693-6.95-fhd-128gb4gb-memory-16mp-selfie-camera48mp-ultra-night-camera-android-11-106836009.html",
       "url_konga": "https://www.konga.com/product/infinix-note-10-6-95-4gb-ram-128gb-rom-48mp-dual-sim-4g-lte-5000mah-fingerprint-green-5782700",
-      "price_jumia": "150000",
-      "price_konga": "170000",
+      "price_jumia": "138000",
+      "price_konga": "120000",
       "star_reviews":4.3
     }
   },
@@ -554,13 +551,13 @@
     "fields": {
       "name": "Infinix Note-11 Pro",
       "brand": 4,
-      "created_on": "2022-07-31",
-      "modified_on": "2022-07-31",
+      "created_on": "2022-07-04 03:45:00",
+      "modified_on": "2022-07-18 08:45:00",
       "image": "/huawei/note_11pro.webp",
       "url_jumia": "https://www.jumia.com.ng/infinix-note-11-pro-8gb128gb-memory-android-11-mist-blue-129754367.html",
       "url_konga": "https://www.konga.com/product/infinix-note-11-pro-6-95-8gb-ram-128gb-rom-dual-sim-4g-lte-64mp-fingerprint-5000mah-blue-5760920",
-      "price_jumia": "150000",
-      "price_konga": "170000",
+      "price_jumia": "134000",
+      "price_konga": "175000",
       "star_reviews":4.3
     }
   },
@@ -570,13 +567,13 @@
     "fields": {
       "name": "Infinix Note-12i",
       "brand": 4,
-      "created_on": "2022-07-31",
-      "modified_on": "2022-07-31",
+      "created_on": "2022-07-05 08:45:00",
+      "modified_on": "2022-07-19 03:45:00",
       "image": "/huawei/note_12i.webp",
       "url_jumia": "https://www.jumia.com.ng/infinix-note-12i-4gb128gb-memory-snowfall-129859134.html",
-      "url_konga": "https://www.konga.com/product/infinix-note-12i-x6819-128gb-4gb-50mp-8mp-dual-sim-5000mah-snowfall-5748844",
-      "price_jumia": "150000",
-      "price_konga": "170000",
+      "url_konga": "https://www.konga.com/product/infinix-note-12i-6-82-4gb-ram-128gb-rom-dual-sim-4g-lte-5000mah-5744839",
+      "price_jumia": "104000",
+      "price_konga": "108000",
       "star_reviews":4.3
     }
   },
@@ -586,13 +583,13 @@
     "fields": {
       "name": "Infinix Note 12",
       "brand": 4,
-      "created_on": "2022-07-31",
-      "modified_on": "2022-07-31",
+      "created_on": "2022-07-06 04:45:00",
+      "modified_on": "2022-07-20 08:45:00",
       "image": "/huawei/note12.webp",
-      "url_jumia": "https://www.jumia.com.ng/infinix-note-12-6.7-fhd-128gb-rom-4gb-ram-50-mp-wide-2-mp-depth-qvga-16mpselfie-4g-lte-5000mah-gold-122494504.html",
+      "url_jumia": "https://www.jumia.com.ng/infinix-note-12-6.7-fhd-128gb-rom-4gb-ram-50-mp-wide-2-mp-depth-qvga-16mpselfie-4g-lte-5000mah-black-125697369.html",
       "url_konga": "https://www.konga.com/product/infinix-note-12-6-7-4gb-ram-128gb-rom-android-11-dual-sim-4g-lte-5000mah-gold-5741889",
-      "price_jumia": "150000",
-      "price_konga": "170000",
+      "price_jumia": "128000",
+      "price_konga": "135000",
       "star_reviews":4.3
     }
   },
@@ -602,13 +599,13 @@
     "fields": {
       "name": "Infinix Smart 6",
       "brand": 4,
-      "created_on": "2022-07-31",
-      "modified_on": "2022-07-31",
+      "created_on": "2022-07-07 08:45:00",
+      "modified_on": "2022-07-21 04:45:00",
       "image": "/huawei/smart6.webp",
       "url_jumia": "https://www.jumia.com.ng/infinix-smart-6-6.6-2gb32gb-5000mah-android-11-midnight-black-127629700.html",
       "url_konga": "https://www.konga.com/product/infinix-smart-6x657-6-6-hd-32gb-rom-2gb-ram-8mp-8mp-5000mah-3g-ocean-blue-5684008",
-      "price_jumia": "150000",
-      "price_konga": "170000",
+      "price_jumia": "53500",
+      "price_konga": "58000",
       "star_reviews":4.3
     }
   },
@@ -618,13 +615,13 @@
     "fields": {
       "name": "Infinix ZeroX",
       "brand": 4,
-      "created_on": "2022-07-31",
-      "modified_on": "2022-07-31",
+      "created_on": "2022-07-08 05:45:00",
+      "modified_on": "2022-07-22 08:45:00",
       "image": "/huawei/zeroX.webp",
       "url_jumia": "https://www.jumia.com.ng/infinix-zero-x-8gb128gb-memory-android-11-starry-silver-129757280.html",
       "url_konga": "https://www.konga.com/product/infinix-infinix-zero-x-6-67-128gb-rom-8gb-ram-4500-mah-dual-sim-silver-5504785",
-      "price_jumia": "150000",
-      "price_konga": "170000",
+      "price_jumia": "165000",
+      "price_konga": "165000",
       "star_reviews":4.3
     }
   },
@@ -634,13 +631,13 @@
     "fields": {
       "name": "Oppo a3s",
       "brand": 5,
-      "created_on": "2022-07-31",
-      "modified_on": "2022-07-31",
+      "created_on": "2022-07-09 08:45:00",
+      "modified_on": "2022-07-23 05:45:00",
       "image": "/Oppo/a3s.webp",
       "url_jumia": "https://www.jumia.com.ng/oppo-a3s-blue-6.2-64gb-4gb-ram-4230mah-141561905.html",
-      "url_konga": "https://www.konga.com/product/oppo-a3s-64gb-rom-4gb-ram-4g-lte-dual-sim-6-2-inch-display-blue-5789057",
-      "price_jumia": "150000",
-      "price_konga": "170000",
+      "url_konga": "https://www.konga.com/product/oppo-a3s-6-2-64gb-4gb-ram-4g-lte-dual-sim-blue-5769744",
+      "price_jumia": "82750",
+      "price_konga": "83200",
       "star_reviews":4.3
     }
   },
@@ -650,13 +647,13 @@
     "fields": {
       "name": "Oppo a16k",
       "brand": 5,
-      "created_on": "2022-07-31",
-      "modified_on": "2022-07-31",
+      "created_on": "2022-07-10 08:45:00",
+      "modified_on": "2022-07-24 08:45:00",
       "image": "/Oppo/a16k.jpg",
-      "url_jumia": "https://www.jumia.com.ng/oppo-a16k-blue-6.52-64gb-4gb-ram-4230mah-98658988.html",
+      "url_jumia": "https://www.jumia.com.ng/a16k-6.52-inch-4gb-ram-64gb-rom-13mp-5mp-android-11-dual-sim-blue-oppo-mpg1662887.html",
       "url_konga": "https://www.konga.com/product/oppo-a16k-6-52-64gb-rom-4gb-ram-dual-sim-4g-lte-13mp-android-11-4230mah-blue-5620878",
-      "price_jumia": "150000",
-      "price_konga": "170000",
+      "price_jumia": "108000",
+      "price_konga": "95000",
       "star_reviews":4.3
     }
   },
@@ -666,13 +663,13 @@
     "fields": {
       "name": "Oppo a54",
       "brand": 5,
-      "created_on": "2022-07-31",
-      "modified_on": "2022-07-31",
+      "created_on": "2022-07-11 05:45:00",
+      "modified_on": "2022-07-26 08:45:00",
       "image": "/Oppo/a54.webp",
       "url_jumia": "https://www.jumia.com.ng/oppo-a54-6.51-inch-4gb-ram128gb-rom-andriod-10-13mp-2mp-2mp-16mp-dual-sim-crystal-black-77285533.html",
       "url_konga": "https://www.konga.com/product/oppo-oppo-a54-blue-4gb-128gb-5392698",
-      "price_jumia": "150000",
-      "price_konga": "170000",
+      "price_jumia": "145000",
+      "price_konga": "107000",
       "star_reviews":4.3
     }
   },
@@ -682,13 +679,13 @@
     "fields": {
       "name": "Oppo Reno3 Pro",
       "brand": 5,
-      "created_on": "2022-07-31",
-      "modified_on": "2022-07-31",
+      "created_on": "2022-07-12 08:45:00",
+      "modified_on": "2022-07-27 05:45:00",
       "image": "/Oppo/reno3_pro.jpg",
       "url_jumia": "https://www.jumia.com.ng/oppo-reno-3-pro-6.5-12gb-ram-256gb-rom-android-10-641382mp-442mp-selfie-4g-dual-4025mah-moonlight-black-133981491.html",
       "url_konga": "https://www.konga.com/product/oppo-reno-3-pro-6-4-256gb-rom-12gb-ram-dual-sim-4g-lte-fingerprint-4025mah-black-5504072",
-      "price_jumia": "150000",
-      "price_konga": "170000",
+      "price_jumia": "385000",
+      "price_konga": "230000",
       "star_reviews":4.3
     }
   },
@@ -698,13 +695,13 @@
     "fields": {
       "name": "Oppo Reno 7",
       "brand": 5,
-      "created_on": "2022-07-31",
-      "modified_on": "2022-07-31",
+      "created_on": "2022-07-13 06:45:00",
+      "modified_on": "2022-07-27 08:45:00",
       "image": "/Oppo/reno7.jpg",
       "url_jumia": "https://www.jumia.com.ng/oppo-reno-7-6.438gb-ram256gb-rom-6422mp32mp4g-4500mah-132805617.html",
       "url_konga": "https://www.konga.com/product/oppo-reno7-6-43amoled-256gb-rom-8gb-ram-dual-sim-4g-lte-4500mah-fingerprint-gold-5722454",
-      "price_jumia": "150000",
-      "price_konga": "170000",
+      "price_jumia": "300000",
+      "price_konga": "255000",
       "star_reviews":4.3
     }
   },
@@ -714,13 +711,13 @@
     "fields": {
       "name": "Tecno Camon 17 Pro",
       "brand": 6,
-      "created_on": "2022-07-31",
-      "modified_on": "2022-07-31",
+      "created_on": "2022-07-14 08:45:00",
+      "modified_on": "2022-07-28 06:45:00",
       "image": "/Tecno/camon_17pro.webp",
       "url_jumia": "https://www.jumia.com.ng/camon-17-pro-cg8-6.8-256gb-rom-8gb-ram-64mp-quad-rear-48mp-selfie-5000mah-4g-lte-malibublue-tecno-mpg1624354.html",
       "url_konga": "https://www.konga.com/product/tecno-camon-17-pro-6-8-256gb-rom-8gb-ram-dual-sim-5516738",
-      "price_jumia": "150000",
-      "price_konga": "170000",
+      "price_jumia": "134000",
+      "price_konga": "128000",
       "star_reviews":4.3
     }
   },
@@ -730,13 +727,13 @@
     "fields": {
       "name": "Tecno Camon 18i",
       "brand": 6,
-      "created_on": "2022-07-31",
-      "modified_on": "2022-07-31",
+      "created_on": "2022-07-15 07:45:00",
+      "modified_on": "2022-07-29 08:45:00",
       "image": "/Tecno/camon_18i.webp",
       "url_jumia": "https://www.jumia.com.ng/tecno-camon-18i-cg6-6.6-90hz-hd-4gb-ram-128gb-rom-48mp-triple-rear8mp-selfie-camera-android-11-5000mah-4g-blue-87815399.html",
       "url_konga": "https://www.konga.com/product/tecno-camon-18i-6-6-5000mah-128gb-rom-4gb-ram-grey-5796767",
-      "price_jumia": "150000",
-      "price_konga": "170000",
+      "price_jumia": "104000",
+      "price_konga": "99300",
       "star_reviews":4.3
     }
   },
@@ -746,13 +743,13 @@
     "fields": {
       "name": "Tecno POP 5 Pro",
       "brand": 6,
-      "created_on": "2022-07-31",
-      "modified_on": "2022-07-31",
+      "created_on": "2022-07-16 08:45:00",
+      "modified_on": "2022-07-30 07:45:00",
       "image": "/Tecno/pop_5pro.webp",
       "url_jumia": "https://www.jumia.com.ng/pop-5-pro-bd4j-6.52-hd-2gb-ram-32gb-rom-6000mah-battery-8mp-5mp-camera-4g-android-11-fingerprint-blue-tecno-mpg1648268.html",
-      "url_konga": "https://www.konga.com/product/tecno-pop-5-pro-6-52-hd-2gb-ram-32gb-rom-6000mah-android-11-deepsea-luster-5653507",
-      "price_jumia": "150000",
-      "price_konga": "170000",
+      "url_konga": "https://www.konga.com/product/tecno-pop-5-pro-6-52hd-32gb-rom-2gb-ram-dual-sim-4g-lte-6000mah-ice-blue-5703393",
+      "price_jumia": "63790",
+      "price_konga": "61500",
       "star_reviews":4.3
     }
   },
@@ -762,13 +759,13 @@
     "fields": {
       "name": "Tecno POP 5",
       "brand": 6,
-      "created_on": "2022-07-31",
-      "modified_on": "2022-07-31",
+      "created_on": "2022-07-01 08:20:00",
+      "modified_on": "2022-07-15 08:45:00",
       "image": "/Tecno/pop5.webp",
       "url_jumia": "https://www.jumia.com.ng/tecno-pop-5-bd2d-6.1-hd-display-2gb-ram-32gb-rom-5000mah-android-10-5mp-5mp-camera-fingerprint-face-id-black-78011919.html",
       "url_konga": "https://www.konga.com/product/tecno-pop-5-bd2p-dual-sim-6-1-2gb-ram-32gb-rom-5000mah-blue-5308694?seller_id=67157&sku_id=5308694&sclid=EivpTjfvs2xcDGYYJkrireSb91vrRvYY",
-      "price_jumia": "150000",
-      "price_konga": "170000",
+      "price_jumia": "50000",
+      "price_konga": "50000",
       "star_reviews":4.3
     }
   },
@@ -778,13 +775,13 @@
     "fields": {
       "name": "Tecno POP 6 Go",
       "brand": 6,
-      "created_on": "2022-07-31",
-      "modified_on": "2022-07-31",
+      "created_on": "2022-07-02 08:45:00",
+      "modified_on": "2022-07-16 08:20:00",
       "image": "/Tecno/pop6_go.webp",
       "url_jumia": "https://www.jumia.com.ng/tecno-pop-6-go6.0-2gb-ram-32gb-rom-4000mah-5mp-5mp-grey-123293724.html",
       "url_konga": "https://www.konga.com/product/tecno-pop-6-go-be6-6-screen-32gb-rom-2gb-ram-5mp-5mp-4000mah-fingerprint-grey-5740575?seller_id=67157&sku_id=5740575&sclid=CmyvmH6o0ROVhVkvkcfxtQsIdyvcHi11",
-      "price_jumia": "150000",
-      "price_konga": "170000",
+      "price_jumia": "49950",
+      "price_konga": "48700",
       "star_reviews":4.3
     }
   },
@@ -794,13 +791,13 @@
     "fields": {
       "name": "Tecno Pova Neo",
       "brand": 6,
-      "created_on": "2022-07-31",
-      "modified_on": "2022-07-31",
+      "created_on": "2022-07-03 08:30:00",
+      "modified_on": "2022-07-17 08:45:00",
       "image": "/Tecno/pova_neo.webp",
       "url_jumia": "https://www.jumia.com.ng/tecno-pova-neo-le6-6.8-hd-4gb-ram-64gb-rom-6000mah-battery-18w-charge-13mp-8mp-camera-android-11-4g-lte-black-92402560.html",
       "url_konga": "https://www.konga.com/product/tecno-pova-neo-le6-6-8-hd-64gb-rom-4gb-ram-13mp-8mp-4g-lte-6000mah-fingerprint-blue-5554576?seller_id=67157&sku_id=5554576&sclid=09wZqDUpdKygv1CZEcktnDI9Jp2Ig8JY",
-      "price_jumia": "150000",
-      "price_konga": "170000",
+      "price_jumia": "83700",
+      "price_konga": "85000",
       "star_reviews":4.3
     }
   },
@@ -810,13 +807,13 @@
     "fields": {
       "name": "Tecno Pova 2",
       "brand": 6,
-      "created_on": "2022-07-31",
-      "modified_on": "2022-07-31",
+      "created_on": "2022-07-04 08:45:00",
+      "modified_on": "2022-07-18 08:30:00",
       "image": "/Tecno/pova2.webp",
-      "url_jumia": "https://www.jumia.com.ng/tecno-pova-2-6.9-fhd-6gb-ram-128gb-rom-android-11-48mp-ai-quad-camera-8mp-selfie-4g-7000mah-battery-polar-silver-91592242.html",
+      "url_jumia": "https://www.jumia.com.ng/tecno-pova-2-6.9-fhd-6gb-ram-128gb-rom-android-11-48mp-ai-quad-camera-8mp-selfie-4g-7000mah-battery-polar-silver-106091872.html",
       "url_konga": "https://www.konga.com/product/tecno-pova-2-128gb-6gb-7000mah-battery-6-9-display-android-11-polar-silver-color-5625108",
-      "price_jumia": "150000",
-      "price_konga": "170000",
+      "price_jumia": "138000",
+      "price_konga": "109500",
       "star_reviews":4.3
     }
   },
@@ -826,13 +823,13 @@
     "fields": {
       "name": "Tecno Spark 8C",
       "brand": 6,
-      "created_on": "2022-07-31",
-      "modified_on": "2022-07-31",
+      "created_on": "2022-07-05 08:45:00",
+      "modified_on": "2022-07-19 08:30:00",
       "image": "/Tecno/spark_8c.webp",
-      "url_jumia": "https://www.jumia.com.ng/tecno-spark-8c-6.62gb64gb5000mah-magnet-black-132879311.html",
+      "url_jumia": "https://www.jumia.com.ng/tecno-spark-8c-kg5j-6.6-hd-2gb-ram-64gb-rom-13mp-5000mah-100977481.html",
       "url_konga": "https://www.konga.com/product/tecno-spark-8c-kg5j-6-6-hd-64gb-rom-2gb-ram-13mp-8mp-4g-lte-5000mah-black-5684006",
-      "price_jumia": "150000",
-      "price_konga": "170000",
+      "price_jumia": "68990",
+      "price_konga": "67700",
       "star_reviews":4.3
     }
   },
@@ -842,13 +839,13 @@
     "fields": {
       "name": "Xiomi M11 Lite",
       "brand": 7,
-      "created_on": "2022-07-31",
-      "modified_on": "2022-07-31",
+      "created_on": "2022-07-06 08:40:00",
+      "modified_on": "2022-07-20 08:45:00",
       "image": "/Tecno/m11_lite.gif",
-      "url_jumia": "https://www.jumia.com.ng/xiaomi-mi-11-lite-ne-5g-6.55-8gb128gb-6485mp4k20mp-4250mah-141736736.html",
+      "url_jumia": "https://www.jumia.com.ng/xiaomi-mi-11-lite-5g-ne-dual-sim-8gb-ram-128gb-truffle-black-132208464.html",
       "url_konga": "https://www.konga.com/product/xiaomi-mi-11-lite-6-55amoled-128gb-rom-8gb-ram-dual-sim-4g-lte-4250mah-fingerprint-peach-5716263",
-      "price_jumia": "150000",
-      "price_konga": "170000",
+      "price_jumia": "210000",
+      "price_konga": "185000",
       "star_reviews":4.3
     }
   },
@@ -858,13 +855,13 @@
     "fields": {
       "name": "Xiomi Redmi 10a",
       "brand": 7,
-      "created_on": "2022-07-31",
-      "modified_on": "2022-07-31",
+      "created_on": "2022-07-07 08:45:00",
+      "modified_on": "2022-07-21 08:40:00",
       "image": "/Tecno/redmi_10a.jpg",
       "url_jumia": "https://www.jumia.com.ng/xiaomi-redmi-10a-6.53-inches-4gb-ram-128gb-rom-5000mah-grey-134168483.html",
       "url_konga": "https://www.konga.com/product/xiaomi-redmi-10a-6-53-128gb-rom-4gb-ram-dual-sim-4g-lte-fingerprint-5000mah-blue-5759542",
-      "price_jumia": "150000",
-      "price_konga": "170000",
+      "price_jumia": "87200",
+      "price_konga": "92900",
       "star_reviews":4.3
     }
   },
@@ -874,13 +871,13 @@
     "fields": {
       "name": "Xiomi Redmi 10c",
       "brand": 7,
-      "created_on": "2022-07-31",
-      "modified_on": "2022-07-31",
+      "created_on": "2022-07-08 08:50:00",
+      "modified_on": "2022-07-22 08:45:00",
       "image": "/Tecno/redmi_10c.jpg",
       "url_jumia": "https://www.jumia.com.ng/xiaomi-redmi-10c-6.53-inch-4gb-ram-128gb-rom-5000mah-gray-132645099.html",
       "url_konga": "https://www.konga.com/product/xiaomi-redmi-10c-6-71-128gb-rom-4gb-ram-dual-sim-4g-lte-5000mah-fingerprint-gray-5670908",
-      "price_jumia": "150000",
-      "price_konga": "170000",
+      "price_jumia": "95900",
+      "price_konga": "94999",
       "star_reviews":4.3
     }
   },
@@ -890,13 +887,13 @@
     "fields": {
       "name": "Xiomi Redmi 11s",
       "brand": 7,
-      "created_on": "2022-07-31",
-      "modified_on": "2022-07-31",
+      "created_on": "2022-07-09 08:45:00",
+      "modified_on": "2022-07-23 08:45:00",
       "image": "/Tecno/redmi_11s.webp",
       "url_jumia": "https://www.jumia.com.ng/redmi-note-11s-6gb128gb-graphite-gray-xiaomi-mpg1662461.html",
       "url_konga": "https://www.konga.com/product/xiaomi-redmi-note-11s-6-43-fhd-128gb-rom-6gb-ram-4g-lte-108mp-16mp-5000mah-blue-5639607?seller_id=67157&sku_id=5639607&sclid=lvWstlfGgtWMCO8bp37mNDTLMOPkyyeO",
-      "price_jumia": "150000",
-      "price_konga": "170000",
+      "price_jumia": "132870",
+      "price_konga": "147000",
       "star_reviews":4.3
     }
   },
@@ -906,13 +903,13 @@
     "fields": {
       "name": "Xiomi Redmi 11t",
       "brand": 7,
-      "created_on": "2022-07-31",
-      "modified_on": "2022-07-31",
+      "created_on": "2022-07-10 03:45:00",
+      "modified_on": "2022-07-24 08:21:00",
       "image": "/Tecno/redmi_11t.jpg",
-      "url_jumia": "https://www.jumia.com.ng/xiaomi-11t-pro-6.67-inch-5g-12gb-ram-256gb-rom-android-11-108mp-8mp-5mp-16mp-dual-sim-moonlight-white-111184692.html",
+      "url_jumia": "https://www.jumia.com.ng/xiaomi-11t-pro-dual-sim-12gb-ram-256gb-5g-meteorite-gray-98303832.html",
       "url_konga": "https://www.konga.com/product/xiaomi-11t-pro-5g-6-67amoled-12gb-ram-256gb-rom-108mp-dual-sim-5000mah-fingerprint-blue-5705422",
-      "price_jumia": "150000",
-      "price_konga": "170000",
+      "price_jumia": "380000",
+      "price_konga": "365000",
       "star_reviews":4.3
     }
   },
@@ -922,13 +919,13 @@
     "fields": {
       "name": "Xiomi Redmi Note 10",
       "brand": 7,
-      "created_on": "2022-07-31",
-      "modified_on": "2022-07-31",
+      "created_on": "2022-07-11 08:45:00",
+      "modified_on": "2022-07-25 08:45:00",
       "image": "/Tecno/redmi_note10.jpg",
       "url_jumia": "https://www.jumia.com.ng/xiaomi-redmi-10-6.5-inch-6gb-ram-128gb-rom-android-11-50mp-8mp-2mp-2mp-8mp-dual-sim-carbon-gray-104725632.html",
       "url_konga": "https://www.konga.com/product/xiaomi-redmi-10-6-5-6gb-ram-128gb-rom-50mp-dual-sim-4g-lte-5000mah-fingerprint-grey-5440619",
-      "price_jumia": "150000",
-      "price_konga": "170000",
+      "price_jumia": "118900",
+      "price_konga": "113000",
       "star_reviews":4.3
     }
   },
@@ -938,13 +935,13 @@
     "fields": {
       "name": "Xiomi Redmi Note 10s",
       "brand": 7,
-      "created_on": "2022-07-31",
-      "modified_on": "2022-07-31",
+      "created_on": "2022-07-12 08:45:00",
+      "modified_on": "2022-07-26 08:45:00",
       "image": "/Tecno/redmi_note10s.webp",
       "url_jumia": "https://www.jumia.com.ng/xiaomi-redmi-note-10s-8gb128gb-blue-129757859.html",
       "url_konga": "https://www.konga.com/product/xiaomi-redmi-note-10s-8gb-128gb-white-smartphone-5487470",
-      "price_jumia": "150000",
-      "price_konga": "170000",
+      "price_jumia": "123600",
+      "price_konga": "136000",
       "star_reviews":4.3
     }
   },
@@ -954,13 +951,13 @@
     "fields": {
       "name": "Xiomi Redmi Note 11",
       "brand": 7,
-      "created_on": "2022-07-31",
-      "modified_on": "2022-07-31",
+      "created_on": "2022-07-13 06:45:00",
+      "modified_on": "2022-07-27 05:45:00",
       "image": "/Tecno/redmi_note11.webp",
-      "url_jumia": "https://www.jumia.com.ng/xiaomi-redmi-note-11-6.5-4gb-ram-64gb-rom-50mp-dual-sim-4g-lte-5000mah-fingerprint-gray-98898983.html",
+      "url_jumia": "https://www.jumia.com.ng/xiaomi-redmi-note-10-5g-6.4-super-amoled-screen-6gb128gb-memory-48mp-quad-camera-5000-mah-battery-android-11-grey-112072026.html",
       "url_konga": "https://www.konga.com/product/xiaomi-redmi-note-11-6-43-fhd-64gb-rom-4gb-ram-4g-lte-50mp-13mp-5000mah-gray-5651531?seller_id=67157&sku_id=5651531&sclid=uaQM0R1e8gY8cRbl5CbXHlD0i8HHdw6B",
-      "price_jumia": "150000",
-      "price_konga": "170000",
+      "price_jumia": "113790",
+      "price_konga": "116500",
       "star_reviews":4.3
     }
   },
@@ -970,15 +967,14 @@
     "fields": {
       "name": "Xiomi Redmi Note 11 Pro",
       "brand": 7,
-      "created_on": "2022-07-31",
-      "modified_on": "2022-07-31",
+      "created_on": "2022-07-14 02:45:00",
+      "modified_on": "2022-07-28 03:50:00",
       "image": "/Tecno/redmi_note11pro.jpg",
       "url_jumia": "https://www.jumia.com.ng/redmi-note-11-pro-5g-6.67-inch-8gb-ram-256gb-rom-android-11-108mp-8mp-2mp-16mp-dual-sim-graphite-gray-xiaomi-mpg1662881.html",
       "url_konga": "https://www.konga.com/product/xiaomi-redmi-note-11-pro-5g-6-67amoled-256gb-rom-8gb-ram-dual-sim-4500mah-fingerprint-gray-5690025",
-      "price_jumia": "150000",
-      "price_konga": "170000",
+      "price_jumia": "285000",
+      "price_konga": "249999",
       "star_reviews":4.3
     }
   }
-  
 ]
