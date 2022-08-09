@@ -224,6 +224,7 @@
       "star_reviews":4.2
     }
   },
+  {
     "model": "price_compare_app.phone",
     "pk": 15,
     "fields": {
