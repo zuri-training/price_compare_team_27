@@ -49,11 +49,19 @@ def search(request):
         search_keyword=request.GET['search']
         if search:
             phones=Phone.objects.filter(name__icontains=search_keyword)
-    context={
-        'phones':phones,
-    }
+     
+   
+        context={
+            'phones':phones,
+        }
+        
+        return render(request,'price_compare_app/search.html',context)
+    else:
+        print('No search result found')
+        return render(request,'price_compare_app/search.html',{})
 
-    return render(request,'price_compare_app/search.html',context)
+    
+
 
 
 
@@ -81,9 +89,10 @@ def updateItem(request):
     elif action =='remove':
         wishItem.quantity -= 1
 
-    elif action =='delete':
-        wishItem.delete()
     wishItem.save()
+    
+    if action =='delete':
+        wishItem.delete()
 
     if wishItem.quantity <= 0:
         wishItem.delete()
