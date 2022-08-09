@@ -6,7 +6,6 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Sharp:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="{% static 'accounts/css/Forgot_password/forgot.css' %}">
 {% endblock styles %}
 
 <header> 
@@ -51,7 +50,7 @@
         </div>
 
         <div class="head-search">
-            <input type="search" name="search-products" id="" placeholder="Search here">
+            <input type="search" name="search" id="" placeholder="Search here">
         </div>
     </div>
 
@@ -60,7 +59,7 @@
 
         <div class="d-search">
             <form action="{% url 'search' %}" id="d-search-form">
-                <input type="search" id="d-search-search" placeholder="What are you looking to find?">
+                <input type="search" id="d-search-search" placeholder="What are you looking to find?" name="search">
                 <input type="submit" id="d-search-submit" value="Search">
             </form>
         </div>
