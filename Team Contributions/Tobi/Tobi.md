@@ -6,7 +6,6 @@
 ##### Github Username : tobyabraham
 ##### Track: Full-Stack
 #### Contributions:
-I Worked on the productinfo functionality (Back-end) 
 
 - I added a function that visualize how the phone details route will operate. [Click here to view ](https://github.com/zuri-training/price_compare_team_27/blob/main/price_compare_app/views.py)
 - I defined the url route for the phone details page [Click here to view ](https://github.com/zuri-training/price_compare_team_27/blob/main/price_compare_app/urls.py)
