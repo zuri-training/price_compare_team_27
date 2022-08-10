@@ -6,7 +6,7 @@
 ##### Github Username : Seyopsy
 ##### Track: Full-Stack
 #### Contributions:
-- As Frontend Team Lead, I organized the Frontend Development for the project [Click here to view ](https://github.com/zuri-training/price_compare_team_27/tree/main/Final_UI_templates)
+- As Frontend Team Lead, I organized the Frontend Development for the project Final Template:[Click here to view ](https://github.com/zuri-training/price_compare_team_27/tree/main/Final_UI_templates) and Initial working template  [Click here to view ](https://github.com/zuri-training/price_compare_team_27/tree/main/Base_Template)
 - I Designed the following pages in the above link for injection of codes from the backend devs
   - Landing page,
   - Contact us page, 
