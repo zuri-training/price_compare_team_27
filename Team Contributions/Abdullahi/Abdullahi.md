@@ -12,4 +12,4 @@
 - I Fixed the _nav html, _footer html and base html [Click here to view ](https://github.com/zuri-training/price_compare_team_27/tree/main/price_compare_app/templates/price_compare_app)
 - Collaboratively worked on the search function for the project [Click here to view](https://github.com/zuri-training/price_compare_team_27/blob/main/price_compare_app/views.py)
 - Fixed the Models.py for the price_compare_app [Click here to view](https://github.com/zuri-training/price_compare_team_27/blob/main/price_compare_app/models.py)
-- I implemeted the send to gmail functionality in the settings.py (Click here to view)[https://github.com/zuri-training/price_compare_team_27/blob/main/price_compare/settings.py]
+- I implemeted the send to gmail functionality in the settings.py [Click here to view](https://github.com/zuri-training/price_compare_team_27/blob/main/price_compare/settings.py)
