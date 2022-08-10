@@ -144,11 +144,11 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
-EMAIL_USE_TLS = True
-EMAIL_HOST = 'smtp.mailtrap.io'
-EMAIL_HOST_USER = '64d78b436ddd55'
-EMAIL_HOST_PASSWORD = 'ea23ecbb4aabe2'
-EMAIL_PORT = '2525'
+EMAIL_USE_SSL = True
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_HOST_USER = config("EMAIL_HOST_USER")
+EMAIL_HOST_PASSWORD = config("EMAIL_HOST_PASSWORD")
+EMAIL_PORT = '465'
 
 
 # django_heroku.settings(locals())
