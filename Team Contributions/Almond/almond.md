@@ -1,5 +1,11 @@
+## Onyebuchi Emmanuel's Contribution to team 27 price compare project
 
--Contributions:
+#### Full-Name: Onyebuchi Emmanuel Chukwuemeka
+
+##### Slack Username: almondb
+##### Github Username : almondb262
+##### Track: Full-Stack
+#### Contributions:
 
 Scraped product data for the project >
 
