@@ -1,0 +1,1 @@
+All categories pages
