@@ -12,7 +12,7 @@ iphoneXS_Max='https://www.jumia.com.ng/apple-iphone-xs-max-256gb-4gb-6.5-gold.-f
 iphone11='https://www.jumia.com.ng/apple-iphone-11-128gb-black-authorized-reseller-store-44865293.html'
 iphone11_ProMax= 'https://www.jumia.com.ng/iphone-11-pro-max-6.5-inch-4gb-ram-256gb-romios-13-12mp12mp12mp12mp-4g-lte-smartphone-midnight-green-apple-mpg1598798.html'
 iphone12='https://www.jumia.com.ng/apple-iphone-12-128gb-purple-78398928.html'
-iphone12_ProMax='https://www.jumia.com.ng/iphone-12-pro-max-256gb-6gb-ram-6.7-inch12mp12mp12mp-pacific-blue-apple-mpg1595399.html'
+iphone12_ProMax='https://www.jumia.com.ng/iphone-12-6.1-inches-4gb-ram-64gb-rom-12mp-12mp-2815mah-black-apple-mpg1566249.html'
 iphone13_ProMax='https://www.jumia.com.ng/apple-iphone-13-pro-max-6.7-xdr-display-6gb-ram-128gb-rom-ios-15-sierra-blue-93389767.html'
 
 
