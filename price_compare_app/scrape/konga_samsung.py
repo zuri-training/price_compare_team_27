@@ -1,7 +1,7 @@
 import requests
 from bs4 import BeautifulSoup
 
-A03_core ='https://www.konga.com/product/samsung-samsung-galaxy-a03-core-2gb-ram-32gb-rom-dual-sim-4g-lte-5000mah-5706106'
+A03_core ='https://www.konga.com/product/samsung-galaxy-a03-core-32gb-rom-2gb-ram-dual-sim-4g-lte-5000mah-6-5-black-5760875'
 A13='https://www.konga.com/product/samsung-samsung-galaxy-a13-4gb-ram-64gb-rom-lte-5000mah-5706179'
 A22='https://www.konga.com/product/samsung-galaxy-a22-5g-64gb-rom-4gb-ram-5000mah-android-11-6-6-white-5673453'
 A23='https://www.konga.com/product/samsung-samsung-galaxy-a23-6-6-4gb-ram-128gb-rom-dual-sim-5000mah-peach-5674621'
