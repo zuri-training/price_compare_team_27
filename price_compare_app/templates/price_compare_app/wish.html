@@ -22,7 +22,7 @@
         <div class="product-div grid">
             
             {% for item in best_price  %}
-                      
+            <a href="{% url 'phone-details' item.phone.id %}">       
                 <section class="product-card">
         
                     <div class="phone-img">
@@ -52,7 +52,7 @@
                             
                     </div>
         
-                </section>
+                </section></a>
             {% endfor %}
           
     
