@@ -59,6 +59,7 @@ input:-webkit-autofill:active  {
 /* layout */
 html {
   font-size: 16px;
+  scroll-behavior: smooth;
 }
 body {
   font-size: 1rem;
@@ -235,9 +236,9 @@ header {
   display: flex;
   padding-block: 1em;
   padding-inline-start: 1em;
-  border: 1px solid var(--input-default-state);
+  border: 2px solid var(--input-default-state);
   border-radius: var(--border-radius);
-  background-image: url('icons/search.svg');
+  background-image: url('/Final_UI_templates/icons/search.svg');
   background-repeat: no-repeat;
   background-position: 98% 50%;
   background-size: 2em;
