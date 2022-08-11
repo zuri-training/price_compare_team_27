@@ -449,86 +449,16 @@ header {
 
 
 
-.main_container{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
-  padding-inline: 4.5em;
-}
 
-
-.main_container h3{
-  font-size: 22px;
-}
-
-.main_container p{
-  margin-block-start: 1em;
-}
-
-.top{
-  display: flex;
-  margin-block-start: 1em;
-  margin-block-end: 2em;
-  justify-content: space-between;
-}
-
-.text_part{
-  width:50%;
-}
-
-#our_part{
-  margin-block-start: 5em;
-}
-
-#our_part p{
-  margin-block-start: 1em;
-}
-
-p{
-  max-width: 42ch;
-}
-
-.image_part{
-  width:50%;
-}
-
-
-  .middle{
+  .main_container{
     display: flex;
-    margin-block-start: 3em;
-    margin-block-end: 2em;
-    justify-content: space-evenly;
-  }
-
-.middle .text_part{
-  padding-inline: 2em;
-}
-
-.middle .text_part p{
-  margin-block-start: 2em;
-}
-
-
-.meet_part{
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  padding-inline: 4.5em;
-}
-
-.meet_part h3{
-  font-size: 22px;
-}
-  .team>div {
-    width: 12%;
-    aspect-ratio: 1;
-    display: flex;
-    justify-content: space-between;
+    flex-direction: column;
     align-items: center;
   }
 
-
+.main_container h1{
+  font-size: 25px;
+}
 
 
 /* footer */
