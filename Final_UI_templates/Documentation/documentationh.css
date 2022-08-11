@@ -479,7 +479,7 @@ header {
 
   #link_small{
     font-size: 15px;
-    padding-inline-start: 11em;
+    padding-inline-start: 9em;
   }
 
 
@@ -506,6 +506,68 @@ p{
 text-decoration: underline;
 color: inherit;
 }
+
+
+
+#text-part ol{
+  padding-inline-start: 1.5em;
+  margin-block-start: 1em;
+}
+
+#text-part li{
+  margin-block-start: 1em;
+}
+
+
+
+
+.btn {
+  background-color:#4070EC;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  margin-inline-start: 1.2em;
+  cursor: pointer;
+  font-size: 15px;
+  border-radius: 9px;
+}
+
+.input-div input, .input-div textarea {
+  display: block;
+  width: 100%;
+}
+
+.input-div textarea {
+  border: 2px solid var(--input-default-state);
+  border-radius: var(--border-radius);
+  padding: 1em 2em;
+  margin-top: 0.5em;
+}
+
+.input-div input[type="textarea"]::placeholder {
+  font-family: var(--font-family);
+  font-size: inherit;
+  color: var(--grey-color);
+  font-weight: 500;
+}
+
+.input-div textarea:hover, .input-div textarea:active, .input-div textarea:focus {
+  border: 2px solid var(--input-hovered-state);
+}
+
+
+
+
+
+/* Darker background on mouse-over */
+.btn:hover {
+  background-color: RoyalBlue;
+}
+
+.message{
+  margin-block-end: 9em;
+}
+
 
 
 
