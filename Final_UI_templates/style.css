@@ -367,11 +367,11 @@ aside li {
   }
   .popular-products {
     background: var(--main-color);
-    padding-bottom: 10.5625em;
+    padding-bottom: 7em;
     padding-inline: 2em;
   }
   .new-products {
-    padding-bottom: 7.5em;
+    padding-bottom: 4em;
     background: var(--new-products);
     padding-inline: 2em;
   }
@@ -702,7 +702,7 @@ footer {
    display: block;
    background: url('/Final_UI_templates/images/Union\ \(1\).png'), url('/Final_UI_templates/images/Union\ \(2\).png'), url('/Final_UI_templates/images/Ellipse\ 9.png'), url('/Final_UI_templates/images/Ellipse\ 10.png'), linear-gradient(180deg, #D9E2FB -9.42%, #FFFFFF -9.41%, #D9E3FB 100%);
    background-size: 25em, 7em, 25em, 15em, 100%;
-   background-position: 40% 0%, 0% 97%, 95% -5%, top left;
+   background-position: 40% 0%, 0% 97%, 90% -5%, top left;
    background-repeat: no-repeat;
   }
   .d-header-nav-top {
@@ -729,7 +729,7 @@ footer {
     gap: 7em;
   }
   .d-hero-txt-big h2 {
-    max-width: 25ch;
+    max-width: 23ch;
     font-size: 3em;
     font-weight: 700;
     line-height: 1.3;
@@ -782,7 +782,7 @@ footer {
     background: var(--button-hovered-state);
   }
   .d-hero-boy-image {
-    width: 50%;
+    width: 40%;
   }
   .d-hero-section-brands {
     width: 80%;
