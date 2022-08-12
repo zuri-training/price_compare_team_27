@@ -1,0 +1,89 @@
+{%load static%}
+{% load social_share %}
+{% block styles %}
+    <link rel="stylesheet" href="{% static 'price_compare_app/css/auth-header.css' %}">
+    <script src="{% static 'price_compare_app/js/jquery-3.6.0.min.js' %}"></script>
+    <script src="{% static 'price_compare_app/js/scripts.js' %}"></script>
+    {% endblock styles %}
+<header>
+    <div class="header-container-mobile">
+        <div class="head-nav">
+
+            <div id="nav-left">
+                <div class="menu">
+                    <img id="menu-btn" src="{% static 'images/icons/menu.svg'%}">
+                    <div id="close-box"><img src="{% static 'images/icons/close.svg'%}" alt="#" id="close"></div>
+                </div>
+                <div class="h-logo"><a href="{% url 'index' %}" class="home"><img
+                            src="{% static 'images/Choice Logo.png' %}"></a></div>
+            </div>
+            <div id="nav-right">
+                <a href="{% url 'wishlist' %}" id="wishlist">
+                    <div class="cart"><img src="{% static 'images/icons/cart.svg'%}" alt=""></div>
+                </a>
+                <div class="login-btn">
+                    <div class="profile-icon"><img src="{% static 'images/icons/profile.svg'%}" alt=""></div><span
+                        class="profile-name">Nelson</span>
+                    <div class="m-p-c-down" id="m-p-c-down"><img src="{% static 'images/icons/drop-down.svg'%}" alt="">
+                    </div>
+                    <div id="{% url 'logout' %}">Logout</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="head-search">
+            <input type="search" name="search-products" id="" placeholder="Search here">
+        </div>
+    </div>
+
+    <div class="header-container-desktop">
+        <div class="d-logo"><a href="{% url 'index' %}" class="home"><img src="{% static 'images/Choice Logo.png' %}"
+                    alt=""></a></div>
+
+        <div class="d-search">
+            <form action="{% url 'search' %}" id="d-search-form">
+                <input type="search" id="d-search-search" placeholder="What are you looking to find?">
+                <input type="submit" id="d-search-submit" value="Search">
+            </form>
+        </div>
+
+        <div class="d-nav">
+            <a href="{% url 'index' %}">Home</a>
+            <a href="">Categories</a>
+            <a href="{% url 'wishlist' %}">Wishlist <div class="d-cart"><img src="{% static 'images/icons/cart.svg'%}" alt="">
+                </div></a>
+            <div id="f-link">
+                <div class="d-profile-icon"><img src="{% static 'images/icons/profile.svg'%}" alt=""></div><span
+                    class="d-profile-name">{{request.user}}</span>
+                <div class="d-p-c-down"><img src="{% static '/images/icons/drop-down.svg'%}" alt=""></div>
+                <div id="d-logout-panel">
+                    <a href="{% url 'logout' %}">Logout</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<aside id="aside">
+    <div class="aside-mobile">
+        <ul class="side-bar">
+            <li><a href="'{% url 'index' %}">Home</a></li>
+            <li>
+                <div class="toggle-category"> Categories <div class="drop-down"><img
+                            src="{% static 'images/icons/drop-down.svg'%}"></div>
+                </div>
+                <ul class="categories-list">
+                    <li><a href="apple.html">Apple</a></li>
+                    <li><a href="techno.html">Techno</a></li>
+                    <li><a href="infinix.html">Infinix</a></li>
+                    <li><a href="samsung.html">Samsung</a></li>
+                    <li><a href="oppo.html">Oppo</a></li>
+                    <li><a href="xiaomi.html">Xiaomi</a></li>
+                </ul>
+            </li>
+            <li><a href="{% url 'wishlist' %}">Wishlist</a></li>
+        </ul>
+    </div>
+</aside>

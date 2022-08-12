@@ -29,7 +29,29 @@ $(document).ready(function() {
       $('.m-p-c-down').toggleClass('down')
     })
   })
+
+  $('.product-love .material-symbols-sharp').click(function() {
+    $(this).css({
+      "font-variation-settings":"'FILL' 1"
+    })
+    // $(".product-link").removeAttr("href");
+  })
+
+
 })
+
+
+var addToCart = document.getElementById('add-to-cart')
+
+// addToCart.addEventListener('click', function() {
+//   addToCart.style.'font-variation-settings' = 'FILL 1'
+// })
+
+
+
+
+
+
 
 
 var d_logoutBtnDrop = document.getElementById('f-link')

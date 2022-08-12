@@ -532,6 +532,11 @@ color: inherit;
   border-radius: 9px;
 }
 
+
+.left_sidenav a:hover, .left_sidenav a:focus {
+  background: #aeb5c5;
+}
+
 .input-div input, .input-div textarea {
   display: block;
   width: 100%;
