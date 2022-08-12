@@ -1,44 +1,42 @@
 {% load static %}
 {% block styles %}
-  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Sharp:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
   <link rel="stylesheet" href="{% static 'price_compare_app/css/footer-style.css' %}">
-
+  <script src="{%static 'price_compare_app/js/jquery-3.6.0.min.css'%}"></script>
 {% endblock styles %}
 <footer>
   <div class="footer-container-mobile">
     <div class="f-newsletter">
       <label for="f-newsletter-form">Newsletter Subscription</label>
       <form action="" id="f-newsletter-form" name="f-newsletter-form">
-        <input type="email" name="f-newsletter-email" id="f-newsletter-email" placeholder="Subscribe to our newsletter">
+        <input type="email" name="f-newsletter-email" id="f-newsletter-email" placeholder="Enter your mail">
         <input type="submit" id="f-newsletter-submit" value="Subscribe">
       </form>
     </div>
     <div class="f-nav">
-      <section class="f-logo"><img src="{% static 'images/White Logo.png' %}" alt=""></section>
+      <section class="f-logo"><img src="{%static 'images/White Logo.png'%}" alt=""></section>
 
       <section class="f-company">
         <ul id="company">
           <li><label for="">Company</label></li>
           <li><p><a href="{% url 'about' %}">About Us</a></p></li>
-          <li><p><a href="contactUs.html">Contact</a></p></li>
-          <li><p><a href="documentation/">Documentation</a></p></li>
+          <li><p><a href="{% url 'contact' %}">Contact</a></p></li>
+          <li><p><a href="">Documentation</a></p></li>
         </ul>
       </section>
 
       <section class="f-brands">
         <div class="brand-big">
-          <img src="{% static 'images/VectorWhite-1.png' %}" alt="">
-          <img src="{% static 'images/cil_car-alt (Traced)White.png' %}" alt="">
-          <img src="{% static 'images/VectorWhite-2.png' %}" alt="">
+          <img src="{%static 'images/VectorWhite-1.png'%}" alt="">
+          <img src="{%static 'images/cil_car-alt (Traced)White.png'%}" alt="">
+          <img src="{%static 'images/VectorWhite-2.png'%}" alt="">
         </div>
         <div class="brand-mid">
-          <img src="{% static 'images/bi_laptop (Traced)White.png' %}" alt="">
-          <img src="{% static 'images/TecnWhite.png' %}" alt="">
+          <img src="{%static 'images/bi_laptop (Traced)White.png'%}" alt="">
+          <img src="{%static 'images/TecnWhite.png'%}" alt="">
         </div>
         <div class="brand-down">
-          <img src="{% static 'images/Frame 17 (Traced)White.png' %}" alt="">
-          <img src="{% static 'images/VectorWhite.png' %}" alt="">
+          <img src="{%static 'images/Frame 17 (Traced)White.png'%}" alt="">
+          <img src="{%static 'images/VectorWhite.png'%}" alt="">
         </div>
       </section>
     </div>
@@ -46,13 +44,13 @@
   <div class="copyright-mobile"><small>Copyright 2022. Made with  &nbsp;  <span class="emoji">❤</span>  &nbsp;  from Zuri Project. Team 27</small></div>
 
   <div class="footer-container-desktop">
-    <div class="d-f-logo"><img src="{% static 'images/White Logo.png' %}" alt=""></div>
+    <div class="d-f-logo"><img src="{%static 'images/White Logo.png'%}" alt=""></div>
 
     <div class="d-f-nav">
       <ul id="d-company">
         <li><label>Company</label></li>
-        <li><p><a href="aboutUs.html">About Us</a></p></li>
-        <li><p><a href="contactUs.html">Contact</a></p></li>
+        <li><p><a href="{% url 'about' %}">About Us</a></p></li>
+        <li><p><a href="{% url 'contact' %}">Contact</a></p></li>
         <li><p><a href="documentation/">Documentation</a></p></li>
       </ul>
       <ul id="d-brands">
@@ -70,7 +68,7 @@
     <div class="d-f-newsletter">
       <label for="d-Newsletter-form">Newsletter Subscription</label>
       <form action="" name="d-Newsletter-form">
-        <input type="email" name="d-f-newsletter-email" id="d-f-newsletter-email" placeholder="Subscribe to our newsletter">
+        <input type="email" name="d-f-newsletter-email" id="d-f-newsletter-email" placeholder="Enter your mail">
         <input type="submit" name="d-f-newsletter-search" id="d-f-newsletter-submit" value="Subscribe">
       </form>
     </div>

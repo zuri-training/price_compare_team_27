@@ -1,0 +1,9 @@
+{% autoescape off %}
+Hello {{user.username}},
+
+Thanks for subscribing to our news letter, You'll receive new phone prices update from us every week
+
+Sincerely,
+Pricify
+
+{% endautoescape %}
