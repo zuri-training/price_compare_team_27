@@ -1,25 +1,31 @@
-{%extends 'price_compare_app/base.html' %}
-{% load static %}
-
+{%extends 'price_compare_app/base.html' %} 
+{% load static %} 
 {% block styles %}
-    <link rel="stylesheet" href="{% static 'price_compare_app/css/productinfo.css' %}">
-{% endblock styles %}
-    
 
+    <link rel="stylesheet" href="{% static 'price_compare_app/css/productinfo.css' %}">
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+        integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+        crossorigin="anonymous"
+        referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Sharp:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+{% endblock styles %}
+   
 {% block content %}
-    <section class="first">
-        <div class="content-container">
-        <div class="desc">
-            <div class="img"><img src="{{data.image.url}}"></div>
-            <div class="text">
-            <h2>{{data.name}}</h2>
-            <span>
-                4.0(6 reviews)<br />
-                Operation System: Apple iOS 15<br />
-                Screen size: 6.7 inches<br />
-                Storage space: 256GB
-            </span>
-            </div>
+  <section class="first">
+    <div class="content-container">
+      <div class="desc">
+        <div class="img"><img src="{{data.image.url}}" /></div>
+        <div class="text">
+          <h2>{{data.name}}</h2>
+          <span>
+            4.0(6 reviews)<br />
+            Operation System: Apple iOS 15<br />
+            Screen size: 6.7 inches<br />
+            Storage space: 256GB
+          </span>
         </div>
         <div class="buttons">
             <button data-product = '{{data.id}}' data-action='add' class="btn-wishlist update-cart">
@@ -32,34 +38,67 @@
             <p>Share this product on</p> 
             <p><i class="fa-brands fa-slack"></i>
             <i class="fa-brands fa-square-facebook"></i>
-            <i class="fa-solid fa-envelope"></i></p>
+            <i class="fa-solid fa-envelope"></i>
+          </p>
         </div>
-        </div>
-        </div>
-        <div class="price-history">
-        <h2>Price history</h2>
-        <p>Have a look at how this product has been performing</p>
-        <div class="price-chart"></div>
-    </section>
-    <section class="price-compare">
-        <h2>Compare price across platforms</h2>
-        <div class="jumia">
-            <div class="logo"><img src="{% static 'images/Rectangle 57.png' %}" style="width:122px; height:48px;"></div>
-            <div class="name">{{data.name}}</div>
-            <div class="price">{{data.get_jumia_price}}</div>
-            <div class="review">4.0 <img src="{% static 'images/Star 6.png' %}" style="width: 20px; height:20x;"></div>
-            <div class="delivery">Free delivery</div>
-            <div class="shop-link"><a href="{{data.url_jumia}}"><button>view in shop <i class="fa-solid fa-cart-shopping"></i></button></a></div>
-        </div>
+      </div>
+    </div>
+    <div class="price-history">
+          <h2>Price history</h2>
+          <p>Have a look at how this product has been performing</p>
+          <div class="price-chart">
+            <iframe class="phoneframe" src="/price_compare_app/templates/price_compare_app/iphone13promaxprice.html" frameborder="0"></iframe>
+          </div>
+  </section>
+  <section class="price-compare">
+    <h2>Compare price across platforms</h2>
+    <div class="jumia">
+      <div class="logo">
+        <img
+          src="{% static 'images/Rectangle 57.png' %}"
+          style="width: 122px; height: 48px"
+        />
+      </div>
+      <div class="name">{{data.name}}</div>
+      <div class="price">{{data.get_jumia_price}}</div>
+      <div class="review">
+        4.0
+        <img
+          src="{% static 'images/Star 6.png' %}"
+          style="width: 20px; height: 20x"
+        />
+      </div>
+      <div class="delivery">Free delivery</div>
+      <div class="shop-link">
+        <a href="{{data.url_jumia}}"
+          ><button>view in shop <i class="fa-solid fa-cart-shopping"></i></button
+        ></a>
+      </div>
+    </div>
 
-        <div class="konga">
-            <div class="logo"><img src="{% static 'images/Rectangle 58.png' %}" style="width:122px; height:48px;"></div>
-            <div class="name">{{data.name}}</div>
-            <div class="price">{{data.get_konga_price}}</div>
-            <div class="review"><span id="prix">4.0 <img src="{% static 'images/Star 6.png' %}" style="width: 20px; height:20x;"></span></div>
-            <div class="delivery">Free delivery</div>
-            <div class="shop-link"><a href="{{data.url_konga}}"><button>view in shop <i class="fa-solid fa-cart-shopping"></i></button></a></div>
-        </div>
-    </section>
+    <div class="konga">
+      <div class="logo">
+        <img
+          src="{% static 'images/Rectangle 58.png' %}"
+          style="width: 122px; height: 48px"
+        />
+      </div>
+      <div class="name">{{data.name}}</div>
+      <div class="price">{{data.get_konga_price}}</div>
+      <div class="review">
+        <span id="prix"
+          >4.0
+          <img
+            src="{% static 'images/Star 6.png' %}"
+            style="width: 20px; height: 20x"
+        /></span>
+      </div>
+      <div class="delivery">Free delivery</div>
+      <div class="shop-link">
+        <a href="{{data.url_konga}}"
+          ><button>view in shop <i class="fa-solid fa-cart-shopping"></i></button
+        ></a>
+      </div>
+    </div>
+  </section>
 {% endblock content %}
-    

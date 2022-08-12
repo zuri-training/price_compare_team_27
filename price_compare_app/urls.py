@@ -9,5 +9,8 @@ urlpatterns = [
     path('search',views.search,name='search'),
     path('about',views.about_page,name='about'),
     path('phone/<int:id>/', views.PhoneDetailView, name='phone-details'),
+    path('contact', views.contact, name='contact'),
+
 ]
+ 
  
