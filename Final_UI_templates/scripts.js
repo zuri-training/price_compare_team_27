@@ -34,7 +34,7 @@ $(document).ready(function() {
     $(this).css({
       "font-variation-settings":"'FILL' 1"
     })
-    console.log('hi');
+    // $(".product-link").removeAttr("href");
   })
 
 

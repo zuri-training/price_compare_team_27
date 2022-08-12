@@ -436,6 +436,10 @@ aside li {
     color: var(--dark-text);
     border-radius: var(--border-radius);
   }
+  .product-card a {
+    color: inherit;
+    text-decoration: none;
+  }
   .product-card:hover, .product-card:active, .product-card:focus {
     background-color: var(--footer-color);
     color: var(--light-text);
