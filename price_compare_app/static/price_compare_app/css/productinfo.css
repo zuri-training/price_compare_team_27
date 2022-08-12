@@ -147,6 +147,222 @@
   .content-container {
     display: flex;
     flex-direction: column;
-    padding: 40px 60px;
+  }
+
+  .buttons {
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
+  }
+
+  .price-compare .jumia {
+    width: 100%;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .jumia .review {
+    display: flex;
+  }
+
+  .jumia .review img {
+    width: 20px;
+    height: 20px;
+    margin-top: 3px;
+  }
+
+  .price-compare .konga {
+    width: 100%;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .konga .review {
+    display: flex;
+  }
+
+  .konga .review img {
+    width: 20px;
+    height: 20px;
+    margin-top: 3px;
+  }
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  .content-container {
+    display: flex;
+    flex-direction: column;
+    padding: 10px 20px;
+  }
+
+  .price-history {
+    padding: 10px 20px;
+  }
+
+  .price-compare {
+    padding: 10px 20px;
+  }
+
+  .desc {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .img {
+    width: 100%;
+  }
+
+  .text {
+    margin-top: 30px;
+  }
+
+  .buttons {
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+  }
+
+  .btn-wishlist {
+    padding: 16px 105px;
+  }
+
+  .btn-wishlist i {
+    padding-left: 10px;
+  }
+
+  .btn-priceA {
+    padding: 16px 125px;
+  }
+
+  .price-compare .jumia {
+    width: 100%;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .jumia .review {
+    display: flex;
+  }
+
+  .jumia .review img {
+    width: 20px;
+    height: 20px;
+    margin-top: 3px;
+  }
+
+  .price-compare .konga {
+    width: 100%;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .konga .review {
+    display: flex;
+  }
+
+  .konga .review img {
+    width: 20px;
+    height: 20px;
+    margin-top: 3px;
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  .content-container {
+    display: flex;
+    flex-direction: column;
+    padding: 10px 20px;
+  }
+
+  .price-history {
+    padding: 10px 20px;
+  }
+
+  .price-compare {
+    padding: 10px 20px;
+  }
+
+  .desc {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .img {
+    width: 100%;
+  }
+
+  .img img {
+    width: 100%;
+    height: 200px;
+  }
+
+  .text {
+    margin-top: 30px;
+  }
+
+  .buttons {
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+  }
+
+  .btn-wishlist {
+    padding: 16px 50px;
+  }
+
+  .btn-wishlist i {
+    padding-left: 10px;
+  }
+
+  .btn-priceA {
+    padding: 16px 70px;
+  }
+
+  .buttons .share {
+    display: inline-block;
+  }
+
+  .price-compare .jumia {
+    width: 100%;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .jumia .review {
+    display: flex;
+  }
+
+  .jumia .review img {
+    width: 20px;
+    height: 20px;
+    margin-top: 3px;
+  }
+
+  .price-compare .konga {
+    width: 100%;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .konga .review {
+    display: flex;
+  }
+
+  .konga .review img {
+    width: 20px;
+    height: 20px;
+    margin-top: 3px;
   }
 }
