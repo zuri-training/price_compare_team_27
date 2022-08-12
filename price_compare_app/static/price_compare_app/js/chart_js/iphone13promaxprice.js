@@ -1,5 +1,5 @@
 const xmlhttp = new XMLHttpRequest();
-const url = "http://127.0.0.1:5500/js/price.json";
+const url = "http://127.0.0.1:8000/price_compare_team_27/price.json";
 xmlhttp.open("GET", url, true);
 xmlhttp.send();
 xmlhttp.onreadystatechange = function () {
