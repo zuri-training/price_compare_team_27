@@ -283,6 +283,40 @@ aside li {
 
 
 /* main */
+.m-main-container {
+  padding-block: 3em;
+  display: block;
+}
+.d-main-container {
+  display: none;
+}
+.m-main-categories-txt {
+  padding-left: 1em;
+  padding-bottom: 2em;
+}
+.category-brand-name {
+  width: 100%;
+  background: var(--button-default-state);
+  color: var(--light-text);
+  padding-block: 0.5em;
+  text-align: center;
+}
+.categories-list-flex {
+  padding: 1em;
+  display: flex;
+  gap: 1em 0em;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+.phone-name {
+  width: 50%;
+}
+
+
+
+
+
 
 
 /* footer */
