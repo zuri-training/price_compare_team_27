@@ -86,6 +86,11 @@ h4 {
   font-size: 32px;
   line-height: 54px;
 }
+h6 {
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 36px;
+}
 p {
   font-weight: 400;
   font-size: 16px;
