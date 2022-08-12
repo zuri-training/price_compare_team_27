@@ -488,11 +488,23 @@ header {
   }
 
 
+  #home_image{
+    width:55%;
+    margin-block: 1em;
+  }
+
+#brand_image{
+  width:90%;
+ padding-inline: 3.5em;
+}
+
+
   #main_container {
     margin-left: 19em;
     margin-block-start: 3em;
     padding-inline-start: 6em;
     padding-inline-end: 4.5em;
+    margin-block-end: 3.5em;
   }
 
 h1 {font-size: 25px;
@@ -510,6 +522,7 @@ p{
 #text-part a{
 text-decoration: underline;
 color: inherit;
+padding-block-end: 2em;
 }
 
 
