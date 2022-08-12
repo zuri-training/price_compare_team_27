@@ -1,5 +1,6 @@
 from django.contrib import messages
 from django.contrib.auth import authenticate, login, logout
+from django.contrib.auth.forms import PasswordResetForm
 from django.contrib.auth.models import User
 from django.contrib.auth.tokens import default_token_generator
 from django.core.mail import BadHeaderError, send_mail
@@ -7,10 +8,8 @@ from django.db.models.query_utils import Q
 from django.http import HttpResponse
 from django.shortcuts import redirect, render
 from django.template.loader import render_to_string
-from django.contrib.auth.forms import PasswordResetForm
 from django.utils.encoding import force_bytes
 from django.utils.http import urlsafe_base64_encode
-
 
 from .forms import CreateUserForm
 
@@ -87,3 +86,6 @@ def password_reset_request(request):
 	password_reset_form = PasswordResetForm()
   
 	return render(request=request, template_name="accounts/password_reset.html", context={"password_reset_form":password_reset_form},)
+
+def newsletter():
+    pass
