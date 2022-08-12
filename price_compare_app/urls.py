@@ -10,8 +10,11 @@ urlpatterns = [
     path('about/',views.about_page,name='about'),
     path('phone/<int:id>/', views.PhoneDetailView, name='phone-details'),
     path('contact/', views.contact, name='contact'),
-    path('documentation/', views.documentation, name='documentation'),
-    path('documentation_features/',views.documentation_features, name='documentationf'),
+    path('documentation/', views.documentation, name='doc'),
+    path('documentation-features/',views.documentation_features, name='doc-features'),
+    path('documentation-signup/',views.documentation_sign_up, name='doc-sign'),
+    path('documentation-compare/',views.documentation_compare_prices, name='doc-compare'),
+    path('documentation-search/',views.documentation_search, name='doc-search'),
 
 ]
  

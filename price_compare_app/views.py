@@ -155,6 +155,16 @@ def documentation(request):
 def documentation_features(request):
     return render(request,'price_compare_app/documentation/documentationf.html')
 
+def documentation_sign_up(request):
+    return render(request,'price_compare_app/documentation/documentationh.html')
+
+
+def documentation_compare_prices(request):
+    return render(request,'price_compare_app/documentation/documentationi.html')
+
+
+def documentation_search(request):
+    return render(request,'price_compare_app/documentation/documentations.html')
 
 
 
