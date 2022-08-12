@@ -546,6 +546,17 @@ color: inherit;
 }
 
 
+#pricehistory_image , #pricealert_image
+ , #wishlist_image {
+  width:60%;
+  margin-block: 1em;
+}
+
+#popularproduct_image, #categories_image {
+  width:45%;
+  margin-block: 1em;
+}
+
 
 
 
