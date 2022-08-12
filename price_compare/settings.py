@@ -146,8 +146,8 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 EMAIL_USE_SSL = True
 EMAIL_HOST = 'smtp.gmail.com'
-EMAIL_HOST_USER = config("EMAIL_HOST_USER")
-EMAIL_HOST_PASSWORD = config("EMAIL_HOST_PASSWORD")
+EMAIL_HOST_USER = 'price.compare@gmail.com'
+EMAIL_HOST_PASSWORD = 'nqopaanqdqeitkwa'
 EMAIL_PORT = '465'
 
 
