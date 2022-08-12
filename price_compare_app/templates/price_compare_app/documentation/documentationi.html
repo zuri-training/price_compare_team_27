@@ -1,131 +1,57 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="documentationi.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script type="text/javascript" src="/jquery-3.6.0.min.js"></script>
-    <title>Documentation : How to Compare Prices</title>
-  </head>
-  <body>
-    <header>
-      <div class="header-container-mobile">
-        <div class="head-nav">
-          <div id="nav-left">
-            <div class="menu">
-              <img id="menu-btn" src="/icons/menu.svg" />
-              <div id="close-box">
-                <img src="/icons/close.svg" alt="#" id="close" />
-              </div>
-            </div>
-            <div class="h-logo"><img src="/images/Choice Logo.png" /></div>
-          </div>
-          <div id="nav-right">
-            <a href="wishlist.html" id="wishlist"
-              ><div class="cart"><img src="/icons/cart.svg" alt="" /></div
-            ></a>
-            <div class="login-btn"><a href="login.html">Login</a></div>
-          </div>
-        </div>
+{% extends 'price_compare_app/documentation/base.html' %}
+{% load static  %}
+{% block styles %}
+  <link rel="stylesheet" href="{% static 'price_compare_app/css/documentationi.css'%}" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+{% endblock styles %}
 
-        <div class="head-search">
-          <input
-            type="search"
-            name="search-products"
-            id=""
-            placeholder="Search here"
-          />
-        </div>
+{% block title %}
+  Documentation:Compare
+{% endblock title %}
+
+{% block content %}
+  <div class="left_sidenav">
+    <a href="{% url 'doc' %}">Getting Started</a>
+    <a href="{% url 'doc-features' %}">Features</a>
+    <a href="{% url 'doc-sign' %}">How to</a>
+    <a id="link_small" href="{% url 'doc-sign' %}">Sign Up</a>
+    <a id="link_small" href="{% url 'doc-compare' %}">Compare Prices</a>
+    <a id="link_small" href="{% url 'doc-search' %}">Search for products</a>
+  </div>
+
+  <div id="main_container">
+    <h1>How to</h1>
+    <h3>Compare Prices</h3>
+    <div id="text-part">
+      <p>
+        The “Compare Prices” feature allows you to match price of products across multiple e-shops. With this
+        feature, you can discover the price of any device. However, to compare prices, you'll have to be a registered
+        user. Here, to compare prices
+        <br>
+        <br>
+        Simply search for a device or select a mobile device from the categories or wishlist.
+        Once a product is selected, you'll have an option to compare prices. Upon click, you'll
+        be redirected to the price comparison pagewhere you can see the price tags of selected device.
+      </p>
+      <br>
+      <br>
+      <div id="price_compare"><img src="{% static 'images/price_compare.png' %}" alt="price compare"> </div>
+      <div id="pricealert_image">
+        <img src="{% static 'images/price_info.png' %}" alt="pricealert_page" />
       </div>
-
-      <div class="header-container-desktop">
-        <div class="d-logo"><img src="/images/Choice Logo.png" alt="" /></div>
-
-        <div class="d-search">
-          <form action="" id="d-search-form">
-            <input
-              type="search"
-              id="d-search-search"
-              placeholder="What are you looking to find?"
-            />
-            <input type="submit" id="d-search-submit" value="Search" />
-          </form>
-        </div>
-
-        <div class="d-nav">
-          <a href="/index.html">Home</a>
-          <a href="/Categories/">Categories</a>
-          <a href="/wishlist.html"
-            >Wishlist
-            <div class="d-cart"><img src="/icons/cart.svg" alt="" /></div
-          ></a>
-          <a href="/login.html">Login</a>
-        </div>
-      </div>
-    </header>
-
-    <aside>
-      <div class="aside-mobile">
-        <ul class="side-bar">
-          <li><a href="index.html">Home</a></li>
-          <li>
-            <div class="toggle-category">
-              Categories
-              <div class="drop-down"><img src="/icons/drop-down.svg" /></div>
-            </div>
-            <ul class="categories-list">
-              <li><a href="apple.html">Apple</a></li>
-              <li><a href="techno.html">Techno</a></li>
-              <li><a href="infinix.html">Infinix</a></li>
-              <li><a href="samsung.html">Samsung</a></li>
-              <li><a href="oppo.html">Oppo</a></li>
-              <li><a href="xiaomi.html">Xiaomi</a></li>
-            </ul>
-          </li>
-          <li><a href="wishlist.html">Wishlist</a></li>
-        </ul>
-      </div>
-    </aside>
-
-    <div class="left_sidenav">
-      <a href="documentation.html">Getting Started</a>
-      <a href="documentationf.html">Features</a>
-      <a href="#">How to</a>
-      <a id="link_small" href="documentationh.html">Sign Up</a>
-      <a id="link_small" href="documentationi.html">Compare Prices</a>
-      <a id="link_small" href="documentations.html">Search for products</a>
+      <p>
+        Was this information helpful ? <button class="btn"><i class="fa fa-thumbs-up"></i> Yes</button><button
+          class="btn"><i class="fa fa-thumbs-down"></i> No</button>
+      </p>
+      <br>
+      <br>
     </div>
-
-    <div id="main_container">
-      <h1>How to</h1>
-      <h3>Compare Prices</h3>
-      <div id="text-part">
-        <p>
-The “Compare Prices” feature allows you to match price of products across multiple e-shops. With this
-feature, you can discover the price of any device. However, to compare prices, you'll have to be a registered user. Here, to compare prices
-<br>
-<br>
-Simply search for a device or select a mobile device from the categories or wishlist.
-Once a product is selected, you'll have an option to compare prices. Upon click, you'll
-be redirected to the price comparison pagewhere you can see the price tags of selected device.
-        </p>
-        <br>
-        <br>
-        <img src="" alt="">
-        <img src="" alt="">
-        <img src="" alt="">
-        <p>
-          Was this information helpful ? <button class="btn"><i class="fa fa-thumbs-up"></i> Yes</button><button class="btn"><i class="fa fa-thumbs-down"></i> No</button>
-        </p>
-        <br>
-        <br>
-      </div>
-      <div class="message input-div">
-      <label for="message"><p>Need further information ?</p></label>
-      <textarea name="message" id="message" cols="30" rows="10" class="message" placeholder="Let us Know what you need" ></textarea>
-      </div>
+    <div class="message input-div">
+      <label for="message">
+        <p>Need further information ?</p>
+      </label>
+      <textarea name="message" id="message" cols="30" rows="10" class="message"
+        placeholder="Let us Know what you need"></textarea>
     </div>
-  </body>
-</html>
+  </div>
+{%endblock content%}
