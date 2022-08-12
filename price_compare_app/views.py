@@ -1,10 +1,11 @@
 import json
 
 from django.contrib.auth.decorators import login_required
-from django.http import JsonResponse
-from django.shortcuts import get_object_or_404, render
+from django.core.mail import BadHeaderError, send_mail
+from django.http import HttpResponse, JsonResponse
+from django.shortcuts import get_object_or_404, redirect, render
 
-from price_compare_app.form import ReviewForm
+from price_compare_app.form import ContactForm, ReviewForm
 from price_compare_app.models import *
 
 from .form import ReviewForm
@@ -123,3 +124,34 @@ def PhoneDetailView(request, id):
                "new_review": new_review,
                "review_form": review_form}
     return render(request, 'price_compare_app/productinfo.html', context)
+
+
+def contact(request):
+	if request.method == 'POST':
+		form = ContactForm(request.POST)
+		if form.is_valid():
+			subject = "Website Inquiry" 
+			body = {
+			'first_name': form.cleaned_data['first_name'], 
+			'last_name': form.cleaned_data['last_name'], 
+			'email': form.cleaned_data['email_address'], 
+			'message':form.cleaned_data['message'], 
+			}
+			message = "\n".join(body.values())
+
+			try:
+				send_mail(subject, message, 'first_name', ['jackgriffo49@gmail.com']) 
+			except BadHeaderError:
+				return HttpResponse('Invalid header found.')
+			return redirect ("/")
+      
+	form = ContactForm()
+	return render(request, "price_compare_app/contact.html", {'form':form})
+
+def error_404_view(request,exception):
+    return render(request,'price_compare_app/404.html')
+
+
+def error_500_view(request):
+    data = {}
+    return render(request,'price_compare_app/404.html', data)

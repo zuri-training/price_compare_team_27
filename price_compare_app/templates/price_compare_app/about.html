@@ -1,35 +1,69 @@
 {% extends 'price_compare_app/base.html' %}
 {% load static %}
-{% block title %} About Us {% endblock %}
+
 
 {% block styles %}
-  <link rel="stylesheet" type="text/css" href="{% static 'price_compare_app/css/about.css' %}">
-{% endblock %}
+  <script type="text/javascript" src="{% static 'price_compare_app/js/jquery-3.6.0.min.js' %}"></script>
+  <link rel="stylesheet" type="text/css" href="{% static 'price_compare_app/css/aboutus.css' %}">
+{% endblock styles %}
 
+{% block title %} About Us {% endblock %}
 
 {% block content %}  
 
-
-
-  <section class="section-1">
-    <h1>About Us</h1>
-    <p>We are a fast-growing brand that provides comparison of prices from various e-commerce brands</p>
-  </section>
-
-  <section class="section-2">
-    <h1>Our Story</h1>
-    <p>We stand off with a burden to lessen the stress associated with comparing prices of products over a range of brands</p>
-    <br>
-    <p>Our platform helps to compare prices and make the best choice of your day-to-day essential products</p>
-  </section>
-
-  <section class="section-3">
-    <h1>Why we do it</h1>
-    <p>We saw the need to plan and budget better with the help of price comparison</p>
-    <br>
-    <p>We are able to serve our customers, helping them to choose products with the best quality and price</p>
-    <br>
-    <p>We provide the price list from different brands, which reduces the overallstress experienced by our users, also giving them the luxury of ordering for their products from the preferred brand</p>
-  </section>
+<div class="main_container">
+  <div class="top">
+    <div class="text_part">
+      <div class="about_side">
+        <div>
+          <h3>About Pricify</h3>
+          <p>We are a fast-growing brand that provides
+            comparison of prices from various e-commerce brands.
+          </p>
+        </div>
+        <div id="our_part">
+          <h3>Our story</h3>
+          <p>We started off with a burden to lessen the stress associated<br>
+            with comparing prices of products over a range of brands.
+          </p>
+          <p>Our platform helps to compare prices and make the best choice <br>
+            of your day-to-day essential products.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="image_part">
+      <img src="{%static 'images/unsplash_13z851QZVtE-1.png'%}" alt="fine image">
+    </div>
+  </div>
+  <div class="middle">
+    <div class="image_part">
+      <img src="{%static 'images/unsplash_13z851QZVtE-1.png'%}" alt="fine image">
+    </div>
+    <div class="text_part">
+      <div class="about_side">
+        <h3>Why we started</h3>
+        <p>We saw the need to plan
+          and budget better with the help of price comparison.</p>
+        <p>We are able to serve our customers, helping them
+          to choose products with the <br>
+          best quality and price
+        <p>We provide the price list from different brands, which <br>
+          reduces the overall stress <br>
+          experienced by our users, also giving them the luxury of
+          ordering for their products <br>
+          from the preferred brand.
+      </div>
+    </div>
+  </div>
+</div>
+<div class="meet_part">
+  <div>
+    <h3>Meet the team</h3>
+  </div>
+  <div id="team">
+    <img src="" alt="teamlead">
+  </div>
+</div>
 
 {% endblock %}
