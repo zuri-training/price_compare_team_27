@@ -482,6 +482,9 @@ header {
     padding-inline-start: 11em;
   }
 
+  #link_small a:hover, .link_small a:focus {
+    background: #aeb5c5;
+  }
 
   #main_container {
     margin-left: 19em;
@@ -507,9 +510,12 @@ text-decoration: underline;
 color: inherit;
 }
 
+
+
 .left_sidenav a:hover, .left_sidenav a:focus {
   background: #aeb5c5;
 }
+
 
 .btn {
   background-color:#4070EC;

@@ -537,15 +537,38 @@ color: inherit;
   background: #aeb5c5;
 }
 
+#home_image {
+  width:60%;
+  margin-block: 1em;
+}
+
+#create_account {
+  width:55%;
+  margin-block-start: 1em;
+}
+
+#price_compare {
+  width:65%;
+  margin-block-start: 1em;
+}
+
+#pricealert_image
+{
+  width:60%;
+  margin-block: 2em;
+  margin-block-end: 2em;
+}
+
 .input-div input, .input-div textarea {
   display: block;
   width: 100%;
+padding-inline-start: 4em;
 }
 
 .input-div textarea {
   border: 2px solid var(--input-default-state);
   border-radius: var(--border-radius);
-  padding: 1em 2em;
+  padding: 1em 2em;;
   margin-top: 0.5em;
 }
 

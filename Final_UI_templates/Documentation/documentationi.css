@@ -532,6 +532,22 @@ color: inherit;
   border-radius: 9px;
 }
 
+#create_account {
+  width:55%;
+  margin-block-start: 1em;
+}
+
+#price_compare {
+  width:65%;
+  margin-block-start: 1em;
+}
+
+#pricealert_image
+{
+  width:60%;
+  margin-block: 2em;
+  margin-block-end: 2em;
+}
 
 .left_sidenav a:hover, .left_sidenav a:focus {
   background: #aeb5c5;

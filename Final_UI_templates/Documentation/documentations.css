@@ -518,6 +518,12 @@ color: inherit;
   margin-block-start: 1em;
 }
 
+#pricesearch_image
+{
+  width:60%;
+  margin-block-start: 2em;
+  margin-block-end: 2em;
+}
 
 
 
