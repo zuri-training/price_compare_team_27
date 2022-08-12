@@ -15,6 +15,7 @@ urlpatterns = [
     path('documentation-signup/',views.documentation_sign_up, name='doc-sign'),
     path('documentation-compare/',views.documentation_compare_prices, name='doc-compare'),
     path('documentation-search/',views.documentation_search, name='doc-search'),
+    path('iphone13/',views.iphone13, name='iphone13'),
 
 ]
  
