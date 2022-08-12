@@ -1,0 +1,63 @@
+{% extends 'price_compare_app/base.html' %}
+{% load static  %}
+{% block styles %}
+  <link rel="stylesheet" href="{%static 'price_compare_app/css/documentationf.css'%}" />
+{% endblock styles %}
+ 
+
+{% block content %}
+  <div class="left_sidenav">
+    <a href="#">Getting Started</a>
+    <a id="link_small" href="#">Introduction</a>
+    <a id="link_small" href="#">File Structure</a>
+    <a href="{% url 'documentationf' %}">Features</a>
+    <a href="">How to</a>
+  </div>
+
+  <div id="main_container">
+    <h1>Getting Started</h1>
+    <h3>Introduction</h3>
+    <div id="home_image">
+      <img src="{%static 'images/Home_page.png'%}" alt="home page" href="{% url 'index' %}" />
+    </div>
+    <div id="text-part">
+      <p>
+        Pricify is a platform that compares prices of different brands of
+        phones across multiple platforms. Pricify, a price comparison
+        platform, aims to simplify users search when trying to find a mobile
+        device they Would like to buy by providing them with prices of phones
+        based on their search parameters from various ecommerce websites in
+        Nigeria like Jumia and Konga and also provide products ratings and
+        reviews for users to see and make intelligent and smart purchasing
+        decisions quicker and easier.
+        <br />
+        <br>
+        The platform has a streamlined focus towards mobile phones from
+        various top brands like Samsung, Apple, Infinix, Tecno, Oppo, Xiaomi
+        and a host of others
+      </p>
+    </div>
+
+    <div id="brand_image">
+      <img src="{%static 'images/brands.png'%}" alt="brands" href="{% url 'index'%}">
+    </div>
+    <h3>File Structure</h3>
+    <div id="text-part">
+      <p>
+        This documentation has been splited into, sections to help you,
+        our esteemed users, navigate seamlessly. It is our utmost priority that you understand our purpose and see Pricify
+        as a tool in your
+        purchasing endeavours.
+        <br>
+        <br>
+        Our features are accessible to users who <a href="{% url 'signup' %}">sign up</a> on our platform. Under <a
+          href="{% url 'documentationf' %}">Features</a>, we outlined interesting
+        features available for your use.
+        <br>
+        <br>
+        In the How to section, we have been able to explain the step-by-step actions of key processes that are
+        peculiar to our users
+      </p>
+    </div>
+  </div>
+{% endblock content %}
