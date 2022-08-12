@@ -148,6 +148,28 @@ def contact(request):
 	form = ContactForm()
 	return render(request, "price_compare_app/contact.html", {'form':form})
 
+
+def documentation(request):
+    return render(request,'price_compare_app/documentation/documentation.html')
+
+def documentation_features(request):
+    return render(request,'price_compare_app/documentation/documentationf.html')
+
+def documentation_sign_up(request):
+    return render(request,'price_compare_app/documentation/documentationh.html')
+
+
+def documentation_compare_prices(request):
+    return render(request,'price_compare_app/documentation/documentationi.html')
+
+
+def documentation_search(request):
+    return render(request,'price_compare_app/documentation/documentations.html')
+
+
+
+
+
 def error_404_view(request,exception):
     return render(request,'price_compare_app/404.html')
 

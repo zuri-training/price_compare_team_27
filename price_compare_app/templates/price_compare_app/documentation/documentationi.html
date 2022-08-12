@@ -1,0 +1,57 @@
+{% extends 'price_compare_app/documentation/base.html' %}
+{% load static  %}
+{% block styles %}
+  <link rel="stylesheet" href="{% static 'price_compare_app/css/documentationi.css'%}" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+{% endblock styles %}
+
+{% block title %}
+  Documentation:Compare
+{% endblock title %}
+
+{% block content %}
+  <div class="left_sidenav">
+    <a href="{% url 'doc' %}">Getting Started</a>
+    <a href="{% url 'doc-features' %}">Features</a>
+    <a href="{% url 'doc-sign' %}">How to</a>
+    <a id="link_small" href="{% url 'doc-sign' %}">Sign Up</a>
+    <a id="link_small" href="{% url 'doc-compare' %}">Compare Prices</a>
+    <a id="link_small" href="{% url 'doc-search' %}">Search for products</a>
+  </div>
+
+  <div id="main_container">
+    <h1>How to</h1>
+    <h3>Compare Prices</h3>
+    <div id="text-part">
+      <p>
+        The “Compare Prices” feature allows you to match price of products across multiple e-shops. With this
+        feature, you can discover the price of any device. However, to compare prices, you'll have to be a registered
+        user. Here, to compare prices
+        <br>
+        <br>
+        Simply search for a device or select a mobile device from the categories or wishlist.
+        Once a product is selected, you'll have an option to compare prices. Upon click, you'll
+        be redirected to the price comparison pagewhere you can see the price tags of selected device.
+      </p>
+      <br>
+      <br>
+      <div id="price_compare"><img src="{% static 'images/price_compare.png' %}" alt="price compare"> </div>
+      <div id="pricealert_image">
+        <img src="{% static 'images/price_info.png' %}" alt="pricealert_page" />
+      </div>
+      <p>
+        Was this information helpful ? <button class="btn"><i class="fa fa-thumbs-up"></i> Yes</button><button
+          class="btn"><i class="fa fa-thumbs-down"></i> No</button>
+      </p>
+      <br>
+      <br>
+    </div>
+    <div class="message input-div">
+      <label for="message">
+        <p>Need further information ?</p>
+      </label>
+      <textarea name="message" id="message" cols="30" rows="10" class="message"
+        placeholder="Let us Know what you need"></textarea>
+    </div>
+  </div>
+{%endblock content%}
