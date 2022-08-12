@@ -177,3 +177,6 @@ def error_404_view(request,exception):
 def error_500_view(request):
     data = {}
     return render(request,'price_compare_app/404.html', data)
+
+def iphone13(request):
+    return render(request, 'price_compare_app/charts_html/iphone13promaxprice.html')
