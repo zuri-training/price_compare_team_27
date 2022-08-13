@@ -2,97 +2,53 @@
   {% include 'price_compare_app/_landingheader.html' %}
   <main>
     <div class="main-container">
-      
-      <section class="popular">
-    
-        <div class="popular-text">
-          <div class="section-heading">
-            <h3>Popular Products</h3>
-            <p>All deals in one place</p>
-          </div>
-          <div class="section-filter">
-            <div class="sort-by">
-              <span>Sort by</span>
-            </div>
-            <div class="newest">
-              <span>Newest </span><div class="drop-down"><span class="material-symbols-sharp">expand_more </span></div>
-            </div>
-            <div class="filter-icon">
-              <span class="material-symbols-sharp">filter_list</span>
-            </div>
-          </div>
+
+      <section class="popular-products main-section">
+        <div class="section-head txt">
+          <h4>Popular products</h4>
+          <p>All deals in one place, enjoy</p>
         </div>
-        
-        
-          <div class="product-div grid">
-            {% for phone in iphones %}
+
+
+        <div class="cards-grid cards-flex">
 
               <a href="{% url 'phone-details' phone.id %}"><section class="product-card">
                 <div class="price">$500</div>
-                <div class="fav"><span class="material-symbols-sharp fav-icon" style="font-size: 1.6em; font-weight: 400; color: var(--dark-text);">favorite</span></div>
+                <div class="fav"><span data-product = '{{phone.id}}' data-action = 'add' class="material-symbols-sharp fav-icon update-cart" style="font-size: 1.6em; font-weight: 400; color: var(--dark-text);">favorite</span></div>
+                
 
-                <div class="phone-img">
-                  <div class="img"><img src="{{phone.image.url}}" alt=""></div>
-                </div>
-                
-                <div class="phone-txt">
-                  
-                  <p class="phone-name">{{phone.name}}</p>
-                  
-                  <div class="availabilty">
-                    <p>Availablity</p>
-                    <p>4</p>
-                  </div>
-                  
-                  <hr>
-                  
-                  <div class="review">
-                    <p>Review</p>
-                    <p>★★★★<span class="white">★</span></p>
-                  </div>
-                  
-                </div>
-                
-              </section></a>
-            
-            {% endfor %}
-          </div>
-        
           
-       
+          {% for phone in phones %}
+            <div class="product-card">
+              <div class="product-price">{{phone.price_range}}</div>
+              <div class="product-love"><span class="material-symbols-sharp" id="add-to-cart">favorite</span></div>
+              <div class="product-img"><img src="{{phone.image.url}}" alt=""></div>
+              <a href="{% url 'phone-details' phone.id %}"><div class="product-info">
+                <div class="phone-name-div"><p class="phone-name">{{phone.name}}</p></div>
+                <div class="avail-div"><p class="avail">Shopping platform availability</p><p>2</p></div><hr>
+                <div class="review-div">
+                  <p class="review">Review</p>
+                  <p class="stars">
+                    {{phone.star_reviews}}/5<span class="material-symbols-sharp">star</span>
+                  </p>
+                </div>
+              </div></a>
+            </div>
+          {% endfor %}
+            
+          
+   
 
-        <div class="see-more">
-          <a href="#">See all deals <div><span class="material-symbols-sharp">open_in_new</span></div></a>
         </div>
 
-      </section>
-
-      <section class="new-products">
-
-        <div class="popular-text">
-          <div class="section-heading">
-            <h3>New Product release</h3>
-            <p>All deals in one place</p>
-          </div>
-          <div class="section-filter">
-            <div class="sort-by">
-              <span>Sort by</span>
-            </div>
-            <div class="newest">
-              <span>Newest </span><div class="drop-down"><span class="material-symbols-sharp">expand_more </span></div>
-            </div>
-            <div class="filter-icon">
-              <span class="material-symbols-sharp">filter_list</span>
-            </div>
-          </div>
-        </div>
         
+
         <div class="product-div grid">
           {% for phone in samsung %}  
             <a href="{% url 'phone-details' phone.id %}"><section class="product-card">
 
               <div class="price">$500</div>
-              <div class="fav"><span class="material-symbols-sharp fav-icon" style="font-size: 1.6em; font-weight: 400; color: var(--dark-text);">favorite</span></div>
+              <div class="fav"><span data-product = '{{phone.id}}' data-action = 'add' class="material-symbols-sharp fav-icon update-cart" style="font-size: 1.6em; font-weight: 400; color: var(--dark-text);">favorite</span></div>
               
               <div class="phone-img">
                 <div class="img"><img src="{{phone.image.url}}" alt=""></div>
@@ -121,38 +77,39 @@
                   
         </div>
 
-        <div class="see-more">
-          <a href="#">See all deals <div><span class="material-symbols-sharp">open_in_new</span></div></a>
+
+        <div class="see-all-deals">
+          <a href="">See all deals <div class="expand"><img src="{% static 'images/icons/see-more.svg' %}" alt=""></div></a>
         </div>
 
       </section>
 
-      <section class="trending">
-
-        <div class="popular-text">
-          <div class="section-heading">
-            <h3>Trending Products</h3>
-            <p>All deals in one place</p>
-          </div>
-          <div class="section-filter">
-            <div class="sort-by">
-              <span>Sort by</span>
-            </div>
-            <div class="newest">
-              <span>Newest </span><div class="drop-down"><span class="material-symbols-sharp">expand_more </span></div>
-            </div>
-            <div class="filter-icon">
-              <span class="material-symbols-sharp">filter_list</span>
-            </div>
-          </div>
+      <section class="new-products main-section">
+        <div class="section-head txt">
+          <h4>New product release</h4>
+          <p>All deals in one place, enjoy</p>
         </div>
-        
-        <div class="product-div grid">
-            {% for phone in huawei %}
-              <a href="{% url 'phone-details' phone.id %}"><section class="product-card">
 
+
+        <div class="cards-grid cards-flex">
+          
+          
+          {% for phone in latest_phone %}      
+            <div class="product-card">
+              <div class="product-price">{{phone.price_range}}</div>
+              <div class="product-love"><span class="material-symbols-sharp" id="add-to-cart">favorite</span></div>
+              <div class="product-img"><img src="{{phone.image.url}}" alt=""></div>
+              <a href="{% url 'phone-details' phone.id %}"><div class="product-info">
+                <div class="phone-name-div"><p class="phone-name">{{phone.name}}</p></div>
+                <div class="avail-div"><p class="avail">Shopping platform availability</p><p>2</p></div><hr>
+                <div class="review-div">
+                  <p class="review">Review</p>
+                  <p class="stars">
+                    {{phone.star_reviews}}/5<span class="material-symbols-sharp">star</span>
+                  </p
+                    
                 <div class="price">$500</div>
-                <div class="fav"><span class="material-symbols-sharp fav-icon" style="font-size: 1.6em; font-weight: 400; color: var(--dark-text);">favorite</span></div>
+                <div class="fav"><span data-product = '{{phone.id}}' data-action = 'add' class="material-symbols-sharp fav-icon update-cart" style="font-size: 1.6em; font-weight: 400; color: var(--dark-text);">favorite</span></div>
                 
                 <div class="phone-img">
                   <div class= "img"><img src="{{phone.image.url}}" alt=""></div>
@@ -174,72 +131,29 @@
                     <p>★★★★<span class="white">★</span></p>
                   </div>
                   
+
                 </div>
-                
-              </section></a>
-            {% endfor%}
-                  
+              </div></a>
+            </div>
+          {% endfor %}
         </div>
-
-        <div class="see-more">
-          <a href="#">See all deals <div><span class="material-symbols-sharp">open_in_new</span></div></a>
+        <div class="see-all-deals">
+          <a href="#">See all deals <div class="expand"><img src="{% static 'images/icons/see-more.svg' %}" alt=""></div></a>
         </div>
 
       </section>
-      
-      <section class="display-cards">      
-        <div class="back-card">
-          <div class="bk-card-img">
-            <img src="{% static 'images/Pics 185.png' %}" alt="">
-          </div>
-          <div class="bk-card-text">
-            <h2>Why we are special</h2>
-          </div>
-        </div>
 
-        <div class="front-card">
-
-          <div class="fr-card-img1">
-            <img src="{% static 'images/unsplash_7qCeFo19r24.png' %}" alt="">
-          </div>
-          
-          <div class="fr-card-txt"><p>Our joy is to see all our customers<br>enjoy purchasing products from the<br>comfort of their homes</p></div>
-
-          <div class="fr-card-img2">
-            <img src="{% static 'images/New Pics.png' %}" alt="">
-          </div>
-
-
-        </div>
-
-
-        <div class="abs-card">
-          <p>Our vision is to make you feel safe when shopping online, giving you free access to helpful information in order to make smart purchasing decisions.</p>
-        </div>
-      </section>
-
-      <section class="mobile-d-cards">
-        <div id="big">
-          <h1>Why we are special</h1>
-        </div>
-        <div id="middle">
-          <p>Our joy is to see all our customers 
-            enjoy purchasing products from the 
-            comfort of their homes</p>
-        </div>
-        <div id="shadowed">
-          <p>Our vision is to make you feel 
-            safe when shopping online, 
-            giving you free access to helpful 
-            information in order to make 
-            smart purchasing decisions.</p>
-        </div>
+      <section class="who-we-are">
+        <div class="we-big"><h4>Why we are special</h4></div>
+        <div class="we-right"><p>Our joy is to see all our customers enjoy purchasing products from the comfort of their homes</p></div>
+        <div class="we-shadow"><p>Our vision is to make you feel safe when shopping online, giving you free access to helpful information in order to make smart purchasing decisions.</p></div>
+        <div class="ellipse-up"><img src="{% static 'images/Ellipse 8.png'%}" alt=""></div>
+        <div class="ellipse-down"><img src="{% static 'images/Ellipse 7.png'%}" alt=""></div>
       </section>
 
     </div>
   </main>
 
   {% include 'price_compare_app/_landingfooter.html' %}
-  <script src="{% static 'price_compare_app/js/live.js' %}"></script>
 </body>
 </html>

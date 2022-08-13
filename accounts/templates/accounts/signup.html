@@ -1,54 +1,63 @@
 {% extends 'price_compare_app/base.html' %}
 {% load static %}
+{% block styles %}
+  <link rel="stylesheet" href="{%static 'accounts/css/signup.css'%}">
+{% endblock styles %}
+  
+
 {% block content %}
 
-  <div class="main-container">
-    <form method="post" class="login-form">
-      {% csrf_token %}
+<div class="main-mobile-container">
+  <form method="post" class="login-form">
+    {% csrf_token %}
 
-      <section class="form-tittle">
-        <h5>Create an Account</h5>
-      </section>
+    <h5>Create an Account</h5>
+    <div class="form-email input-div">
+      <label for="form-email"><p>Email Address</p></label>
+      {{form.email}}
+      <small class="error-msg">Invalid format</small>
+    </div>
 
-      <section class="details" id="first">
-        <label for="login-email">Email Address</label>
-        <input type="email" name="email" id="" placeholder="Enter your Email" required>
-      </section>
+    <div class="username input-div">
+      <label for="username"><p>Username</p></label>
+      {{form.username}}
+      <small class="error-msg">Invalid format</small>
+    </div>
 
-      <section class="details" id="second">
-        <label for="username">Username</label>
-        <input type="text" name="username" id="" placeholder="Enter your username" required>
-      </section>
+    <div class="password input-div">
+      <label for="password"><p>Password</p></label>
+      {{form.password1}}
+      <small class="error-msg">Inavlid format</small>
+    </div>
 
-      <section class="details" id="third">
-        <label for="new-password">Password</label>
-        <input type="password" name="new-password" id="" placeholder="Enter your password" required>
-      </section>
+    <div class="confirm-password input-div">
+      <label for="c-password"><p>Confirm Password</p></label>
+      {{form.password2}}
 
-      <section class="details" id="fourth">
-        <label for="confirm-password">Confirm Password</label>
-        <input type="password" name="confirm-password" id="" placeholder="Confirm Your Password" required>
-      </section>
+      <small class="error-msg">Inavlid format</small>
+    </div>
 
-      <section class="ter-action">
+    <div class="ter-actions">
+      <div class="remember-me">
+        <input type="checkbox" name="checkbox" class="custom" id="checkbox">
+        <label for="checkbox" id="rem-text"><small>Remember me</small></label>
+      </div>
+    </div>
+    {% for field in form %}
+      {% for error in field.errors %}
+        <p style="color: red">{{ error }}</p>
+      {% endfor %}
+    {% endfor %}
+    <div class="form-submit">
+      <input type="submit" value="Sign up">
+    </div>
 
-        <label for="check">
-          <input type="checkbox" name="check" class="custom" id="">
-          <p>Remember me</p>
-        </label>
+    <div class="sec-action">
+      <small>Have an account? <a href="login.html">Login</a></small>
+    </div>
+  </form>
+</div>
 
-      </section>
-
-      <section class="call-to-action">
-        <input type="submit" value="Sign Up">
-      </section>
-
-      <section class="sec-action">
-        <p>Have an account&quest; <a href="#">Login</a></p>
-      </section>
-
-    </form>
-  </div>
 
 
 {% endblock content %}

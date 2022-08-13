@@ -4,15 +4,28 @@
 <head>
   
   
+<<<<<<< HEAD
   {% block stylesheet %}
     
   {% endblock stylesheet %}
+=======
+  {% block styles %}
+    
+  {% endblock styles %}
+>>>>>>> 74e71b37e7d6af326b8296b06c2b405f637438d6
     
 
 
   <title>{% block title %} {% endblock title %} - Pricify</title>
 
-  {% include 'price_compare_app/_nav.html' %}
+  
+  {% if user.is_authenticated %}
+    {% include 'price_compare_app/auth_nav.html' %}
+  {% else %}
+    {% include 'price_compare_app/_nav.html' %}
+  {% endif %}
+    
+  
 
 
 </head>

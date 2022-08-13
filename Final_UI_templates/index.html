@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Sharp:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  <link rel="stylesheet" href="style.css">
+  <script type="text/javascript" src="/Final_UI_templates/jquery-3.6.0.min.js"></script>
+  <title>Pricify</title>
+</head>
+<body>
+
+  <header>
+    <div class="header-container-mobile">
+      <div class="head-nav">
+
+        <div id="nav-left">
+          <div class="menu">
+            <img id="menu-btn" src="/Final_UI_templates/icons/menu.svg">
+            <div id="close-box"><img src="/Final_UI_templates/icons/close.svg" alt="#" id="close"></div>
+          </div>
+          <div class="h-logo"><a href="/index.html" class="home"><img src="/Final_UI_templates/images/Choice Logo.png"></a></div>
+        </div>
+        <div id="nav-right">
+          <a href="wishlist.html" id="wishlist"><div class="cart"><img src="/Final_UI_templates/icons/cart.svg" alt=""></div></a>
+          <div class="login-btn"><a href="login.html">Login</a></div>
+        </div>
+
+      </div>
+
+      <div class="head-search">
+        <input type="search" name="search-products" id="" placeholder="Search here">
+      </div>
+    </div>
+
+    <div class="header-container-desktop">
+      <div class="d-header-nav-top">
+        <div class="d-logo"><a href="/index.html" class="home"><img src="/Final_UI_templates/images/Choice Logo.png" alt=""></a></div>
+
+      <div class="d-nav">
+        <a href="/index.html">Home</a>
+        <a href="/Categories/">Categories</a>
+        <a href="/wishlist.html">Wishlist <div class="d-cart"><img src="/Final_UI_templates/icons/cart.svg" alt=""></div></a>
+      </div>
+
+      <div class="d-login"><a href="/login.html">Login</a></div>
+      </div>
+
+      <div class="d-hero-section">
+       <div class="d-hero-section-main">
+        <div class="d-hero-txt">
+          <div class="d-hero-txt-big"><h2>Match phone prices across e-shops and get the best deal!</h2></div>
+          <div class="d-hero-txt-mid"><p>With Pricify, you can discover and compare prices of mobile devices accross different webshops and get the best deal.</p></div>
+          <div class="d-hero-search">
+            <form action="">
+              <input type="search" name="d-hero-search-searchs" id="d-hero-search-search" placeholder="What are you looking to find?">
+              <input type="submit" name="d-hero-search-submit" id="d-hero-search-submit" value="Search">
+            </form>
+          </div>
+        </div>
+
+        <div class="d-hero-boy-image"><img src="/Final_UI_templates/images/Group 13.png" alt=""></div>
+     
+       </div>
+
+       <div class="d-hero-section-brands">
+        <div class="d-div-samsung d-brands"><img src="/Final_UI_templates/images/Vector.png" alt=""></div>
+        <div class="d-div-iphone d-brands"><img src="/Final_UI_templates/images/cil_car-alt (Traced).png" alt=""></div>
+        <div class="d-div-huawei d-brands"><img src="/Final_UI_templates/images/Vector-1.png" alt=""></div>
+        <div class="d-div-infinix d-brands"><img src="/Final_UI_templates/images/bi_laptop (Traced).png" alt=""></div>
+        <div class="d-div-oppo d-brands"><img src="/Final_UI_templates/images/Frame 17 (Traced).png" alt=""></div>
+        <div class="d-div-xiaomi d-brands"><img src="/Final_UI_templates/images/Vector-2.png" alt=""></div>
+        <div class="d-div-techno d-brands"><img src="/Final_UI_templates/images/Tecn.png" alt=""></div>
+       </div>
+      </div>
+
+    </div>
+  </header>
+
+  <section class="m-hero-section">
+    <div class="m-hero-txt">
+      <h3>Match phone prices across e-shops and get the best deal!</h3>
+      <p>With Pricify, you can discover and compare prices of mobile devices accross different webshops and get the best deal.</p>
+    </div>
+
+    <div class="m-hero-search">
+      <form action="">
+        <input type="search" name="" id="" placeholder="What are you looking to find?">
+        <input type="submit" value="Search">
+      </form>
+    </div>
+
+    <div class="m-hero-brands">
+      <div class="div-samsung m-brands"><img src="/Final_UI_templates/images/Vector.png" alt=""></div>
+      <div class="div-iphone m-brands"><img src="/Final_UI_templates/images/cil_car-alt (Traced).png" alt=""></div>
+      <div class="div-huawei m-brands"><img src="/Final_UI_templates/images/Vector-1.png" alt=""></div>
+      <div class="div-infinix m-brands"><img src="/Final_UI_templates/images/bi_laptop (Traced).png" alt=""></div>
+      <div class="div-oppo m-brands"><img src="/Final_UI_templates/images/Frame 17 (Traced).png" alt=""></div>
+      <div class="div-xiaomi m-brands"><img src="/Final_UI_templates/images/Vector-2.png" alt=""></div>
+      <div class="div-techno m-brands"><img src="/Final_UI_templates/images/Tecn.png" alt=""></div>
+    </div>
+
+  </section>
+
+  <aside id="aside">
+    <div class="aside-mobile">
+      <ul class="side-bar">
+        <li><a href="index.html">Home</a></li>
+        <li><div class="toggle-category"> Categories <div class="drop-down"><img src="/Final_UI_templates/icons/drop-down.svg"></div></div>
+          <ul class="categories-list">
+            <li><a href="apple.html">Apple</a></li>
+            <li><a href="techno.html">Techno</a></li>
+            <li><a href="infinix.html">Infinix</a></li>
+            <li><a href="samsung.html">Samsung</a></li>
+            <li><a href="oppo.html">Oppo</a></li>
+            <li><a href="xiaomi.html">Xiaomi</a></li>
+          </ul>
+        </li>
+        <li><a href="wishlist.html">Wishlist</a></li>
+      </ul>
+    </div>
+  </aside>
+
+  <main>
+    <div class="main-container">
+
+      <section class="popular-products main-section">
+        <div class="section-head txt">
+          <h4>Popular products</h4>
+          <p>All deals in one place, enjoy</p>
+        </div>
+
+        <div class="cards-grid cards-flex">
+
+          <div class="product-card">
+            <div class="product-price">₦750,000</div>
+            <div class="product-love"><span class="material-symbols-sharp" id="add-to-cart">favorite</span></div>
+            <div class="product-img"><img src="/Final_UI_templates/images/iPhone.jpg" alt=""></div>
+            <a href="productInfo.html"><div class="product-info">
+              <div class="phone-name-div"><p class="phone-name">Apple iPhone 13 Pro Max 256GB Gold</p></div>
+              <div class="avail-div"><p class="avail">Shopping platform availability</p><p>2</p></div><hr>
+              <div class="review-div">
+                <p class="review">Review</p>
+                <p class="stars">
+                  <span class="material-symbols-sharp">star</span>
+                  <span class="material-symbols-sharp">star</span>
+                  <span class="material-symbols-sharp">star</span>
+                  <span class="material-symbols-sharp">star</span>
+                  <span class="material-symbols-sharp">grade</span>
+                </p>
+              </div>
+            </div></a>
+          </div>
+          
+          <div class="product-card">
+            <div class="product-price">₦750,000</div>
+            <div class="product-love"><span class="material-symbols-sharp" id="add-to-cart">favorite</span></div>
+            <div class="product-img"><img src="/Final_UI_templates/images/iPhone.jpg" alt=""></div>
+            <a href="productInfo.html"><div class="product-info">
+              <div class="phone-name-div"><p class="phone-name">Apple iPhone 13 Pro Max 256GB Gold</p></div>
+              <div class="avail-div"><p class="avail">Shopping platform availability</p><p>2</p></div><hr>
+              <div class="review-div">
+                <p class="review">Review</p>
+                <p class="stars">
+                  <span class="material-symbols-sharp">star</span>
+                  <span class="material-symbols-sharp">star</span>
+                  <span class="material-symbols-sharp">star</span>
+                  <span class="material-symbols-sharp">star</span>
+                  <span class="material-symbols-sharp">grade</span>
+                </p>
+              </div>
+            </div></a>
+          </div>
+          
+          <div class="product-card">
+            <div class="product-price">₦750,000</div>
+            <div class="product-love"><span class="material-symbols-sharp" id="add-to-cart">favorite</span></div>
+            <div class="product-img"><img src="/Final_UI_templates/images/iPhone.jpg" alt=""></div>
+            <a href="productInfo.html"><div class="product-info">
+              <div class="phone-name-div"><p class="phone-name">Apple iPhone 13 Pro Max 256GB Gold</p></div>
+              <div class="avail-div"><p class="avail">Shopping platform availability</p><p>2</p></div><hr>
+              <div class="review-div">
+                <p class="review">Review</p>
+                <p class="stars">
+                  <span class="material-symbols-sharp">star</span>
+                  <span class="material-symbols-sharp">star</span>
+                  <span class="material-symbols-sharp">star</span>
+                  <span class="material-symbols-sharp">star</span>
+                  <span class="material-symbols-sharp">grade</span>
+                </p>
+              </div>
+            </div></a>
+          </div>
+
+          <div class="product-card">
+            <div class="product-price">₦750,000</div>
+            <div class="product-love"><span class="material-symbols-sharp" id="add-to-cart">favorite</span></div>
+            <div class="product-img"><img src="/Final_UI_templates/images/iPhone.jpg" alt=""></div>
+            <a href="productInfo.html"><div class="product-info">
+              <div class="phone-name-div"><p class="phone-name">Apple iPhone 13 Pro Max 256GB Gold</p></div>
+              <div class="avail-div"><p class="avail">Shopping platform availability</p><p>2</p></div><hr>
+              <div class="review-div">
+                <p class="review">Review</p>
+                <p class="stars">
+                  <span class="material-symbols-sharp">star</span>
+                  <span class="material-symbols-sharp">star</span>
+                  <span class="material-symbols-sharp">star</span>
+                  <span class="material-symbols-sharp">star</span>
+                  <span class="material-symbols-sharp">grade</span>
+                </p>
+              </div>
+            </div></a>
+          </div>
+          
+          <div class="product-card">
+            <div class="product-price">₦750,000</div>
+            <div class="product-love"><span class="material-symbols-sharp" id="add-to-cart">favorite</span></div>
+            <div class="product-img"><img src="/Final_UI_templates/images/iPhone.jpg" alt=""></div>
+            <a href="productInfo.html"><div class="product-info">
+              <div class="phone-name-div"><p class="phone-name">Apple iPhone 13 Pro Max 256GB Gold</p></div>
+              <div class="avail-div"><p class="avail">Shopping platform availability</p><p>2</p></div><hr>
+              <div class="review-div">
+                <p class="review">Review</p>
+                <p class="stars">
+                  <span class="material-symbols-sharp">star</span>
+                  <span class="material-symbols-sharp">star</span>
+                  <span class="material-symbols-sharp">star</span>
+                  <span class="material-symbols-sharp">star</span>
+                  <span class="material-symbols-sharp">grade</span>
+                </p>
+              </div>
+            </div></a>
+          </div>
+          
+          <div class="product-card">
+            <div class="product-price">₦750,000</div>
+            <div class="product-love"><span class="material-symbols-sharp" id="add-to-cart">favorite</span></div>
+            <div class="product-img"><img src="/Final_UI_templates/images/iPhone.jpg" alt=""></div>
+            <a href="productInfo.html"><div class="product-info">
+              <div class="phone-name-div"><p class="phone-name">Apple iPhone 13 Pro Max 256GB Gold</p></div>
+              <div class="avail-div"><p class="avail">Shopping platform availability</p><p>2</p></div><hr>
+              <div class="review-div">
+                <p class="review">Review</p>
+                <p class="stars">
+                  <span class="material-symbols-sharp">star</span>
+                  <span class="material-symbols-sharp">star</span>
+                  <span class="material-symbols-sharp">star</span>
+                  <span class="material-symbols-sharp">star</span>
+                  <span class="material-symbols-sharp">grade</span>
+                </p>
+              </div>
+            </div></a>
+          </div>
+
+          
+          <div class="product-card">
+            <div class="product-price">₦750,000</div>
+            <div class="product-love"><span class="material-symbols-sharp" id="add-to-cart">favorite</span></div>
+            <div class="product-img"><img src="/Final_UI_templates/images/iPhone.jpg" alt=""></div>
+            <a href="productInfo.html"><div class="product-info">
+              <div class="phone-name-div"><p class="phone-name">Apple iPhone 13 Pro Max 256GB Gold</p></div>
+              <div class="avail-div"><p class="avail">Shopping platform availability</p><p>2</p></div><hr>
+              <div class="review-div">
+                <p class="review">Review</p>
+                <p class="stars">
+                  <span class="material-symbols-sharp">star</span>
+                  <span class="material-symbols-sharp">star</span>
+                  <span class="material-symbols-sharp">star</span>
+                  <span class="material-symbols-sharp">star</span>
+                  <span class="material-symbols-sharp">grade</span>
+                </p>
+              </div>
+            </div></a>
+          </div>
+          
+          <div class="product-card">
+            <div class="product-price">₦750,000</div>
+            <div class="product-love"><span class="material-symbols-sharp" id="add-to-cart">favorite</span></div>
+            <div class="product-img"><img src="/Final_UI_templates/images/iPhone.jpg" alt=""></div>
+            <a href="productInfo.html"><div class="product-info">
+              <div class="phone-name-div"><p class="phone-name">Apple iPhone 13 Pro Max 256GB Gold</p></div>
+              <div class="avail-div"><p class="avail">Shopping platform availability</p><p>2</p></div><hr>
+              <div class="review-div">
+                <p class="review">Review</p>
+                <p class="stars">
+                  <span class="material-symbols-sharp">star</span>
+                  <span class="material-symbols-sharp">star</span>
+                  <span class="material-symbols-sharp">star</span>
+                  <span class="material-symbols-sharp">star</span>
+                  <span class="material-symbols-sharp">grade</span>
+                </p>
+              </div>
+            </div></a>
+          </div>
+          
+          <div class="product-card">
+            <div class="product-price">₦750,000</div>
+            <div class="product-love"><span class="material-symbols-sharp" id="add-to-cart">favorite</span></div>
+            <div class="product-img"><img src="/Final_UI_templates/images/iPhone.jpg" alt=""></div>
+            <a href="productInfo.html"><div class="product-info">
+              <div class="phone-name-div"><p class="phone-name">Apple iPhone 13 Pro Max 256GB Gold</p></div>
+              <div class="avail-div"><p class="avail">Shopping platform availability</p><p>2</p></div><hr>
+              <div class="review-div">
+                <p class="review">Review</p>
+                <p class="stars">
+                  <span class="material-symbols-sharp">star</span>
+                  <span class="material-symbols-sharp">star</span>
+                  <span class="material-symbols-sharp">star</span>
+                  <span class="material-symbols-sharp">star</span>
+                  <span class="material-symbols-sharp">grade</span>
+                </p>
+              </div>
+            </div></a>
+          </div>
+
+          <div class="product-card">
+            <div class="product-price">₦750,000</div>
+            <div class="product-love"><span class="material-symbols-sharp" id="add-to-cart">favorite</span></div>
+            <div class="product-img"><img src="/Final_UI_templates/images/iPhone.jpg" alt=""></div>
+            <a href="productInfo.html"><div class="product-info">
+              <div class="phone-name-div"><p class="phone-name">Apple iPhone 13 Pro Max 256GB Gold</p></div>
+              <div class="avail-div"><p class="avail">Shopping platform availability</p><p>2</p></div><hr>
+              <div class="review-div">
+                <p class="review">Review</p>
+                <p class="stars">
+                  <span class="material-symbols-sharp">star</span>
+                  <span class="material-symbols-sharp">star</span>
+                  <span class="material-symbols-sharp">star</span>
+                  <span class="material-symbols-sharp">star</span>
+                  <span class="material-symbols-sharp">grade</span>
+                </p>
+              </div>
+            </div></a>
+          </div>
+          
+          <div class="product-card">
+            <div class="product-price">₦750,000</div>
+            <div class="product-love"><span class="material-symbols-sharp" id="add-to-cart">favorite</span></div>
+            <div class="product-img"><img src="/Final_UI_templates/images/iPhone.jpg" alt=""></div>
+            <a href="productInfo.html"><div class="product-info">
+              <div class="phone-name-div"><p class="phone-name">Apple iPhone 13 Pro Max 256GB Gold</p></div>
+              <div class="avail-div"><p class="avail">Shopping platform availability</p><p>2</p></div><hr>
+              <div class="review-div">
+                <p class="review">Review</p>
+                <p class="stars">
+                  <span class="material-symbols-sharp">star</span>
+                  <span class="material-symbols-sharp">star</span>
+                  <span class="material-symbols-sharp">star</span>
+                  <span class="material-symbols-sharp">star</span>
+                  <span class="material-symbols-sharp">grade</span>
+                </p>
+              </div>
+            </div></a>
+          </div>
+          
+          <div class="product-card">
+            <div class="product-price">₦750,000</div>
+            <div class="product-love"><span class="material-symbols-sharp" id="add-to-cart">favorite</span></div>
+            <div class="product-img"><img src="/Final_UI_templates/images/iPhone.jpg" alt=""></div>
+            <a href="productInfo.html"><div class="product-info">
+              <div class="phone-name-div"><p class="phone-name">Apple iPhone 13 Pro Max 256GB Gold</p></div>
+              <div class="avail-div"><p class="avail">Shopping platform availability</p><p>2</p></div><hr>
+              <div class="review-div">
+                <p class="review">Review</p>
+                <p class="stars">
+                  <span class="material-symbols-sharp">star</span>
+                  <span class="material-symbols-sharp">star</span>
+                  <span class="material-symbols-sharp">star</span>
+                  <span class="material-symbols-sharp">star</span>
+                  <span class="material-symbols-sharp">grade</span>
+                </p>
+              </div>
+            </div></a>
+          </div>
+
+
+        </div>
+
+        
+
+        <div class="see-all-deals">
+          <a href="/Final_UI_templates/popularProducts.html">See all deals <div class="expand"><img src="/Final_UI_templates/icons/see-more.svg" alt=""></div></a>
+        </div>
+
+      </section>
+
+      <section class="new-products main-section">
+        <div class="section-head txt">
+          <h4>New product release</h4>
+          <p>All deals in one place, enjoy</p>
+        </div>
+
+        <div class="cards-grid cards-flex">
+          <div class="product-card">
+            <div class="product-price">₦750,000</div>
+            <div class="product-love"><span class="material-symbols-sharp" id="add-to-cart">favorite</span></div>
+            <div class="product-img"><img src="/Final_UI_templates/images/iPhone.jpg" alt=""></div>
+            <a href="productInfo.html"><div class="product-info">
+              <div class="phone-name-div"><p class="phone-name">Apple iPhone 13 Pro Max 256GB Gold</p></div>
+              <div class="avail-div"><p class="avail">Shopping platform availability</p><p>2</p></div><hr>
+              <div class="review-div">
+                <p class="review">Review</p>
+                <p class="stars">
+                  <span class="material-symbols-sharp">star</span>
+                  <span class="material-symbols-sharp">star</span>
+                  <span class="material-symbols-sharp">star</span>
+                  <span class="material-symbols-sharp">star</span>
+                  <span class="material-symbols-sharp">grade</span>
+                </p>
+              </div>
+            </div></a>
+          </div>
+          
+          <div class="product-card">
+            <div class="product-price">₦750,000</div>
+            <div class="product-love"><span class="material-symbols-sharp" id="add-to-cart">favorite</span></div>
+            <div class="product-img"><img src="/Final_UI_templates/images/iPhone.jpg" alt=""></div>
+            <a href="productInfo.html"><div class="product-info">
+              <div class="phone-name-div"><p class="phone-name">Apple iPhone 13 Pro Max 256GB Gold</p></div>
+              <div class="avail-div"><p class="avail">Shopping platform availability</p><p>2</p></div><hr>
+              <div class="review-div">
+                <p class="review">Review</p>
+                <p class="stars">
+                  <span class="material-symbols-sharp">star</span>
+                  <span class="material-symbols-sharp">star</span>
+                  <span class="material-symbols-sharp">star</span>
+                  <span class="material-symbols-sharp">star</span>
+                  <span class="material-symbols-sharp">grade</span>
+                </p>
+              </div>
+            </div></a>
+          </div>
+          
+          <div class="product-card">
+            <div class="product-price">₦750,000</div>
+            <div class="product-love"><span class="material-symbols-sharp" id="add-to-cart">favorite</span></div>
+            <div class="product-img"><img src="/Final_UI_templates/images/iPhone.jpg" alt=""></div>
+            <a href="productInfo.html"><div class="product-info">
+              <div class="phone-name-div"><p class="phone-name">Apple iPhone 13 Pro Max 256GB Gold</p></div>
+              <div class="avail-div"><p class="avail">Shopping platform availability</p><p>2</p></div><hr>
+              <div class="review-div">
+                <p class="review">Review</p>
+                <p class="stars">
+                  <span class="material-symbols-sharp">star</span>
+                  <span class="material-symbols-sharp">star</span>
+                  <span class="material-symbols-sharp">star</span>
+                  <span class="material-symbols-sharp">star</span>
+                  <span class="material-symbols-sharp">grade</span>
+                </p>
+              </div>
+            </div></a>
+          </div>
+
+        </div>
+  
+        <div class="see-all-deals">
+          <a href="/Final_UI_templates/popularProducts.html">See all deals <div class="expand"><img src="/Final_UI_templates/icons/see-more.svg" alt=""></div></a>
+        </div>
+
+      </section>
+
+      <section class="who-we-are">
+        <div class="we-big"><h4>Why we are special</h4></div>
+        <div class="we-right"><p>Our joy is to see all our customers enjoy purchasing products from the comfort of their homes</p></div>
+        <div class="we-shadow"><p>Our vision is to make you feel safe when shopping online, giving you free access to helpful information in order to make smart purchasing decisions.</p></div>
+        <div class="ellipse-up"><img src="/Final_UI_templates/images/Ellipse 8.png" alt=""></div>
+        <div class="ellipse-down"><img src="/Final_UI_templates/images/Ellipse 7.png" alt=""></div>
+      </section>
+
+    </div>
+  </main>
+
+  <footer>
+    <div class="footer-container-mobile">
+      <div class="f-newsletter">
+        <label for="f-newsletter-form">Newsletter Subscription</label>
+        <form action="" id="f-newsletter-form" name="f-newsletter-form">
+          <input type="email" name="f-newsletter-email" id="f-newsletter-email" placeholder="Enter your mail">
+          <input type="submit" id="f-newsletter-submit" value="Subscribe">
+        </form>
+      </div>
+      <div class="f-nav">
+        <section class="f-logo"><img src="/Final_UI_templates/images/White Logo.png" alt=""></section>
+
+        <section class="f-company">
+          <ul id="company">
+            <li><label for="">Company</label></li>
+            <li><p><a href="aboutUs.html">About Us</a></p></li>
+            <li><p><a href="contactUs.html">Contact</a></p></li>
+            <li><p><a href="documentation/">Documentation</a></p></li>
+          </ul>
+        </section>
+
+        <section class="f-brands">
+          <div class="brand-big">
+            <img src="/Final_UI_templates/images/VectorWhite-1.png" alt="">
+            <img src="/Final_UI_templates/images/cil_car-alt (Traced)White.png" alt="">
+            <img src="/Final_UI_templates/images/VectorWhite-2.png" alt="">
+          </div>
+          <div class="brand-mid">
+            <img src="/Final_UI_templates/images/bi_laptop (Traced)White.png" alt="">
+            <img src="/Final_UI_templates/images/TecnWhite.png" alt="">
+          </div>
+          <div class="brand-down">
+            <img src="/Final_UI_templates/images/Frame 17 (Traced)White.png" alt="">
+            <img src="/Final_UI_templates/images/VectorWhite.png" alt="">
+          </div>
+        </section>
+      </div>
+    </div>
+    <div class="copyright-mobile"><small>Copyright 2022. Made with  &nbsp;  <span class="emoji">❤</span>  &nbsp;  from Zuri Project. Team 27</small></div>
+
+    <div class="footer-container-desktop">
+      <div class="d-footer-container-action">
+        <h2>Join millions of other satisfied customers</h2>
+        <nav class="d-actions">
+          <a href="/Final_UI_templates/signup.html">Sign up</a>
+          <a href="/Final_UI_templates/login.html">Sign in</a>
+        </nav>
+      </div>
+
+
+      <div class="d-footer-container-main">
+        <div class="d-f-logo"><img src="/Final_UI_templates/images/White Logo.png" alt=""></div>
+
+        <div class="d-f-nav">
+          <ul id="d-company">
+            <li><label>Company</label></li>
+            <li><p><a href="aboutUs.html">About Us</a></p></li>
+            <li><p><a href="contactUs.html">Contact</a></p></li>
+            <li><p><a href="documentation/">Documentation</a></p></li>
+          </ul>
+          <ul id="d-brands">
+            <li><label for="Brands">Brands</label></li>
+            <li><p><a href="">Samsung</a></p></li>
+            <li><p><a href="">Oppo</a></p></li>
+            <li><p><a href="">iPhone</a></p></li>
+            <li><p><a href="">Techno</a></p></li>
+            <li><p><a href="">Infinix</a></p></li>
+            <li><p><a href="">Xiaomi</a></p></li>
+            <li><p><a href="">Huawei</a></p></li>
+          </ul>
+        </div>
+  
+        <div class="d-f-newsletter">
+          <label for="d-Newsletter-form">Newsletter Subscription</label>
+          <form action="" name="d-Newsletter-form">
+            <input type="email" name="d-f-newsletter-email" id="d-f-newsletter-email" placeholder="Enter your mail">
+            <input type="submit" name="d-f-newsletter-search" id="d-f-newsletter-submit" value="Subscribe">
+          </form>
+        </div>
+      </div>
+
+    </div>
+    <div class="copyright-desktop"><small>Copyright 2022. Made with  &nbsp;  <span class="emoji">❤</span>  &nbsp;  from Zuri Project. Team 27</small></div>
+
+    <div class="footer-container-desktop"></div>
+  </footer>
+
+  <script src="/Final_UI_templates/scripts.js"></script>
+</body>
+</html>
