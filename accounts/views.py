@@ -28,6 +28,10 @@ def sign_up(request):
                 messages.success(request, "Account was created for " + user)
 
                 return redirect('login')
+            else:
+                print(form.errors)
+        else:
+            form=CreateUserForm()
 
         context={'form':form}
         return render(request,'accounts/signup.html',context)
