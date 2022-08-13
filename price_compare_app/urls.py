@@ -24,3 +24,5 @@ urlpatterns = [
     path('iphone13/',views.iphone13, name='iphone13'),
 
 ]
+ 
+ 
