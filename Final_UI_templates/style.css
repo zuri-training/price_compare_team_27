@@ -381,9 +381,12 @@ aside li {
     border-top: 1px solid;
     border-color: var(--dark-text);
     width: 100%;
-    aspect-ratio: 1.5;
+    aspect-ratio: 1.3;
     border-top-left-radius: var(--border-radius);
     border-top-right-radius: var(--border-radius);
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
   .product-img img {
     width: 100%;
@@ -1003,7 +1006,7 @@ footer {
     justify-content: space-between;
     position: relative;
   }
-  .d-footer-container-main a:hover,  .d-footer-container-main a:focus, .d-footer-container-main:active {
+  .d-f-nav a:hover,  .d-f-nav a:focus, .d-f-nav:active {
     text-decoration: underline;
   }
   .d-f-logo {
