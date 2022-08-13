@@ -1,6 +1,5 @@
 {% extends 'price_compare_app/base.html' %}
 {% load static %}
-{% load social_share %}
 {% block title %} Wishlist {% endblock %}
 
 {% block styles %}
@@ -21,43 +20,8 @@
     
         <div class="product-div grid">
             
-
             {% for item in items  %}
                       
-
-            {% for item in best_price  %}
-            <a href="{% url 'phone-details' item.phone.id %}">       
-                <section class="product-card">
-        
-                    <div class="phone-img">
-                        <div class="img"><img src="{{item.phone.image.url}}" alt=""></div>
-                    </div>
-        
-                    <div class="phone-txt">
-        
-                        <p class="phone-name">{{item.phone.name}}</p>
-                        <p class="phone-name">Best Price: {{item.best_price|floatformat:2}}</p>
-                        <div class="availabilty">
-                            <p>Quantity</p>
-                            <p>{{item.quantity}}</p>
-                        </div>
-        
-                        <hr>
-        
-                        <div class="review">
-                            <p>Review</p>
-                            <p>★★★★<span class="white">★</span></p>
-                        </div>
-                        <div class='phone-name'><button data-product = '{{item.phone.id}}' data-action='delete' class="btn-wishlist update-cart">
-                            Remove
-                            </button></div>
-                            {% post_to_facebook object_or_url 'Facebook' %}
-                            {% post_to_twitter "Get the best prices for {{item.phone.name}} on Pricify" object_or_url 'Twitter' %}
-                            
-                    </div>
-        
-                </section></a>
-
             {% endfor %}
           
     
