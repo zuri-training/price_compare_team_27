@@ -20,7 +20,7 @@
         <div class="img"><img src="{{data.image.url}}" /></div>
         <div class="text">
           <h2>{{data.name}}</h2>
-          <span>
+          <span style="font-weight: 400;">
             4.0(6 reviews)<br />
             Operation System: Apple iOS 15<br />
             Screen size: 6.7 inches<br />
@@ -47,7 +47,7 @@
           <h2>Price history</h2>
           <p>Have a look at how this product has been performing</p>
           <div class="price-chart">
-            <iframe class="phoneframe" src="/price_compare_app/templates/price_compare_app/iphone13promaxprice.html" frameborder="0"></iframe>
+            <iframe class="phoneframe" src="/price_compare_app/templates/price_compare_app/charts_html/"  frameborder="0"></iframe>
           </div>
   </section>
   <section class="price-compare">
@@ -86,12 +86,11 @@
       <div class="name">{{data.name}}</div>
       <div class="price">{{data.get_konga_price}}</div>
       <div class="review">
-        <span id="prix"
-          >4.0
+          4.0
           <img
             src="{% static 'images/Star 6.png' %}"
             style="width: 20px; height: 20x"
-        /></span>
+        />
       </div>
       <div class="delivery">Free delivery</div>
       <div class="shop-link">
@@ -100,5 +99,16 @@
         ></a>
       </div>
     </div>
+  </section>
+  <section class="reviews">
+      <h2>Review and rating</h2>
+      <p class="rev">Let us know your thoughts on our products</p>
+      <p class="rev">4.0 (6 reviews)</p>
+      <div class="card">
+        <h4>Carl Benz</h4>
+        <p style="font-size: 12px;">2 weeks ago</p>
+        <p style="font-size: 15px;">I was confused for over a month on what phone to buy and where to buy iy but on finding Pricify, I made my choice in minutes</p>
+      </div>
+      
   </section>
 {% endblock content %}

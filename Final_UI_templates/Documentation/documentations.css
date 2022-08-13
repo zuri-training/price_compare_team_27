@@ -213,7 +213,7 @@ header {
     left: 1em;
     right: 1em;
     top: 4em;
-    z-index: 10;
+    z-index: 1000;
     background: var(--main-color);
     box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.08);
     border-radius: var(--border-radius);
@@ -518,6 +518,12 @@ color: inherit;
   margin-block-start: 1em;
 }
 
+#pricesearch_image
+{
+  width:60%;
+  margin-block-start: 2em;
+  margin-block-end: 2em;
+}
 
 
 
