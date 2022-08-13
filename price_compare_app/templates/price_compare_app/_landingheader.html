@@ -6,206 +6,133 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Sharp:opsz,wght,FILL,GRAD@48,400,1,0" />
-  <link rel="stylesheet" href="{%static 'price_compare_app/css/landingstyle.css'%}">
+  <link rel="stylesheet" href="{%static 'price_compare_app/css/indexstyle.css'%}">
+  <script src="{% static 'scripts.js' %}"></script>
   <title>Pricify</title>
   <script type="text/javascript" src="{% static 'price_compare_app/js/jquery-3.6.0.min.js' %}"> </script>
 </head>
 <body>
-
   <header>
+    <div class="header-container-mobile">
+      <div class="head-nav">
 
-    <div class="header-container">
-
-      <div class="header-top">
-        <section class="header-logo">
-          <img src="{% static 'images/Choice Logo.png' %}" alt="">
-        </section>
-  
-        <section id="mheader-nav" class="header-nav">
-          <nav>
-
-            <a href="{% url 'index' %}">Home</a>
-            <a href="#">Categories</a>
-            <a href="{% url 'wishlist' %}">Wishlist <div class="cart-img"><span class="material-symbols-sharp">shopping_cart</span></div></a>
+        <div id="nav-left">
+          <div class="menu">
+            <img id="menu-btn" src="{%static 'images/icons/menu.svg'%}">
+            <div id="close-box"><img src="{%static 'images/icons/close.svg'%}" alt="#" id="close"></div>
+          </div>
+          <div class="h-logo"><a href="{% url 'index' %}" class="home"><img src="{%static 'images/Choice Logo.png'%}"></a></div>
+        </div>
+        <div id="nav-right">
+          <a href="wishlist.html" id="wishlist"><div class="cart"><img src="{%static 'images/icons/cart.svg'%}" alt=""></div></a>
+          {% if user.is_authenticated %}
+            <div class="login-btn"><a href="{% url 'login' %}">Login</a></div>
+          {% else %}
+            <div class="login-btn"><a href="{% url 'logout' %}">Logout</a></div>
+          {% endif %}
             
-            <div class="dropdown">
-              <div class="dropdown-content">
-                <a href="#">Home </a>
-                <a href="#">Categories</a>
-                <a href="#">Wishlist</a>
-              </div>
-            </div>
-            <!-- <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a> -->
-           
-          </nav>
-        </section>
-
-        <section class="header-profile">
-          <div class="desktop_top">
-            <div id="view"><div class="profile-icon"><span class="material-symbols-sharp">account_circle</span> Account</div><div class="caret-down" id="drop-down"><span class="material-symbols-sharp">expand_more</span></div></div>
-          
         
-            <div id="toggleCard">
-              {% if user.is_authenticated %}
-                <a href="{% url 'logout' %}" class="toggle_top">Logout</a>
-              {% else %}          
-                <a href="{% url 'login' %}" class="toggle_top">Login</a>
-                <a href="{% url 'signup' %}" class="toggle_bottom">Signup</a>
-              {% endif %}
-            </div>
-          </div>
-          <!-- <div class="mobile_top">
-            <a href="#">
-            <div class="cart-img">
-              <span class="material-symbols-sharp">shopping_cart</span>
-            </div>
-              <div class="profile-icon">
-                <span class="material-symbols-sharp">account_circle</span>
-              </div>
-                <div class="caret-down">
-                <span class="material-symbols-sharp">expand_more</span>
-              </div>
-            </a>
-          </div> -->
-        </section>
-      </div>
-
-      <div class="mid">
-
-        <div class="mid_left">
-          <div class="mid_text">
-            <h1>
-              Compare prices across <br />
-              multiple platforms
-            </h1>
-          </div>
-
-          <div class="form_part">
-              <form id=""  action="{% url 'search' %}" method="get" >
-                <input
-                  type="search"
-                  name="search"
-                  placeholder="What are you looking to find?"
-                />
-                <input id="search_button" type="submit" value="Search" />
-              </form>
-            </div>
-
-<!-- 
-          <div class="mid_icon">
-            <div class="header-icon"><img class="iconnnn" src="{% static 'images/ri-google-lineSocial.png' %}" alt="google logo"></div>
-            <div class="header-icon"><img class="iconnnn" src="{% static 'images/ri-facebook-lineSocial.png' %}" alt="facebook logo"></div>
-            <div class="header-icon"><img class="iconnnn" src="{% static 'images/ri-twitter-lineSocial.png' %}" alt="google logo"></div>
-          
-          </div> -->
-        </div>
-
-        <div class="mid_image">
-          <img src="{% static 'images/Group 13.png' %}" alt="image">
         </div>
 
       </div>
 
-    </div>
-
-    <div class="mobile-header">
-      <section class="mobile-nav">
-        <div id="left">
-          <div class="menuBtn">
-            <span class="material-symbols-sharp">menu</span>
-          </div>
-          <div class="head-logo">
-            <img src="{% static 'images/Choice Logo.png' %}" alt="">
-          </div>
-        </div>
-
-        <div id="right">
-          <div class="mobile-cart">
-            <span class="material-symbols-sharp">shopping_cart</span>
-          </div>
-          <div class="profile-mobile">
-            <span class="material-symbols-sharp">account_circle</span>
-            <span class="material-symbols-sharp">expand_more</span>
-          </div>
-        </div>
-      </section>
       
-      <section class="mobile-search">
-        <form action="" class="headSearch">
-          <input type="search" name="" id="" placeholder="Search here">
+      <div class="head-search">
+        <form action="{% url 'search' %}">
+          <input type="search" name="search" id="" placeholder="Search here">
         </form>
-      </section>
-
+      </div>
     </div>
 
+    <div class="header-container-desktop">
+      <div class="d-header-nav-top">
+        <div class="d-logo"><a href="{% url 'index' %}" class="home"><img src="{%static 'images/Choice Logo.png'%}" alt=""></a></div>
+
+      <div class="d-nav">
+        <a href="{% url 'index' %}">Home</a>
+        <a href="{% url 'categories' %}">Categories</a>
+        <a href="{% url 'wishlist' %}">Wishlist <div class="d-cart"><img src="{%static 'images/icons/cart.svg'%}" alt=""></div></a>
+      </div>
+      
+      {% if user.is_authenticated %}
+        <div class="d-login"><a href="{% url 'logout' %}">Logout</a></div>
+      {% else %}
+        <div class="d-login"><a href="{% url 'login' %}">Login</a></div>
+      {% endif %}
+        
+      </div>
+
+      <div class="d-hero-section">
+       <div class="d-hero-section-main">
+        <div class="d-hero-txt">
+          <div class="d-hero-txt-big"><h2>Match phone prices across e-shops and get the best deal!</h2></div>
+          <div class="d-hero-txt-mid"><p>With Pricify, you can discover and compare prices of mobile devices accross different webshops and get the best deal.</p></div>
+          <div class="d-hero-search">
+            <form action="{% url 'search' %}">
+              <input type="search" name="search" id="d-hero-search-search" placeholder="What are you looking to find?">
+              <input type="submit" name="d-hero-search-submit" id="d-hero-search-submit" value="Search">
+            </form>
+          </div>
+        </div>
+
+        <div class="d-hero-boy-image"><img src="{%static 'images/Group 13.png'%}" alt=""></div>
+     
+       </div>
+
+       <div class="d-hero-section-brands">
+        <div class="d-div-samsung d-brands"><img src="{%static 'images/Vector.png'%}" alt=""></div>
+        <div class="d-div-iphone d-brands"><img src="{%static 'images/cil_car-alt (Traced).png'%}" alt=""></div>
+        <div class="d-div-huawei d-brands"><img src="{%static 'images/Vector-1.png'%}" alt=""></div>
+        <div class="d-div-infinix d-brands"><img src="{%static 'images/bi_laptop (Traced).png'%}" alt=""></div>
+        <div class="d-div-oppo d-brands"><img src="{%static 'images/Frame 17 (Traced).png'%}" alt=""></div>
+        <div class="d-div-xiaomi d-brands"><img src="{%static 'images/Vector-2.png'%}" alt=""></div>
+        <div class="d-div-techno d-brands"><img src="{%static 'images/Tecn.png'%}" alt=""></div>
+       </div>
+      </div>
+
+    </div>
   </header>
 
-  <article class="brand-logo">
-    <div class="brands">
-      <div>
-        <img src="{% static 'images/Vector.png' %}" alt="">
-      </div>
-      <div>
-        <div id="small" class="br-logo">
-          <img src="{% static 'images/cil_car-alt (Traced).png' %}" alt="">
-        </div>
-      </div>
-      <div>
-        <div class="br-logo"><img src="{% static 'images/Vector-1.png' %}" alt=""></div>
-      </div>
-      <div>
-        <img src="{% static 'images/bi_laptop (Traced).png' %}" alt="">
-      </div>
-      <div>
-        <div class="br-logo"><img src="{% static 'images/Vector-2.png' %}" alt=""></div>
-      </div>
-      <div>
-        <img src="{% static 'images/Frame 17 (Traced).png' %}" alt="">
-      </div>
-      <!-- <img src="{% static ' images/Vector.png' %}" alt=""> -->
+  <section class="m-hero-section">
+    <div class="m-hero-txt">
+      <h3>Match phone prices across e-shops and get the best deal!</h3>
+      <p>With Pricify, you can discover and compare prices of mobile devices accross different webshops and get the best deal.</p>
     </div>
-  </article>
 
-  <article class="head-section">
-    <div class="sec-txt">
-      <h1>Compare prices across multiple platforms</h1>
-    </div>
-    <div class="sec-search">
+    <div class="m-hero-search">
       <form action="">
-        <input type="search" name="" id="" placeholder="What are you looking to find?">
+        <input type="search" name="search" id="" placeholder="What are you looking to find?">
         <input type="submit" value="Search">
       </form>
     </div>
-    <div class="sec-socials">
-      <div class="header-icon"><img class="iconnnn" src="{% static 'images/ri-google-lineSocial.png' %}" alt="google logo"></div>
-      <div class="header-icon"><img class="iconnnn" src="{% static 'images/ri-facebook-lineSocial.png' %}" alt="facebook logo"></div>
-      <div class="header-icon"><img class="iconnnn" src="{% static 'images/ri-twitter-lineSocial.png' %}" alt="google logo"></div>
+
+    <div class="m-hero-brands">
+      <div class="div-samsung m-brands"><img src="{% static 'images/Vector.png'%}" alt=""></div>
+      <div class="div-iphone m-brands"><img src="{% static 'images/cil_car-alt (Traced).png'%}" alt=""></div>
+      <div class="div-huawei m-brands"><img src="{% static 'images/Vector-1.png'%}" alt=""></div>
+      <div class="div-infinix m-brands"><img src="{% static 'images/bi_laptop (Traced).png'%}" alt=""></div>
+      <div class="div-oppo m-brands"><img src="{% static 'images/Frame 17 (Traced).png'%}" alt=""></div>
+      <div class="div-xiaomi m-brands"><img src="{% static 'images/Vector-2.png'%}" alt=""></div>
+      <div class="div-techno m-brands"><img src="{% static 'images/Tecn.png'%}" alt=""></div>
     </div>
-    <div class="sec-brands">
-      <div>
-        <img src="{% static 'images/Vector.png' %}" alt="">
-      </div>
-      <div>
-        <div id="small" class="br-logo">
-          <img src="{% static 'images/cil_car-alt (Traced).png'%}" alt="">
-        </div>
-      </div>
-      <div>
-        <div class="br-logo"><img src="{% static 'images/Vector-1.png'%}" alt=""></div>
-      </div>
-      <div>
-        <img src="{% static 'images/bi_laptop (Traced).png'%}" alt="">
-      </div>
-      <div>
-        <div class="br-logo"><img src="{% static 'images/Vector-2.png'%}" alt=""></div>
-      </div>
-      <div>
-        <img src="{% static 'images/Frame 17 (Traced).png'%}" alt="">
-      </div>
-      <div>
-        <img src="{% static 'images/Tecn.png'%}" alt="">
-      </div>
-      <!-- <img src="{% static 'images/Vector.png" alt=""> -->
-    
+
+  </section>
+
+  <aside id="aside">
+    <div class="aside-mobile">
+      <ul class="side-bar">
+        <li><a href="{% url 'index' %}">Home</a></li>
+        <li><div class="toggle-category"> Categories <div class="drop-down"><img src="{% static 'images/icons/drop-down.svg' %}"></div></div>
+          <ul class="categories-list">
+            <li><a href="apple.html">Apple</a></li>
+            <li><a href="techno.html">Techno</a></li>
+            <li><a href="infinix.html">Infinix</a></li>
+            <li><a href="samsung.html">Samsung</a></li>
+            <li><a href="oppo.html">Oppo</a></li>
+            <li><a href="xiaomi.html">Xiaomi</a></li>
+          </ul>
+        </li>
+        <li><a href="{% url 'wishlist' %}">Wishlist</a></li>
+      </ul>
     </div>
-  </article>
+  </aside>

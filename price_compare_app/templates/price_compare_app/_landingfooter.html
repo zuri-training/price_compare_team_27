@@ -1,9 +1,5 @@
 {% load static %}
 <footer>
-<<<<<<< HEAD
-    
-    <div class="footer-container">
-=======
   <div class="footer-container-mobile">
     <div class="f-newsletter">
       <label for="f-newsletter-form">Newsletter Subscription</label>
@@ -23,7 +19,6 @@
           <li><p><a href="{% url 'doc' %}">Documentation</a></p></li>
         </ul>
       </section>
->>>>>>> parent of 74e71b3 (Merge branch 'john' into main)
 
       <section class="f-brands">
         <div class="brand-big">
@@ -53,72 +48,42 @@
       </nav>
     </div>
 
-    <div class="copyright">
-      <p>Copyright 2022. Made with&nbsp;    <span class="emoji">❤</span>&nbsp;    from Zuri Project. <span>Team 27</span></p>
-    </div>
 
-    <div class="footer-container-mobile">
+    <div class="d-footer-container-main">
+      <div class="d-f-logo"><img src="{% static 'images/White Logo.png'%}" alt=""></div>
 
-      <section class="m-newsletter">
-        <label for="m-newsletter"><h5>Newsletter Subscription</h5></label>
-        <form method="get">
-          <input type="email" name="m-newsletter" id="m-newsletter-email" placeholder="Subcribe to our newsletter">
-          <input type="submit" value="Subcribe">
+      <div class="d-f-nav">
+        <ul id="d-company">
+          <li><label>Company</label></li>
+          <li><p><a href="{% url 'about' %}">About Us</a></p></li>
+          <li><p><a href="{% url 'contact' %}">Contact</a></p></li>
+          <li><p><a href="{% url 'doc' %}">Documentation</a></p></li>
+        </ul>
+        <ul id="d-brands">
+          <li><label for="Brands">Brands</label></li>
+          <li><p><a href="{% url 'samsung' %}">Samsung</a></p></li>
+          <li><p><a href="{% url 'oppo' %}">Oppo</a></p></li>
+          <li><p><a href="{% url 'categories' %}">iPhone</a></p></li>
+          <li><p><a href="{% url 'tecno' %}">Techno</a></p></li>
+          <li><p><a href="{% url 'infinix'%}">Infinix</a></p></li>
+          <li><p><a href="{% url 'xiaomi' %}">Xiaomi</a></p></li>
+          <li><p><a href="">Huawei</a></p></li>
+        </ul>
+      </div>
+
+      <div class="d-f-newsletter">
+        <label for="d-Newsletter-form">Newsletter Subscription</label>
+        <form action="" name="d-Newsletter-form">
+          <input type="email" name="d-f-newsletter-email" id="d-f-newsletter-email" placeholder="Enter your mail">
+          <input type="submit" name="d-f-newsletter-search" id="d-f-newsletter-submit" value="Subscribe">
         </form>
-      </section>
-
-      <section class="m-logo-div">
-        <div class="m-logo"><img src="{% static 'images/White Logo.png' %}" alt=""></div>
-      </section>
-
-      <section class="m-footer-nav">
-        <nav>
-          <div class="m-nav-top">
-            <ul class="list">
-              <h5>Company</h5>
-              <li><a href="#">About us</a></li>
-              <li><a href="#">Contact</a></li>
-            </ul>
-
-            <ul class="list">
-              <h5>Services</h5>
-              <li>Prices</li>
-              <li>Rating</li>
-              <li>Availabilty</li>
-            </ul>
-          </div>
-
-          <div class="m-nav-bottom">
-            <ul class="list">
-              <h5>Brands</h5>
-              <div class="m-big-brand">
-                <li><img src="{% static 'images/VectorWhite-1.png' %}" alt=""></li>
-                <li><img src="{% static 'images/cil_car-alt (Traced)White.png' %}" alt=""></li>
-                <li><img src="{% static 'images/VectorWhite-2.png' %}" alt=""></li>
-              </div>
-
-              <div class="m-mid-brand">
-                <li><img src="{% static 'images/bi_laptop (Traced)White.png' %}" alt=""></li>
-                <li><img src="{% static 'images/TecnWhite.png' %}" alt=""></li>
-              </div>
-
-              <div class="m-last-brand">
-                <li><img src="{% static 'images/Frame 17 (Traced)White.png' %}" alt=""></li>
-                <li><img src="{% static 'images/VectorWhite.png' %}" alt=""></li>
-              </div>
-            </ul>
-
-            <ul class="list">
-              <h5>Social</h5>
-              <div class="social-flex">
-                <li><a href="#"><img src="{% static 'images/facebook.svg' %}" alt=""></a></li>
-                <li><a href="#"><img src="{% static 'images/instagram.svg' %}" alt=""></a></li>
-                <li><a href="#"><img src="{% static 'images/twitter.svg' %}" alt=""></a></li>
-              </div>
-            </ul>
-          </div>
-        </nav>
-      </section>
+      </div>
     </div>
-    <script type="text/javascript" src="{% static 'wishlist.js' %}"></script>
-  </footer>
+
+  </div>
+  <div class="copyright-desktop"><small>Copyright 2022. Made with  &nbsp;  <span class="emoji">❤</span>  &nbsp;  from Zuri Project. Team 27</small></div>
+
+  <div class="footer-container-desktop"></div>
+</footer>
+
+<script src="{% static 'price_compare_app/js/scripts.js' %}"></script>
