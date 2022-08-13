@@ -1,6 +1,6 @@
 from django.contrib.auth.models import User
 from django.db import models
-
+import math
 # Create your models here.
 
 class Brand(models.Model):
@@ -39,8 +39,18 @@ class Phone(models.Model):
         ordering = ['name']
     
     def price_range(self):
-        pass
+        jumia = self.price_jumia
+        konga= self.price_konga
+        estimate = int(jumia + konga)/2
+        estimate = math.floor(estimate)
+        if len(str(estimate))>=6:
+            range = str(estimate)[:3]
+            return f"₦{range}k +"
+        elif len(str(estimate))<6:
+            range = str(estimate)[:2]
+            return f"₦{range}k +"
 
+        
     def __str__(self):
         return self.name
 
