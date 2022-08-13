@@ -1,12 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Material+Symbols+Sharp:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200");
 
 .first {
-  background: linear-gradient(
-    180deg,
-    #d9e2fb -9.42%,
-    #fafcff -9.41%,
-    #e8eefd 100%
-  );
+  background: #d9e2fb;
   height: auto;
 }
 .content-container {
@@ -142,6 +137,35 @@
   border-radius: 8px;
   box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.11);
 }
+
+.reviews {
+  padding: 40px 60px;
+}
+
+.reviews .card {
+  width: 250px;
+  background: #d9e2fb;
+  padding: 10px;
+  border: none;
+  border-radius: 6px;
+  margin-top: 20px;
+}
+
+.reviews .rev {
+  line-height: 1.7em;
+}
+
+.card h4 {
+  font-size: 20px;
+}
+
+.card p{
+  margin-bottom: 10px;
+}
+
+
+
+
 
 @media screen and (min-width: 769px) and (max-width: 1024px) {
   .content-container {
