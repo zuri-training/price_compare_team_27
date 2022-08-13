@@ -22,6 +22,19 @@
             </div>
           </div>
         </div>
+<<<<<<< HEAD
+        
+        
+          <div class="product-div grid">
+            {% for phone in iphones %}
+
+              <a href="{% url 'phone-details' phone.id %}"><section class="product-card">
+                <div class="price">$500</div>
+                <div class="fav"><span class="material-symbols-sharp fav-icon" style="font-size: 1.6em; font-weight: 400; color: var(--dark-text);">favorite</span></div>
+
+                <div class="phone-img">
+                  <div class="img"><img src="{{phone.image.url}}" alt=""></div>
+=======
 
         <div class="cards-grid cards-flex">
 
@@ -39,26 +52,155 @@
                   <p class="stars">
                     {{phone.star_reviews}}/5<span class="material-symbols-sharp">star</span>
                   </p>
+>>>>>>> parent of 74e71b3 (Merge branch 'john' into main)
                 </div>
-              </div></a>
-            </div>
-          {% endfor %}
+                
+                <div class="phone-txt">
+                  
+                  <p class="phone-name">{{phone.name}}</p>
+                  
+                  <div class="availabilty">
+                    <p>Availablity</p>
+                    <p>4</p>
+                  </div>
+                  
+                  <hr>
+                  
+                  <div class="review">
+                    <p>Review</p>
+                    <p>★★★★<span class="white">★</span></p>
+                  </div>
+                  
+                </div>
+                
+              </section></a>
             
+            {% endfor %}
+          </div>
+        
           
-   
+       
 
+        <div class="see-more">
+          <a href="#">See all deals <div><span class="material-symbols-sharp">open_in_new</span></div></a>
         </div>
 
-        
+      </section>
 
+<<<<<<< HEAD
+      <section class="new-products">
+
+        <div class="popular-text">
+          <div class="section-heading">
+            <h3>New Product release</h3>
+            <p>All deals in one place</p>
+          </div>
+          <div class="section-filter">
+            <div class="sort-by">
+              <span>Sort by</span>
+            </div>
+            <div class="newest">
+              <span>Newest </span><div class="drop-down"><span class="material-symbols-sharp">expand_more </span></div>
+            </div>
+            <div class="filter-icon">
+              <span class="material-symbols-sharp">filter_list</span>
+            </div>
+          </div>
+        </div>
+        
+        <div class="product-div grid">
+          {% for phone in samsung %}  
+            <a href="{% url 'phone-details' phone.id %}"><section class="product-card">
+
+              <div class="price">$500</div>
+              <div class="fav"><span class="material-symbols-sharp fav-icon" style="font-size: 1.6em; font-weight: 400; color: var(--dark-text);">favorite</span></div>
+              
+              <div class="phone-img">
+                <div class="img"><img src="{{phone.image.url}}" alt=""></div>
+              </div>
+              
+              <div class="phone-txt">
+                
+                <p class="phone-name">{{phone.name}}</p>
+                
+                <div class="availabilty">
+                  <p>Availablity</p>
+                  <p>4</p>
+                </div>
+                
+                <hr>
+                
+                <div class="review">
+                  <p>Review</p>
+                  <p>★★★★<span class="white">★</span></p>
+                </div>
+                
+              </div>
+              
+            </section></a>
+          {% endfor %}
+                  
+        </div>
+
+        <div class="see-more">
+          <a href="#">See all deals <div><span class="material-symbols-sharp">open_in_new</span></div></a>
+=======
         <div class="see-all-deals">
           <a href="">See all deals <div class="expand"><img src="{% static 'images/icons/see-more.svg' %}" alt=""></div></a>
+>>>>>>> parent of 74e71b3 (Merge branch 'john' into main)
         </div>
 
       </section>
 
       <section class="trending">
 
+        <div class="popular-text">
+          <div class="section-heading">
+            <h3>Trending Products</h3>
+            <p>All deals in one place</p>
+          </div>
+          <div class="section-filter">
+            <div class="sort-by">
+              <span>Sort by</span>
+            </div>
+            <div class="newest">
+              <span>Newest </span><div class="drop-down"><span class="material-symbols-sharp">expand_more </span></div>
+            </div>
+            <div class="filter-icon">
+              <span class="material-symbols-sharp">filter_list</span>
+            </div>
+          </div>
+        </div>
+        
+        <div class="product-div grid">
+            {% for phone in huawei %}
+              <a href="{% url 'phone-details' phone.id %}"><section class="product-card">
+
+<<<<<<< HEAD
+                <div class="price">$500</div>
+                <div class="fav"><span class="material-symbols-sharp fav-icon" style="font-size: 1.6em; font-weight: 400; color: var(--dark-text);">favorite</span></div>
+                
+                <div class="phone-img">
+                  <div class= "img"><img src="{{phone.image.url}}" alt=""></div>
+                </div>
+                
+                <div class="phone-txt">
+                  
+                  <p class="phone-name">Apple iPhone 13 Pro Max 256GB Gold</p>
+                  
+                  <div class="availabilty">
+                    <p>Availablity</p>
+                    <p>4</p>
+                  </div>
+                  
+                  <hr>
+                  
+                  <div class="review">
+                    <p>Review</p>
+                    <p>★★★★<span class="white">★</span></p>
+                  </div>
+                  
+=======
         <div class="cards-grid cards-flex">
           
           
@@ -75,10 +217,12 @@
                   <p class="stars">
                     {{phone.star_reviews}}/5<span class="material-symbols-sharp">star</span>
                   </p>
+>>>>>>> parent of 74e71b3 (Merge branch 'john' into main)
                 </div>
-              </div></a>
-            </div>
-          {% endfor %}
+                
+              </section></a>
+            {% endfor%}
+                  
         </div>
 
         <div class="see-more">

@@ -1,7 +1,29 @@
 {% load static %}
 <footer>
+<<<<<<< HEAD
     
     <div class="footer-container">
+=======
+  <div class="footer-container-mobile">
+    <div class="f-newsletter">
+      <label for="f-newsletter-form">Newsletter Subscription</label>
+      <form action="" id="f-newsletter-form" name="f-newsletter-form">
+        <input type="email" name="f-newsletter-email" id="f-newsletter-email" placeholder="Enter your mail">
+        <input type="submit" id="f-newsletter-submit" value="Subscribe">
+      </form>
+    </div>
+    <div class="f-nav">
+      <section class="f-logo"><img src="{% static 'images/White Logo.png'%}" alt=""></section>
+
+      <section class="f-company">
+        <ul id="company">
+          <li><label for="">Company</label></li>
+          <li><p><a href="{% url 'about' %}">About Us</a></p></li>
+          <li><p><a href="{% url 'contact' %}">Contact</a></p></li>
+          <li><p><a href="{% url 'doc' %}">Documentation</a></p></li>
+        </ul>
+      </section>
+>>>>>>> parent of 74e71b3 (Merge branch 'john' into main)
 
       <section class="f-brands">
         <div class="brand-big">
