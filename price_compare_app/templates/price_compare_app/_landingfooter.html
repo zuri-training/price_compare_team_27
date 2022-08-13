@@ -1,5 +1,4 @@
 {% load static %}
-{% load social_share %}
 <footer>
     
     <div class="footer-container">
@@ -16,54 +15,32 @@
         </div>
       </div>
 
-      <div class="footer-body">
-        <section class="footer-logo">
-          <img src="{% static 'images/White Logo.png' %}" alt="">
-        </section>
-  
-        <section class="footer-nav">
-          <nav>
-            <ul class="list">
-              <h5>Company</h5>
-              <li><a href="#">About us</a></li>
-              <li><a href="#">Contact</a></li>
-            </ul>
-            <ul class="list">
-              <h5>Brands</h5>
-              <li><a href="#">Samsung</a></li>
-              <li><a href="#">iPhone</a></li>
-              <li><a href="#">Techno</a></li>
-              <li><a href="#">Infinix</a></li>
-              <li><a href="#">Huawei</a></li>
-              <li><a href="#">Xiaomi</a></li>
-              <li><a href="#">Oppo</a></li>
-            </ul>
-            <ul class="list">
-              <h5>Services</h5>
-              <li><a href="#">Prices</a></li>
-              <li><a href="#">Rating</a></li>
-              <li><a href="#">Availabilty</a></li>
-            </ul>
-            <ul class="list">
-              <h5>Social</h5>
-              <li><a href="#">Facebook</a></li>
-              <li><a href="#">Twitter</a></li>
-              <li><a href="#">Instagram</a></li>
-            </ul>
-          </nav>
-        </section>
-  
-        <section class="newsletter">
-          <label for="newsletter"><h5>Newsletter Subscription</h5></label>
-          <form action="" method="get"> 
-            <input type="email" name="newsletter" id="email" placeholder="Subscribe to our newsletter">
-            <input type="submit" value="Subscribe">
-          </form>
-        </section>
-  
-      </div>
-    
-      
+      <section class="f-brands">
+        <div class="brand-big">
+          <img src="{% static 'images/VectorWhite-1.png'%}" alt="">
+          <img src="{% static 'images/cil_car-alt (Traced)White.png'%}" alt="">
+          <img src="{% static 'images/VectorWhite-2.png'%}" alt="">
+        </div>
+        <div class="brand-mid">
+          <img src="{% static 'images/bi_laptop (Traced)White.png'%}" alt="">
+          <img src="{% static 'images/TecnWhite.png'%}" alt="">
+        </div>
+        <div class="brand-down">
+          <img src="{% static 'images/Frame 17 (Traced)White.png'%}" alt="">
+          <img src="{% static 'images/VectorWhite.png'%}" alt="">
+        </div>
+      </section>
+    </div>
+  </div>
+  <div class="copyright-mobile"><small>Copyright 2022. Made with  &nbsp;  <span class="emoji">❤</span>  &nbsp;  from Zuri Project. Team 27</small></div>
+
+  <div class="footer-container-desktop">
+    <div class="d-footer-container-action">
+      <h2>Join millions of other satisfied customers</h2>
+      <nav class="d-actions">
+        <a href="{% url 'signup' %}">Sign up</a>
+        <a href="{% url 'login' %}">Sign in</a>
+      </nav>
     </div>
 
     <div class="copyright">

@@ -22,17 +22,23 @@
             </div>
           </div>
         </div>
-        
-        
-          <div class="product-div grid">
-            {% for phone in iphones %}
 
-              <a href="{% url 'phone-details' phone.id %}"><section class="product-card">
-                <div class="price">$500</div>
-                <div class="fav"><span class="material-symbols-sharp fav-icon" style="font-size: 1.6em; font-weight: 400; color: var(--dark-text);">favorite</span></div>
+        <div class="cards-grid cards-flex">
 
-                <div class="phone-img">
-                  <div class="img"><img src="{{phone.image.url}}" alt=""></div>
+          
+          {% for phone in phones %}
+            <div class="product-card">
+              <div class="product-price">{{phone.price_range}}</div>
+              <div class="product-love"><span class="material-symbols-sharp" id="add-to-cart">favorite</span></div>
+              <div class="product-img"><img src="{{phone.image.url}}" alt=""></div>
+              <a href="{% url 'phone-details' phone.id %}"><div class="product-info">
+                <div class="phone-name-div"><p class="phone-name">{{phone.name}}</p></div>
+                <div class="avail-div"><p class="avail">Shopping platform availability</p><p>2</p></div><hr>
+                <div class="review-div">
+                  <p class="review">Review</p>
+                  <p class="stars">
+                    {{phone.star_reviews}}/5<span class="material-symbols-sharp">star</span>
+                  </p>
                 </div>
                 
                 <div class="phone-txt">
@@ -67,62 +73,8 @@
 
       </section>
 
-      <section class="new-products">
-
-        <div class="popular-text">
-          <div class="section-heading">
-            <h3>New Product release</h3>
-            <p>All deals in one place</p>
-          </div>
-          <div class="section-filter">
-            <div class="sort-by">
-              <span>Sort by</span>
-            </div>
-            <div class="newest">
-              <span>Newest </span><div class="drop-down"><span class="material-symbols-sharp">expand_more </span></div>
-            </div>
-            <div class="filter-icon">
-              <span class="material-symbols-sharp">filter_list</span>
-            </div>
-          </div>
-        </div>
-        
-        <div class="product-div grid">
-          {% for phone in samsung %}  
-            <a href="{% url 'phone-details' phone.id %}"><section class="product-card">
-
-              <div class="price">$500</div>
-              <div class="fav"><span class="material-symbols-sharp fav-icon" style="font-size: 1.6em; font-weight: 400; color: var(--dark-text);">favorite</span></div>
-              
-              <div class="phone-img">
-                <div class="img"><img src="{{phone.image.url}}" alt=""></div>
-              </div>
-              
-              <div class="phone-txt">
-                
-                <p class="phone-name">{{phone.name}}</p>
-                
-                <div class="availabilty">
-                  <p>Availablity</p>
-                  <p>4</p>
-                </div>
-                
-                <hr>
-                
-                <div class="review">
-                  <p>Review</p>
-                  <p>★★★★<span class="white">★</span></p>
-                </div>
-                
-              </div>
-              
-            </section></a>
-          {% endfor %}
-                  
-        </div>
-
-        <div class="see-more">
-          <a href="#">See all deals <div><span class="material-symbols-sharp">open_in_new</span></div></a>
+        <div class="see-all-deals">
+          <a href="">See all deals <div class="expand"><img src="{% static 'images/icons/see-more.svg' %}" alt=""></div></a>
         </div>
 
       </section>
@@ -151,29 +103,22 @@
             {% for phone in huawei %}
               <a href="{% url 'phone-details' phone.id %}"><section class="product-card">
 
-                <div class="price">$500</div>
-                <div class="fav"><span class="material-symbols-sharp fav-icon" style="font-size: 1.6em; font-weight: 400; color: var(--dark-text);">favorite</span></div>
-                
-                <div class="phone-img">
-                  <div class= "img"><img src="{{phone.image.url}}" alt=""></div>
-                </div>
-                
-                <div class="phone-txt">
-                  
-                  <p class="phone-name">Apple iPhone 13 Pro Max 256GB Gold</p>
-                  
-                  <div class="availabilty">
-                    <p>Availablity</p>
-                    <p>4</p>
-                  </div>
-                  
-                  <hr>
-                  
-                  <div class="review">
-                    <p>Review</p>
-                    <p>★★★★<span class="white">★</span></p>
-                  </div>
-                  
+        <div class="cards-grid cards-flex">
+          
+          
+          {% for phone in latest_phone %}      
+            <div class="product-card">
+              <div class="product-price">{{phone.price_range}}</div>
+              <div class="product-love"><span class="material-symbols-sharp" id="add-to-cart">favorite</span></div>
+              <div class="product-img"><img src="{{phone.image.url}}" alt=""></div>
+              <a href="{% url 'phone-details' phone.id %}"><div class="product-info">
+                <div class="phone-name-div"><p class="phone-name">{{phone.name}}</p></div>
+                <div class="avail-div"><p class="avail">Shopping platform availability</p><p>2</p></div><hr>
+                <div class="review-div">
+                  <p class="review">Review</p>
+                  <p class="stars">
+                    {{phone.star_reviews}}/5<span class="material-symbols-sharp">star</span>
+                  </p>
                 </div>
                 
               </section></a>
