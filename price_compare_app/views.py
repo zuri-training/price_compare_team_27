@@ -1,5 +1,4 @@
 import json
-import random
 
 from django.contrib.auth.decorators import login_required
 from django.core.mail import BadHeaderError, send_mail
@@ -12,21 +11,27 @@ from price_compare_app.models import *
 from .form import ReviewForm
 from .models import Phone
 
+# Create your views here.
 
-def get_random_item():
+def get_random_four():
     pass
 
-def home_page(request): 
-    popular_phones = Phone.objects.order_by('?')[:8]
+def get_latest_four():
+    pass
 
-    latest_phones = Phone.objects.order_by('-modified_on')[:4]
+def home_page(request):
+    all_samsung= Phone.objects.filter(brand__name__icontains='samsung')
+    all_iphones= Phone.objects.filter(brand__name__icontains='iphone')
+    all_huawei= Phone.objects.filter(brand__name__icontains='huawei')
+
 
     context={
-        'phones':popular_phones,   
-        'latest_phone':latest_phones  
+        'iphones':all_iphones,
+        'samsung':all_samsung,
+        'huawei':all_huawei
     }
-    return render(request,'price_compare_app/landingpage.html',context)
 
+    return render(request,'price_compare_app/landingpage.html',context)
 
 @login_required(login_url='login')
 def wishlist(request):
@@ -39,7 +44,6 @@ def wishlist(request):
     }
         
     return render(request, 'price_compare_app/wish.html', context)
-
 
 def search(request):
     if 'search' in request.GET:
@@ -56,6 +60,10 @@ def search(request):
     else:
         print('No search result found')
         return render(request,'price_compare_app/search.html',{})
+
+    
+
+
 
 
 def about_page(request):
@@ -140,6 +148,7 @@ def contact(request):
 	form = ContactForm()
 	return render(request, "price_compare_app/contact.html", {'form':form})
 
+
 def documentation(request):
     return render(request,'price_compare_app/documentation/documentation.html')
 
@@ -149,14 +158,21 @@ def documentation_features(request):
 def documentation_sign_up(request):
     return render(request,'price_compare_app/documentation/documentationh.html')
 
+
 def documentation_compare_prices(request):
     return render(request,'price_compare_app/documentation/documentationi.html')
+
 
 def documentation_search(request):
     return render(request,'price_compare_app/documentation/documentations.html')
 
+
+
+
+
 def error_404_view(request,exception):
     return render(request,'price_compare_app/404.html')
+
 
 def error_500_view(request):
     data = {}
@@ -164,39 +180,3 @@ def error_500_view(request):
 
 def iphone13(request):
     return render(request, 'price_compare_app/charts_html/iphone13promaxprice.html')
-
-
-def categories(request):
-    iphone=Phone.objects.filter(brand__name__icontains='iphone')
-    context = {'iphones':iphone}
-    return render(request,'price_compare_app/categories/iphone_category.html',context)
-
-
-def infinix_category(request):
-    infinix=Phone.objects.filter(brand__name__icontains='infinix')
-    context = {'infinixs':infinix}
-    return render(request,'price_compare_app/categories/infinix_category.html',context)
-
-
-def samsung_category(request):
-    samsung=Phone.objects.filter(brand__name__icontains='samsung')
-    context = {'samsungs':samsung}
-    return render(request,'price_compare_app/categories/samsung_category.html',context)
-
-
-def tecno_category(request):
-    tecno=Phone.objects.filter(brand__name__icontains='tecno')
-    context = {'tecnos':tecno}
-    return render(request,'price_compare_app/categories/tecno_category.html',context)
-
-
-def xiaomi_category(request):
-    xiaomi=Phone.objects.filter(brand__name__icontains='xiaomi')
-    context = {'xiaomis':xiaomi}
-    return render(request,'price_compare_app/categories/xiaomi_category.html',context)
-
-
-def oppo_category(request):
-    oppo=Phone.objects.filter(brand__name__icontains='oppo')
-    context = {'oppos':oppo}
-    return render(request,'price_compare_app/categories/oppo_category.html',context)
