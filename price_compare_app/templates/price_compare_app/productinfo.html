@@ -1,5 +1,6 @@
 {%extends 'price_compare_app/base.html' %} 
 {% load static %} 
+{% load social_share %}
 {% block styles %}
 
     <link rel="stylesheet" href="{% static 'price_compare_app/css/productinfo.css' %}">
@@ -29,16 +30,18 @@
         </div>
       </div>
       <div class="buttons">
-        <button class="btn-wishlist">
+        <button data-action= 'add' data-product = '{{data.id}}' class="btn-wishlist update-cart">
           Add to wishlist <i class="fa-solid fa-cart-plus"></i>
         </button>
         <button class="btn-priceA">Set price alert</button>
         <div class="share">
           <p>Share this product on</p>
           <p>
-            <i class="fa-brands fa-slack"></i>
-            <i class="fa-brands fa-square-facebook"></i>
-            <i class="fa-solid fa-envelope"></i>
+            {% post_to_twitter 'Check out the prices for the {{data.name}} from ' object_or_url '<i class="fa-brands fa-square-twitter"></i>' %}
+            {% post_to_facebook object_or_url '<i class="fa-brands fa-square-facebook"></i>' %}
+            {% send_email 'Pricify' 'Get the best prices for the {{data.name}} from ' object_or_url "<i class='fa-solid fa-envelope'></i>" %}
+            <!-- {% copy_to_clipboard object_or_url '<i class="fa fa-link"></i>' %} -->
+
           </p>
         </div>
       </div>
