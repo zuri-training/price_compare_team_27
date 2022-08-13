@@ -1,4 +1,5 @@
 {% load static %}
+{% load social_share %}
 {% block styles %}
   <link rel="stylesheet" href="{% static 'price_compare_app/css/footer-style.css' %}">
   <script src="{%static 'price_compare_app/js/jquery-3.6.0.min.css'%}"></script>
@@ -75,5 +76,9 @@
   </div>
   <div class="copyright-desktop"><small>Copyright 2022. Made with  &nbsp;  <span class="emoji">❤</span>  &nbsp;  from Zuri Project. Team 27</small></div>
 
+  <div class="copyright">
+    <p>Copyright 2022. Made with&nbsp;    <span class="emoji">❤</span>&nbsp;    from Zuri Project. <span>Team 27</span></p>
+  </div>
+  <script type="text/javascript" src="{% static 'wishlist.js' %}"></script>
   <div class="footer-container-desktop"></div>
 </footer>

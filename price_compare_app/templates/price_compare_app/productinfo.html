@@ -27,16 +27,16 @@
             Storage space: 256GB
           </span>
         </div>
-      </div>
-      <div class="buttons">
-        <button class="btn-wishlist">
-          Add to wishlist <i class="fa-solid fa-cart-plus"></i>
-        </button>
-        <button class="btn-priceA">Set price alert</button>
-        <div class="share">
-          <p>Share this product on</p>
-          <p>
-            <i class="fa-brands fa-slack"></i>
+        <div class="buttons">
+            <button data-product = '{{data.id}}' data-action='add' class="btn-wishlist update-cart">
+            Add to wishlist <i class="fa-solid fa-cart-plus"></i>
+            </button>
+            
+            <button class="btn-priceA">Set price alert</button>
+            
+            <div class="share">
+            <p>Share this product on</p> 
+            <p><i class="fa-brands fa-slack"></i>
             <i class="fa-brands fa-square-facebook"></i>
             <i class="fa-solid fa-envelope"></i>
           </p>

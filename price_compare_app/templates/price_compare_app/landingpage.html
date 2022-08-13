@@ -9,7 +9,13 @@
           <p>All deals in one place, enjoy</p>
         </div>
 
+
         <div class="cards-grid cards-flex">
+
+              <a href="{% url 'phone-details' phone.id %}"><section class="product-card">
+                <div class="price">$500</div>
+                <div class="fav"><span data-product = '{{phone.id}}' data-action = 'add' class="material-symbols-sharp fav-icon update-cart" style="font-size: 1.6em; font-weight: 400; color: var(--dark-text);">favorite</span></div>
+                
 
           
           {% for phone in phones %}
@@ -37,6 +43,41 @@
 
         
 
+        <div class="product-div grid">
+          {% for phone in samsung %}  
+            <a href="{% url 'phone-details' phone.id %}"><section class="product-card">
+
+              <div class="price">$500</div>
+              <div class="fav"><span data-product = '{{phone.id}}' data-action = 'add' class="material-symbols-sharp fav-icon update-cart" style="font-size: 1.6em; font-weight: 400; color: var(--dark-text);">favorite</span></div>
+              
+              <div class="phone-img">
+                <div class="img"><img src="{{phone.image.url}}" alt=""></div>
+              </div>
+              
+              <div class="phone-txt">
+                
+                <p class="phone-name">{{phone.name}}</p>
+                
+                <div class="availabilty">
+                  <p>Availablity</p>
+                  <p>4</p>
+                </div>
+                
+                <hr>
+                
+                <div class="review">
+                  <p>Review</p>
+                  <p>★★★★<span class="white">★</span></p>
+                </div>
+                
+              </div>
+              
+            </section></a>
+          {% endfor %}
+                  
+        </div>
+
+
         <div class="see-all-deals">
           <a href="">See all deals <div class="expand"><img src="{% static 'images/icons/see-more.svg' %}" alt=""></div></a>
         </div>
@@ -48,6 +89,7 @@
           <h4>New product release</h4>
           <p>All deals in one place, enjoy</p>
         </div>
+
 
         <div class="cards-grid cards-flex">
           
@@ -64,7 +106,32 @@
                   <p class="review">Review</p>
                   <p class="stars">
                     {{phone.star_reviews}}/5<span class="material-symbols-sharp">star</span>
-                  </p>
+                  </p
+                    
+                <div class="price">$500</div>
+                <div class="fav"><span data-product = '{{phone.id}}' data-action = 'add' class="material-symbols-sharp fav-icon update-cart" style="font-size: 1.6em; font-weight: 400; color: var(--dark-text);">favorite</span></div>
+                
+                <div class="phone-img">
+                  <div class= "img"><img src="{{phone.image.url}}" alt=""></div>
+                </div>
+                
+                <div class="phone-txt">
+                  
+                  <p class="phone-name">Apple iPhone 13 Pro Max 256GB Gold</p>
+                  
+                  <div class="availabilty">
+                    <p>Availablity</p>
+                    <p>4</p>
+                  </div>
+                  
+                  <hr>
+                  
+                  <div class="review">
+                    <p>Review</p>
+                    <p>★★★★<span class="white">★</span></p>
+                  </div>
+                  
+
                 </div>
               </div></a>
             </div>
