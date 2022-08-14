@@ -189,7 +189,7 @@ def categories(request):
 
 def infinix_category(request):
     iphone=Phone.objects.filter(brand__name__icontains='iphone')
-    infinix=Phone.objects.filter(brand__name__icontains='infinix')
+    infinix=Phone.objects.filter(brand__name__icontains='Infinix')
     samsung=Phone.objects.filter(brand__name__icontains='samsung')
     tecno=Phone.objects.filter(brand__name__icontains='tecno')
     xiaomi=Phone.objects.filter(brand__name__icontains='xiaomi')
