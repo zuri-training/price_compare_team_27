@@ -56,7 +56,6 @@ def logout_user(request):
     logout(request)
     return redirect('/')
 
-
 def password_reset_request(request):
 	if request.method == "POST":
 		password_reset_form = PasswordResetForm(request.POST)
