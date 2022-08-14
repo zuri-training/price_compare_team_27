@@ -54,12 +54,12 @@
         <li><a href="{% url 'index' %}">Home</a></li>
         <li><div class="toggle-category"> Categories <div class="drop-down"><img src="{% static 'images/icons/drop-down.svg'%}"></div></div>
           <ul class="categories-list">
-            <li><a href="apple.html">Apple</a></li>
-            <li><a href="techno.html">Techno</a></li>
-            <li><a href="infinix.html">Infinix</a></li>
-            <li><a href="samsung.html">Samsung</a></li>
-            <li><a href="oppo.html">Oppo</a></li>
-            <li><a href="xiaomi.html">Xiaomi</a></li>
+            <li><a href="{% url 'categories' %}">Apple</a></li>
+            <li><a href="{% url 'tecno' %}">Tecno</a></li>
+            <li><a href="{% url 'infinix' %}">Infinix</a></li>
+            <li><a href="{% url 'samsung' %}">Samsung</a></li>
+            <li><a href="{% url 'oppo' %}">Oppo</a></li>
+            <li><a href="{% url 'xiaomi' %}">Xiaomi</a></li>
           </ul>
         </li>
         <li><a href="{% url 'wishlist' %}">Wishlist</a></li>
