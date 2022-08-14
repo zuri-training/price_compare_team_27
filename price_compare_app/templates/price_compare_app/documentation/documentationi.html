@@ -1,7 +1,7 @@
 {% extends 'price_compare_app/documentation/base.html' %}
 {% load static  %}
 {% block styles %}
-  <link rel="stylesheet" href="{% static 'price_compare_app/css/documentationi.css'%}" />
+  <link rel="stylesheet" href="{% static './price_compare_app/css/documentationi.css'%}" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 {% endblock styles %}
 
@@ -35,7 +35,7 @@
       </p>
       <br>
       <br>
-      <div id="price_compare"><img src="{% static 'images/price_compare.png' %}" alt="price compare"> </div>
+      <div id="price_compare"><img src="{% static './images/price_compare.png' %}" alt="price compare"> </div>
       <div id="pricealert_image">
         <img src="{% static 'images/price_info.png' %}" alt="pricealert_page" />
       </div>
