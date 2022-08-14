@@ -1,4 +1,7 @@
-{%extends 'price_compare_app/base.html' %} {% load static %} {% block styles %}
+{%extends 'price_compare_app/base.html' %} 
+{% load static %} 
+{% load social_share %}
+{% block styles %}
 
 <link
   rel="stylesheet"
@@ -27,10 +30,28 @@
             Operation System: Apple iOS 15<br />
             Screen size: 6.7 inches<br />
             Storage space: 256GB
-          </span> -->
+          </span>-->
+        </div>
+      </div>
+      <div class="buttons">
+        <button data-action= 'add' data-product = '{{data.id}}' class="btn-wishlist update-cart">
+          Add to wishlist <i class="fa-solid fa-cart-plus"></i>
+        </button>
+        <button class="btn-priceA">Set price alert</button>
+        <div class="share">
+          <p>Share this product on</p>
+          <p>
+            {% post_to_twitter 'Check out the prices for the {{data.name}} from ' object_or_url '<i class="fa-brands fa-square-twitter"></i>' %}
+            {% post_to_facebook object_or_url '<i class="fa-brands fa-square-facebook"></i>' %}
+            {% send_email 'Pricify' 'Get the best prices for the {{data.name}} from ' object_or_url "<i class='fa-solid fa-envelope'></i>" %}
+            <!-- {% copy_to_clipboard object_or_url '<i class="fa fa-link"></i>' %} -->
+
+          </p>
+        </div>
+          
       </div>
     </div>
-    <div class="buttons">
+    <!-- <div class="buttons">
       <button class="btn-wishlist">
         Add to wishlist <i class="fa-solid fa-cart-plus"></i>
       </button>
@@ -44,7 +65,7 @@
         </p>
       </div>
     </div>
-  </div>
+  </div> -->
   <div class="price-history">
     <h2>Price history</h2>
     <p>Have a look at how this product has been performing</p>
