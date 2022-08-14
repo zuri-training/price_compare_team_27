@@ -65,8 +65,6 @@ def updateItem(request):
     data = json.loads(request.body)
     productId = data['productId']
     action = data['action']
-    print('Action:', action)
-    print('productId:', productId)
     # retrieves the user based on the user_id and retrieves products based on productId
     user = request.user.id
     phone = Phone.objects.get(id = productId)
