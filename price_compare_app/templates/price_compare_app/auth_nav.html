@@ -45,7 +45,7 @@
                 </a>
                 <div class="login-btn">
                     <div class="profile-icon"><img src="{% static './images/icons/profile.svg' %}" alt=""></div><span
-                        class="profile-name">Nelson</span>
+                        class="profile-name">{{request.user}}</span>
                     <div class="m-p-c-down" id="m-p-c-down"><img src="{% static './images/icons/drop-down.svg' %}" alt=""></div>
                     <div id="logout-panel">
                         <a href="{% url 'logout' %}">Logout</a>
