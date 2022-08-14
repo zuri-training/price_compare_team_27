@@ -18,7 +18,7 @@
           <div class="h-logo"><a href="{% url 'index' %}" class="home"><img src="{% static './images/Choice Logo.png'%}"></a></div>
         </div>
         <div id="nav-right">
-          <a href="wishlist.html" id="wishlist"><div class="cart"><img src="{% static './images/icons/cart.svg'%}" alt=""></div></a>
+          <a href="{% url 'wishlist' %}" id="wishlist"><div class="cart"><img src="{% static './images/icons/cart.svg'%}" alt=""></div></a>
           <div class="login-btn"><a href="{% url 'login' %}">Login</a></div>
         </div>
 

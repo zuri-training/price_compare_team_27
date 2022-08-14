@@ -213,7 +213,7 @@ header {
     left: 1em;
     right: 1em;
     top: 4em;
-    z-index: 10;
+    z-index: 1000;
     background: var(--main-color);
     box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.08);
     border-radius: var(--border-radius);
@@ -441,10 +441,81 @@ header {
     aside {
       top: 4.5em;
     }
+
+    .top, .middle{
+      flex-direction: column-reverse;
+      width: 100%;
+    }
+
+    .text_part, .image_part{
+      width:100%;
+    }
+
+
+
   }
   
-  @media screen and (max-width: 768px) and (min-width: 481px) {
+@media screen and (max-width: 768px) and (min-width: 481px) {
     
+    .top{
+      flex-direction: column-reverse;
+    }
+
+.middle{
+  flex-direction: column;
+}
+
+    .text_part {
+      width:100% !important;
+    }
+
+
+.main_container{
+  padding-inline: 1em !important ;
+}
+
+h3, p {
+  font-size: 20px;
+}
+
+    .image_part{
+      width:100% !important;
+    }
+
+.middle .text_part{
+  padding-inline: 0.5em !important;
+  margin-block-start: 1em;
+}
+
+.meet_part{
+  padding-inline: 1em !important;
+  padding-inline-end: 0.5em !important;
+}
+
+
+
+.team{
+  overflow-x: scroll;
+  grid-template-columns: 30% 30% 30% 30% 30% 30% 30% 30% 30% 30% 30% 30% 30% 30% 30% 30% 30% !important;
+  
+}
+
+#our_part{
+  margin-block-start: 2em !important;
+}
+
+.middle .text_part p{
+  margin-block-start: 15px !important;
+}
+
+.main_container p , h3{
+  margin-block-start: 0.5em !important;
+}
+
+.middle .text_part p br{
+  display: none;
+}
+
   }
 
 
@@ -497,7 +568,7 @@ p{
   .middle{
     display: flex;
     margin-block-start: 3em;
-    margin-block-end: 2em;
+    margin-block-end: 4em;
     justify-content: space-evenly;
   }
 
@@ -515,21 +586,43 @@ p{
   flex-direction: column;
   align-items: flex-start;
   padding-inline: 4.5em;
+  padding-inline-end: 4em;
 }
 
 .meet_part h3{
   font-size: 22px;
 }
-  .team>div {
-    width: 12%;
-    aspect-ratio: 1;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  .team {
+    width: 100%;
+    display: grid;;
+    gap:1.5em;
+    margin-block: 2em;
+   grid-template-columns: 10% 10% 10% 10% 10% 10% 10% 10% ;
+   justify-content: space-between;
+   align-self: center;
+  }
+
+  #teamimage{
+    height:120px;
+    border-radius: 10em;
+  }
+
+  .team figcaption h5 {
+    font-size: 15px;
+    font-weight: 600;
+  }
+
+  figcaption p{
+ margin-top: -2.9em;
+ color:#9C9C9F;
+ font-weight: 500;
+ font-size: 12px;
   }
 
 
-
+figcaption{
+  text-align: center;
+}
 
 /* footer */
 footer {
