@@ -42,10 +42,6 @@ INSTALLED_APPS = [
     # 'anymail',
 ]
 
-CRISPY_ALLOWED_TEMPLATE_PACKS = 'bootstrap5'
-CRISPY_TEMPLATE_PACK = 'bootstrap5'
-
-
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
@@ -125,15 +121,17 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/4.0/howto/static-files/
 
 STATIC_URL = '/static/'
-# STATIC_ROOT = BASE_DIR/'static'
+STATIC_ROOT = BASE_DIR/'staticfiles'
 
 STATICFILES_DIRS= [
     os.path.join(BASE_DIR,'static')
 ]
 
 
+STATICFILES_STORAGE = "whitenoise.storage.CompressedStaticFilesStorage"
 
-MEDIA_URL = '/media/'
+
+MEDIA_URL = '/uploads/'
 MEDIA_ROOT= BASE_DIR/'uploads'
 
 # Default primary key field type
@@ -146,8 +144,8 @@ EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 # EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
 EMAIL_USE_SSL = True
 EMAIL_HOST = 'smtp.gmail.com'
-EMAIL_HOST_USER = 'price.compare@gmail.com'
-EMAIL_HOST_PASSWORD = 'nqopaanqdqeitkwa'
+EMAIL_HOST_USER = config("EMAIL_HOST_USER")
+EMAIL_HOST_PASSWORD = config("EMAIL_HOST_PASSWORD")
 EMAIL_PORT = '465'
 
 
