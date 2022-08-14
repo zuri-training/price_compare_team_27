@@ -1,9 +1,9 @@
 {%load static%}
 {% load social_share %}
 {% block styles %}
-  <link rel="stylesheet" href="{% static 'price_compare_app/css/nav-style.css' %}">
-  <script src="{% static 'price_compare_app/js/jquery-3.6.0.min.js' %}"></script>
-  <script src="{% static 'price_compare_app/js/scripts.js' %}"></script>
+  <link rel="stylesheet" href="{% static './price_compare_app/css/nav-style.css' %}">
+  <script src="{% static './price_compare_app/js/jquery-3.6.0.min.js' %}"></script>
+  <script src="{% static './price_compare_app/js/scripts.js' %}"></script>
 {% endblock styles %}
 
 <header>
@@ -12,13 +12,13 @@
 
         <div id="nav-left">
           <div class="menu">
-            <img id="menu-btn" src="{% static 'images/icons/menu.svg'%}">
-            <div id="close-box"><img src="{% static 'images/icons/close.svg'%}" alt="#" id="close"></div>
+            <img id="menu-btn" src="{% static './images/icons/menu.svg'%}">
+            <div id="close-box"><img src="{% static './images/icons/close.svg'%}" alt="#" id="close"></div>
           </div>
-          <div class="h-logo"><a href="{% url 'index' %}" class="home"><img src="{% static '/images/Choice Logo.png'%}"></a></div>
+          <div class="h-logo"><a href="{% url 'index' %}" class="home"><img src="{% static './images/Choice Logo.png'%}"></a></div>
         </div>
         <div id="nav-right">
-          <a href="wishlist.html" id="wishlist"><div class="cart"><img src="{% static 'images/icons/cart.svg'%}" alt=""></div></a>
+          <a href="wishlist.html" id="wishlist"><div class="cart"><img src="{% static './images/icons/cart.svg'%}" alt=""></div></a>
           <div class="login-btn"><a href="{% url 'login' %}">Login</a></div>
         </div>
 
@@ -30,7 +30,7 @@
     </div>
 
     <div class="header-container-desktop">
-      <div class="d-logo"><a href="{% url 'index' %}" class="home"><img src="{% static '/images/Choice Logo.png'%}" alt=""></a></div>
+      <div class="d-logo"><a href="{% url 'index' %}" class="home"><img src="{% static './images/Choice Logo.png'%}" alt=""></a></div>
 
       <div class="d-search">
         <form action="{% url 'search' %}" id="d-search-form">
@@ -42,7 +42,7 @@
       <div class="d-nav">
         <a href="{% url 'index' %}">Home</a>
         <a href="{% url 'categories' %}">Categories</a>
-        <a href="{% url 'wishlist' %}">Wishlist <div class="d-cart"><img src="{% static 'images/icons/cart.svg'%}" alt=""></div></a>
+        <a href="{% url 'wishlist' %}">Wishlist <div class="d-cart"><img src="{% static './images/icons/cart.svg'%}" alt=""></div></a>
         <a href="{% url 'login' %}">Login</a>
       </div>
     </div>
@@ -52,7 +52,7 @@
     <div class="aside-mobile">
       <ul class="side-bar">
         <li><a href="{% url 'index' %}">Home</a></li>
-        <li><div class="toggle-category"> Categories <div class="drop-down"><img src="{% static 'images/icons/drop-down.svg'%}"></div></div>
+        <li><div class="toggle-category"> Categories <div class="drop-down"><img src="{% static './images/icons/drop-down.svg'%}"></div></div>
           <ul class="categories-list">
             <li><a href="{% url 'categories' %}">Apple</a></li>
             <li><a href="{% url 'tecno' %}">Tecno</a></li>
