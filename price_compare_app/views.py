@@ -168,35 +168,124 @@ def iphone13(request):
 
 def categories(request):
     iphone=Phone.objects.filter(brand__name__icontains='iphone')
-    context = {'iphones':iphone}
+    infinix=Phone.objects.filter(brand__name__icontains='infinix')
+    samsung=Phone.objects.filter(brand__name__icontains='samsung')
+    tecno=Phone.objects.filter(brand__name__icontains='tecno')
+    xiaomi=Phone.objects.filter(brand__name__icontains='xiaomi')
+    oppo=Phone.objects.filter(brand__name__icontains='oppo')
+
+    context = {
+        'iphones':iphone,
+        'infinixs':infinix,
+        'samsungs':samsung,
+        'tecnos':tecno,
+        'xiaomis':xiaomi,
+        'oppos':oppo
+
+    }
+        
     return render(request,'price_compare_app/categories/iphone_category.html',context)
 
 
 def infinix_category(request):
+    iphone=Phone.objects.filter(brand__name__icontains='iphone')
     infinix=Phone.objects.filter(brand__name__icontains='infinix')
-    context = {'infinixs':infinix}
+    samsung=Phone.objects.filter(brand__name__icontains='samsung')
+    tecno=Phone.objects.filter(brand__name__icontains='tecno')
+    xiaomi=Phone.objects.filter(brand__name__icontains='xiaomi')
+    oppo=Phone.objects.filter(brand__name__icontains='oppo')
+
+    context = {
+        'iphones':iphone,
+        'infinixs':infinix,
+        'samsungs':samsung,
+        'tecnos':tecno,
+        'xiaomis':xiaomi,
+        'oppos':oppo
+    }
+        
     return render(request,'price_compare_app/categories/infinix_category.html',context)
 
 
 def samsung_category(request):
+    iphone=Phone.objects.filter(brand__name__icontains='iphone')
+    infinix=Phone.objects.filter(brand__name__icontains='infinix')
     samsung=Phone.objects.filter(brand__name__icontains='samsung')
-    context = {'samsungs':samsung}
+    tecno=Phone.objects.filter(brand__name__icontains='tecno')
+    xiaomi=Phone.objects.filter(brand__name__icontains='xiaomi')
+    oppo=Phone.objects.filter(brand__name__icontains='oppo')
+
+    context = {
+        'iphones':iphone,
+        'infinixs':infinix,
+        'samsungs':samsung,
+        'tecnos':tecno,
+        'xiaomis':xiaomi,
+        'oppos':oppo
+
+    }
+        
     return render(request,'price_compare_app/categories/samsung_category.html',context)
 
 
 def tecno_category(request):
+    iphone=Phone.objects.filter(brand__name__icontains='iphone')
+    infinix=Phone.objects.filter(brand__name__icontains='infinix')
+    samsung=Phone.objects.filter(brand__name__icontains='samsung')
     tecno=Phone.objects.filter(brand__name__icontains='tecno')
-    context = {'tecnos':tecno}
+    xiaomi=Phone.objects.filter(brand__name__icontains='xiaomi')
+    oppo=Phone.objects.filter(brand__name__icontains='oppo')
+
+    context = {
+        'iphones':iphone,
+        'infinixs':infinix,
+        'samsungs':samsung,
+        'tecnos':tecno,
+        'xiaomis':xiaomi,
+        'oppos':oppo
+
+    }
+        
     return render(request,'price_compare_app/categories/tecno_category.html',context)
 
 
 def xiaomi_category(request):
+    iphone=Phone.objects.filter(brand__name__icontains='iphone')
+    infinix=Phone.objects.filter(brand__name__icontains='infinix')
+    samsung=Phone.objects.filter(brand__name__icontains='samsung')
+    tecno=Phone.objects.filter(brand__name__icontains='tecno')
     xiaomi=Phone.objects.filter(brand__name__icontains='xiaomi')
-    context = {'xiaomis':xiaomi}
+    oppo=Phone.objects.filter(brand__name__icontains='oppo')
+
+    context = {
+        'iphones':iphone,
+        'infinixs':infinix,
+        'samsungs':samsung,
+        'tecnos':tecno,
+        'xiaomis':xiaomi,
+        'oppos':oppo
+
+    }
+        
     return render(request,'price_compare_app/categories/xiaomi_category.html',context)
 
 
 def oppo_category(request):
+    iphone=Phone.objects.filter(brand__name__icontains='iphone')
+    infinix=Phone.objects.filter(brand__name__icontains='infinix')
+    samsung=Phone.objects.filter(brand__name__icontains='samsung')
+    tecno=Phone.objects.filter(brand__name__icontains='tecno')
+    xiaomi=Phone.objects.filter(brand__name__icontains='xiaomi')
     oppo=Phone.objects.filter(brand__name__icontains='oppo')
-    context = {'oppos':oppo}
+
+    context = {
+        'iphones':iphone,
+        'infinixs':infinix,
+        'samsungs':samsung,
+        'tecnos':tecno,
+        'xiaomis':xiaomi,
+        'oppos':oppo
+
+    }
+        
     return render(request,'price_compare_app/categories/oppo_category.html',context)
