@@ -51,6 +51,12 @@
   padding: 16px 138px;
   margin-bottom: 20px;
   color: white;
+  cursor: pointer;
+}
+
+.btn-wishlist:hover,
+.btn-wishlist:focus {
+  background: #355dc5;
 }
 
 .btn-wishlist i {
@@ -64,6 +70,7 @@
   padding: 16px 158px;
   color: black;
   margin-bottom: 20px;
+  cursor: pointer;
 }
 .buttons .share {
   display: flex;
@@ -116,6 +123,12 @@
   background: #4070ec;
   color: white;
   padding: 16px 32px;
+  cursor: pointer;
+}
+
+.shop-link button:hover,
+.shop-link button:focus {
+  background: #355dc5;
 }
 
 .shop-link button i {
@@ -142,13 +155,24 @@
   padding: 40px 60px;
 }
 
-.reviews .card {
-  width: 250px;
+.card-content {
+  display: flex;
+  overflow-x: scroll;
+  width: 100%;
+}
+
+.card {
+  min-width: 250px;
   background: #d9e2fb;
   padding: 10px;
   border: none;
   border-radius: 6px;
   margin-top: 20px;
+  margin-right: 20px;
+}
+
+.card-content .card p {
+  font-size: 10px;
 }
 
 .reviews .rev {
@@ -159,15 +183,26 @@
   font-size: 20px;
 }
 
-.card p{
+.card p {
   margin-bottom: 10px;
 }
 
+.rev-button {
+  padding: 15px 30px;
+  border: none;
+  border-radius: 5px;
+  background: #4070ec;
+  color: white;
+  margin-top: 30px;
+  cursor: pointer;
+}
 
+.rev-button:hover,
+.rev-button:focus {
+  background: #355dc5;
+}
 
-
-
-@media screen and (min-width: 769px) and (max-width: 1024px) {
+@media screen and (max-width: 1024px) {
   .content-container {
     display: flex;
     flex-direction: column;
@@ -216,7 +251,7 @@
   }
 }
 
-@media screen and (min-width: 481px) and (max-width: 768px) {
+@media screen and (max-width: 768px) {
   .content-container {
     display: flex;
     flex-direction: column;
@@ -224,6 +259,10 @@
   }
 
   .price-history {
+    padding: 10px 20px;
+  }
+
+  .reviews {
     padding: 10px 20px;
   }
 
@@ -299,7 +338,7 @@
   }
 }
 
-@media screen and (min-width: 320px) and (max-width: 480px) {
+@media screen and (max-width: 480px) {
   .content-container {
     display: flex;
     flex-direction: column;
@@ -309,6 +348,8 @@
   .price-history {
     padding: 10px 20px;
   }
+
+  
 
   .price-compare {
     padding: 10px 20px;
