@@ -1,8 +1,6 @@
 import os
 from pathlib import Path
 
-import dj_database_url
-import django_heroku
 from decouple import config
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -35,11 +33,9 @@ INSTALLED_APPS = [
     'accounts',
 
     #3rd party packages
-    'crispy_forms',
-    'crispy_bootstrap5',
     'django_social_share',
     'django_extensions'
-    # 'anymail',
+
 ]
 
 MIDDLEWARE = [

@@ -312,6 +312,9 @@ aside li {
   justify-content: flex-start;
   flex-wrap: wrap;
 }
+.categories-list-flex a{
+  color: inherit;
+}
 .phone-name {
   width: 50%;
 }
