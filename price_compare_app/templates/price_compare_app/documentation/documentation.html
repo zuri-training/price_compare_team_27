@@ -2,7 +2,7 @@
 
 {% load static  %}
 {% block styles %}
-  <link rel="stylesheet" href="{%static 'price_compare_app/css/documentation.css'%}" />
+  <link rel="stylesheet" href="{%static './price_compare_app/css/documentation.css'%}" />
 {% endblock styles %}
  
 
@@ -18,7 +18,7 @@
   <h1>Getting Started</h1>
   <h3>Introduction</h3>
   <div id="home_image">
-    <img src="{% static 'images/Home_page.png' %}" alt="home page" href="{% url 'index' %}" />
+    <img src="{% static './images/Home_page.png' %}" alt="home page" href="{% url 'index' %}" />
   </div>
   <div id="text-part">
     <p>
@@ -39,7 +39,7 @@
   </div>
 
   <div id="brand_image">
-    <img src="{% static 'images/brands.png' %} " alt="brands" href="{% url 'index' %}">
+    <img src="{% static './images/brands.png' %} " alt="brands" href="{% url 'index' %}">
   </div>
   <h3 id="file">File Structure</h3>
   <div id="text-part">

@@ -1,7 +1,7 @@
 {% extends 'price_compare_app/documentation/base.html' %}
 {% load static  %}
 {% block styles %}
-  <link rel="stylesheet" href="{% static 'price_compare_app/css/documentations.css'%}" />
+  <link rel="stylesheet" href="{% static './price_compare_app/css/documentations.css'%}" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 {% endblock styles %}
 
@@ -38,7 +38,7 @@
         if you for example, are on the look out for an iphone and you enter this in the search bar, you will
         get a list of different iphones, you can then choose to click any of the shown options
       </p>
-      <img src="{% static '/images/search.png' %}" id="pricesearch_image">
+      <img src="{% static './images/search.png' %}" id="pricesearch_image">
       <p>
         Was this information helpful ? <button class="btn"><i class="fa fa-thumbs-up"></i> Yes</button><button
           class="btn"><i class="fa fa-thumbs-down"></i> No</button>

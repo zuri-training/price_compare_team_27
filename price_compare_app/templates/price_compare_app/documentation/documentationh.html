@@ -1,7 +1,7 @@
 {% extends 'price_compare_app/documentation/base.html' %}
 {% load static  %}
 {% block styles %}
-  <link rel="stylesheet" href="{% static 'price_compare_app/css/documentationh.css'%}" />
+  <link rel="stylesheet" href="{% static './price_compare_app/css/documentationh.css'%}" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 {% endblock styles %}
 
@@ -35,7 +35,7 @@
             requesting your information
           </p>
           <div id="home_image">
-            <img src="{% static 'images/Home_page.png' %}" alt="home page" href="index.html" />
+            <img src="{% static './images/Home_page.png' %}" alt="home page" href="index.html" />
           </div>
         </li>
         <li>
@@ -43,16 +43,16 @@
             Input your correct information on the fields provided and click on the "Sign Up" button <img src="" alt="">
           </p>
           <div id="create_account">
-            <img src="{% static 'images/create_account.png' %}" alt="create account">
+            <img src="{% static './images/create_account.png' %}" alt="create account">
           </div>
         </li>
         <li>
           <p>
             Once you click on the sign up button, you've successfully created your account and you'll be redirected to
             your dashboard; and you can now start exploring our price comparison page and other features. </p>
-          <div id="price_compare"><img src="{% static 'images/price_compare.png' %}" alt="price compare"> </div>
+          <div id="price_compare"><img src="{% static './images/price_compare.png' %}" alt="price compare"> </div>
           <div id="pricealert_image">
-            <img src="{% static 'images/price_info.png' %}" alt="pricealert_page" />
+            <img src="{% static './images/price_info.png' %}" alt="pricealert_page" />
           </div>
         </li>
       </ol>

@@ -45,7 +45,7 @@
         "model": "price_compare_app.Brand", 
         "pk": 7, 
         "fields": {
-          "name": "Xiomi"
+          "name": "Xiaomi"
         }
     }
 ]

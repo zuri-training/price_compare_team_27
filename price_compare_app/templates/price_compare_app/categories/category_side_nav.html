@@ -1,129 +1,13 @@
 {% load static %}
 
-<div class="m-main-container">
-    <div class="m-main-categories-txt">
-        <h2>Categories</h2>
-    </div>
-
-    <div class="m-main-categories-list">
-        <div class="category-brand-name">
-            <h6>Samsung</h6>
-        </div>
-        <div class="categories-list-flex">
-            <p class="phone-name">Galaxy S20+</p>
-            <p class="phone-name">Galaxy S9</p>
-            <p class="phone-name">Galaxy S9 Edge</p>
-            <p class="phone-name">Galaxy S21 Ultra</p>
-            <p class="phone-name">Galaxy S10+</p>
-            <p class="phone-name">Galaxy S9+</p>
-            <p class="phone-name">Galaxy S20</p>
-            <p class="phone-name">Galaxy S10 5G</p>
-            <p class="phone-name">Galaxy S6</p>
-            <p class="phone-name">Galaxy S6 Edge</p>
-        </div>
-    </div>
-
-    <div class="m-main-categories-list">
-        <div class="category-brand-name">
-            <h6>Apple</h6>
-        </div>
-        <div class="categories-list-flex">
-            <p class="phone-name">iPhone 13</p>
-            <p class="phone-name">iPhone SE</p>
-            <p class="phone-name">iPhone 12</p>
-            <p class="phone-name">iPhone 11</p>
-            <p class="phone-name">iPhone 13 Pro</p>
-            <p class="phone-name">iPhone X</p>
-            <p class="phone-name">iPhone XS</p>
-            <p class="phone-name">iPhone XR</p>
-            <p class="phone-name">iPhone 6s Plus</p>
-            <p class="phone-name">iPhone 8</p>
-
-        </div>
-    </div>
-
-    <div class="m-main-categories-list">
-        <div class="category-brand-name">
-            <h6>Techno</h6>
-        </div>
-        <div class="categories-list-flex">
-            <p class="phone-name">Camon 19 Pro</p>
-            <p class="phone-name">Camon 19</p>
-            <p class="phone-name">POVA 5G</p>
-            <p class="phone-name">POP 6</p>
-            <p class="phone-name">Spark 8</p>
-            <p class="phone-name">Spark 9 Pro</p>
-            <p class="phone-name">Pop 6</p>
-            <p class="phone-name">POVA Neo</p>
-            <p class="phone-name">Camon 18</p>
-            <p class="phone-name">Camon 18 Primier</p>
-        </div>
-    </div>
-
-    <div class="m-main-categories-list">
-        <div class="category-brand-name">
-            <h6>Oppo</h6>
-        </div>
-        <div class="categories-list-flex">
-            <p class="phone-name">Oppo Reno7</p>
-            <p class="phone-name">Oppo Reno5</p>
-            <p class="phone-name">Oppo A96</p>
-            <p class="phone-name">Oppo A76</p>
-            <p class="phone-name">Oppo A57</p>
-            <p class="phone-name">Oppo A55</p>
-            <p class="phone-name">Oppo A16K</p>
-            <p class="phone-name">Oppo A16</p>
-        </div>
-    </div>
-
-    <div class="m-main-categories-list">
-        <div class="category-brand-name">
-            <h6>Infinix</h6>
-        </div>
-        <div class="categories-list-flex">
-            <p class="phone-name">Note 12 VIP</p>
-            <p class="phone-name">Note 12 G96</p>
-            <p class="phone-name">Smart 6 Plus</p>
-            <p class="phone-name">Hot 12</p>
-            <p class="phone-name">Hot 12 Play NFC</p>
-            <p class="phone-name">Zero 5G</p>
-            <p class="phone-name">Hot 11 Play</p>
-            <p class="phone-name">Zero X Pro</p>
-            <p class="phone-name">Note 11</p>
-            <p class="phone-name">Note 11 Pro</p>
-        </div>
-    </div>
-
-    <div class="m-main-categories-list">
-        <div class="category-brand-name">
-            <h6>Xiaomi</h6>
-        </div>
-        <div class="categories-list-flex">
-            <p class="phone-name">Redmi Note 11</p>
-            <p class="phone-name">12S Ultra</p>
-            <p class="phone-name">Redmi Note 10 Pro</p>
-            <p class="phone-name">Poco F4</p>
-            <p class="phone-name">Hot 12 Play</p>
-            <p class="phone-name">12 Lite</p>
-            <p class="phone-name">Poco X3 Pro</p>
-            <p class="phone-name">11T Pro</p>
-            <p class="phone-name">Redmi Note 11 Pro</p>
-            <p class="phone-name">12 Pro</p>
-        </div>
-    </div>
-
-</div>
-
 <div class="d-page-big-flex">
-    <div class="d-categories-sidebar">
-        <nav class="d-categories-brands">
-            <a href="{% url 'samsung' %}">Samsung</a>
-            <a href="{% url 'categories' %}">Apple</a>
-            <a href="{% url 'tecno' %}">Techno</a>
-            <a href="{% url 'infinix' %}">Infinix</a>
-            <a href="{% url 'xiaomi' %}">Xiaomi</a>
-            <a href="{% url 'oppo' %}">Oppo</a>
-        </nav>
-    </div>
-
-  
+  <div class="d-categories-sidebar">
+    <nav class="d-categories-brands">
+      <a href="{% url 'samsung' %}">Samsung</a>
+      <a href="{% url 'categories' %}">Apple</a>
+      <a href="{% url 'tecno' %}">Techno</a>
+      <a href="{% url 'infinix' %}">Infinix</a>
+      <a href="{% url 'xiaomi' %}">Xiaomi</a>
+      <a href="{% url 'oppo' %}">Oppo</a>
+    </nav>
+  </div>
