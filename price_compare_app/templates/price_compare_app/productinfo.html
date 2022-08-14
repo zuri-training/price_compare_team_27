@@ -116,49 +116,19 @@
 <section class="reviews">
   <h2>Review and rating</h2>
   <p class="rev">Let us know your thoughts on our products</p>
-  <p class="rev">4.0 (6 reviews)</p>
+  <p class="rev">4.0 ({{review_count}} reviews)</p>
+  
   <div class="card-content">
-    <div class="card">
-      <h4>Carl Benz</h4>
-      <p style="font-size: 12px">2 weeks ago</p>
-      <p style="font-size: 15px">
-        I was confused for over a month on what phone to buy and where to buy it
-        but on finding Pricify, I made my choice in minutes
-      </p>
-    </div>
-    <div class="card">
-      <h4>Carl Benz</h4>
-      <p style="font-size: 12px">2 weeks ago</p>
-      <p style="font-size: 15px">
-        I was confused for over a month on what phone to buy and where to buy it
-        but on finding Pricify, I made my choice in minutes
-      </p>
-    </div>
-    <div class="card">
-      <h4>Carl Benz</h4>
-      <p style="font-size: 12px">2 weeks ago</p>
-      <p style="font-size: 15px">
-        I was confused for over a month on what phone to buy and where to buy it
-        but on finding Pricify, I made my choice in minutes
-      </p>
-    </div>
-    <div class="card">
-      <h4>Carl Benz</h4>
-      <p style="font-size: 12px">2 weeks ago</p>
-      <p style="font-size: 15px">
-        I was confused for over a month on what phone to buy and where to buy it
-        but on finding Pricify, I made my choice in minutes
-      </p>
-    </div>
-    <div class="card">
-      <h4>Carl Benz</h4>
-      <p style="font-size: 12px">2 weeks ago</p>
-      <p style="font-size: 15px">
-        I was confused for over a month on what phone to buy and where to buy it
-        but on finding Pricify, I made my choice in minutes
-      </p>
-    </div>
+    {% for review in reviews %}
+      <div class="card">
+        <h4>{{review.user}}</h4>
+        <p style="font-size: 12px">{{review.date}}</p>
+        <p style="font-size: 15px">
+          {{review.comment}}
+        </p>
+      </div>     
+    {% endfor %}
   </div>
-  <button class="rev-button">Post your review</button>
+  <a href="{% url 'post-review' data.id %}"><button class="rev-button">Post your review</button></a>
 </section>
 {% endblock content %}

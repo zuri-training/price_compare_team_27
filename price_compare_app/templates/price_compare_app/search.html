@@ -1,46 +1,53 @@
-{% extends 'price_compare_app/base.html' %} {% load static %} {% block title %}
-Search Results {% endblock %} {% block styles %}
-<link
-  rel="stylesheet"
-  href="{% static './price_compare_app/css/wishlist.css' %}"
-/>
-{% endblock styles %} {% block content %}
-<div class="main-container">
-  <section class="popular">
-    <div class="popular-text">
-      <div class="section-heading">
-        <h2>Search results</h2>
-      </div>
+{% extends 'price_compare_app/base.html' %}
+{% load static %}
+{% block title %} Search {% endblock %}
+
+{% block styles %}
+<link rel="stylesheet" href="{% static './price_compare_app/css/wish.css' %}">
+<link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Sharp:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+<script type="text/javascript" src="{% static './price_compare_app/js/jquery-3.6.0.min.js' %}"></script>
+{% endblock styles %}
+
+{% block content %}
+<main>
+  <div class="main-container">
+    <div class="wishlist-head-txt">
+      <h5>Search results</h5>
     </div>
 
-    <div class="product-div grid">
-      {% if phones %} {% for phone in phones %}
+    <div class="cards-grid cards-flex">
 
-      <section class="product-card">
-        <div class="phone-img">
-          <div class="img"><img src="{{phone.image.url}}" alt="" /></div>
+      {% for phone in phones %}
+        <div class="product-card">
+          <div class="product-price">{{phone.price_range}}</div>
+          <div class="product-love"><span class="material-symbols-sharp" id="add-to-cart">favorite</span></div>
+          <div class="product-img"><img src="{{phone.image.url}}" alt=""></div>
+          <a href="{% url 'phone-details' phone.id %}">
+            <div class="product-info">
+              <div class="phone-name-div">
+                <p class="phone-name">{{phone.name}}</p>
+              </div>
+              <div class="avail-div">
+                <p class="avail">Shopping platform availability</p>
+                <p>2</p>
+              </div>
+              <hr>
+              <div class="review-div">
+                <p class="review">Review</p>
+                <p class="stars">
+                  {{phone.star_reviews}}/5<span class="material-symbols-sharp">star</span>
+                </p>
+              </div>
+            </div>
+          </a>
         </div>
+      {% endfor %}
 
-        <div class="phone-txt">
-          <p class="phone-name">{{phone.name}}</p>
 
-          <div class="availabilty">
-            <p>Quantity</p>
-            <p>4</p>
-          </div>
-
-          <hr />
-
-          <div class="review">
-            <p>Review</p>
-            <p>★★★★<span class="white">★</span></p>
-          </div>
-        </div>
-      </section>
-      {% endfor %} {% else %}
-      <p>No search result found</p>
-      {% endif %}
     </div>
-  </section>
-</div>
+  </div>
+</main>
+
+<script src="{%static './scripts.js' %}"></script>
 {% endblock content %}

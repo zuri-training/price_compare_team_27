@@ -11,14 +11,14 @@
 
             <div id="nav-left">
                 <div class="menu">
-                    <img id="menu-btn" src="{% static 'images/icons/menu.svg'%}">
+                    <img id="menu-btn" src="{% static './images/icons/menu.svg'%}">
                     <div id="close-box"><img src="{% static './images/icons/close.svg'%}" alt="#" id="close"></div>
                 </div>
                 <div class="h-logo"><a href="{% url 'index' %}" class="home"><img
                             src="{% static './images/Choice Logo.png' %}"></a></div>
             </div>
             <div id="nav-right">
-                <a href="wishlist.html" id="wishlist">
+                <a href="{% url 'wishlist' %}" id="wishlist">
                     <div class="cart"><img src="{% static './images/icons/cart.svg' %}" alt=""></div>
                 </a>
                 <div class="login-btn">
@@ -53,13 +53,13 @@
 
         <div class="d-nav">
             <a href="{% url 'index' %}">Home</a>
-            <a href="">Categories</a>
+            <a href="{% url 'categories' %}">Categories</a>
             <a href="{% url 'wishlist' %}">Wishlist <div class="d-cart"><img src="{% static './images/icons/cart.svg'%}" alt="">
                 </div></a>
             <div id="f-link">
                 <div class="d-profile-icon"><img src="{% static './images/icons/profile.svg'%}" alt=""></div><span
                     class="d-profile-name">{{request.user}}</span>
-                <div class="d-p-c-down"><img src="{% static '/images/icons/drop-down.svg'%}" alt=""></div>
+                <div class="d-p-c-down"><img src="{% static './images/icons/drop-down.svg'%}" alt=""></div>
                 <div id="d-logout-panel">
                     <a href="{% url 'logout' %}">Logout</a>
                 </div>
@@ -77,12 +77,12 @@
                             src="{% static './images/icons/drop-down.svg'%}"></div>
                 </div>
                 <ul class="categories-list">
-                    <li><a href="apple.html">Apple</a></li>
-                    <li><a href="techno.html">Techno</a></li>
-                    <li><a href="infinix.html">Infinix</a></li>
-                    <li><a href="samsung.html">Samsung</a></li>
-                    <li><a href="oppo.html">Oppo</a></li>
-                    <li><a href="xiaomi.html">Xiaomi</a></li>
+                    <li><a href="{% url 'categories' %}">Apple</a></li>
+                    <li><a href="{% url 'tecno' %}">Techno</a></li>
+                    <li><a href="{% url 'infinix' %}">Infinix</a></li>
+                    <li><a href="{% url 'samsung' %}">Samsung</a></li>
+                    <li><a href="{% url 'oppo' %}">Oppo</a></li>
+                    <li><a href="{% url 'xiaomi' %}">Xiaomi</a></li>
                 </ul>
             </li>
             <li><a href="{% url 'wishlist' %}">Wishlist</a></li>
