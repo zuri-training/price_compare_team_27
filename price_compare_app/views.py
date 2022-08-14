@@ -1,15 +1,17 @@
 import json
 import random
+from datetime import date, datetime
 
 from django.contrib.auth.decorators import login_required
 from django.core.mail import BadHeaderError, send_mail
-from django.http import HttpResponse, JsonResponse
+from django.http import HttpResponse, HttpResponseRedirect, JsonResponse
 from django.shortcuts import get_object_or_404, redirect, render
+from django.urls import reverse
 
-from price_compare_app.form import ContactForm, ReviewForm
+import price_compare_app
+from price_compare_app.form import ContactForm
 from price_compare_app.models import *
 
-from .form import ReviewForm
 from .models import Phone
 
 
@@ -31,16 +33,13 @@ def home_page(request):
 @login_required(login_url='login')
 def wishlist(request):
     user = request.user.id
-    wishes, created= WishList.objects.get_or_create(user_id=user)
-    items = wishes.wishitem_set.all()
-    best_price = WishItem.objects.all()
-    context = {
-        'items':items, 'wish': wishes, 'best_price': best_price
+    wishitem = WishItem.objects.filter(wish__user__id=user)
+    context= {
+        'phone_wish':wishitem
     }
-        
     return render(request, 'price_compare_app/wish.html', context)
 
-
+@login_required(login_url='login')
 def search(request):
     if 'search' in request.GET:
         search_keyword=request.GET['search']
@@ -92,29 +91,17 @@ def updateItem(request):
         
     return JsonResponse('Item was added', safe=False)
 
-
+@login_required(login_url='login')
 def PhoneDetailView(request, id):
     data = get_object_or_404(Phone, pk=id)
-    reviews = data.reviews
     new_review = None
-
-    if request.method == 'POST':
-        review_form = ReviewForm(data=request.POST)
-        if review_form.is_valid():
-
-            # Create Comment object but don't save to database yet
-            new_review = review_form.save(commit=False)
-            # Assign the current post to the comment
-            new_review.data = data
-            # Save the comment to the database
-            new_review.save()
-    else:
-        review_form = ReviewForm()
+    reviews = Review.objects.filter(phone__id=id)
+    reviews_count = Review.objects.filter(phone__id=id).count
 
     context = {"data":data,
                "reviews": reviews,
                "new_review": new_review,
-               "review_form": review_form}
+               "review_count": reviews_count}
     return render(request, 'price_compare_app/productinfo.html', context)
 
 
@@ -161,10 +148,6 @@ def error_404_view(request,exception):
 def error_500_view(request):
     data = {}
     return render(request,'price_compare_app/404.html', data)
-
-def iphone13(request):
-    return render(request, 'price_compare_app/charts_html/iphone13promaxprice.html')
-
 
 def categories(request):
     iphone=Phone.objects.filter(brand__name__icontains='iphone')
@@ -289,3 +272,20 @@ def oppo_category(request):
     }
         
     return render(request,'price_compare_app/categories/oppo_category.html',context)
+
+@login_required(login_url='login')
+def post_review(request,id):
+    user= request.user
+    phone = Phone.objects.get(id=id)
+    phone__id = phone.id
+    if request.method == "POST":
+        d_user= user
+        d_comment = request.POST['comment']
+        d_phone = phone
+        d_date= datetime.now()
+        new_comment= Review(user=d_user,comment=d_comment,phone=d_phone,date=d_date)
+        new_comment.save()
+ 
+        return HttpResponseRedirect(reverse('phone-details', kwargs={'id': phone__id}))
+    else:
+        return render(request,'price_compare_app/review_post.html')

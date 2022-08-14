@@ -38,7 +38,7 @@
         
 
         <div class="see-all-deals">
-          <a href="">See all deals <div class="expand"><img src="{% static './images/icons/see-more.svg' %}" alt=""></div></a>
+          <a href="{% url 'categories' %}">See all deals <div class="expand"><img src="{% static './images/icons/see-more.svg' %}" alt=""></div></a>
         </div>
 
       </section>
@@ -71,7 +71,7 @@
           {% endfor %}
         </div>
         <div class="see-all-deals">
-          <a href="#">See all deals <div class="expand"><img src="{% static './images/icons/see-more.svg' %}" alt=""></div></a>
+          <a href="{% url 'categories' %}">See all deals <div class="expand"><img src="{% static './images/icons/see-more.svg' %}" alt=""></div></a>
         </div>
 
       </section>
