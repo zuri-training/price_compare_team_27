@@ -14,10 +14,10 @@
 - Fixed the Models.py for the price_compare_app [Click here to view](https://github.com/zuri-training/price_compare_team_27/blob/main/price_compare_app/models.py)
 - I implemeted the send to gmail functionality in the settings.py [Click here to view](https://github.com/zuri-training/price_compare_team_27/blob/main/price_compare/settings.py)
 - I implemented the send contact us form and send to email using the contact [Click here to view](https://github.com/zuri-training/price_compare_team_27/blob/main/price_compare_app/templates/price_compare_app/contact.html)
-- I adjusted the phones.json file to make it load some broken images [Click here to view]()
+- I adjusted the phones.json file to make it load some broken images [Click here to view](https://github.com/zuri-training/price_compare_team_27/blob/main/price.json)
 - I created the UI for the post a comment and implemented the functionality [Click here to view](
 https://github.com/zuri-training/price_compare_team_27/blob/main/price_compare_app/templates/price_compare_app/contact.html)
-- I Implemented the landing page and fetched the products from the database [Click here to view]()
+- I Implemented the landing page and fetched the products from the database [Click here to view](https://github.com/zuri-training/price_compare_team_27/blob/main/price_compare_app/templates/price_compare_app/landingpage.html)
 - I implemented the wishlist page to fetch the products that are in the user's wishlist [Click here to view](https://github.com/zuri-training/price_compare_team_27/blob/main/price_compare_app/templates/price_compare_app/wish.html)
 - I implemented the documentation page [Click here to view](https://github.com/zuri-training/price_compare_team_27/tree/main/price_compare_app/templates/price_compare_app/documentation)
 - I implemented all the categories page [Click here to view](https://github.com/zuri-training/price_compare_team_27/blob/main/price_compare_app/views.py)
