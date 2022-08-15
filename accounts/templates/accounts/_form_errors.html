@@ -4,9 +4,9 @@
         <span aria-hidden="true">&times;</span>
         </button>     
         {% if messages %}        
-        {% for message in messages %}
-            <p class="display-5 mx-auto align-items-center">{{message}}</p>
-        {% endfor %}
+            {% for message in messages %}
+                <p class="display-5 mx-auto align-items-center">{{message}}</p>
+            {% endfor %}
         {% endif %}
     </div>
 {% endif %}
