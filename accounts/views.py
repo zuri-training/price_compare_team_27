@@ -65,7 +65,7 @@ def password_reset_request(request):
 			if associated_users.exists():
 				for user in associated_users:
 					subject = "Password Reset Requested"
-					email_template_name = "./templates/password_reset_email.txt"
+					email_template_name = "password_reset_email.txt"
 					c = {
 					"email":user.email,
 					'domain':'http://pricify.zurifordummies.com',
