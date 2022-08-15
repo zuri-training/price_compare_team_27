@@ -3,15 +3,15 @@
     "model": "price_compare_app.phone",
     "pk": 1,
     "fields": {
-      "name": "Iphone 5",
-      "brand": 1,
+      "name": "Samsung S7",
+      "brand": 2,
       "created_on": "2022-07-01 10:45:00",
       "modified_on": "2022-07-15 02:33:00",
-      "image": "/iphones/iphone5.webp",
-      "url_jumia": "url.com",
-      "url_konga": "iamge.com",
-      "price_jumia": "50000",
-      "price_konga": "60000",
+      "image": "/samsung/s7.webp",
+      "url_jumia": "https://www.jumia.com.ng/samsung-galaxy-s7-g930f-32gb-gsm-4g-lte-octa-core-phone-w-12mp-dual-pixel-camera-37537341.html",
+      "url_konga": "https://www.konga.com/product/samsung-galaxy-s7-edge-5-5-4gb-ram-32gb-rom-12mp-dual-sim-fingerprint-smartphone-black-4921421?gclid=Cj0KCQjwuuKXBhCRARIsAC-gM0hPU8ggoE2pCBKgEwn6DJOX4bHpUdH4ej54OG5raKRb_-m8oSZO_PoaAqOEEALw_wcB",
+      "price_jumia": "108000",
+      "price_konga": "85900",
       "star_reviews":4.0
     }
   },
