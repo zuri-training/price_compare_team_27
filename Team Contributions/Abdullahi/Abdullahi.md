@@ -22,4 +22,4 @@ https://github.com/zuri-training/price_compare_team_27/blob/main/price_compare_a
 - I implemented the documentation page [Click here to view](https://github.com/zuri-training/price_compare_team_27/tree/main/price_compare_app/templates/price_compare_app/documentation)
 - I implemented all the categories page [Click here to view](https://github.com/zuri-training/price_compare_team_27/blob/main/price_compare_app/views.py)
 - I fixed and linked all the pages together [Click here to view](https://github.com/zuri-training/price_compare_team_27/tree/main/price_compare_app/templates/price_compare_app)
--   
+  
