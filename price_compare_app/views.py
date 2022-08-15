@@ -27,7 +27,7 @@ def home_page(request):
         'phones':popular_phones,   
         'latest_phone':latest_phones  
     }
-    return render(request,'price_compare_app/landingpage.html',context)
+    return render(request,'landingpage.html',context)
 
 
 @login_required(login_url='login')
@@ -37,7 +37,7 @@ def wishlist(request):
     context= {
         'phone_wish':wishitem
     }
-    return render(request, 'price_compare_app/wish.html', context)
+    return render(request, 'wish.html', context)
 
 @login_required(login_url='login')
 def search(request):
@@ -51,14 +51,14 @@ def search(request):
             'phones':phones,
         }
         
-        return render(request,'price_compare_app/search.html',context)
+        return render(request,'search.html',context)
     else:
         print('No search result found')
-        return render(request,'price_compare_app/search.html',{})
+        return render(request,'search.html',{})
 
 
 def about_page(request):
-    return render(request,'price_compare_app/about.html')
+    return render(request,'about.html')
 
 def updateItem(request):
     # loads the data from the wishlist.js javascript file and creates variables to store this data in productId is the phoneId
@@ -100,7 +100,7 @@ def PhoneDetailView(request, id):
                "reviews": reviews,
                "new_review": new_review,
                "review_count": reviews_count}
-    return render(request, 'price_compare_app/productinfo.html', context)
+    return render(request, 'productinfo.html', context)
 
 
 def contact(request):
@@ -123,29 +123,29 @@ def contact(request):
 			return redirect ("/")
       
 	form = ContactForm()
-	return render(request, "price_compare_app/contact.html", {'form':form})
+	return render(request, "contact.html", {'form':form})
 
 def documentation(request):
-    return render(request,'price_compare_app/documentation/documentation.html')
+    return render(request,'documentation/documentation.html')
 
 def documentation_features(request):
-    return render(request,'price_compare_app/documentation/documentationf.html')
+    return render(request,'documentation/documentationf.html')
 
 def documentation_sign_up(request):
-    return render(request,'price_compare_app/documentation/documentationh.html')
+    return render(request,'documentation/documentationh.html')
 
 def documentation_compare_prices(request):
-    return render(request,'price_compare_app/documentation/documentationi.html')
+    return render(request,'documentation/documentationi.html')
 
 def documentation_search(request):
-    return render(request,'price_compare_app/documentation/documentations.html')
+    return render(request,'documentation/documentations.html')
 
 def error_404_view(request,exception):
-    return render(request,'price_compare_app/404.html')
+    return render(request,'404.html')
 
 def error_500_view(request):
     data = {}
-    return render(request,'price_compare_app/404.html', data)
+    return render(request,'404.html', data)
 
 def categories(request):
     iphone=Phone.objects.filter(brand__name__icontains='iphone')
@@ -165,7 +165,7 @@ def categories(request):
 
     }
         
-    return render(request,'price_compare_app/categories/iphone_category.html',context)
+    return render(request,'categories/iphone_category.html',context)
 
 
 def infinix_category(request):
@@ -185,7 +185,7 @@ def infinix_category(request):
         'oppos':oppo
     }
         
-    return render(request,'price_compare_app/categories/infinix_category.html',context)
+    return render(request,'categories/infinix_category.html',context)
 
 
 def samsung_category(request):
@@ -206,7 +206,7 @@ def samsung_category(request):
 
     }
         
-    return render(request,'price_compare_app/categories/samsung_category.html',context)
+    return render(request,'categories/samsung_category.html',context)
 
 
 def tecno_category(request):
@@ -227,7 +227,7 @@ def tecno_category(request):
 
     }
         
-    return render(request,'price_compare_app/categories/tecno_category.html',context)
+    return render(request,'categories/tecno_category.html',context)
 
 
 def xiaomi_category(request):
@@ -248,7 +248,7 @@ def xiaomi_category(request):
 
     }
         
-    return render(request,'price_compare_app/categories/xiaomi_category.html',context)
+    return render(request,'categories/xiaomi_category.html',context)
 
 
 def oppo_category(request):
@@ -269,7 +269,7 @@ def oppo_category(request):
 
     }
         
-    return render(request,'price_compare_app/categories/oppo_category.html',context)
+    return render(request,'categories/oppo_category.html',context)
 
 @login_required(login_url='login')
 def post_review(request,id):
@@ -286,4 +286,4 @@ def post_review(request,id):
  
         return HttpResponseRedirect(reverse('phone-details', kwargs={'id': phone__id}))
     else:
-        return render(request,'price_compare_app/review_post.html')
+        return render(request,'review_post.html')
