@@ -1,0 +1,427 @@
+@import url("https://fonts.googleapis.com/css2?family=Material+Symbols+Sharp:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200");
+
+.first {
+  background: #d9e2fb;
+  height: auto;
+}
+.content-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 40px 60px;
+}
+
+.desc {
+  display: flex;
+}
+
+.img {
+  margin-right: 20px;
+  border: none;
+  border-radius: 8px;
+  background-color: white;
+}
+
+.img img {
+  width: 398px;
+  height: 300px;
+  padding: 20px 40px;
+}
+
+.text {
+  width: 300px;
+}
+
+.text h2 {
+  padding-bottom: 10px;
+}
+
+.text span {
+  line-height: 24px;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: column;
+}
+
+.btn-wishlist {
+  background: #4070ec;
+  border: none;
+  border-radius: 8px;
+  padding: 16px 138px;
+  margin-bottom: 20px;
+  color: white;
+  cursor: pointer;
+}
+
+.btn-wishlist:hover,
+.btn-wishlist:focus {
+  background: #355dc5;
+}
+
+.btn-wishlist i {
+  padding-left: 10px;
+}
+
+.btn-priceA {
+  background-color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 16px 158px;
+  color: black;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+.buttons .share {
+  display: flex;
+  justify-content: space-between;
+  font-weight: lighter;
+}
+
+.buttons i {
+  padding-right: 15px;
+}
+
+.price-history {
+  padding: 40px 60px;
+}
+
+.price-chart {
+  margin-top: 10px;
+  width: 100vw;
+  height: 100vh;
+  background-color: white;
+}
+
+.price-compare {
+  padding: 40px 60px;
+}
+.price-compare h2 {
+  margin-bottom: 20px;
+}
+
+.price-compare .jumia {
+  width: 1240px;
+  height: 100px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border: none;
+  border-radius: 8px;
+  box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.11);
+}
+
+.shop-link button {
+  width: 201px;
+  height: 52px;
+  border: none;
+  border-radius: 8px;
+  background: #4070ec;
+  color: white;
+  padding: 16px 32px;
+  cursor: pointer;
+}
+
+.shop-link button:hover,
+.shop-link button:focus {
+  background: #355dc5;
+}
+
+.shop-link button i {
+  margin-left: 10px;
+}
+
+.price {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.price-compare .konga {
+  width: 1240px;
+  height: 100px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border: none;
+  border-radius: 8px;
+  box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.11);
+}
+
+.reviews {
+  padding: 40px 60px;
+}
+
+.card-content {
+  display: flex;
+  overflow-x: scroll;
+  width: 100%;
+}
+
+.card {
+  min-width: 250px;
+  background: #d9e2fb;
+  padding: 10px;
+  border: none;
+  border-radius: 6px;
+  margin-top: 20px;
+  margin-right: 20px;
+}
+
+.card-content .card p {
+  font-size: 10px;
+}
+
+.reviews .rev {
+  line-height: 1.7em;
+}
+
+.card h4 {
+  font-size: 20px;
+}
+
+.card p {
+  margin-bottom: 10px;
+}
+
+.rev-button {
+  padding: 15px 30px;
+  border: none;
+  border-radius: 5px;
+  background: #4070ec;
+  color: white;
+  margin-top: 30px;
+  cursor: pointer;
+}
+
+.rev-button:hover,
+.rev-button:focus {
+  background: #355dc5;
+}
+
+@media screen and (max-width: 1024px) {
+  .content-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .buttons {
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
+  }
+
+  .price-compare .jumia {
+    width: 100%;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .jumia .review {
+    display: flex;
+  }
+
+  .jumia .review img {
+    width: 20px;
+    height: 20px;
+    margin-top: 3px;
+  }
+
+  .price-compare .konga {
+    width: 100%;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .konga .review {
+    display: flex;
+  }
+
+  .konga .review img {
+    width: 20px;
+    height: 20px;
+    margin-top: 3px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .content-container {
+    display: flex;
+    flex-direction: column;
+    padding: 10px 20px;
+  }
+
+  .price-history {
+    padding: 10px 20px;
+  }
+
+  .reviews {
+    padding: 10px 20px;
+  }
+
+  .price-compare {
+    padding: 10px 20px;
+  }
+
+  .desc {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .img {
+    width: 100%;
+  }
+
+  .text {
+    margin-top: 30px;
+  }
+
+  .buttons {
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+  }
+
+  .btn-wishlist {
+    padding: 16px 105px;
+  }
+
+  .btn-wishlist i {
+    padding-left: 10px;
+  }
+
+  .btn-priceA {
+    padding: 16px 125px;
+  }
+
+  .price-compare .jumia {
+    width: 100%;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .jumia .review {
+    display: flex;
+  }
+
+  .jumia .review img {
+    width: 20px;
+    height: 20px;
+    margin-top: 3px;
+  }
+
+  .price-compare .konga {
+    width: 100%;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .konga .review {
+    display: flex;
+  }
+
+  .konga .review img {
+    width: 20px;
+    height: 20px;
+    margin-top: 3px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .content-container {
+    display: flex;
+    flex-direction: column;
+    padding: 10px 20px;
+  }
+
+  .price-history {
+    padding: 10px 20px;
+  }
+
+  .price-compare {
+    padding: 10px 20px;
+  }
+
+  .desc {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .img {
+    width: 100%;
+  }
+
+  .img img {
+    width: 100%;
+    height: 200px;
+  }
+
+  .text {
+    margin-top: 30px;
+  }
+
+  .buttons {
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+  }
+
+  .btn-wishlist {
+    padding: 16px 50px;
+  }
+
+  .btn-wishlist i {
+    padding-left: 10px;
+  }
+
+  .btn-priceA {
+    padding: 16px 70px;
+  }
+
+  .buttons .share {
+    display: inline-block;
+  }
+
+  .price-compare .jumia {
+    width: 100%;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .jumia .review {
+    display: flex;
+  }
+
+  .jumia .review img {
+    width: 20px;
+    height: 20px;
+    margin-top: 3px;
+  }
+
+  .price-compare .konga {
+    width: 100%;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .konga .review {
+    display: flex;
+  }
+
+  .konga .review img {
+    width: 20px;
+    height: 20px;
+    margin-top: 3px;
+  }
+}
