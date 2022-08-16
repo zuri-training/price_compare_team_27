@@ -1,0 +1,92 @@
+{% load static %}
+  {% include '_landingheader.html' %}
+  <main>
+    <div class="main-container">
+
+      <section class="popular-products main-section">
+        <div class="section-head txt">
+          <h4>Popular products</h4>
+          <p>All deals in one place, enjoy</p>
+        </div>
+
+        <div class="cards-grid cards-flex">
+
+          
+          {% for phone in phones %}
+            <div class="product-card">
+              <div class="product-price">{{phone.price_range}}</div>
+              <div class="product-love"><span class="material-symbols-sharp" id="add-to-cart">favorite</span></div>
+              <div class="product-img"><img src="{{phone.image.url}}" alt=""></div>
+              <a href="{% url 'phone-details' phone.id %}"><div class="product-info">
+                <div class="phone-name-div"><p class="phone-name">{{phone.name}}</p></div>
+                <div class="avail-div"><p class="avail">Shopping platform availability</p><p>2</p></div><hr>
+                <div class="review-div">
+                  <p class="review">Review</p>
+                  <p class="stars">
+                    {{phone.star_reviews}}/5<span class="material-symbols-sharp">star</span>
+                  </p>
+                </div>
+              </div></a>
+            </div>
+          {% endfor %}
+            
+          
+   
+
+        </div>
+
+        
+
+        <div class="see-all-deals">
+          <a href="{% url 'categories' %}">See all deals <div class="expand"><img src="{% static './images/icons/see-more.svg' %}" alt=""></div></a>
+        </div>
+
+      </section>
+
+      <section class="new-products main-section">
+        <div class="section-head txt">
+          <h4>New product release</h4>
+          <p>All deals in one place, enjoy</p>
+        </div>
+
+        <div class="cards-grid cards-flex">
+          
+          
+          {% for phone in latest_phone %}      
+            <div class="product-card">
+              <div class="product-price">{{phone.price_range}}</div>
+              <div class="product-love"><span class="material-symbols-sharp" id="add-to-cart">favorite</span></div>
+              <div class="product-img"><img src="{{phone.image.url}}" alt=""></div>
+              <a href="{% url 'phone-details' phone.id %}"><div class="product-info">
+                <div class="phone-name-div"><p class="phone-name">{{phone.name}}</p></div>
+                <div class="avail-div"><p class="avail">Shopping platform availability</p><p>2</p></div><hr>
+                <div class="review-div">
+                  <p class="review">Review</p>
+                  <p class="stars">
+                    {{phone.star_reviews}}/5<span class="material-symbols-sharp">star</span>
+                  </p>
+                </div>
+              </div></a>
+            </div>
+          {% endfor %}
+        </div>
+        <div class="see-all-deals">
+          <a href="{% url 'categories' %}">See all deals <div class="expand"><img src="{% static './images/icons/see-more.svg' %}" alt=""></div></a>
+        </div>
+
+      </section>
+
+      <section class="who-we-are">
+        <div class="we-big"><h4>Why we are special</h4></div>
+        <div class="we-right"><p>Our joy is to see all our customers enjoy purchasing products from the comfort of their homes</p></div>
+        <div class="we-shadow"><p>Our vision is to make you feel safe when shopping online, giving you free access to helpful information in order to make smart purchasing decisions.</p></div>
+        <div class="ellipse-up"><img src="{% static './images/Ellipse 8.png'%}" alt=""></div>
+        <div class="ellipse-down"><img src="{% static './images/Ellipse 7.png'%}" alt=""></div>
+      </section>
+
+    </div>
+  </main>
+
+  {% include '_landingfooter.html' %}
+</body>
+</html>

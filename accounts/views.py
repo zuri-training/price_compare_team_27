@@ -30,7 +30,7 @@ def sign_up(request):
                 return redirect('login')
 
         context={'form':form}
-        return render(request,'accounts/signup.html',context)
+        return render(request,'signup.html',context)
 
 
 def login_page(request):
@@ -50,7 +50,7 @@ def login_page(request):
 
     context = {}
     
-    return render(request,'accounts/login.html',context)
+    return render(request,'login.html',context)
 
 def logout_user(request):
     logout(request)
@@ -65,7 +65,7 @@ def password_reset_request(request):
 			if associated_users.exists():
 				for user in associated_users:
 					subject = "Password Reset Requested"
-					email_template_name = "./accounts/password_reset_email.txt"
+					email_template_name = "password_reset_email.txt"
 					c = {
 					"email":user.email,
 					'domain':'http://pricify.zurifordummies.com',
@@ -84,7 +84,7 @@ def password_reset_request(request):
 
 	password_reset_form = PasswordResetForm()
   
-	return render(request=request, template_name="accounts/password_reset.html", context={"password_reset_form":password_reset_form},)
+	return render(request=request, template_name="password_reset.html", context={"password_reset_form":password_reset_form},)
 
 def newsletter():
     pass

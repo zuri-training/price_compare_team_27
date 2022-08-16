@@ -1,0 +1,133 @@
+{% extends 'base.html' %}
+{% load static %}
+
+
+{% block styles %}
+  <script type="text/javascript" src="{% static './js/jquery-3.6.0.min.js' %}"></script>
+  <link rel="stylesheet" type="text/css" href="{% static './css/aboutus.css' %}">
+{% endblock styles %}
+
+{% block title %} About Us {% endblock %}
+
+{% block content %}  
+
+<div class="main_container">
+  <div class="top">
+    <div class="text_part">
+      <div class="about_side">
+        <div>
+          <h3>About Pricify</h3>
+          <p>
+            We are a fast-growing brand that provides comparison of prices
+            from various e-commerce brands.
+          </p>
+        </div>
+        <div id="our_part">
+          <h3>Our story</h3>
+          <p>
+            We started off with a burden to lessen the stress associated<br />
+            with comparing prices of products over a range of brands.
+          </p>
+          <p>
+            Our platform helps to compare prices and make the best choice
+            <br />
+            of your day-to-day essential products.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="image_part">
+      <img src="{% static './images/unsplash_13z851QZVtE-1.png' %}" alt="fine image" />
+    </div>
+
+  </div>
+  <div class="middle">
+    <div class="image_part">
+      <img src="{% static './images/unsplash_13z851QZVtE-1.png' %}" alt="fine image">
+    </div>
+    <div class="text_part">
+      <div class="about_side">
+        <h3>Why we started</h3>
+        <p>
+          We saw the need to plan and budget better with the help of price
+          comparison.
+        </p>
+        <p>
+          We are able to serve our customers, helping them to choose
+          products with the <br />
+          best quality and price
+        </p>
+
+        <p>
+          We provide the price list from different brands, which <br />
+          reduces the overall stress <br />
+          experienced by our users, also giving them the luxury of ordering
+          for their products <br />
+          from the preferred brand.
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="meet_part">
+  <div>
+    <h1>Meet the team</h1>
+  </div>
+  <div class="team">
+    <figure><img  id="teamimage" src="{% static './images/team members/Abdullahi- Team Lead.jpg' %}" alt="teamlead" />
+    <figcaption><h5>Abdullahi</h5> <br> <p>Team Lead</p></figcaption></figure>
+    <figure><img  id="teamimage" src="{% static './images/team members/Emmanuel- Ass. Team Lead.jpg' %}" alt="teammember" />
+    <figcaption><h5>Emmanuel</h5> <br> <p>Ass. Team Lead</p></figcaption></figure>
+    <figure><img  id="teamimage" src="{% static './images/team members/Blessing- Design Lead.jpg' %}" alt="teammember" />
+    <figcaption><h5>Blessing</h5> <br> <p>Design Team Lead</p></figcaption></figure>
+    <figure><img  id="teamimage" src="{% static './images/team members/Oluwafisayomi- Project Manager.jpg' %}" alt="teamlead" />
+    <figcaption><h5>Oluwafisayomi</h5> <br> <p>Project Manager</p></figcaption></figure>
+    <figure><img  id="teamimage" src="{% static './images/team members/Philip - Product Manager.jpg' %}" alt="teamlead" />
+    <figcaption><h5>Philip</h5> <br> <p>Product Manager</p></figcaption></figure>
+    <figure> <img  id="teamimage" src="{% static './images/team members/Patrick-Product Designer.jpg' %}" alt="teamlead" />
+    <figcaption><h5>Patric</h5> <br> <p>Backend Lead</p></figcaption></figure>
+    <figure><img id="teamimage"  src="{% static './images/team members/John-Backend Lead.jpg' %}" alt="teamlead" />
+    <figcaption><h5>John</h5> <br> <p>Product Designer</p></figcaption></figure>
+
+    <figure><img  id="teamimage" src="{% static './images/team members/Vincent-Product Manager.PNG' %}" alt="teamlead" />   
+    <figcaption><h5>Vincent</h5> <br> <p>Product Designer</p></figcaption></figure>
+    <figure>        <img  id="teamimage" src="{% static './images/team members/Nelson-Product Designer.jpeg' %}" alt="teamlead" />
+    <figcaption><h5>Nelson</h5> <br> <p>Product Designer</p></figcaption></figure>
+    <figure>   <img  id="teamimage" src="{% static './images/team members/Benjamin-Product Designer.jpg' %}" alt="teammember" />
+    <figcaption><h5>Benjamin</h5> <br> <p>Product Designer</p></figcaption></figure>
+
+    <figure> <img  id="teamimage" src="{% static './images/team members/Olajide-Product Designer.jpeg' %}" alt="teamlead" />
+    <figcaption><h5>Olajide</h5> <br> <p>Product Designer</p></figcaption></figure>
+
+    <figure> <img  id="teamimage" src="{% static './images/team members/Jamiu-Fullstack Developer.jpg' %}" alt="teamlead" />
+    <figcaption><h5>Jamiu</h5> <br> <p>Fullstack</p></figcaption></figure>
+
+    <figure>  <img  id="teamimage" src="{% static './images/team members/Oluwaseyi-Fullstack Developer.JPG' %}" alt="teamlead" />
+    <figcaption><h5>Oluwaseyi</h5> <br> <p>Fullstack Developer</p></figcaption></figure>
+    <figure>   <img  id="teamimage" src="{% static './images/team members/Patrick-Backend Developer.jpg' %}" alt="teamlead" />
+    <figcaption><h5>Patrick</h5> <br> <p>Backend Developer</p></figcaption></figure>
+    <figure>  <img  id="teamimage" src="{% static './images/team members/Anthony-Fullstack Developer.jpg' %}" alt="teammember" />
+    <figcaption><h5>Anthony</h5> <br> <p>Fullstack Developer</p></figcaption></figure>
+
+    <figure> <img  id="teamimage" src="{% static './images/team members/Silas-Backend Developer.jpg' %}" alt="teamlead" />
+    <figcaption><h5>Silas</h5> <br> <p>Backend Developer</p></figcaption></figure>
+
+    <figure> <img  id="teamimage" src="{% static './images/team members/Ifeoluwa-Product Designer.jpg' %}" alt="teamlead" />
+    <figcaption><h5>Ifeoluwa</h5> <br> <p>Product Designer</p></figcaption></figure>
+
+    <figure> <img  id="teamimage" src="{% static './images/team members/Aliu-Fullstack Developer.jpg' %}" alt="dev" />
+    <figcaption><h5>Aliu</h5> <br> <p>Fullstack Developer</p></figcaption></figure>
+
+    <figure> <img  id="teamimage" src="{% static './images/team members/Qudus-Product Designer.jpg' %}" alt="teamlead" />
+    <figcaption><h5>Qudus</h5> <br> <p>Product Designer</p></figcaption></figure>
+
+    <figure> <img  id="teamimage" src="{% static './images/team members/Oluwatobi-Fullstack Developer.jpg' %}" alt="teamlead" />
+    <figcaption><h5>Oluwatobi</h5> <br> <p>Fullstack Developer</p></figcaption></figure>
+
+    <figure> <img  id="teamimage" src="{% static './images/team members/Obikiel-Frontend Developer.jpg' %}" alt="teamlead" />
+    <figcaption><h5>Obikiel</h5> <br> <p>Frontend Developer</p></figcaption></figure>
+
+  </div>
+</div>
+
+{% endblock %}

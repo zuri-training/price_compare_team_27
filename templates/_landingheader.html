@@ -1,0 +1,138 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Sharp:opsz,wght,FILL,GRAD@48,400,1,0" />
+  <link rel="stylesheet" href="{%static './css/indexstyle.css'%}">
+  <script src="{% static './scripts.js' %}"></script>
+  <title>Pricify</title>
+  <script type="text/javascript" src="{% static './js/jquery-3.6.0.min.js' %}"> </script>
+</head>
+<body>
+  <header>
+    <div class="header-container-mobile">
+      <div class="head-nav">
+
+        <div id="nav-left">
+          <div class="menu">
+            <img id="menu-btn" src="{%static './images/icons/menu.svg'%}">
+            <div id="close-box"><img src="{%static './images/icons/close.svg'%}" alt="#" id="close"></div>
+          </div>
+          <div class="h-logo"><a href="{% url 'index' %}" class="home"><img src="{%static './images/Choice Logo.png'%}"></a></div>
+        </div>
+        <div id="nav-right">
+          <a href="{% url 'wishlist' %}" id="wishlist"><div class="cart"><img src="{%static './images/icons/cart.svg'%}" alt=""></div></a>
+          {% if user.is_authenticated %}
+            <div class="login-btn"><a href="{% url 'logout' %}">Logout</a></div>
+          {% else %}
+            <div class="login-btn"><a href="{% url 'login' %}">Login</a></div>
+          {% endif %}
+            
+        
+        </div>
+
+      </div>
+
+      
+      <div class="head-search">
+        <form action="{% url 'search' %}">
+          <input type="search" name="search" id="" placeholder="Search here">
+        </form>
+      </div>
+    </div>
+
+    <div class="header-container-desktop">
+      <div class="d-header-nav-top">
+        <div class="d-logo"><a href="{% url 'index' %}" class="home"><img src="{%static './images/Choice Logo.png'%}" alt=""></a></div>
+
+      <div class="d-nav">
+        <a href="{% url 'index' %}">Home</a>
+        <a href="{% url 'categories' %}">Categories</a>
+        <a href="{% url 'wishlist' %}">Wishlist <div class="d-cart"><img src="{%static './images/icons/cart.svg'%}" alt=""></div></a>
+      </div>
+      
+      {% if user.is_authenticated %}
+        <div class="d-login"><a href="{% url 'logout' %}">Logout</a></div>
+      {% else %}
+        <div class="d-login"><a href="{% url 'login' %}">Login</a></div>
+      {% endif %}
+        
+      </div>
+
+      <div class="d-hero-section">
+       <div class="d-hero-section-main">
+        <div class="d-hero-txt">
+          <div class="d-hero-txt-big"><h2>Match phone prices across e-shops and get the best deal!</h2></div>
+          <div class="d-hero-txt-mid"><p>With Pricify, you can discover and compare prices of mobile devices accross different webshops and get the best deal.</p></div>
+          <div class="d-hero-search">
+            <form action="{% url 'search' %}">
+              <input type="search" name="search" id="d-hero-search-search" placeholder="What are you looking to find?">
+              <input type="submit" name="d-hero-search-submit" id="d-hero-search-submit" value="Search">
+            </form>
+          </div>
+        </div>
+
+        <div class="d-hero-boy-image"><img src="{%static './images/Group 13.png'%}" alt=""></div>
+     
+       </div>
+
+       <div class="d-hero-section-brands">
+        <div class="d-div-samsung d-brands"><img src="{%static './images/Vector.png'%}" alt=""></div>
+        <div class="d-div-iphone d-brands"><img src="{%static './images/cil_car-alt (Traced).png'%}" alt=""></div>
+        <div class="d-div-huawei d-brands"><img src="{%static './images/Vector-1.png'%}" alt=""></div>
+        <div class="d-div-infinix d-brands"><img src="{%static './images/bi_laptop (Traced).png'%}" alt=""></div>
+        <div class="d-div-oppo d-brands"><img src="{%static './images/Frame 17 (Traced).png'%}" alt=""></div>
+        <div class="d-div-xiaomi d-brands"><img src="{%static './images/Vector-2.png'%}" alt=""></div>
+        <div class="d-div-techno d-brands"><img src="{%static './images/Tecn.png'%}" alt=""></div>
+       </div>
+      </div>
+
+    </div>
+  </header>
+
+  <section class="m-hero-section">
+    <div class="m-hero-txt">
+      <h3>Match phone prices across e-shops and get the best deal!</h3>
+      <p>With Pricify, you can discover and compare prices of mobile devices accross different webshops and get the best deal.</p>
+    </div>
+
+    <div class="m-hero-search">
+      <form action="">
+        <input type="search" name="search" id="" placeholder="What are you looking to find?">
+        <input type="submit" value="Search">
+      </form>
+    </div>
+
+    <div class="m-hero-brands">
+      <div class="div-samsung m-brands"><img src="{% static './images/Vector.png'%}" alt=""></div>
+      <div class="div-iphone m-brands"><img src="{% static './images/cil_car-alt (Traced).png'%}" alt=""></div>
+      <div class="div-huawei m-brands"><img src="{% static './images/Vector-1.png'%}" alt=""></div>
+      <div class="div-infinix m-brands"><img src="{% static './images/bi_laptop (Traced).png'%}" alt=""></div>
+      <div class="div-oppo m-brands"><img src="{% static './images/Frame 17 (Traced).png'%}" alt=""></div>
+      <div class="div-xiaomi m-brands"><img src="{% static './images/Vector-2.png'%}" alt=""></div>
+      <div class="div-techno m-brands"><img src="{% static './images/Tecn.png'%}" alt=""></div>
+    </div>
+
+  </section>
+
+  <aside id="aside">
+    <div class="aside-mobile">
+      <ul class="side-bar">
+        <li><a href="{% url 'index' %}">Home</a></li>
+        <li><div class="toggle-category"> Categories <div class="drop-down"><img src="{% static './images/icons/drop-down.svg' %}"></div></div>
+          <ul class="categories-list">
+            <li><a href="{% url 'categories' %}">Apple</a></li>
+            <li><a href="{% url 'tecno' %}">Tecno</a></li>
+            <li><a href="{% url 'infinix' %}">Infinix</a></li>
+            <li><a href="{% url 'samsung' %}">Samsung</a></li>
+            <li><a href="{% url 'oppo' %}">Oppo</a></li>
+            <li><a href="{% url 'xiaomi' %}">Xiaomi</a></li>
+          </ul>
+        </li>
+        <li><a href="{% url 'wishlist' %}">Wishlist</a></li>
+      </ul>
+    </div>
+  </aside>

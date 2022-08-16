@@ -1,0 +1,89 @@
+{% load static %}
+<footer>
+  <div class="footer-container-mobile">
+    <div class="f-newsletter">
+      <label for="f-newsletter-form">Newsletter Subscription</label>
+      <form action="" id="f-newsletter-form" name="f-newsletter-form">
+        <input type="email" name="f-newsletter-email" id="f-newsletter-email" placeholder="Enter your mail">
+        <input type="submit" id="f-newsletter-submit" value="Subscribe">
+      </form>
+    </div>
+    <div class="f-nav">
+      <section class="f-logo"><img src="{% static './images/White Logo.png'%}" alt=""></section>
+
+      <section class="f-company">
+        <ul id="company">
+          <li><label for="">Company</label></li>
+          <li><p><a href="{% url 'about' %}">About Us</a></p></li>
+          <li><p><a href="{% url 'contact' %}">Contact</a></p></li>
+          <li><p><a href="{% url 'doc' %}">Documentation</a></p></li>
+        </ul>
+      </section>
+
+      <section class="f-brands">
+        <div class="brand-big">
+          <img src="{% static './images/VectorWhite-1.png'%}" alt="">
+          <img src="{% static './images/cil_car-alt (Traced)White.png'%}" alt="">
+          <img src="{% static 'images/VectorWhite-2.png'%}" alt="">
+        </div>
+        <div class="brand-mid">
+          <img src="{% static './images/bi_laptop (Traced)White.png'%}" alt="">
+          <img src="{% static './images/TecnWhite.png'%}" alt="">
+        </div>
+        <div class="brand-down">
+          <img src="{% static './images/Frame 17 (Traced)White.png'%}" alt="">
+          <img src="{% static './images/VectorWhite.png'%}" alt="">
+        </div>
+      </section>
+    </div>
+  </div>
+  <div class="copyright-mobile"><small>Copyright 2022. Made with  &nbsp;  <span class="emoji">❤</span>  &nbsp;  from Zuri Project. Team 27</small></div>
+
+  <div class="footer-container-desktop">
+    <div class="d-footer-container-action">
+      <h2>Join millions of other satisfied customers</h2>
+      <nav class="d-actions">
+        <a href="{% url 'signup' %}">Sign up</a>
+        <a href="{% url 'login' %}">Sign in</a>
+      </nav>
+    </div>
+
+
+    <div class="d-footer-container-main">
+      <div class="d-f-logo"><img src="{% static './images/White Logo.png'%}" alt=""></div>
+
+      <div class="d-f-nav">
+        <ul id="d-company">
+          <li><label>Company</label></li>
+          <li><p><a href="{% url 'about' %}">About Us</a></p></li>
+          <li><p><a href="{% url 'contact' %}">Contact</a></p></li>
+          <li><p><a href="{% url 'doc' %}">Documentation</a></p></li>
+        </ul>
+        <ul id="d-brands">
+          <li><label for="Brands">Brands</label></li>
+          <li><p><a href="{% url 'samsung' %}">Samsung</a></p></li>
+          <li><p><a href="{% url 'oppo' %}">Oppo</a></p></li>
+          <li><p><a href="{% url 'categories' %}">iPhone</a></p></li>
+          <li><p><a href="{% url 'tecno' %}">Techno</a></p></li>
+          <li><p><a href="{% url 'infinix'%}">Infinix</a></p></li>
+          <li><p><a href="{% url 'xiaomi' %}">Xiaomi</a></p></li>
+          <li><p><a href="">Huawei</a></p></li>
+        </ul>
+      </div>
+
+      <div class="d-f-newsletter">
+        <label for="d-Newsletter-form">Newsletter Subscription</label>
+        <form action="#" name="d-Newsletter-form">
+          <input type="email" name="d-f-newsletter-email" id="d-f-newsletter-email" placeholder="Enter your mail">
+          <input type="submit" name="d-f-newsletter-search" id="d-f-newsletter-submit" value="Subscribe">
+        </form>
+      </div>
+    </div>
+
+  </div>
+  <div class="copyright-desktop"><small>Copyright 2022. Made with  &nbsp;  <span class="emoji">❤</span>  &nbsp;  from Zuri Project. Team 27</small></div>
+
+  <div class="footer-container-desktop"></div>
+</footer>
+
+<script src="{% static './js/scripts.js' %}"></script>

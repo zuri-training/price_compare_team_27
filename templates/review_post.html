@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block styles %}
+    <link rel="stylesheet" href="{% static './css/revpost.css' %}">
+{% endblock styles %}
+{% block title %} Comment {% endblock %}
+
+{% block content %}
+<div class="main-mobile-container">
+    <form method="post" class="login-form">
+        {% csrf_token %}
+        <h5>Post your comment</h5>
+        <div class="username input-div">
+            <textarea id="text" cols="30" rows="10" name="comment"></textarea>
+        </div>
+
+        <div class="form-submit">
+            <input type="submit" value="Post">
+        </div>
+    </form>
+</main>
+   
+{% endblock content %}
+    

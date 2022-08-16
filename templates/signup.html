@@ -1,0 +1,66 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block styles %}
+  <link rel="stylesheet" href="{%static './css/signup.css'%}">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+{% endblock styles %}
+  
+
+{% block content %}
+
+<div class="main-mobile-container">
+  <form method="post" class="login-form">
+    {% include 'new_form.html' %}
+
+    {% csrf_token %}
+
+    <h5>Create an Account</h5>
+    <div class="form-email input-div">
+      <label for="form-email"><p>Email Address</p></label>
+      {{form.email}}
+      <small class="error-msg">Invalid format</small>
+    </div>
+
+    <div class="username input-div">
+      <label for="username"><p>Username</p></label>
+      {{form.username}}
+      <small class="error-msg">Invalid format</small>
+    </div>
+
+    <div class="password input-div">
+      <label for="password"><p>Password</p></label>
+      {{form.password1}}
+      <small class="error-msg">Inavlid format</small>
+    </div>
+
+    <div class="confirm-password input-div">
+      <label for="c-password"><p>Confirm Password</p></label>
+      {{form.password2}}
+
+      <small class="error-msg">Inavlid format</small>
+    </div>
+
+    <div class="ter-actions">
+      <div class="remember-me">
+        <input type="checkbox" name="checkbox" class="custom" id="checkbox">
+        <label for="checkbox" id="rem-text"><small>Remember me</small></label>
+      </div>
+    </div>
+  
+    <div class="form-submit">
+      <input type="submit" value="Sign up">
+    </div>
+
+    <div class="sec-action">
+      <small>Have an account? <a href="{% url 'login' %}">Login</a></small>
+    </div>
+
+
+  </form>
+
+  
+
+
+{% endblock content %}
