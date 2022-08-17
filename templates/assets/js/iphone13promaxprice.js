@@ -1,5 +1,5 @@
 const xmlhttp = new XMLHttpRequest();
-const url = "http://http://pricify.zurifordummies.com/static/price.json";
+const url = "http://pricify.zurifordummies.com/static/price.json";
 xmlhttp.open("GET", url, true);
 xmlhttp.send();
 xmlhttp.onreadystatechange = function () {
