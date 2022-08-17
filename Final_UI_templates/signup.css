@@ -439,6 +439,7 @@ footer {
 }
 .footer-container-mobile {
   padding: 3em 1em;
+  padding-bottom: 5em;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -545,6 +546,10 @@ footer {
   text-align: center;
   color: var(--dark-text);
   padding-block: 0.5em;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
 }
 .emoji {
   color: var(--input-invalid-state);
@@ -787,6 +792,29 @@ footer {
   aside {
     top: 5em;
   }
+  /* setup */
+  html {
+    height: fit-content;
+  }
+  .big-page-container-box {
+    position: relative;
+    min-height: 100vh;
+  }
+  .content-wrap {
+    padding-bottom: 40rem; 
+  }
+  footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: auto;
+    min-height: 20rem;
+  }
+  .copyright-mobile {
+    position: absolute;
+    bottom: 0;
+  }
 }
 
 @media screen and (max-width: 768px) and (min-width: 570px) {
@@ -810,6 +838,29 @@ footer {
   aside {
     top: 4.8em;
   }
+  /* setup */
+  html {
+    height: fit-content;
+  }
+  .big-page-container-box {
+    position: relative;
+    min-height: 100vh;
+  }
+  .content-wrap {
+    padding-bottom: 40rem; 
+  }
+  footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: auto;
+    min-height: 20rem;
+  }
+  .copyright-mobile {
+    position: absolute;
+    bottom: 0;
+  }
 }
 
 @media screen and (max-width: 768px) and (min-width: 481px) {
@@ -819,6 +870,30 @@ footer {
   #nav-right {
     width: 45%;
   } */
+  /* setup */
+  html {
+    height: fit-content;
+  }
+  .big-page-container-box {
+    position: relative;
+    min-height: 100vh;
+  }
+  .content-wrap {
+    padding-bottom: 40rem; 
+  }
+  footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: auto;
+    min-height: 20rem;
+  }
+  .copyright-mobile {
+    
+    position: absolute;
+    bottom: 0;
+  }
 }
 @media screen and (max-width: 450px) {
   #nav-left {
@@ -827,5 +902,31 @@ footer {
   #nav-right {
     width: 50%;
   }
+  
+/* setup */
+  html {
+    height: fit-content;
+  }
+  .big-page-container-box {
+    position: relative;
+    min-height: 100vh;
+  }
+  .content-wrap {
+    padding-bottom: 40rem; 
+  }
+  footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: auto;
+    min-height: 20rem;
+  }
+  .copyright-mobile {
+    
+    position: absolute;
+    bottom: 0;
+  }
 }
+
 

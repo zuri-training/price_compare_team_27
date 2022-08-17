@@ -412,6 +412,7 @@ footer {
   background: var(--footer-color);
   color: var(--light-text);
   font-size: 0.8rem;
+  padding-bottom: 2em;
 }
 .footer-container-mobile {
   padding: 3em 1em;
@@ -521,6 +522,10 @@ footer {
   text-align: center;
   color: var(--dark-text);
   padding-block: 0.5em;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
 }
 .emoji {
   color: var(--input-invalid-state);
@@ -546,6 +551,22 @@ footer {
     align-items: center;
     justify-content: space-between;
   }
+
+
+
+  .big-page-container-box {
+    position: relative;
+    min-height: fit-content;
+  }
+  .content-wrap {
+    padding-bottom: 0;
+  }
+  footer {
+    position: relative;
+    min-height: fit-content;
+  }
+
+
   aside {
     display: none;
   }
@@ -666,6 +687,7 @@ footer {
     bottom: 0;
     left: 0;
     right: 0;
+    margin-top: 0.5em;
   }
   .copyright-mobile {
     display: none;
@@ -766,6 +788,29 @@ footer {
   aside {
     top: 5em;
   }
+  /* setup */
+  html {
+    height: fit-content;
+  }
+  .big-page-container-box {
+    position: relative;
+    min-height: 100vh;
+  }
+  .content-wrap {
+    padding-bottom: 40rem; 
+  }
+  footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: auto;
+    min-height: 20rem;
+  }
+  .copyright-mobile {
+    position: absolute;
+    bottom: 0;
+  }
 }
 
 @media screen and (max-width: 768px) and (min-width: 570px) {
@@ -789,6 +834,29 @@ footer {
   aside {
     top: 4.8em;
   }
+  /* setup */
+  html {
+    height: fit-content;
+  }
+  .big-page-container-box {
+    position: relative;
+    min-height: 100vh;
+  }
+  .content-wrap {
+    padding-bottom: 40rem; 
+  }
+  footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: auto;
+    min-height: 20rem;
+  }
+  .copyright-mobile {
+    position: absolute;
+    bottom: 0;
+  }
 }
 
 @media screen and (max-width: 768px) and (min-width: 481px) {
@@ -798,6 +866,30 @@ footer {
   #nav-right {
     width: 45%;
   } */
+  /* setup */
+  html {
+    height: fit-content;
+  }
+  .big-page-container-box {
+    position: relative;
+    min-height: 100vh;
+  }
+  .content-wrap {
+    padding-bottom: 40rem; 
+  }
+  footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: auto;
+    min-height: 20rem;
+  }
+  .copyright-mobile {
+    
+    position: absolute;
+    bottom: 0;
+  }
 }
 @media screen and (max-width: 450px) {
   #nav-left {
@@ -805,6 +897,31 @@ footer {
   }
   #nav-right {
     width: 50%;
+  }
+  
+/* setup */
+  html {
+    height: fit-content;
+  }
+  .big-page-container-box {
+    position: relative;
+    min-height: 100vh;
+  }
+  .content-wrap {
+    padding-bottom: 40rem; 
+  }
+  footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: auto;
+    min-height: 20rem;
+  }
+  .copyright-mobile {
+    
+    position: absolute;
+    bottom: 0;
   }
 }
 
