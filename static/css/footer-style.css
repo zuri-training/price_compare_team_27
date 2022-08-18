@@ -254,6 +254,7 @@ footer {
     align-items: flex-start;
     justify-content: space-between;
     position: relative;
+    background-color: red;
   }
   .footer-container-desktop a:hover,   .footer-container-desktop a:focus {
     text-decoration: underline;
