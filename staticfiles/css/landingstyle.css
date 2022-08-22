@@ -67,7 +67,7 @@ header {
   padding-block-end: 1.5em;
   min-height: 100vh;
   /* background: linear-gradient(to bottom, #FFFFFF, #94AFF4); */
-  background-image: url("static/images/SemicircleBig.png"), url('static/images/Blur\ Ellipse\ 9Boys\ head.png'), url('static/images/Blur\ Ellipse\ 10Top\ Left\ corner.png') ,linear-gradient(to bottom, #FFFFFF, #94AFF4);
+  background-image: url("../../staticfiles/images/SemicircleBig.png"), url('../../staticfiles/images/Blur\ Ellipse\ 9Boys\ head.png'), url('../../staticfiles/images/Blur\ Ellipse\ 10Top\ Left\ corner.png') ,linear-gradient(to bottom, #FFFFFF, #94AFF4);
   background-position: 33% 0%, 98% -20%, top left;
   background-repeat: no-repeat, no-repeat, no-repeat;
   background-size: 25em, 25em, 15em, 100%;
@@ -277,7 +277,7 @@ article {
   width: 100%;
   background: #94AFF4;
   padding-block: 2.5em 3em;
-  /* background-image: url('/Base_Template/images/Semicircle\ 2small.png');
+  /* background-image: url('../../staticfiles/images/Semicircle\ 2small.png');
   background-position: 0% 180%;
   background-repeat: no-repeat;
   background-size: 7.5em; */
@@ -603,7 +603,7 @@ footer {
   align-items: center;
   justify-content: space-between;
   border-radius: 0.4em;
-  background-image: url("static\images\Union(4).png");
+  background-image: url("../../staticfiles\images\Union4.png");
   background-repeat: no-repeat;
   background-position-x: 100%;
   background-position-y: 0%;
