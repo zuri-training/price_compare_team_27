@@ -1,7 +1,6 @@
 import os
 from pathlib import Path
 
-from decouple import config
 
 import django_heroku
 import dj_database_url
@@ -15,7 +14,8 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/4.0/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = config('SECRET_KEY')
+SECRET_KEY = '3c3395e376809cc8272cf931'
+
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -150,8 +150,8 @@ EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 # EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
 EMAIL_USE_SSL = True
 EMAIL_HOST = 'smtp.gmail.com'
-EMAIL_HOST_USER = config("EMAIL_HOST_USER")
-EMAIL_HOST_PASSWORD = config("EMAIL_HOST_PASSWORD")
+EMAIL_HOST_USER = 'jackgriffo49@gmail.com'
+EMAIL_HOST_PASSWORD = 'cquxpgmudjimapfp'
 EMAIL_PORT = '465'
 
 
