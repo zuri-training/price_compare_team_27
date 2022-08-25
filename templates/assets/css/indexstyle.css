@@ -199,7 +199,7 @@ header {
   padding-inline-start: 1em;
   border: 2px solid var(--input-default-state);
   border-radius: var(--border-radius);
-  background-image: url('../../staticfiles/images/icons/search.svg');
+  background-image: url('../../static/images/icons/search.svg');
   background-repeat: no-repeat;
   background-position: 98% 50%;
   background-size: 2em;
@@ -280,7 +280,7 @@ aside li {
 
 /* hero section */
 .m-hero-section {
-  background: url('../../staticfiles/images/Union1.png'), url('../../staticfiles/images/Union2.png'), var(--hero-section-gradient);
+  background: url('../../static/images/Union1.png'), url('../../static/images/Union2.png'), var(--hero-section-gradient);
   background-repeat: no-repeat, no-repeat;
   background-size: 90%, 5em, 100%;
   background-position: 50% 0%, 0% 97%, 100%;
@@ -703,7 +703,7 @@ footer {
   }
   .header-container-desktop {
    display: block;
-   background: url('../../staticfiles/images/Union1.png'), url('../../staticfiles/images/Union2.png'), url('../../staticfiles/images/Ellipse 9.png'), url('../../staticfiles/images/Ellipse 10.png'), linear-gradient(180deg, #D9E2FB -9.42%, #FFFFFF -9.41%, #D9E3FB 100%);
+   background: url('../../static/images/Union1.png'), url('../../static/images/Union2.png'), url('../../static/images/Ellipse 9.png'), url('../../static/images/Ellipse 10.png'), linear-gradient(180deg, #D9E2FB -9.42%, #FFFFFF -9.41%, #D9E3FB 100%);
    background-size: 25em, 7em, 25em, 15em, 100%;
    background-position: 40% 0%, 0% 97%, 90% -5%, top left;
    background-repeat: no-repeat;

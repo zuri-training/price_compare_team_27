@@ -197,7 +197,7 @@ header {
     padding-inline-start: 1em;
     border: 1px solid var(--input-default-state);
     border-radius: var(--border-radius);
-    background-image: url('../../staticfiles/images/icons/search.svg');
+    background-image: url('../../static/images/icons/search.svg');
     background-repeat: no-repeat;
     background-position: 98% 50%;
     background-size: 2em;
