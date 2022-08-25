@@ -224,7 +224,7 @@ header {
   padding-inline-start: 1em;
   border: 2px solid var(--input-default-state);
   border-radius: var(--border-radius);
-  background-image: url("icons/search.svg");
+  background-image: url('../../static/images/icons/search.svg');
   background-repeat: no-repeat;
   background-position: 98% 50%;
   background-size: 2em;
@@ -854,4 +854,4 @@ footer {
   #nav-right {
     width: 50%;
   }
-}
+

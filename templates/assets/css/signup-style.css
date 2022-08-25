@@ -313,7 +313,7 @@ input.custom {
     margin-block-start: 1em;
     padding: 1em;
     border-radius: 0.4em;
-    background: url("/Base_Template/images/search.svg");
+    background: url("../../static/images/icons/search.svg");
     background-repeat: no-repeat;
     background-position-x: 100%;
     background-position-y: 50%;
